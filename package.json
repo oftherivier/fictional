@@ -1,0 +1,30 @@
+{
+  "name": "fictional",
+  "description": "Generate fake data deterministically from a given input",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:oftherivier/fictional.git",
+  "author": "Justin van der Merwe",
+  "license": "MIT",
+  "oftherivier": {
+    "type": "es5",
+    "src": "index.js"
+  },
+  "renovate": {
+    "extends": [
+      "github>oftherivier/tools"
+    ]
+  },
+  "scripts": {
+    "build": "otr build",
+    "lint": "otr lint",
+    "format": "otr format",
+    "test": "otr test",
+    "release": "otr release",
+    "typetest": "otr typetest",
+    "checks": "yarn lint && yarn typetest && yarn test"
+  },
+  "devDependencies": {
+    "@oftherivier/tools": "^0.1.27"
+  }
+}
