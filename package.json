@@ -1,0 +1,26 @@
+{
+  "name": "fictional",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": "@oftherivier",
+  "license": "MIT",
+  "type": "commonjs",
+  "description": "Generate fake data deterministically from a given input",
+  "scripts": {
+    "lint": "otr style --lint",
+    "format": "otr style --format",
+    "test": "otr test './tests/**/*.test.js'",
+    "typetest": "otr typetest",
+    "checks": "yarn lint && yarn typetest && yarn test",
+    "release": "otr release",
+    "prepublishOnly": "yarn checks"
+  },
+  "renovate": {
+    "extends": [
+      "github>oftherivier/tools"
+    ]
+  },
+  "devDependencies": {
+    "@oftherivier/tools": "^0.1.0"
+  }
+}
