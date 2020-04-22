@@ -26,5 +26,9 @@
   },
   "devDependencies": {
     "@oftherivier/tools": "^0.1.27"
+  },
+  "dependencies": {
+    "fast-json-stable-stringify": "^2.1.0",
+    "string-hash": "^1.1.3"
   }
 }
