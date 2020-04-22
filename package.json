@@ -24,6 +24,6 @@
     "checks": "yarn lint && yarn typetest && yarn test"
   },
   "devDependencies": {
-    "@oftherivier/tools": "^0.1.27"
+    "@oftherivier/tools": "0.1.27"
   }
 }
