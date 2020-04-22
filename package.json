@@ -21,6 +21,6 @@
     ]
   },
   "devDependencies": {
-    "@oftherivier/tools": "0.1.2"
+    "@oftherivier/tools": "0.1.27"
   }
 }
