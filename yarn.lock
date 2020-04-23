@@ -858,7 +858,7 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
-"@oftherivier/tools@^0.1.29":
+"@oftherivier/tools@0.1.29":
   version "0.1.29"
   resolved "https://registry.yarnpkg.com/@oftherivier/tools/-/tools-0.1.29.tgz#0a35cd7def1ff758bf3b80c955777b9cb35ebd63"
   integrity sha512-x9ZoLeVYqVrJN8FybEB+0LY1SC1nqmXzVPqlkHKV4+hYfUqquFDv+oLuUKsI/HWb9HWTFUyfkRhqPK1Qy8+NNg==
