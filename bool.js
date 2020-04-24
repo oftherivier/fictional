@@ -1,3 +1,5 @@
-module.exports = function bool(id) {
-  return !!(id % 2)
+var hash = require('./internal/hash')
+
+module.exports = function bool(inputs) {
+  return !!(hash(inputs) % 2)
 }

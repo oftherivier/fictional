@@ -1,7 +1,3 @@
-var hash = require('string-hash')
-var stringify = require('fast-json-stable-stringify')
+var hash = require('./internal/hash')
 
-module.exports = function int (inputs) {
-  // todo: cache `inputs` using a WeakMap
-  return hash(stringify(inputs))
-}
+module.exports = hash

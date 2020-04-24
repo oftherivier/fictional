@@ -1,4 +1,5 @@
 var Seq = require('./internal/Seq')
+var hash = require('./internal/hash')
 
 var VOWELS = 'aeiou'
 var CONSONANT = 'bcdfghjklmnpqrstvwxyz'
@@ -8,7 +9,8 @@ var CONSONANT_LEN = CONSONANT.length
 var MAX_SYLLABLES = 10
 var MIN_SYLLABLES = 4
 
-module.exports = function word(id) {
+module.exports = function word(inputs) {
+  var id = hash(inputs)
   var n = Math.max(id % MAX_SYLLABLES, MIN_SYLLABLES)
 
   var ids = new Seq(id)
