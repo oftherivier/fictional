@@ -1,5 +1,5 @@
 var Seq = require('./internal/Seq')
-var hash = require('./internal/hash')
+var hash = require('./hash')
 
 var VOWELS = 'aeiou'
 var CONSONANT = 'bcdfghjklmnpqrstvwxyz'

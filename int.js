@@ -1,3 +1,3 @@
-var hash = require('./internal/hash')
+var hash = require('./hash')
 
 module.exports = hash
