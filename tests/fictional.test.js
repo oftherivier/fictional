@@ -4,7 +4,14 @@ const tap = require('tap')
 const types = getTypes()
 
 tap.test('generated values', t => {
-  t.matchSnapshot(callTypes(23))
+  let i = -1
+  const results = []
+
+  while (++i < 50) {
+    results.push(callTypes(i))
+  }
+
+  t.matchSnapshot(results)
   t.end()
 })
 
