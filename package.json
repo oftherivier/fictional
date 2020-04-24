@@ -31,7 +31,7 @@
     "checks": "yarn lint && yarn typetest && yarn test"
   },
   "devDependencies": {
-    "@oftherivier/tools": "0.1.29"
+    "@oftherivier/tools": "0.1.30"
   },
   "dependencies": {
     "fast-json-stable-stringify": "^2.1.0",
