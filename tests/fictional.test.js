@@ -1,6 +1,7 @@
 const fictional = require('..')
 const tap = require('tap')
 
+var TYPE_EXCLUDES = new Set('hash', 'oneOf')
 const types = getTypes()
 
 tap.test('generated values', t => {
@@ -37,5 +38,14 @@ function callTypes(input) {
 }
 
 function getTypes() {
-  return fictional
+  const result = {}
+
+  for (const name of Object.keys(fictional)) {
+    if (!TYPE_EXCLUDES.has(name)) {
+      result[name] = fictional[name]
+    }
+  }
+
+  result.oneOf = fictional.oneOf(['red', 'green', 'blue'])
+  return result
 }
