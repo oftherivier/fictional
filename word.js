@@ -1,4 +1,3 @@
-var Seq = require('./internal/Seq')
 var hash = require('./hash')
 
 var VOWELS = 'aeiou'
@@ -13,11 +12,13 @@ module.exports = function word(inputs) {
   var id = hash(inputs)
   var n = Math.max(id % MAX_SYLLABLES, MIN_SYLLABLES)
 
-  var ids = new Seq(id)
   var i = -1
   var result = ''
 
-  while (++i < n) result += i % 2 ? vowel(ids.next()) : constant(ids.next())
+  while (++i < n) {
+    id = hash(id)
+    result += i % 2 ? vowel(id) : constant(id)
+  }
 
   return result
 }
