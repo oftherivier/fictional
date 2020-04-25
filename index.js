@@ -1,7 +1,9 @@
+exports.hash = require('./hash')
+exports.oneOf = require('./oneOf')
+exports.tuple = require('./tuple')
+
 exports.int = require('./int')
 exports.word = require('./word')
 exports.bool = require('./bool')
 exports.datestr = require('./datestr')
-exports.oneOf = require('./oneOf')
-exports.tuple = require('./tuple')
 exports.float = require('./float')
