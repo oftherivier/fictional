@@ -13,5 +13,7 @@ module.exports = function datestr(inputs) {
   var hour = fit(id, 0, 23)
   var min = fit(id, 0, 59)
   var millisec = fit(id, 0, 1000)
-  return new Date(year, monthIndex, day, hour, min, millisec).toISOString()
+  return new Date(
+    Date.UTC(year, monthIndex, day, hour, min, millisec)
+  ).toISOString()
 }
