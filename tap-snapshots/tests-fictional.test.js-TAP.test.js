@@ -12,6 +12,10 @@ Array [
     "datestr": "2009-07-06T18:35:17.000Z",
     "int": 177557,
     "oneOf": "blue",
+    "tuple": Array [
+      "Parkway",
+      "Street",
+    ],
     "word": "pukekot",
   },
   Object {
@@ -19,6 +23,10 @@ Array [
     "datestr": "2008-06-05T17:34:16.000Z",
     "int": 177556,
     "oneOf": "green",
+    "tuple": Array [
+      "Privet",
+      "Street",
+    ],
     "word": "dukuci",
   },
   Object {
@@ -26,6 +34,10 @@ Array [
     "datestr": "2011-09-08T20:37:19.000Z",
     "int": 177559,
     "oneOf": "green",
+    "tuple": Array [
+      "Parkway",
+      "Road",
+    ],
     "word": "sopuvotid",
   },
   Object {
@@ -33,6 +45,10 @@ Array [
     "datestr": "2010-08-07T19:36:18.000Z",
     "int": 177558,
     "oneOf": "red",
+    "tuple": Array [
+      "Privet",
+      "Street",
+    ],
     "word": "honeceme",
   },
   Object {
@@ -40,6 +56,10 @@ Array [
     "datestr": "2005-03-02T15:31:13.000Z",
     "int": 177553,
     "oneOf": "green",
+    "tuple": Array [
+      "Cherry",
+      "Drive",
+    ],
     "word": "sefo",
   },
   Object {
@@ -47,6 +67,10 @@ Array [
     "datestr": "2004-02-01T14:30:12.000Z",
     "int": 177552,
     "oneOf": "red",
+    "tuple": Array [
+      "Cherry",
+      "Street",
+    ],
     "word": "huvi",
   },
   Object {
@@ -54,6 +78,10 @@ Array [
     "datestr": "2007-05-04T16:33:15.000Z",
     "int": 177555,
     "oneOf": "red",
+    "tuple": Array [
+      "Parkway",
+      "Drive",
+    ],
     "word": "lexav",
   },
   Object {
@@ -61,6 +89,10 @@ Array [
     "datestr": "2006-04-03T15:32:14.000Z",
     "int": 177554,
     "oneOf": "blue",
+    "tuple": Array [
+      "Cherry",
+      "Drive",
+    ],
     "word": "zeqi",
   },
   Object {
@@ -68,6 +100,10 @@ Array [
     "datestr": "2017-04-14T03:43:25.000Z",
     "int": 177565,
     "oneOf": "green",
+    "tuple": Array [
+      "Cherry",
+      "Road",
+    ],
     "word": "xoduj",
   },
   Object {
@@ -75,6 +111,10 @@ Array [
     "datestr": "2016-03-13T03:42:24.000Z",
     "int": 177564,
     "oneOf": "red",
+    "tuple": Array [
+      "Parkway",
+      "Drive",
+    ],
     "word": "name",
   },
   Object {
@@ -82,6 +122,10 @@ Array [
     "datestr": "1991-07-09T11:47:32.000Z",
     "int": 5859332,
     "oneOf": "blue",
+    "tuple": Array [
+      "Privet",
+      "Drive",
+    ],
     "word": "qaxi",
   },
   Object {
@@ -89,6 +133,10 @@ Array [
     "datestr": "1985-07-14T22:22:05.000Z",
     "int": 5859365,
     "oneOf": "blue",
+    "tuple": Array [
+      "Privet",
+      "Road",
+    ],
     "word": "maloj",
   },
   Object {
@@ -96,6 +144,10 @@ Array [
     "datestr": "2018-07-21T08:55:38.000Z",
     "int": 5859398,
     "oneOf": "blue",
+    "tuple": Array [
+      "Parkway",
+      "Drive",
+    ],
     "word": "riqidiyu",
   },
   Object {
@@ -103,6 +155,10 @@ Array [
     "datestr": "2012-07-27T18:30:11.000Z",
     "int": 5859431,
     "oneOf": "blue",
+    "tuple": Array [
+      "Parkway",
+      "Street",
+    ],
     "word": "yugo",
   },
   Object {
@@ -110,6 +166,10 @@ Array [
     "datestr": "2015-07-12T17:31:20.000Z",
     "int": 5859200,
     "oneOf": "blue",
+    "tuple": Array [
+      "Cherry",
+      "Street",
+    ],
     "word": "duvi",
   },
   Object {
@@ -117,6 +177,10 @@ Array [
     "datestr": "2009-07-18T04:05:53.000Z",
     "int": 5859233,
     "oneOf": "blue",
+    "tuple": Array [
+      "Cherry",
+      "Road",
+    ],
     "word": "xopi",
   },
   Object {
@@ -124,6 +188,10 @@ Array [
     "datestr": "2003-07-24T14:39:26.000Z",
     "int": 5859266,
     "oneOf": "blue",
+    "tuple": Array [
+      "Cherry",
+      "Road",
+    ],
     "word": "zileko",
   },
   Object {
@@ -131,6 +199,10 @@ Array [
     "datestr": "1997-07-03T01:13:59.000Z",
     "int": 5859299,
     "oneOf": "blue",
+    "tuple": Array [
+      "Parkway",
+      "Street",
+    ],
     "word": "yavowazuq",
   },
   Object {
@@ -138,6 +210,10 @@ Array [
     "datestr": "1982-07-02T23:20:56.000Z",
     "int": 5859596,
     "oneOf": "blue",
+    "tuple": Array [
+      "Parkway",
+      "Road",
+    ],
     "word": "vezilu",
   },
   Object {
@@ -145,6 +221,10 @@ Array [
     "datestr": "2015-07-09T09:54:29.000Z",
     "int": 5859629,
     "oneOf": "blue",
+    "tuple": Array [
+      "Privet",
+      "Street",
+    ],
     "word": "hinodurip",
   },
   Object {
@@ -152,6 +232,10 @@ Array [
     "datestr": "1994-10-12T15:50:35.000Z",
     "int": 5859335,
     "oneOf": "blue",
+    "tuple": Array [
+      "Parkway",
+      "Drive",
+    ],
     "word": "damuh",
   },
   Object {
@@ -159,6 +243,10 @@ Array [
     "datestr": "1986-08-15T23:23:06.000Z",
     "int": 5859366,
     "oneOf": "red",
+    "tuple": Array [
+      "Parkway",
+      "Road",
+    ],
     "word": "gipero",
   },
   Object {
@@ -166,6 +254,10 @@ Array [
     "datestr": "2017-06-20T07:54:37.000Z",
     "int": 5859397,
     "oneOf": "green",
+    "tuple": Array [
+      "Cherry",
+      "Road",
+    ],
     "word": "vodupof",
   },
   Object {
@@ -173,6 +265,10 @@ Array [
     "datestr": "2009-04-24T15:27:08.000Z",
     "int": 5859428,
     "oneOf": "blue",
+    "tuple": Array [
+      "Parkway",
+      "Drive",
+    ],
     "word": "bubuwujo",
   },
   Object {
@@ -180,6 +276,10 @@ Array [
     "datestr": "2018-10-15T20:34:23.000Z",
     "int": 5859203,
     "oneOf": "blue",
+    "tuple": Array [
+      "Parkway",
+      "Street",
+    ],
     "word": "tiga",
   },
   Object {
@@ -187,6 +287,10 @@ Array [
     "datestr": "2010-08-19T05:06:54.000Z",
     "int": 5859234,
     "oneOf": "red",
+    "tuple": Array [
+      "Cherry",
+      "Drive",
+    ],
     "word": "wutu",
   },
   Object {
@@ -194,6 +298,10 @@ Array [
     "datestr": "2002-06-23T13:38:25.000Z",
     "int": 5859265,
     "oneOf": "green",
+    "tuple": Array [
+      "Cherry",
+      "Road",
+    ],
     "word": "selaj",
   },
   Object {
@@ -201,6 +309,10 @@ Array [
     "datestr": "1994-04-26T22:10:56.000Z",
     "int": 5859296,
     "oneOf": "blue",
+    "tuple": Array [
+      "Parkway",
+      "Street",
+    ],
     "word": "narabo",
   },
   Object {
@@ -208,6 +320,10 @@ Array [
     "datestr": "1985-10-06T03:23:59.000Z",
     "int": 5859599,
     "oneOf": "blue",
+    "tuple": Array [
+      "Cherry",
+      "Road",
+    ],
     "word": "ralivixaq",
   },
   Object {
@@ -215,6 +331,10 @@ Array [
     "datestr": "2016-08-10T10:55:30.000Z",
     "int": 5859630,
     "oneOf": "red",
+    "tuple": Array [
+      "Privet",
+      "Road",
+    ],
     "word": "vozo",
   },
   Object {
@@ -222,6 +342,10 @@ Array [
     "datestr": "1993-09-11T13:49:34.000Z",
     "int": 5859334,
     "oneOf": "green",
+    "tuple": Array [
+      "Privet",
+      "Road",
+    ],
     "word": "bahe",
   },
   Object {
@@ -229,6 +353,10 @@ Array [
     "datestr": "1987-09-17T00:24:07.000Z",
     "int": 5859367,
     "oneOf": "green",
+    "tuple": Array [
+      "Privet",
+      "Street",
+    ],
     "word": "wugihas",
   },
   Object {
@@ -236,6 +364,10 @@ Array [
     "datestr": "2016-05-19T06:53:36.000Z",
     "int": 5859396,
     "oneOf": "red",
+    "tuple": Array [
+      "Privet",
+      "Drive",
+    ],
     "word": "semiju",
   },
   Object {
@@ -243,6 +375,10 @@ Array [
     "datestr": "2010-05-25T16:28:09.000Z",
     "int": 5859429,
     "oneOf": "red",
+    "tuple": Array [
+      "Cherry",
+      "Road",
+    ],
     "word": "duwupegal",
   },
   Object {
@@ -250,6 +386,10 @@ Array [
     "datestr": "2017-09-14T19:33:22.000Z",
     "int": 5859202,
     "oneOf": "green",
+    "tuple": Array [
+      "Cherry",
+      "Street",
+    ],
     "word": "riri",
   },
   Object {
@@ -257,6 +397,10 @@ Array [
     "datestr": "2011-09-20T06:07:55.000Z",
     "int": 5859235,
     "oneOf": "green",
+    "tuple": Array [
+      "Cherry",
+      "Street",
+    ],
     "word": "jigur",
   },
   Object {
@@ -264,6 +408,10 @@ Array [
     "datestr": "2001-05-22T12:37:24.000Z",
     "int": 5859264,
     "oneOf": "red",
+    "tuple": Array [
+      "Privet",
+      "Drive",
+    ],
     "word": "quto",
   },
   Object {
@@ -271,6 +419,10 @@ Array [
     "datestr": "1995-04-30T23:11:57.000Z",
     "int": 5859297,
     "oneOf": "red",
+    "tuple": Array [
+      "Privet",
+      "Road",
+    ],
     "word": "zewuxuf",
   },
   Object {
@@ -278,6 +430,10 @@ Array [
     "datestr": "1984-09-05T01:22:58.000Z",
     "int": 5859598,
     "oneOf": "green",
+    "tuple": Array [
+      "Privet",
+      "Street",
+    ],
     "word": "pavozuqi",
   },
   Object {
@@ -285,6 +441,10 @@ Array [
     "datestr": "2017-09-11T11:56:31.000Z",
     "int": 5859631,
     "oneOf": "green",
+    "tuple": Array [
+      "Privet",
+      "Drive",
+    ],
     "word": "cumo",
   },
   Object {
@@ -292,6 +452,10 @@ Array [
     "datestr": "1988-04-06T08:44:29.000Z",
     "int": 5859329,
     "oneOf": "blue",
+    "tuple": Array [
+      "Cherry",
+      "Drive",
+    ],
     "word": "hamuribec",
   },
   Object {
@@ -299,6 +463,10 @@ Array [
     "datestr": "1980-02-10T17:17:00.000Z",
     "int": 5859360,
     "oneOf": "red",
+    "tuple": Array [
+      "Cherry",
+      "Road",
+    ],
     "word": "wasa",
   },
   Object {
@@ -306,6 +474,10 @@ Array [
     "datestr": "2015-04-18T05:52:35.000Z",
     "int": 5859395,
     "oneOf": "blue",
+    "tuple": Array [
+      "Cherry",
+      "Drive",
+    ],
     "word": "hifez",
   },
   Object {
@@ -313,6 +485,10 @@ Array [
     "datestr": "2007-02-22T14:25:06.000Z",
     "int": 5859426,
     "oneOf": "red",
+    "tuple": Array [
+      "Parkway",
+      "Road",
+    ],
     "word": "hodaqu",
   },
   Object {
@@ -320,6 +496,10 @@ Array [
     "datestr": "1981-01-17T00:36:25.000Z",
     "int": 5859205,
     "oneOf": "green",
+    "tuple": Array [
+      "Parkway",
+      "Drive",
+    ],
     "word": "babox",
   },
   Object {
@@ -327,6 +507,10 @@ Array [
     "datestr": "2012-10-21T07:08:56.000Z",
     "int": 5859236,
     "oneOf": "blue",
+    "tuple": Array [
+      "Cherry",
+      "Road",
+    ],
     "word": "goweti",
   },
   Object {
@@ -334,6 +518,10 @@ Array [
     "datestr": "2008-01-02T20:44:31.000Z",
     "int": 5859271,
     "oneOf": "green",
+    "tuple": Array [
+      "Cherry",
+      "Road",
+    ],
     "word": "gula",
   },
   Object {
@@ -341,6 +529,10 @@ Array [
     "datestr": "2000-10-06T04:17:02.000Z",
     "int": 5859302,
     "oneOf": "blue",
+    "tuple": Array [
+      "Privet",
+      "Drive",
+    ],
     "word": "xofa",
   },
   Object {
@@ -348,6 +540,10 @@ Array [
     "datestr": "2018-04-27T19:17:53.000Z",
     "int": 5859593,
     "oneOf": "blue",
+    "tuple": Array [
+      "Privet",
+      "Street",
+    ],
     "word": "qeca",
   },
   Object {
@@ -355,6 +551,10 @@ Array [
     "datestr": "2010-02-04T05:49:24.000Z",
     "int": 5859624,
     "oneOf": "red",
+    "tuple": Array [
+      "Parkway",
+      "Street",
+    ],
     "word": "teku",
   },
 ]
