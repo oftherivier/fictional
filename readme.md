@@ -2,4 +2,4 @@
 
 Generate fake data deterministically from a given input
 
-_Docs and type definitions coming soon_
+_Docs coming soon_
