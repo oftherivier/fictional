@@ -10,6 +10,7 @@ Array [
   Object {
     "bool": true,
     "datestr": "2009-07-06T18:35:17.000Z",
+    "float": 177557.3709851107,
     "int": 177557,
     "oneOf": "blue",
     "tuple": Array [
@@ -21,6 +22,7 @@ Array [
   Object {
     "bool": false,
     "datestr": "2008-06-05T17:34:16.000Z",
+    "float": 177556.3670855106,
     "int": 177556,
     "oneOf": "green",
     "tuple": Array [
@@ -32,6 +34,7 @@ Array [
   Object {
     "bool": true,
     "datestr": "2011-09-08T20:37:19.000Z",
+    "float": 177559.4092000941,
     "int": 177559,
     "oneOf": "green",
     "tuple": Array [
@@ -43,6 +46,7 @@ Array [
   Object {
     "bool": false,
     "datestr": "2010-08-07T19:36:18.000Z",
+    "float": 177558.405300494,
     "int": 177558,
     "oneOf": "red",
     "tuple": Array [
@@ -54,6 +58,7 @@ Array [
   Object {
     "bool": true,
     "datestr": "2005-03-02T15:31:13.000Z",
+    "float": 177553.3857184359,
     "int": 177553,
     "oneOf": "green",
     "tuple": Array [
@@ -65,6 +70,7 @@ Array [
   Object {
     "bool": false,
     "datestr": "2004-02-01T14:30:12.000Z",
+    "float": 177552.3818188358,
     "int": 177552,
     "oneOf": "red",
     "tuple": Array [
@@ -76,6 +82,7 @@ Array [
   Object {
     "bool": true,
     "datestr": "2007-05-04T16:33:15.000Z",
+    "float": 177555.3631584545,
     "int": 177555,
     "oneOf": "red",
     "tuple": Array [
@@ -87,6 +94,7 @@ Array [
   Object {
     "bool": false,
     "datestr": "2006-04-03T15:32:14.000Z",
+    "float": 177554.3592588544,
     "int": 177554,
     "oneOf": "blue",
     "tuple": Array [
@@ -98,6 +106,7 @@ Array [
   Object {
     "bool": true,
     "datestr": "2017-04-14T03:43:25.000Z",
+    "float": 177565.3630538146,
     "int": 177565,
     "oneOf": "green",
     "tuple": Array [
@@ -109,6 +118,7 @@ Array [
   Object {
     "bool": false,
     "datestr": "2016-03-13T03:42:24.000Z",
+    "float": 177564.3593774467,
     "int": 177564,
     "oneOf": "red",
     "tuple": Array [
@@ -120,6 +130,7 @@ Array [
   Object {
     "bool": false,
     "datestr": "1991-07-09T11:47:32.000Z",
+    "float": 5859332.152255516,
     "int": 5859332,
     "oneOf": "blue",
     "tuple": Array [
@@ -131,6 +142,7 @@ Array [
   Object {
     "bool": true,
     "datestr": "1985-07-14T22:22:05.000Z",
+    "float": 5859365.384622693,
     "int": 5859365,
     "oneOf": "blue",
     "tuple": Array [
@@ -142,6 +154,7 @@ Array [
   Object {
     "bool": false,
     "datestr": "2018-07-21T08:55:38.000Z",
+    "float": 5859398.446616022,
     "int": 5859398,
     "oneOf": "blue",
     "tuple": Array [
@@ -153,6 +166,7 @@ Array [
   Object {
     "bool": true,
     "datestr": "2012-07-27T18:30:11.000Z",
+    "float": 5859431.379336018,
     "int": 5859431,
     "oneOf": "blue",
     "tuple": Array [
@@ -164,6 +178,7 @@ Array [
   Object {
     "bool": false,
     "datestr": "2015-07-12T17:31:20.000Z",
+    "float": 5859200.327267974,
     "int": 5859200,
     "oneOf": "blue",
     "tuple": Array [
@@ -175,6 +190,7 @@ Array [
   Object {
     "bool": true,
     "datestr": "2009-07-18T04:05:53.000Z",
+    "float": 5859233.28128372,
     "int": 5859233,
     "oneOf": "blue",
     "tuple": Array [
@@ -186,6 +202,7 @@ Array [
   Object {
     "bool": false,
     "datestr": "2003-07-24T14:39:26.000Z",
+    "float": 5859266.768014582,
     "int": 5859266,
     "oneOf": "blue",
     "tuple": Array [
@@ -197,6 +214,7 @@ Array [
   Object {
     "bool": true,
     "datestr": "1997-07-03T01:13:59.000Z",
+    "float": 5859299.173689807,
     "int": 5859299,
     "oneOf": "blue",
     "tuple": Array [
@@ -208,6 +226,7 @@ Array [
   Object {
     "bool": false,
     "datestr": "1982-07-02T23:20:56.000Z",
+    "float": 5859596.104480188,
     "int": 5859596,
     "oneOf": "blue",
     "tuple": Array [
@@ -219,6 +238,7 @@ Array [
   Object {
     "bool": true,
     "datestr": "2015-07-09T09:54:29.000Z",
+    "float": 5859629.200330399,
     "int": 5859629,
     "oneOf": "blue",
     "tuple": Array [
@@ -230,6 +250,7 @@ Array [
   Object {
     "bool": true,
     "datestr": "1994-10-12T15:50:35.000Z",
+    "float": 5859335.38023565,
     "int": 5859335,
     "oneOf": "blue",
     "tuple": Array [
@@ -241,6 +262,7 @@ Array [
   Object {
     "bool": false,
     "datestr": "1986-08-15T23:23:06.000Z",
+    "float": 5859366.769196215,
     "int": 5859366,
     "oneOf": "red",
     "tuple": Array [
@@ -252,6 +274,7 @@ Array [
   Object {
     "bool": true,
     "datestr": "2017-06-20T07:54:37.000Z",
+    "float": 5859397.232456303,
     "int": 5859397,
     "oneOf": "green",
     "tuple": Array [
@@ -263,6 +286,7 @@ Array [
   Object {
     "bool": false,
     "datestr": "2009-04-24T15:27:08.000Z",
+    "float": 5859428.790111098,
     "int": 5859428,
     "oneOf": "blue",
     "tuple": Array [
@@ -274,6 +298,7 @@ Array [
   Object {
     "bool": true,
     "datestr": "2018-10-15T20:34:23.000Z",
+    "float": 5859203.277146943,
     "int": 5859203,
     "oneOf": "blue",
     "tuple": Array [
@@ -285,6 +310,7 @@ Array [
   Object {
     "bool": false,
     "datestr": "2010-08-19T05:06:54.000Z",
+    "float": 5859234.251207445,
     "int": 5859234,
     "oneOf": "red",
     "tuple": Array [
@@ -296,6 +322,7 @@ Array [
   Object {
     "bool": true,
     "datestr": "2002-06-23T13:38:25.000Z",
+    "float": 5859265.3847408565,
     "int": 5859265,
     "oneOf": "green",
     "tuple": Array [
@@ -307,6 +334,7 @@ Array [
   Object {
     "bool": false,
     "datestr": "1994-04-26T22:10:56.000Z",
+    "float": 5859296.103428098,
     "int": 5859296,
     "oneOf": "blue",
     "tuple": Array [
@@ -318,6 +346,7 @@ Array [
   Object {
     "bool": true,
     "datestr": "1985-10-06T03:23:59.000Z",
+    "float": 5859599.172637717,
     "int": 5859599,
     "oneOf": "blue",
     "tuple": Array [
@@ -329,6 +358,7 @@ Array [
   Object {
     "bool": false,
     "datestr": "2016-08-10T10:55:30.000Z",
+    "float": 5859630.337823534,
     "int": 5859630,
     "oneOf": "red",
     "tuple": Array [
@@ -340,6 +370,7 @@ Array [
   Object {
     "bool": false,
     "datestr": "1993-09-11T13:49:34.000Z",
+    "float": 5859334.251548853,
     "int": 5859334,
     "oneOf": "green",
     "tuple": Array [
@@ -351,6 +382,7 @@ Array [
   Object {
     "bool": true,
     "datestr": "1987-09-17T00:24:07.000Z",
+    "float": 5859367.198239769,
     "int": 5859367,
     "oneOf": "green",
     "tuple": Array [
@@ -362,6 +394,7 @@ Array [
   Object {
     "bool": false,
     "datestr": "2016-05-19T06:53:36.000Z",
+    "float": 5859396.103769506,
     "int": 5859396,
     "oneOf": "red",
     "tuple": Array [
@@ -373,6 +406,7 @@ Array [
   Object {
     "bool": true,
     "datestr": "2010-05-25T16:28:09.000Z",
+    "float": 5859429.200567584,
     "int": 5859429,
     "oneOf": "red",
     "tuple": Array [
@@ -384,6 +418,7 @@ Array [
   Object {
     "bool": false,
     "datestr": "2017-09-14T19:33:22.000Z",
+    "float": 5859202.155590469,
     "int": 5859202,
     "oneOf": "green",
     "tuple": Array [
@@ -395,6 +430,7 @@ Array [
   Object {
     "bool": true,
     "datestr": "2011-09-20T06:07:55.000Z",
+    "float": 5859235.380577058,
     "int": 5859235,
     "oneOf": "green",
     "tuple": Array [
@@ -406,6 +442,7 @@ Array [
   Object {
     "bool": false,
     "datestr": "2001-05-22T12:37:24.000Z",
+    "float": 5859264.263184383,
     "int": 5859264,
     "oneOf": "red",
     "tuple": Array [
@@ -417,6 +454,7 @@ Array [
   Object {
     "bool": true,
     "datestr": "1995-04-30T23:11:57.000Z",
+    "float": 5859297.232797711,
     "int": 5859297,
     "oneOf": "red",
     "tuple": Array [
@@ -428,6 +466,7 @@ Array [
   Object {
     "bool": false,
     "datestr": "1984-09-05T01:22:58.000Z",
+    "float": 5859598.4395092,
     "int": 5859598,
     "oneOf": "green",
     "tuple": Array [
@@ -439,6 +478,7 @@ Array [
   Object {
     "bool": true,
     "datestr": "2017-09-11T11:56:31.000Z",
+    "float": 5859631.376964176,
     "int": 5859631,
     "oneOf": "green",
     "tuple": Array [
@@ -450,6 +490,7 @@ Array [
   Object {
     "bool": true,
     "datestr": "1988-04-06T08:44:29.000Z",
+    "float": 5859329.200685734,
     "int": 5859329,
     "oneOf": "blue",
     "tuple": Array [
@@ -461,6 +502,7 @@ Array [
   Object {
     "bool": false,
     "datestr": "1980-02-10T17:17:00.000Z",
+    "float": 5859360.31908556,
     "int": 5859360,
     "oneOf": "red",
     "tuple": Array [
@@ -472,6 +514,7 @@ Array [
   Object {
     "bool": true,
     "datestr": "2015-04-18T05:52:35.000Z",
+    "float": 5859395.404133808,
     "int": 5859395,
     "oneOf": "blue",
     "tuple": Array [
@@ -483,6 +526,7 @@ Array [
   Object {
     "bool": false,
     "datestr": "2007-02-22T14:25:06.000Z",
+    "float": 5859426.613844852,
     "int": 5859426,
     "oneOf": "red",
     "tuple": Array [
@@ -494,6 +538,7 @@ Array [
   Object {
     "bool": true,
     "datestr": "1981-01-17T00:36:25.000Z",
+    "float": 5859205.36173486,
     "int": 5859205,
     "oneOf": "green",
     "tuple": Array [
@@ -505,6 +550,7 @@ Array [
   Object {
     "bool": false,
     "datestr": "2012-10-21T07:08:56.000Z",
+    "float": 5859236.648245203,
     "int": 5859236,
     "oneOf": "blue",
     "tuple": Array [
@@ -516,6 +562,7 @@ Array [
   Object {
     "bool": true,
     "datestr": "2008-01-02T20:44:31.000Z",
+    "float": 5859271.225166288,
     "int": 5859271,
     "oneOf": "green",
     "tuple": Array [
@@ -527,6 +574,7 @@ Array [
   Object {
     "bool": false,
     "datestr": "2000-10-06T04:17:02.000Z",
+    "float": 5859302.155708632,
     "int": 5859302,
     "oneOf": "blue",
     "tuple": Array [
@@ -538,6 +586,7 @@ Array [
   Object {
     "bool": true,
     "datestr": "2018-04-27T19:17:53.000Z",
+    "float": 5859593.319309577,
     "int": 5859593,
     "oneOf": "blue",
     "tuple": Array [
@@ -549,6 +598,7 @@ Array [
   Object {
     "bool": false,
     "datestr": "2010-02-04T05:49:24.000Z",
+    "float": 5859624.248004594,
     "int": 5859624,
     "oneOf": "red",
     "tuple": Array [
