@@ -1,7 +1,7 @@
 const f = require('..')
 const tap = require('tap')
 
-var TYPE_EXCLUDES = new Set('hash', 'oneOf', 'tuple')
+var TYPE_EXCLUDES = new Set(['hash', 'oneOf', 'tuple'])
 
 const types = {
   ...getSimpleTyples(),
