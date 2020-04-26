@@ -17,7 +17,7 @@ Array [
       "Parkway",
       "Street",
     ],
-    "word": "pukekot",
+    "word": "Pukekot",
   },
   Object {
     "bool": false,
@@ -29,7 +29,7 @@ Array [
       "Privet",
       "Street",
     ],
-    "word": "dukuci",
+    "word": "Dukuci",
   },
   Object {
     "bool": true,
@@ -41,7 +41,7 @@ Array [
       "Parkway",
       "Road",
     ],
-    "word": "sopuvotid",
+    "word": "Sopuvotid",
   },
   Object {
     "bool": false,
@@ -53,7 +53,7 @@ Array [
       "Privet",
       "Street",
     ],
-    "word": "honeceme",
+    "word": "Honeceme",
   },
   Object {
     "bool": true,
@@ -65,7 +65,7 @@ Array [
       "Cherry",
       "Drive",
     ],
-    "word": "sefo",
+    "word": "Sefo",
   },
   Object {
     "bool": false,
@@ -77,7 +77,7 @@ Array [
       "Cherry",
       "Street",
     ],
-    "word": "huvi",
+    "word": "Huvi",
   },
   Object {
     "bool": true,
@@ -89,7 +89,7 @@ Array [
       "Parkway",
       "Drive",
     ],
-    "word": "lexav",
+    "word": "Lexav",
   },
   Object {
     "bool": false,
@@ -101,7 +101,7 @@ Array [
       "Cherry",
       "Drive",
     ],
-    "word": "zeqi",
+    "word": "Zeqi",
   },
   Object {
     "bool": true,
@@ -113,7 +113,7 @@ Array [
       "Cherry",
       "Road",
     ],
-    "word": "xoduj",
+    "word": "Xoduj",
   },
   Object {
     "bool": false,
@@ -125,7 +125,7 @@ Array [
       "Parkway",
       "Drive",
     ],
-    "word": "name",
+    "word": "Name",
   },
   Object {
     "bool": false,
@@ -137,7 +137,7 @@ Array [
       "Privet",
       "Drive",
     ],
-    "word": "qaxi",
+    "word": "Qaxi",
   },
   Object {
     "bool": true,
@@ -149,7 +149,7 @@ Array [
       "Privet",
       "Road",
     ],
-    "word": "maloj",
+    "word": "Maloj",
   },
   Object {
     "bool": false,
@@ -161,7 +161,7 @@ Array [
       "Parkway",
       "Drive",
     ],
-    "word": "riqidiyu",
+    "word": "Riqidiyu",
   },
   Object {
     "bool": true,
@@ -173,7 +173,7 @@ Array [
       "Parkway",
       "Street",
     ],
-    "word": "yugo",
+    "word": "Yugo",
   },
   Object {
     "bool": false,
@@ -185,7 +185,7 @@ Array [
       "Cherry",
       "Street",
     ],
-    "word": "duvi",
+    "word": "Duvi",
   },
   Object {
     "bool": true,
@@ -197,7 +197,7 @@ Array [
       "Cherry",
       "Road",
     ],
-    "word": "xopi",
+    "word": "Xopi",
   },
   Object {
     "bool": false,
@@ -209,7 +209,7 @@ Array [
       "Cherry",
       "Road",
     ],
-    "word": "zileko",
+    "word": "Zileko",
   },
   Object {
     "bool": true,
@@ -221,7 +221,7 @@ Array [
       "Parkway",
       "Street",
     ],
-    "word": "yavowazuq",
+    "word": "Yavowazuq",
   },
   Object {
     "bool": false,
@@ -233,7 +233,7 @@ Array [
       "Parkway",
       "Road",
     ],
-    "word": "vezilu",
+    "word": "Vezilu",
   },
   Object {
     "bool": true,
@@ -245,7 +245,7 @@ Array [
       "Privet",
       "Street",
     ],
-    "word": "hinodurip",
+    "word": "Hinodurip",
   },
   Object {
     "bool": true,
@@ -257,7 +257,7 @@ Array [
       "Parkway",
       "Drive",
     ],
-    "word": "damuh",
+    "word": "Damuh",
   },
   Object {
     "bool": false,
@@ -269,7 +269,7 @@ Array [
       "Parkway",
       "Road",
     ],
-    "word": "gipero",
+    "word": "Gipero",
   },
   Object {
     "bool": true,
@@ -281,7 +281,7 @@ Array [
       "Cherry",
       "Road",
     ],
-    "word": "vodupof",
+    "word": "Vodupof",
   },
   Object {
     "bool": false,
@@ -293,7 +293,7 @@ Array [
       "Parkway",
       "Drive",
     ],
-    "word": "bubuwujo",
+    "word": "Bubuwujo",
   },
   Object {
     "bool": true,
@@ -305,7 +305,7 @@ Array [
       "Parkway",
       "Street",
     ],
-    "word": "tiga",
+    "word": "Tiga",
   },
   Object {
     "bool": false,
@@ -317,7 +317,7 @@ Array [
       "Cherry",
       "Drive",
     ],
-    "word": "wutu",
+    "word": "Wutu",
   },
   Object {
     "bool": true,
@@ -329,7 +329,7 @@ Array [
       "Cherry",
       "Road",
     ],
-    "word": "selaj",
+    "word": "Selaj",
   },
   Object {
     "bool": false,
@@ -341,7 +341,7 @@ Array [
       "Parkway",
       "Street",
     ],
-    "word": "narabo",
+    "word": "Narabo",
   },
   Object {
     "bool": true,
@@ -353,7 +353,7 @@ Array [
       "Cherry",
       "Road",
     ],
-    "word": "ralivixaq",
+    "word": "Ralivixaq",
   },
   Object {
     "bool": false,
@@ -365,7 +365,7 @@ Array [
       "Privet",
       "Road",
     ],
-    "word": "vozo",
+    "word": "Vozo",
   },
   Object {
     "bool": false,
@@ -377,7 +377,7 @@ Array [
       "Privet",
       "Road",
     ],
-    "word": "bahe",
+    "word": "Bahe",
   },
   Object {
     "bool": true,
@@ -389,7 +389,7 @@ Array [
       "Privet",
       "Street",
     ],
-    "word": "wugihas",
+    "word": "Wugihas",
   },
   Object {
     "bool": false,
@@ -401,7 +401,7 @@ Array [
       "Privet",
       "Drive",
     ],
-    "word": "semiju",
+    "word": "Semiju",
   },
   Object {
     "bool": true,
@@ -413,7 +413,7 @@ Array [
       "Cherry",
       "Road",
     ],
-    "word": "duwupegal",
+    "word": "Duwupegal",
   },
   Object {
     "bool": false,
@@ -425,7 +425,7 @@ Array [
       "Cherry",
       "Street",
     ],
-    "word": "riri",
+    "word": "Riri",
   },
   Object {
     "bool": true,
@@ -437,7 +437,7 @@ Array [
       "Cherry",
       "Street",
     ],
-    "word": "jigur",
+    "word": "Jigur",
   },
   Object {
     "bool": false,
@@ -449,7 +449,7 @@ Array [
       "Privet",
       "Drive",
     ],
-    "word": "quto",
+    "word": "Quto",
   },
   Object {
     "bool": true,
@@ -461,7 +461,7 @@ Array [
       "Privet",
       "Road",
     ],
-    "word": "zewuxuf",
+    "word": "Zewuxuf",
   },
   Object {
     "bool": false,
@@ -473,7 +473,7 @@ Array [
       "Privet",
       "Street",
     ],
-    "word": "pavozuqi",
+    "word": "Pavozuqi",
   },
   Object {
     "bool": true,
@@ -485,7 +485,7 @@ Array [
       "Privet",
       "Drive",
     ],
-    "word": "cumo",
+    "word": "Cumo",
   },
   Object {
     "bool": true,
@@ -497,7 +497,7 @@ Array [
       "Cherry",
       "Drive",
     ],
-    "word": "hamuribec",
+    "word": "Hamuribec",
   },
   Object {
     "bool": false,
@@ -509,7 +509,7 @@ Array [
       "Cherry",
       "Road",
     ],
-    "word": "wasa",
+    "word": "Wasa",
   },
   Object {
     "bool": true,
@@ -521,7 +521,7 @@ Array [
       "Cherry",
       "Drive",
     ],
-    "word": "hifez",
+    "word": "Hifez",
   },
   Object {
     "bool": false,
@@ -533,7 +533,7 @@ Array [
       "Parkway",
       "Road",
     ],
-    "word": "hodaqu",
+    "word": "Hodaqu",
   },
   Object {
     "bool": true,
@@ -545,7 +545,7 @@ Array [
       "Parkway",
       "Drive",
     ],
-    "word": "babox",
+    "word": "Babox",
   },
   Object {
     "bool": false,
@@ -557,7 +557,7 @@ Array [
       "Cherry",
       "Road",
     ],
-    "word": "goweti",
+    "word": "Goweti",
   },
   Object {
     "bool": true,
@@ -569,7 +569,7 @@ Array [
       "Cherry",
       "Road",
     ],
-    "word": "gula",
+    "word": "Gula",
   },
   Object {
     "bool": false,
@@ -581,7 +581,7 @@ Array [
       "Privet",
       "Drive",
     ],
-    "word": "xofa",
+    "word": "Xofa",
   },
   Object {
     "bool": true,
@@ -593,7 +593,7 @@ Array [
       "Privet",
       "Street",
     ],
-    "word": "qeca",
+    "word": "Qeca",
   },
   Object {
     "bool": false,
@@ -605,7 +605,7 @@ Array [
       "Parkway",
       "Street",
     ],
-    "word": "teku",
+    "word": "Teku",
   },
 ]
 `
