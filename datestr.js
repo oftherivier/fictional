@@ -4,8 +4,8 @@ var fit = require('./internal/fit')
 var MIN_YEAR = 1980
 var MAX_YEAR = 2019
 
-module.exports = function datestr(inputs) {
-  var id = hash(inputs)
+module.exports = function datestr(input) {
+  var id = hash(input)
   // for simplicity, use 28d as max regardless of month/year
   var year = fit(id, MIN_YEAR, MAX_YEAR)
   var monthIndex = fit(id, 0, 11)

@@ -8,8 +8,8 @@ var CONSONANT_LEN = CONSONANT.length
 var MAX_SYLLABLES = 10
 var MIN_SYLLABLES = 4
 
-module.exports = function word(inputs) {
-  var id = hash(inputs)
+module.exports = function word(input) {
+  var id = hash(input)
   var n = Math.max(id % MAX_SYLLABLES, MIN_SYLLABLES)
 
   var i = -1
