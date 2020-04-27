@@ -9,7 +9,10 @@ tap.test('capitalize', t => {
 
 tap.test('.options()', t => {
   t.equals(
-    word.options({ capitalize: false })(23),
+    word
+      .options({ capitalize: false })
+      .options({ capitalize: true })
+      .options({ capitalize: false })(23),
     word(23, { capitalize: false })
   )
 

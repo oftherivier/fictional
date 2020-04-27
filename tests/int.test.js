@@ -9,6 +9,17 @@ tap.test('min and max', t => {
 })
 
 tap.test('.options()', t => {
-  t.equals(int.options({ max: 2 })('foo'), int('foo', { max: 2 }))
+  t.equals(
+    int
+      .options({
+        min: 2,
+        max: 2
+      })
+      .options({ min: 1 })('foo'),
+    int('foo', {
+      min: 1,
+      max: 2
+    })
+  )
   t.end()
 })

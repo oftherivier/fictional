@@ -1,4 +1,5 @@
 var hash = require('./hash')
+var conj = require('./internal/conj')
 var defaults = require('./internal/defaults')
 
 var VOWELS = 'aeiou'
@@ -31,8 +32,12 @@ function word(input, opts) {
 }
 
 word.options = function wordOptions(opts) {
-  return function wordOptionsFn(input) {
-    return word(input, opts)
+  var base = this
+  wordFn.options = word.options
+  return wordFn
+
+  function wordFn(input, overrides) {
+    return base(input, conj(opts, overrides))
   }
 }
 

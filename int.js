@@ -1,5 +1,6 @@
 var hash = require('./hash')
 var fit = require('./internal/fit')
+var conj = require('./internal/conj')
 
 function int(input, opts) {
   opts = opts || 0
@@ -10,8 +11,12 @@ function int(input, opts) {
 }
 
 int.options = function intOptions(opts) {
-  return function intOptionsFn(input) {
-    return int(input, opts)
+  var base = this
+  intFn.options = int.options
+  return intFn
+
+  function intFn(input, overrides) {
+    return base(input, conj(opts, overrides))
   }
 }
 
