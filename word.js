@@ -1,27 +1,68 @@
 var hash = require('./hash')
 var conj = require('./internal/conj')
+var fit = require('./internal/fit')
 var defaults = require('./internal/defaults')
 
-var VOWELS = 'aeiou'
-var CONSONANT = 'bcdfghjklmnpqrstvwxyz'
-var VOWELS_LEN = VOWELS.length
-var CONSONANT_LEN = CONSONANT.length
+var SYLLABLES = [
+  'ka',
+  'ki',
+  'ku',
+  'ke',
+  'ko',
+  'ta',
+  'chi',
+  'tsu',
+  'te',
+  'to',
+  'sa',
+  'shi',
+  'su',
+  'se',
+  'so',
+  'na',
+  'ni',
+  'nu',
+  'ne',
+  'no',
+  'ha',
+  'hi',
+  'fu',
+  'he',
+  'ho',
+  'ma',
+  'mi',
+  'mu',
+  'me',
+  'mo',
+  'ya',
+  'yu',
+  'yo',
+  'ra',
+  'ri',
+  'ru',
+  're',
+  'ro',
+  'wa',
+  'wo'
+]
 
-var MAX_SYLLABLES = 10
-var MIN_SYLLABLES = 4
+var SYLLABLES_LEN = SYLLABLES.length
+
+var MAX_SYLLABLES = 5
+var MIN_SYLLABLES = 2
 
 function word(input, opts) {
   opts = opts || 0
   var shouldCapitalize = defaults(opts.capitalize, true)
   var id = hash(input)
-  var n = Math.max(id % MAX_SYLLABLES, MIN_SYLLABLES)
+  var n = fit(id, MIN_SYLLABLES, MAX_SYLLABLES)
 
-  var i = -1
   var result = ''
+  var i = -1
 
   while (++i < n) {
     id = hash(id)
-    result += i % 2 ? vowel(id) : constant(id)
+    result += SYLLABLES[id % SYLLABLES_LEN]
   }
 
   if (shouldCapitalize) {
@@ -42,14 +83,6 @@ word.options = function wordOptions(opts) {
 }
 
 module.exports = word
-
-function vowel(id) {
-  return VOWELS[id % VOWELS_LEN]
-}
-
-function constant(id) {
-  return CONSONANT[id % CONSONANT_LEN]
-}
 
 function capitalize(s) {
   return s[0].toUpperCase() + s.slice(1)
