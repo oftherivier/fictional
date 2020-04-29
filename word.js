@@ -48,14 +48,17 @@ var SYLLABLES = [
 
 var SYLLABLES_LEN = SYLLABLES.length
 
-var MAX_SYLLABLES = 5
-var MIN_SYLLABLES = 2
+var DEFAULT_MIN_SYLLABLES = 2
+var DEFAULT_MAX_SYLLABLES = 4
+var DEFAULT_CAPITALIZE = true
 
 function word(input, opts) {
   opts = opts || 0
-  var shouldCapitalize = defaults(opts.capitalize, true)
+  var shouldCapitalize = defaults(opts.capitalize, DEFAULT_CAPITALIZE)
+  var minSyllables = defaults(opts.minSyllables, DEFAULT_MIN_SYLLABLES)
+  var maxSyllables = defaults(opts.maxSyllables, DEFAULT_MAX_SYLLABLES)
   var id = hash(input)
-  var n = fit(id, MIN_SYLLABLES, MAX_SYLLABLES)
+  var n = fit(id, minSyllables, maxSyllables)
 
   var result = ''
   var i = -1
