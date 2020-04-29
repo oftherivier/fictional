@@ -12,6 +12,7 @@ Array [
     "datestr": "2009-07-06T20:35:17.000Z",
     "float": 177557.3709851107,
     "int": 177557,
+    "join": "Cherry Street",
     "oneOf": "blue",
     "tuple": Array [
       "Cherry",
@@ -24,6 +25,7 @@ Array [
     "datestr": "2008-06-05T19:34:16.000Z",
     "float": 177556.3670855106,
     "int": 177556,
+    "join": "Cherry Drive",
     "oneOf": "green",
     "tuple": Array [
       "Cherry",
@@ -36,6 +38,7 @@ Array [
     "datestr": "2011-09-08T22:37:19.000Z",
     "float": 177559.4092000941,
     "int": 177559,
+    "join": "Parkway Drive",
     "oneOf": "green",
     "tuple": Array [
       "Parkway",
@@ -48,6 +51,7 @@ Array [
     "datestr": "2010-08-07T21:36:18.000Z",
     "float": 177558.405300494,
     "int": 177558,
+    "join": "Cherry Road",
     "oneOf": "red",
     "tuple": Array [
       "Cherry",
@@ -60,6 +64,7 @@ Array [
     "datestr": "2005-03-02T16:31:13.000Z",
     "float": 177553.3857184359,
     "int": 177553,
+    "join": "Parkway Street",
     "oneOf": "green",
     "tuple": Array [
       "Parkway",
@@ -72,6 +77,7 @@ Array [
     "datestr": "2004-02-01T15:30:12.000Z",
     "float": 177552.3818188358,
     "int": 177552,
+    "join": "Cherry Road",
     "oneOf": "red",
     "tuple": Array [
       "Cherry",
@@ -84,6 +90,7 @@ Array [
     "datestr": "2007-05-04T18:33:15.000Z",
     "float": 177555.3631584545,
     "int": 177555,
+    "join": "Parkway Drive",
     "oneOf": "red",
     "tuple": Array [
       "Parkway",
@@ -96,6 +103,7 @@ Array [
     "datestr": "2006-04-03T17:32:14.000Z",
     "float": 177554.3592588544,
     "int": 177554,
+    "join": "Cherry Street",
     "oneOf": "blue",
     "tuple": Array [
       "Cherry",
@@ -108,6 +116,7 @@ Array [
     "datestr": "2017-04-14T05:43:25.000Z",
     "float": 177565.3630538146,
     "int": 177565,
+    "join": "Privet Road",
     "oneOf": "green",
     "tuple": Array [
       "Privet",
@@ -120,6 +129,7 @@ Array [
     "datestr": "2016-03-13T04:42:24.000Z",
     "float": 177564.3593774467,
     "int": 177564,
+    "join": "Cherry Drive",
     "oneOf": "red",
     "tuple": Array [
       "Cherry",
@@ -132,6 +142,7 @@ Array [
     "datestr": "1991-07-09T13:47:32.000Z",
     "float": 5859332.152255516,
     "int": 5859332,
+    "join": "Privet Drive",
     "oneOf": "blue",
     "tuple": Array [
       "Privet",
@@ -144,6 +155,7 @@ Array [
     "datestr": "1985-07-15T00:22:05.000Z",
     "float": 5859365.384622693,
     "int": 5859365,
+    "join": "Privet Road",
     "oneOf": "blue",
     "tuple": Array [
       "Privet",
@@ -156,6 +168,7 @@ Array [
     "datestr": "2018-07-21T10:55:38.000Z",
     "float": 5859398.446616022,
     "int": 5859398,
+    "join": "Parkway Road",
     "oneOf": "blue",
     "tuple": Array [
       "Parkway",
@@ -168,6 +181,7 @@ Array [
     "datestr": "2012-07-27T20:30:11.000Z",
     "float": 5859431.379336018,
     "int": 5859431,
+    "join": "Parkway Street",
     "oneOf": "blue",
     "tuple": Array [
       "Parkway",
@@ -180,6 +194,7 @@ Array [
     "datestr": "2015-07-12T19:31:20.000Z",
     "float": 5859200.327267974,
     "int": 5859200,
+    "join": "Parkway Street",
     "oneOf": "blue",
     "tuple": Array [
       "Parkway",
@@ -192,6 +207,7 @@ Array [
     "datestr": "2009-07-18T06:05:53.000Z",
     "float": 5859233.28128372,
     "int": 5859233,
+    "join": "Cherry Drive",
     "oneOf": "blue",
     "tuple": Array [
       "Cherry",
@@ -204,6 +220,7 @@ Array [
     "datestr": "2003-07-24T16:39:26.000Z",
     "float": 5859266.768014582,
     "int": 5859266,
+    "join": "Cherry Drive",
     "oneOf": "blue",
     "tuple": Array [
       "Cherry",
@@ -216,6 +233,7 @@ Array [
     "datestr": "1997-07-03T03:13:59.000Z",
     "float": 5859299.173689807,
     "int": 5859299,
+    "join": "Parkway Road",
     "oneOf": "blue",
     "tuple": Array [
       "Parkway",
@@ -228,6 +246,7 @@ Array [
     "datestr": "1982-07-03T01:20:56.000Z",
     "float": 5859596.104480188,
     "int": 5859596,
+    "join": "Privet Road",
     "oneOf": "blue",
     "tuple": Array [
       "Privet",
@@ -240,6 +259,7 @@ Array [
     "datestr": "2015-07-09T11:54:29.000Z",
     "float": 5859629.200330399,
     "int": 5859629,
+    "join": "Parkway Street",
     "oneOf": "blue",
     "tuple": Array [
       "Parkway",
@@ -252,6 +272,7 @@ Array [
     "datestr": "1994-10-12T16:50:35.000Z",
     "float": 5859335.38023565,
     "int": 5859335,
+    "join": "Cherry Road",
     "oneOf": "blue",
     "tuple": Array [
       "Cherry",
@@ -264,6 +285,7 @@ Array [
     "datestr": "1986-08-16T01:23:06.000Z",
     "float": 5859366.769196215,
     "int": 5859366,
+    "join": "Privet Street",
     "oneOf": "red",
     "tuple": Array [
       "Privet",
@@ -276,6 +298,7 @@ Array [
     "datestr": "2017-06-20T09:54:37.000Z",
     "float": 5859397.232456303,
     "int": 5859397,
+    "join": "Cherry Drive",
     "oneOf": "green",
     "tuple": Array [
       "Cherry",
@@ -288,6 +311,7 @@ Array [
     "datestr": "2009-04-24T17:27:08.000Z",
     "float": 5859428.790111098,
     "int": 5859428,
+    "join": "Privet Road",
     "oneOf": "blue",
     "tuple": Array [
       "Privet",
@@ -300,6 +324,7 @@ Array [
     "datestr": "2018-10-15T22:34:23.000Z",
     "float": 5859203.277146943,
     "int": 5859203,
+    "join": "Cherry Road",
     "oneOf": "blue",
     "tuple": Array [
       "Cherry",
@@ -312,6 +337,7 @@ Array [
     "datestr": "2010-08-19T07:06:54.000Z",
     "float": 5859234.251207445,
     "int": 5859234,
+    "join": "Parkway Road",
     "oneOf": "red",
     "tuple": Array [
       "Parkway",
@@ -324,6 +350,7 @@ Array [
     "datestr": "2002-06-23T15:38:25.000Z",
     "float": 5859265.3847408565,
     "int": 5859265,
+    "join": "Parkway Drive",
     "oneOf": "green",
     "tuple": Array [
       "Parkway",
@@ -336,6 +363,7 @@ Array [
     "datestr": "1994-04-27T00:10:56.000Z",
     "float": 5859296.103428098,
     "int": 5859296,
+    "join": "Parkway Road",
     "oneOf": "blue",
     "tuple": Array [
       "Parkway",
@@ -348,6 +376,7 @@ Array [
     "datestr": "1985-10-06T04:23:59.000Z",
     "float": 5859599.172637717,
     "int": 5859599,
+    "join": "Parkway Street",
     "oneOf": "blue",
     "tuple": Array [
       "Parkway",
@@ -360,6 +389,7 @@ Array [
     "datestr": "2016-08-10T12:55:30.000Z",
     "float": 5859630.337823534,
     "int": 5859630,
+    "join": "Cherry Road",
     "oneOf": "red",
     "tuple": Array [
       "Cherry",
@@ -372,6 +402,7 @@ Array [
     "datestr": "1993-09-11T15:49:34.000Z",
     "float": 5859334.251548853,
     "int": 5859334,
+    "join": "Privet Drive",
     "oneOf": "green",
     "tuple": Array [
       "Privet",
@@ -384,6 +415,7 @@ Array [
     "datestr": "1987-09-17T02:24:07.000Z",
     "float": 5859367.198239769,
     "int": 5859367,
+    "join": "Privet Road",
     "oneOf": "green",
     "tuple": Array [
       "Privet",
@@ -396,6 +428,7 @@ Array [
     "datestr": "2016-05-19T08:53:36.000Z",
     "float": 5859396.103769506,
     "int": 5859396,
+    "join": "Cherry Street",
     "oneOf": "red",
     "tuple": Array [
       "Cherry",
@@ -408,6 +441,7 @@ Array [
     "datestr": "2010-05-25T18:28:09.000Z",
     "float": 5859429.200567584,
     "int": 5859429,
+    "join": "Parkway Drive",
     "oneOf": "red",
     "tuple": Array [
       "Parkway",
@@ -420,6 +454,7 @@ Array [
     "datestr": "2017-09-14T21:33:22.000Z",
     "float": 5859202.155590469,
     "int": 5859202,
+    "join": "Parkway Drive",
     "oneOf": "green",
     "tuple": Array [
       "Parkway",
@@ -432,6 +467,7 @@ Array [
     "datestr": "2011-09-20T08:07:55.000Z",
     "float": 5859235.380577058,
     "int": 5859235,
+    "join": "Privet Street",
     "oneOf": "green",
     "tuple": Array [
       "Privet",
@@ -444,6 +480,7 @@ Array [
     "datestr": "2001-05-22T14:37:24.000Z",
     "float": 5859264.263184383,
     "int": 5859264,
+    "join": "Parkway Road",
     "oneOf": "red",
     "tuple": Array [
       "Parkway",
@@ -456,6 +493,7 @@ Array [
     "datestr": "1995-05-01T01:11:57.000Z",
     "float": 5859297.232797711,
     "int": 5859297,
+    "join": "Privet Road",
     "oneOf": "red",
     "tuple": Array [
       "Privet",
@@ -468,6 +506,7 @@ Array [
     "datestr": "1984-09-05T03:22:58.000Z",
     "float": 5859598.4395092,
     "int": 5859598,
+    "join": "Parkway Drive",
     "oneOf": "green",
     "tuple": Array [
       "Parkway",
@@ -480,6 +519,7 @@ Array [
     "datestr": "2017-09-11T13:56:31.000Z",
     "float": 5859631.376964176,
     "int": 5859631,
+    "join": "Privet Road",
     "oneOf": "green",
     "tuple": Array [
       "Privet",
@@ -492,6 +532,7 @@ Array [
     "datestr": "1988-04-06T10:44:29.000Z",
     "float": 5859329.200685734,
     "int": 5859329,
+    "join": "Parkway Street",
     "oneOf": "blue",
     "tuple": Array [
       "Parkway",
@@ -504,6 +545,7 @@ Array [
     "datestr": "1980-02-10T18:17:00.000Z",
     "float": 5859360.31908556,
     "int": 5859360,
+    "join": "Cherry Drive",
     "oneOf": "red",
     "tuple": Array [
       "Cherry",
@@ -516,6 +558,7 @@ Array [
     "datestr": "2015-04-18T07:52:35.000Z",
     "float": 5859395.404133808,
     "int": 5859395,
+    "join": "Cherry Street",
     "oneOf": "blue",
     "tuple": Array [
       "Cherry",
@@ -528,6 +571,7 @@ Array [
     "datestr": "2007-02-22T15:25:06.000Z",
     "float": 5859426.613844852,
     "int": 5859426,
+    "join": "Parkway Road",
     "oneOf": "red",
     "tuple": Array [
       "Parkway",
@@ -540,6 +584,7 @@ Array [
     "datestr": "1981-01-17T01:36:25.000Z",
     "float": 5859205.36173486,
     "int": 5859205,
+    "join": "Cherry Drive",
     "oneOf": "green",
     "tuple": Array [
       "Cherry",
@@ -552,6 +597,7 @@ Array [
     "datestr": "2012-10-21T09:08:56.000Z",
     "float": 5859236.648245203,
     "int": 5859236,
+    "join": "Cherry Road",
     "oneOf": "blue",
     "tuple": Array [
       "Cherry",
@@ -564,6 +610,7 @@ Array [
     "datestr": "2008-01-02T21:44:31.000Z",
     "float": 5859271.225166288,
     "int": 5859271,
+    "join": "Privet Road",
     "oneOf": "green",
     "tuple": Array [
       "Privet",
@@ -576,6 +623,7 @@ Array [
     "datestr": "2000-10-06T06:17:02.000Z",
     "float": 5859302.155708632,
     "int": 5859302,
+    "join": "Cherry Drive",
     "oneOf": "blue",
     "tuple": Array [
       "Cherry",
@@ -588,6 +636,7 @@ Array [
     "datestr": "2018-04-27T21:17:53.000Z",
     "float": 5859593.319309577,
     "int": 5859593,
+    "join": "Cherry Drive",
     "oneOf": "blue",
     "tuple": Array [
       "Cherry",
@@ -600,6 +649,7 @@ Array [
     "datestr": "2010-02-04T06:49:24.000Z",
     "float": 5859624.248004594,
     "int": 5859624,
+    "join": "Cherry Street",
     "oneOf": "red",
     "tuple": Array [
       "Cherry",

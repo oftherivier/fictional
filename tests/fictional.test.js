@@ -1,14 +1,20 @@
 const f = require('..')
 const tap = require('tap')
 
-var TYPE_EXCLUDES = new Set(['hash', 'oneOf', 'tuple'])
+const { oneOf, tuple, join } = f
 
-const types = {
+const TYPE_EXCLUDES = new Set(['hash', 'oneOf', 'tuple'])
+
+const makers = {
   ...getSimpleTyples(),
-  oneOf: f.oneOf(['red', 'green', 'blue']),
-  tuple: f.tuple([
-    f.oneOf(['Privet', 'Parkway', 'Cherry']),
-    f.oneOf(['Drive', 'Street', 'Road'])
+  oneOf: oneOf(['red', 'green', 'blue']),
+  tuple: tuple([
+    oneOf(['Privet', 'Parkway', 'Cherry']),
+    oneOf(['Drive', 'Street', 'Road'])
+  ]),
+  join: join(vals => vals.join(' '), [
+    oneOf(['Privet', 'Parkway', 'Cherry']),
+    oneOf(['Drive', 'Street', 'Road'])
   ])
 }
 
@@ -17,7 +23,7 @@ tap.test('generated values', t => {
   const results = []
 
   while (++i < 50) {
-    results.push(callTypes(i))
+    results.push(callMakers(i))
   }
 
   t.matchSnapshot(results)
@@ -26,20 +32,20 @@ tap.test('generated values', t => {
 
 tap.test('consistency', t => {
   let i = -1
-  const firstResult = callTypes(23)
+  const firstResult = callMakers(23)
 
   while (++i < 100) {
-    t.deepEquals(callTypes(23), firstResult)
+    t.deepEquals(callMakers(23), firstResult)
   }
 
   t.end()
 })
 
-function callTypes(input) {
+function callMakers(input) {
   const result = {}
 
-  for (const name of Object.keys(types)) {
-    result[name] = types[name](input)
+  for (const name of Object.keys(makers)) {
+    result[name] = makers[name](input)
   }
 
   return result

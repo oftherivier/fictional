@@ -1,6 +1,7 @@
 export { default as hash } from './has'
 export { default as oneOf } from './oneOf'
 export { default as tuple } from './tuple'
+export { default as join } from './join'
 
 export { default as int } from './int'
 export { default as float } from './float'
