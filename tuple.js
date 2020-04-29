@@ -11,7 +11,7 @@ function tupleMain(input, fns) {
   var results = []
 
   while (++i < n) {
-    id = hash(id)
+    id = hash([id, 'tuple', i])
     results.push(fns[i](id))
   }
 

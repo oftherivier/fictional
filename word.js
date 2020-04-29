@@ -61,7 +61,7 @@ function word(input, opts) {
   var i = -1
 
   while (++i < n) {
-    id = hash(id)
+    id = hash([id, 'word', i])
     result += SYLLABLES[id % SYLLABLES_LEN]
   }
 
