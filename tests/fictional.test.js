@@ -1,21 +1,30 @@
-const f = require('..')
+const fictional = require('..')
 const tap = require('tap')
 
-const { oneOf, tuple, join } = f
+const { oneOf, tuple, join } = fictional
 
-const TYPE_EXCLUDES = new Set(['hash', 'oneOf', 'tuple'])
+const curriedMakerDefs = [
+  [oneOf, ['red', 'green', 'blue']],
+  [
+    tuple,
+    [oneOf(['Privet', 'Parkway', 'Cherry']), oneOf(['Drive', 'Street', 'Road'])]
+  ],
+  [
+    join,
+    vals => vals.join(' '),
+    [oneOf(['Privet', 'Parkway', 'Cherry']), oneOf(['Drive', 'Street', 'Road'])]
+  ]
+]
+
+const curriedMakers = {}
+
+curriedMakerDefs.forEach(
+  ([fn, ...args]) => (curriedMakers[fn.name] = fn(...args))
+)
 
 const makers = {
-  ...getSimpleTyples(),
-  oneOf: oneOf(['red', 'green', 'blue']),
-  tuple: tuple([
-    oneOf(['Privet', 'Parkway', 'Cherry']),
-    oneOf(['Drive', 'Street', 'Road'])
-  ]),
-  join: join(vals => vals.join(' '), [
-    oneOf(['Privet', 'Parkway', 'Cherry']),
-    oneOf(['Drive', 'Street', 'Road'])
-  ])
+  ...fictional,
+  ...curriedMakers
 }
 
 tap.test('generated values', t => {
@@ -41,23 +50,29 @@ tap.test('consistency', t => {
   t.end()
 })
 
+tap.test('curried makers', t => {
+  for (const [fn, ...args] of curriedMakerDefs) {
+    t.deepEquals(fn(23, ...args), fn(...args)(23))
+  }
+
+  t.end()
+})
+
+tap.test('.options() chaining', t => {
+  for (const fn of Object.values(makers)) {
+    if (fn.options) {
+      t.ok(typeof fn.options({}).options({}).options === 'function')
+    }
+  }
+
+  t.end()
+})
+
 function callMakers(input) {
   const result = {}
 
   for (const name of Object.keys(makers)) {
     result[name] = makers[name](input)
-  }
-
-  return result
-}
-
-function getSimpleTyples() {
-  const result = {}
-
-  for (const name of Object.keys(f)) {
-    if (!TYPE_EXCLUDES.has(name)) {
-      result[name] = f[name]
-    }
   }
 
   return result

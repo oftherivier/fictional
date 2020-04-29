@@ -1,6 +1,6 @@
 var hash = require('./hash')
 
-module.exports = function tuple(a, b) {
+function tuple(a, b) {
   return a != null && b != null ? tupleMain(a, b) : tupleCurried(a)
 }
 
@@ -23,3 +23,5 @@ function tupleCurried(fns) {
     return tupleMain(input, fns)
   }
 }
+
+module.exports = tuple
