@@ -6,13 +6,14 @@ function join(a, b, c) {
     : joinMain(a, b, c)
 }
 
-function joinMain(id, joinerFn, makerFns) {
-  return joinerFn(tuple(id, makerFns))
+function joinMain(id, joiner, makerFns) {
+  var result = tuple(id, makerFns)
+  return typeof joiner === 'function' ? joiner(result) : result.join(joiner)
 }
 
-function joinCurried(joinerFn, makerFns) {
+function joinCurried(joiner, makerFns) {
   return function joinFn(id) {
-    return joinMain(id, joinerFn, makerFns)
+    return joinMain(id, joiner, makerFns)
   }
 }
 

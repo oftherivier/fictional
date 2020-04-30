@@ -11,7 +11,7 @@ const curriedMakerDefs = [
   ],
   [
     join,
-    vals => vals.join(' '),
+    ' ',
     [oneOf(['Privet', 'Parkway', 'Cherry']), oneOf(['Drive', 'Street', 'Road'])]
   ]
 ]
