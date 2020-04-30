@@ -12,7 +12,7 @@ export function int(input: Input): number
 export function float(input: Input): number
 export function word(input: Input): string
 export function bool(input: Input): boolean
-export function datestr(input: Input): Date
+export function dateString(input: Input): Date
 
 declare function oneOf<Sample>(samples: Sample[]): (input: Input) => Sample
 

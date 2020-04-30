@@ -9,7 +9,7 @@ exports[`tests/fictional.test.js TAP generated values > must match snapshot 1`] 
 Array [
   Object {
     "bool": true,
-    "datestr": "2017-06-10T05:23:20.000Z",
+    "dateString": "2017-06-10T05:23:20.000Z",
     "float": 177557.3709851107,
     "hash": 177557,
     "int": 177557,
@@ -26,7 +26,7 @@ Array [
   },
   Object {
     "bool": false,
-    "datestr": "2016-05-09T04:22:19.000Z",
+    "dateString": "2016-05-09T04:22:19.000Z",
     "float": 177556.3670855106,
     "hash": 177556,
     "int": 177556,
@@ -43,7 +43,7 @@ Array [
   },
   Object {
     "bool": true,
-    "datestr": "2019-08-12T07:25:22.000Z",
+    "dateString": "2019-08-12T07:25:22.000Z",
     "float": 177559.4092000941,
     "hash": 177559,
     "int": 177559,
@@ -60,7 +60,7 @@ Array [
   },
   Object {
     "bool": false,
-    "datestr": "2018-07-11T06:24:21.000Z",
+    "dateString": "2018-07-11T06:24:21.000Z",
     "float": 177558.405300494,
     "hash": 177558,
     "int": 177558,
@@ -77,7 +77,7 @@ Array [
   },
   Object {
     "bool": true,
-    "datestr": "2013-02-06T01:19:16.000Z",
+    "dateString": "2013-02-06T01:19:16.000Z",
     "float": 177553.3857184359,
     "hash": 177553,
     "int": 177553,
@@ -94,7 +94,7 @@ Array [
   },
   Object {
     "bool": false,
-    "datestr": "2012-01-05T00:18:15.000Z",
+    "dateString": "2012-01-05T00:18:15.000Z",
     "float": 177552.3818188358,
     "hash": 177552,
     "int": 177552,
@@ -111,7 +111,7 @@ Array [
   },
   Object {
     "bool": true,
-    "datestr": "2015-04-08T03:21:18.000Z",
+    "dateString": "2015-04-08T03:21:18.000Z",
     "float": 177555.3631584545,
     "hash": 177555,
     "int": 177555,
@@ -128,7 +128,7 @@ Array [
   },
   Object {
     "bool": false,
-    "datestr": "2014-03-07T02:20:17.000Z",
+    "dateString": "2014-03-07T02:20:17.000Z",
     "float": 177554.3592588544,
     "hash": 177554,
     "int": 177554,
@@ -145,7 +145,7 @@ Array [
   },
   Object {
     "bool": true,
-    "datestr": "1985-02-18T13:31:28.000Z",
+    "dateString": "1985-02-18T13:31:28.000Z",
     "float": 177565.3630538146,
     "hash": 177565,
     "int": 177565,
@@ -162,7 +162,7 @@ Array [
   },
   Object {
     "bool": false,
-    "datestr": "1984-01-17T12:30:27.000Z",
+    "dateString": "1984-01-17T12:30:27.000Z",
     "float": 177564.3593774467,
     "hash": 177564,
     "int": 177564,
@@ -179,7 +179,7 @@ Array [
   },
   Object {
     "bool": false,
-    "datestr": "1992-09-25T20:39:59.000Z",
+    "dateString": "1992-09-25T20:39:59.000Z",
     "float": 5859332.152255516,
     "hash": 5859332,
     "int": 5859332,
@@ -196,7 +196,7 @@ Array [
   },
   Object {
     "bool": true,
-    "datestr": "1985-06-02T05:13:32.000Z",
+    "dateString": "1985-06-02T05:13:32.000Z",
     "float": 5859365.384622693,
     "hash": 5859365,
     "int": 5859365,
@@ -213,7 +213,7 @@ Array [
   },
   Object {
     "bool": false,
-    "datestr": "2018-03-07T14:47:05.000Z",
+    "dateString": "2018-03-07T14:47:05.000Z",
     "float": 5859398.446616022,
     "hash": 5859398,
     "int": 5859398,
@@ -230,7 +230,7 @@ Array [
   },
   Object {
     "bool": true,
-    "datestr": "2011-12-12T23:20:38.000Z",
+    "dateString": "2011-12-12T23:20:38.000Z",
     "float": 5859431.379336018,
     "hash": 5859431,
     "int": 5859431,
@@ -247,7 +247,7 @@ Array [
   },
   Object {
     "bool": false,
-    "datestr": "1980-09-05T08:25:47.000Z",
+    "dateString": "1980-09-05T08:25:47.000Z",
     "float": 5859200.327267974,
     "hash": 5859200,
     "int": 5859200,
@@ -264,7 +264,7 @@ Array [
   },
   Object {
     "bool": true,
-    "datestr": "2013-06-10T17:59:20.000Z",
+    "dateString": "2013-06-10T17:59:20.000Z",
     "float": 5859233.28128372,
     "hash": 5859233,
     "int": 5859233,
@@ -281,7 +281,7 @@ Array [
   },
   Object {
     "bool": false,
-    "datestr": "2006-03-15T02:32:53.000Z",
+    "dateString": "2006-03-15T02:32:53.000Z",
     "float": 5859266.768014582,
     "hash": 5859266,
     "int": 5859266,
@@ -298,7 +298,7 @@ Array [
   },
   Object {
     "bool": true,
-    "datestr": "1999-12-20T12:06:26.000Z",
+    "dateString": "1999-12-20T12:06:26.000Z",
     "float": 5859299.173689807,
     "hash": 5859299,
     "int": 5859299,
@@ -315,7 +315,7 @@ Array [
   },
   Object {
     "bool": false,
-    "datestr": "2016-09-09T21:08:23.000Z",
+    "dateString": "2016-09-09T21:08:23.000Z",
     "float": 5859596.104480188,
     "hash": 5859596,
     "int": 5859596,
@@ -332,7 +332,7 @@ Array [
   },
   Object {
     "bool": true,
-    "datestr": "2009-06-14T05:41:56.000Z",
+    "dateString": "2009-06-14T05:41:56.000Z",
     "float": 5859629.200330399,
     "hash": 5859629,
     "int": 5859629,
@@ -349,7 +349,7 @@ Array [
   },
   Object {
     "bool": true,
-    "datestr": "1995-12-28T23:43:02.000Z",
+    "dateString": "1995-12-28T23:43:02.000Z",
     "float": 5859335.38023565,
     "hash": 5859335,
     "int": 5859335,
@@ -366,7 +366,7 @@ Array [
   },
   Object {
     "bool": false,
-    "datestr": "1986-07-03T06:14:33.000Z",
+    "dateString": "1986-07-03T06:14:33.000Z",
     "float": 5859366.769196215,
     "hash": 5859366,
     "int": 5859366,
@@ -383,7 +383,7 @@ Array [
   },
   Object {
     "bool": true,
-    "datestr": "2017-02-06T13:46:04.000Z",
+    "dateString": "2017-02-06T13:46:04.000Z",
     "float": 5859397.232456303,
     "hash": 5859397,
     "int": 5859397,
@@ -400,7 +400,7 @@ Array [
   },
   Object {
     "bool": false,
-    "datestr": "2008-09-09T20:17:35.000Z",
+    "dateString": "2008-09-09T20:17:35.000Z",
     "float": 5859428.790111098,
     "hash": 5859428,
     "int": 5859428,
@@ -417,7 +417,7 @@ Array [
   },
   Object {
     "bool": true,
-    "datestr": "1983-12-08T11:28:50.000Z",
+    "dateString": "1983-12-08T11:28:50.000Z",
     "float": 5859203.277146943,
     "hash": 5859203,
     "int": 5859203,
@@ -434,7 +434,7 @@ Array [
   },
   Object {
     "bool": false,
-    "datestr": "2014-07-11T19:00:21.000Z",
+    "dateString": "2014-07-11T19:00:21.000Z",
     "float": 5859234.251207445,
     "hash": 5859234,
     "int": 5859234,
@@ -451,7 +451,7 @@ Array [
   },
   Object {
     "bool": true,
-    "datestr": "2005-02-14T01:31:52.000Z",
+    "dateString": "2005-02-14T01:31:52.000Z",
     "float": 5859265.3847408565,
     "hash": 5859265,
     "int": 5859265,
@@ -468,7 +468,7 @@ Array [
   },
   Object {
     "bool": false,
-    "datestr": "1996-09-17T09:03:23.000Z",
+    "dateString": "1996-09-17T09:03:23.000Z",
     "float": 5859296.103428098,
     "hash": 5859296,
     "int": 5859296,
@@ -485,7 +485,7 @@ Array [
   },
   Object {
     "bool": true,
-    "datestr": "2019-12-13T00:11:26.000Z",
+    "dateString": "2019-12-13T00:11:26.000Z",
     "float": 5859599.172637717,
     "hash": 5859599,
     "int": 5859599,
@@ -502,7 +502,7 @@ Array [
   },
   Object {
     "bool": false,
-    "datestr": "2010-07-15T06:42:57.000Z",
+    "dateString": "2010-07-15T06:42:57.000Z",
     "float": 5859630.337823534,
     "hash": 5859630,
     "int": 5859630,
@@ -519,7 +519,7 @@ Array [
   },
   Object {
     "bool": false,
-    "datestr": "1994-11-27T22:42:01.000Z",
+    "dateString": "1994-11-27T22:42:01.000Z",
     "float": 5859334.251548853,
     "hash": 5859334,
     "int": 5859334,
@@ -536,7 +536,7 @@ Array [
   },
   Object {
     "bool": true,
-    "datestr": "1987-08-04T07:15:34.000Z",
+    "dateString": "1987-08-04T07:15:34.000Z",
     "float": 5859367.198239769,
     "hash": 5859367,
     "int": 5859367,
@@ -553,7 +553,7 @@ Array [
   },
   Object {
     "bool": false,
-    "datestr": "2016-01-05T12:45:03.000Z",
+    "dateString": "2016-01-05T12:45:03.000Z",
     "float": 5859396.103769506,
     "hash": 5859396,
     "int": 5859396,
@@ -570,7 +570,7 @@ Array [
   },
   Object {
     "bool": true,
-    "datestr": "2009-10-10T21:18:36.000Z",
+    "dateString": "2009-10-10T21:18:36.000Z",
     "float": 5859429.200567584,
     "hash": 5859429,
     "int": 5859429,
@@ -587,7 +587,7 @@ Array [
   },
   Object {
     "bool": false,
-    "datestr": "1982-11-07T10:27:49.000Z",
+    "dateString": "1982-11-07T10:27:49.000Z",
     "float": 5859202.155590469,
     "hash": 5859202,
     "int": 5859202,
@@ -604,7 +604,7 @@ Array [
   },
   Object {
     "bool": true,
-    "datestr": "2015-08-12T20:01:22.000Z",
+    "dateString": "2015-08-12T20:01:22.000Z",
     "float": 5859235.380577058,
     "hash": 5859235,
     "int": 5859235,
@@ -621,7 +621,7 @@ Array [
   },
   Object {
     "bool": false,
-    "datestr": "2004-01-13T00:30:51.000Z",
+    "dateString": "2004-01-13T00:30:51.000Z",
     "float": 5859264.263184383,
     "hash": 5859264,
     "int": 5859264,
@@ -638,7 +638,7 @@ Array [
   },
   Object {
     "bool": true,
-    "datestr": "1997-10-18T10:04:24.000Z",
+    "dateString": "1997-10-18T10:04:24.000Z",
     "float": 5859297.232797711,
     "hash": 5859297,
     "int": 5859297,
@@ -655,7 +655,7 @@ Array [
   },
   Object {
     "bool": false,
-    "datestr": "2018-11-11T23:10:25.000Z",
+    "dateString": "2018-11-11T23:10:25.000Z",
     "float": 5859598.4395092,
     "hash": 5859598,
     "int": 5859598,
@@ -672,7 +672,7 @@ Array [
   },
   Object {
     "bool": true,
-    "datestr": "2011-08-16T07:43:58.000Z",
+    "dateString": "2011-08-16T07:43:58.000Z",
     "float": 5859631.376964176,
     "hash": 5859631,
     "int": 5859631,
@@ -689,7 +689,7 @@ Array [
   },
   Object {
     "bool": true,
-    "datestr": "1989-06-22T17:36:56.000Z",
+    "dateString": "1989-06-22T17:36:56.000Z",
     "float": 5859329.200685734,
     "hash": 5859329,
     "int": 5859329,
@@ -706,7 +706,7 @@ Array [
   },
   Object {
     "bool": false,
-    "datestr": "1980-01-25T00:08:27.000Z",
+    "dateString": "1980-01-25T00:08:27.000Z",
     "float": 5859360.31908556,
     "hash": 5859360,
     "int": 5859360,
@@ -723,7 +723,7 @@ Array [
   },
   Object {
     "bool": true,
-    "datestr": "2015-12-04T11:44:02.000Z",
+    "dateString": "2015-12-04T11:44:02.000Z",
     "float": 5859395.404133808,
     "hash": 5859395,
     "int": 5859395,
@@ -740,7 +740,7 @@ Array [
   },
   Object {
     "bool": false,
-    "datestr": "2006-07-07T18:15:33.000Z",
+    "dateString": "2006-07-07T18:15:33.000Z",
     "float": 5859426.613844852,
     "hash": 5859426,
     "int": 5859426,
@@ -757,7 +757,7 @@ Array [
   },
   Object {
     "bool": true,
-    "datestr": "1985-02-10T13:30:52.000Z",
+    "dateString": "1985-02-10T13:30:52.000Z",
     "float": 5859205.36173486,
     "hash": 5859205,
     "int": 5859205,
@@ -774,7 +774,7 @@ Array [
   },
   Object {
     "bool": false,
-    "datestr": "2016-09-13T21:02:23.000Z",
+    "dateString": "2016-09-13T21:02:23.000Z",
     "float": 5859236.648245203,
     "hash": 5859236,
     "int": 5859236,
@@ -791,7 +791,7 @@ Array [
   },
   Object {
     "bool": true,
-    "datestr": "2011-08-20T07:37:58.000Z",
+    "dateString": "2011-08-20T07:37:58.000Z",
     "float": 5859271.225166288,
     "hash": 5859271,
     "int": 5859271,
@@ -808,7 +808,7 @@ Array [
   },
   Object {
     "bool": false,
-    "datestr": "2002-03-23T14:09:29.000Z",
+    "dateString": "2002-03-23T14:09:29.000Z",
     "float": 5859302.155708632,
     "hash": 5859302,
     "int": 5859302,
@@ -825,7 +825,7 @@ Array [
   },
   Object {
     "bool": true,
-    "datestr": "2013-06-06T18:05:20.000Z",
+    "dateString": "2013-06-06T18:05:20.000Z",
     "float": 5859593.319309577,
     "hash": 5859593,
     "int": 5859593,
@@ -842,7 +842,7 @@ Array [
   },
   Object {
     "bool": false,
-    "datestr": "2004-01-09T00:36:51.000Z",
+    "dateString": "2004-01-09T00:36:51.000Z",
     "float": 5859624.248004594,
     "hash": 5859624,
     "int": 5859624,
