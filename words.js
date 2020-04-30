@@ -20,6 +20,8 @@ function words(input, opts) {
 
   var id = hash(input)
   var n = fit(id, minWords, maxWords)
+  var i = 0
+
   id = hash([id, 'words', i])
 
   var result = word(id, {
@@ -31,8 +33,6 @@ function words(input, opts) {
     minSyllables: minSyllables,
     capitalize: shouldCapitalizeAll
   }
-
-  var i = 0
 
   while (++i < n) {
     id = hash([id, 'words', i])

@@ -1,4 +1,10 @@
 module.exports = function fit(v, lo, hi) {
   lo = lo || 0
-  return hi == null ? v + lo : (v % (hi + 1 - lo)) + lo
+
+  if (hi == null) {
+    return v + lo
+  }
+
+  hi = Math.max(hi, lo)
+  return (v % (hi + 1 - lo)) + lo
 }
