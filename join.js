@@ -1,9 +1,7 @@
 var tuple = require('./tuple')
 
 function join(a, b, c) {
-  return a != null && b != null && c == null
-    ? joinCurried(a, b)
-    : joinMain(a, b, c)
+  return b != null && c == null ? joinCurried(a, b) : joinMain(a, b, c)
 }
 
 function joinMain(id, joiner, makerFns) {

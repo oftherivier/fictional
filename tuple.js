@@ -1,7 +1,7 @@
 var hash = require('./hash')
 
 function tuple(a, b) {
-  return a != null && b != null ? tupleMain(a, b) : tupleCurried(a)
+  return b != null ? tupleMain(a, b) : tupleCurried(a)
 }
 
 function tupleMain(input, fns) {

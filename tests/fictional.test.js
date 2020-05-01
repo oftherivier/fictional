@@ -54,6 +54,7 @@ tap.test('consistency', t => {
 tap.test('curried makers', t => {
   for (const [fn, ...args] of curriedMakerDefs) {
     t.deepEquals(fn(23, ...args), fn(...args)(23))
+    t.deepEquals(fn(null, ...args), fn(...args)(null))
   }
 
   t.end()
