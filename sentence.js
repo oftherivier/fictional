@@ -25,8 +25,8 @@ function sentence(input, opts) {
 
   var firstOpts = conj(opts, {
     capitalize: true,
-    minWords: minWords,
-    maxWords: maxWords,
+    min: minWords,
+    max: maxWords,
     minSyllables: minSyllables
   })
 

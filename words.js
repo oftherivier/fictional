@@ -15,11 +15,11 @@ function words(input, opts) {
   var capitalize = defaults(opts.capitalize, DEFAULT_CAPITALIZE)
   var shouldCapitalizeFirst = capitalize || capitalize === 'first'
   var shouldCapitalizeAll = capitalize === 'all'
-  var minWords = defaults(opts.minWords, DEFAULT_MIN_WORDS)
-  var maxWords = defaults(opts.maxWords, DEFAULT_MAX_WORDS)
+  var min = defaults(opts.min, DEFAULT_MIN_WORDS)
+  var max = defaults(opts.max, DEFAULT_MAX_WORDS)
 
   var id = hash(input)
-  var n = fit(id, minWords, maxWords)
+  var n = fit(id, min, max)
   var i = 0
 
   id = hash([id, 'words', i])
