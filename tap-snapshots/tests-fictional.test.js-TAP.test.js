@@ -17,6 +17,11 @@ Array [
     "oneOf": "blue",
     "paragraph": "Kanefu mafu wohonane hoya yatotayo muyure yo kosurote, tsunoriyu miyota nenihe sohishire raha. Sechiyumo komenono yori shiromi niraru chi. Tanohaho takune suteko fuwonoku kumisuhe se ku, nomanoru no shiruyu semochine tachinaka niko ninano. Nanuse karafume komu fuhitsu kasuchi samoha sene ruseso. Kitaya te rikeruna neyo rama wa rironama, su shi yate mamu chikemi furusa yo.",
     "sentence": "Ruka toya surimu meku re royowaya, nutekinu he he noyuto shi nu tohotsu.",
+    "times": Array [
+      "Rome",
+      "Sonanuho",
+      "Hano",
+    ],
     "tuple": Array [
       "Cherry",
       "Street",
@@ -34,6 +39,10 @@ Array [
     "oneOf": "green",
     "paragraph": "Teru herini chikesa ri sehamo kehishiri musorihe, nonuka mimechitsu ku chitenunu ke to tsukukafu henayuno. Kekarosa katera hoyo tsutasa sashiku ma meyorumi. Ruyuho koha kuwa shito kusaki nanamuwa. Re nesu notsuheki horososhi sarakuwa kohoshiya mofune rufutara.",
     "sentence": "Nehokaki ka ho ha chimote teshiyaro.",
+    "times": Array [
+      "Wonomi",
+      "Yanuyo",
+    ],
     "tuple": Array [
       "Cherry",
       "Drive",
@@ -51,6 +60,13 @@ Array [
     "oneOf": "green",
     "paragraph": "Raha yutariro shishi mikemana haka, saraya ta romo somimewa yuchishito. Kikeshishi newanoku sa tonoko ho tone. Hate hahiro yorerura so yasonena matehi, nusunaro watomu mamate koshinoma kimutsu himuhomo ho kesosa. Karomi na tasonu niyokete yoto ni, so no renuchi satare misato tsusa. Risu tosoruka yo rimu wake sahiha kiyaruka, wohotsuse shichi hareya su he kuya.",
     "sentence": "No miho furu hechiwa muyo su, memuse shi hi yochi ya ni.",
+    "times": Array [
+      "Kumi",
+      "Shitosechi",
+      "Ramoto",
+      "Nirire",
+      "Sesena",
+    ],
     "tuple": Array [
       "Parkway",
       "Drive",
@@ -68,6 +84,12 @@ Array [
     "oneOf": "red",
     "paragraph": "Tsurosaru runa somo rehari rari. Ririne tese kichiruho seri fuhihise shikiru, tora yu katahi wa kotoma te. Hinumahe tokamomu mohise menuso sekenure. Romonu hemine yoyo ro shiyusuko ne roso.",
     "sentence": "Shishiwa muke ra narehohe matsu.",
+    "times": Array [
+      "Yore",
+      "Naruka",
+      "Riyoyaku",
+      "Kiyumi",
+    ],
     "tuple": Array [
       "Cherry",
       "Road",
@@ -85,6 +107,11 @@ Array [
     "oneOf": "green",
     "paragraph": "Kanike fuyuro wakuke komanu nu. Minishino kimuroro tetsutara musemeka taroru tsu, raromi tesa niyamenu teni tatsu mo. Mosa mi se yoneyara yochiniho yamima, runisu ra wameresu waruhi naso suhahako. Nunerowa nanofu karu moyo henamu. Romemishi mohahonu niseneke ki fumira yu kesa, re nena rorari ro hite tsu.",
     "sentence": "Yumi tsune se hi mo koyu rahi, wahiyoku natsuha yariwa su ho shitokeya noshinoto.",
+    "times": Array [
+      "Sate",
+      "Rafuka",
+      "Hosu",
+    ],
     "tuple": Array [
       "Parkway",
       "Street",
@@ -102,6 +129,10 @@ Array [
     "oneOf": "red",
     "paragraph": "Ruru yafuke shi rasushimo teyuko, wosami ni yo kate tefuwara. Rahe hasa yarutota homisuyu mani yu mi yufunuchi, no nofu yamo sukiko hami ninohi hota. Nasehe kaniyumo kanike nitoshi mashiyafu ninunema re nese. Heronono ho ki muyo tanowo sa chi wo, nine mafuyuna yaso motsu yanora no.",
     "sentence": "Nosotasu ya yarite nokerufu ko ha ri.",
+    "times": Array [
+      "Nukumosa",
+      "Yuyamusu",
+    ],
     "tuple": Array [
       "Cherry",
       "Road",
@@ -119,6 +150,13 @@ Array [
     "oneOf": "red",
     "paragraph": "Rora haru kumo re hamomumu. Roratsu toko so keho keha rosowo tokese fuchi, runuyu yonoshihi se riyuru mayora yosuke hisa. Yu ma rumo ri mokiya raneyoki ro. Rano sori yuyatamo rekeri tahehiri, reha yafuneku nasu ne fushi rimukoso nuso. Hitama suha ka rutewone nayamiro nusoka hoyo sariminu.",
     "sentence": "Na tsuyanuki tsuku kufu ke niromuko kiku nu, naro funakihe risa re hiwahise shikoyutsu kunene hawamo.",
+    "times": Array [
+      "Keseyu",
+      "Tarusutsu",
+      "Mihose",
+      "Ruhi",
+      "Mukore",
+    ],
     "tuple": Array [
       "Parkway",
       "Drive",
@@ -136,6 +174,12 @@ Array [
     "oneOf": "blue",
     "paragraph": "Ka ko hiruyo heshi ne wo, no he nashi nemuhe ruhiho yosayu. Kahenono honori ki to mi nakome. Ru mi ka ka sa. Hi ya kino su niyuki miraku, mutatsu wani ra sese ranichi yusuri.",
     "sentence": "Retewani rinenato wo yo nitete noroyosu nayaruhi kuwaso.",
+    "times": Array [
+      "Muwato",
+      "Kanumise",
+      "Wasu",
+      "Sumemohe",
+    ],
     "tuple": Array [
       "Cherry",
       "Street",
@@ -153,6 +197,11 @@ Array [
     "oneOf": "green",
     "paragraph": "Wakarete se hekese nunote seha su waseno tsuchisa, hi washiraro sa ho yo mirihama hemetora hotaro. Ni kamiwa serumo hohifu kani sunehe katosa, masateno te muke shimuho niruyayu. Yosawo wowo reto kohekosa kosa, ke yoruyuma wo ni hanu kikewoso chiratsushi haseke. Minaseku ma nekire nohehose hoka yatsu. Muteyo fu ka mi he reme mu.",
     "sentence": "Sekeyo tsu hanikota koya renuchi rowahone shihikoho ta, matorusu himu nunarena tsuhe kekukaro.",
+    "times": Array [
+      "Hakikofu",
+      "Raya",
+      "Tamoma",
+    ],
     "tuple": Array [
       "Privet",
       "Road",
@@ -170,6 +219,10 @@ Array [
     "oneOf": "red",
     "paragraph": "Manu chi rasemi mo ruko tsukete hi, fumukafu nokiteme mofu yufusa yu teroro. Muwa shimichishi yo fuhehitsu nukorofu mamoteno nutsuko meme. Wayo wanehe sewowa komaniko shiyu yohesemo. Yumuso kohosoni fu tome mame.",
     "sentence": "Ho yanefu ta yurite mi kere.",
+    "times": Array [
+      "Rohanoko",
+      "Torehoya",
+    ],
     "tuple": Array [
       "Cherry",
       "Drive",
@@ -187,6 +240,10 @@ Array [
     "oneOf": "blue",
     "paragraph": "Ma yunahe ta shi ho yokayu ta suseta. Yune su chimu tasu newaroni sufuma. Maranu so heke kere nukeneke ri wamari. Menumi yochirane woyusu yoshihiwa notochi, kamu hotomaha yohe yahimi satamino.",
     "sentence": "He nuwa tsu moma mehomu hamahoku mawo ka.",
+    "times": Array [
+      "Toruha",
+      "Rane",
+    ],
     "tuple": Array [
       "Privet",
       "Drive",
@@ -204,6 +261,11 @@ Array [
     "oneOf": "blue",
     "paragraph": "Hoketari chiha shika tenimo ruhimiwo kise. Sasutsute yurini chitoku ta rumose ruhowo sumaneke. Se rini honuha tsu ki shihamu monoke seyunume. Tsurekure ha nemitaku momi newo kiretame nuchichire horefu, miworuyu wato tatsuno nomo meme ne. Kora ka reneseno yu chimurumu mimemi.",
     "sentence": "Rohemohi re wama re netsuma nuru ke mirihemu, mofure hihekuhe tomikonu nanehi kosoko ko heshi.",
+    "times": Array [
+      "Ranu",
+      "Tona",
+      "Waku",
+    ],
     "tuple": Array [
       "Privet",
       "Road",
@@ -221,6 +283,12 @@ Array [
     "oneOf": "blue",
     "paragraph": "Towayaha nitsuse wokaranu hasehoni terotasa mora sanafu ma. Hikeyama niraho riyuheso hamita tarera himotani chi, rayuyu tonoyo hara rohi tsu. Minete wo hi ka mororu hikiworo he, tsuneta nuyamena sakasa teneneta numichi. Mero masamake mini ta chiha tesuseto shimosu, hosameko ma woyono ta mi setokafu.",
     "sentence": "Mo wo mufu sutese shifu kenema tanaku hora.",
+    "times": Array [
+      "Teyate",
+      "Kenishi",
+      "Seramuna",
+      "Nohemera",
+    ],
     "tuple": Array [
       "Parkway",
       "Road",
@@ -238,6 +306,13 @@ Array [
     "oneOf": "blue",
     "paragraph": "Ni mochini hemiwo nekochiwo tososa shiyoko, ka yano fuyo ruru mowofu muwo. He ka temimo roso miwoyuni ri sora semo. Niso sutohise nanorunu ha nahe, so newa yumuse kuho mimikara ka mereyona. Ke manu rosu tose toruru hikuri chishikira neki. Sumuni mesowo yuwano so sahikatsu neke.",
     "sentence": "Hawona sechiri tehekafu tosahehe hiku riwamanu hi somuso, sari to temekate hiyataso yutsuse kukachi.",
+    "times": Array [
+      "Tesuta",
+      "Kaheshire",
+      "Memukote",
+      "Kiki",
+      "Saya",
+    ],
     "tuple": Array [
       "Parkway",
       "Street",
@@ -255,6 +330,10 @@ Array [
     "oneOf": "blue",
     "paragraph": "Sumo tehokama wachi me ranuhe yuyu ketomusu. Kisa hinosune senerite moyute rasachi matsu tesorawo. Rikoha hi wa re muyamuta teka muwoyu na, kuyatsu kefumo fumoyuno ru kusoyaku. Wanoto hisehi ha here nurotsu rimure nayona kike, ri mi so tsuhi tsufuteku.",
     "sentence": "Roka tsu hifuwa so ruketsu rina ta yatakoha.",
+    "times": Array [
+      "Kekifuwa",
+      "Kowore",
+    ],
     "tuple": Array [
       "Parkway",
       "Street",
@@ -272,6 +351,11 @@ Array [
     "oneOf": "blue",
     "paragraph": "Ko wamu nuneyani yuwowono tahone rafu yomowa meha. Teshika hashiya mina heha mi, yaru na hihehefu nihi yomehiro. Mehefu watetsu semomiyo chisu chinaruku te rukoneso chiho. Soharomo ya ku sute nayu. Ku hawanachi shinokoko wayakoke sukete shiki hiru kore, ronu chikayachi ri yonutone keso teme sawochiki.",
     "sentence": "Satsurishi shikeke nowono wota ro nito, hoyaha fu hiyuchine kerarehi mekuhowa hewa.",
+    "times": Array [
+      "Mema",
+      "Yunirore",
+      "Tekene",
+    ],
     "tuple": Array [
       "Cherry",
       "Drive",
@@ -289,6 +373,12 @@ Array [
     "oneOf": "blue",
     "paragraph": "Fuchina chihayu chi re tsuchikaki yo. Rokare runomi yanowa newoyomi riki ku ruwoha kutsuse. Hifu yotahoki hoha kanunuse na namitsune, wanachiyu yoronu tafuwoyo koyayune yanesa kineyu ke. Kisuwoso na konumu ne mu sakenonu sufu.",
     "sentence": "Ko rimufu mo rero shi museho.",
+    "times": Array [
+      "Teme",
+      "Taha",
+      "Chisusosa",
+      "Homa",
+    ],
     "tuple": Array [
       "Cherry",
       "Drive",
@@ -306,6 +396,13 @@ Array [
     "oneOf": "blue",
     "paragraph": "Tawotofu shiwafuta watsu kuha ha matefu fuyasowa tamena. Heketa mume ne teku kakima ka shihikumu horo, hero ya meya ronunesa wonomu shihe. Kichitesa hatsuro nemuwo wa fuka rurure monuni, mo horamimo haro sushi tawa ki mosuwaku. Shi nimeni ka taru tsurakefu, to heniha shiko tanuni natohama naronuni soki. Hayoyu memi wanoro yumaro nakusa keyayu, mukahiko ma moyatsuhi seri namuni yomihowa.",
     "sentence": "Sokoya rasoru yakiwote yatome shikafu, namenuni nohi tsu ma yowomeme kitewa chisu.",
+    "times": Array [
+      "Ratorume",
+      "Yare",
+      "Yoware",
+      "Ronofuku",
+      "Nateyuyu",
+    ],
     "tuple": Array [
       "Parkway",
       "Road",
@@ -323,6 +420,10 @@ Array [
     "oneOf": "blue",
     "paragraph": "Nahe kinekuyu wowotahi te mesorori, nashi toru ki mumese mamo. Ri re makiriri tsukokete mi momo romiru sonu, niyasete resoyoru mamane rena haraneno ko sukowome shichi. Re yotaku ne futsumene he. Hiwo kusasa sufu chiyuho kusana se moko yutsumo.",
     "sentence": "Tonokuwa hi kira keyowako te.",
+    "times": Array [
+      "Minose",
+      "Risetsuna",
+    ],
     "tuple": Array [
       "Privet",
       "Road",
@@ -340,6 +441,11 @@ Array [
     "oneOf": "blue",
     "paragraph": "Kesu temo wakino samori mu rayaku henure, te himu nisuka me hokemechi. Nimuhete mohe nishihe neshi nutemi mima terakashi nonona. Ranumoso kitsu hakoshi nu funari ra chimore. Se seme hichime su tsuheshi nutsuno tasemi hira, wose keriwohe futo soheri nomushimu shino kimitsu runo. Nu tsu kutsuru kiyu nini ta ke ku, nakohero sesata sorusoka chisatsu ha hisuku hitase.",
     "sentence": "Mani ki runuyuse mo yarehiyo mururamo meharuma yowo, kokimeso wa makuruma ri reku mihemeha mohato naku.",
+    "times": Array [
+      "Heyayonu",
+      "Satomumu",
+      "Momi",
+    ],
     "tuple": Array [
       "Parkway",
       "Street",
@@ -357,6 +463,13 @@ Array [
     "oneOf": "blue",
     "paragraph": "Tsuke mehamishi nanohoshi toya rufute tanure nune, chiseruno tewachi nosa niri te shi. Te tasuyoma tsu kushise kashikane ru, sarete no tsuyuki shishiruso hokifuchi. Sehiyara rori muho ne mi rowatsuri. Ka kotake yorushihe kiwo kohi ne yaroka, ri rana rofu ta yarenuru mi. Koma retsuyo masamu tareki furi nasutato ki.",
     "sentence": "Fusoya rehiwo ko sanini yu homachi, waremame me ritsususa motefu naku tsume sunuroni.",
+    "times": Array [
+      "Shiyotoshi",
+      "Noshiwonu",
+      "Hekari",
+      "Tese",
+      "Fumuhi",
+    ],
     "tuple": Array [
       "Cherry",
       "Road",
@@ -374,6 +487,12 @@ Array [
     "oneOf": "red",
     "paragraph": "Nesani ru rikinu neko sayume ruyuko, mira nisemochi nirekowo chika somu nufure kumemiro muterami. Rama mehame ra shiwaho mo fu ke, kamehe moteyuyu mutsu heno yomoteru. Ki sekahe shineku hake fuhashira nesa nanono tohatsu. Komu kenimaro kichiyo su ya ku kato.",
     "sentence": "Neremufu raka fu te niroyu musehi suwoto yushi.",
+    "times": Array [
+      "Yuchi",
+      "Niroroke",
+      "Fuyayoha",
+      "Narasa",
+    ],
     "tuple": Array [
       "Privet",
       "Street",
@@ -391,6 +510,11 @@ Array [
     "oneOf": "green",
     "paragraph": "Kishina safu tenoki fuchi mo kironuka, toro tohenuro yohehe muheteko mechiheho. Tomeriho kehi koto mari ronuyoro ritachichi heha. Mumetote newamihi mosonuya rukichiyo no mu kisokawo. Narewaro raho fumoro so tasorona hahi yamene, he narona kimukowo kirise mimohiya. Tamehahi kokamotsu mu tasa sano furito soseyose, teto mesoshike wochimoha sachike rikosu.",
     "sentence": "Ro ro kachi hekokihe rukurusu, yonokutsu su seyomi mo seha.",
+    "times": Array [
+      "Muta",
+      "Muru",
+      "Hiku",
+    ],
     "tuple": Array [
       "Cherry",
       "Drive",
@@ -408,6 +532,10 @@ Array [
     "oneOf": "blue",
     "paragraph": "Ne no wo soyu senewa. Satanu yufu moriru su meneneku shi. Tarere wose chino nenike yake. Merite meyami rosamu hesahoshi keki.",
     "sentence": "Mehami chiyuhi wase wasako kokuya.",
+    "times": Array [
+      "Meyu",
+      "Risuto",
+    ],
     "tuple": Array [
       "Privet",
       "Road",
@@ -425,6 +553,13 @@ Array [
     "oneOf": "blue",
     "paragraph": "Womufu hichichi wo kurika keniyu satsu me, sehekoko mesahari se kinoko ri. Kuha kokama yaroke ke tenaworu ho tenawa yuhehi, no kotsu kumo rayokoro hokuso wo. Rani te yomu ri ha shifufu te, romekano shirewase yuno murehiha yo wachiso. Moke wanoso nana fu wo kinahahe rihoma nasetsu, hono he chichikori moritsu makoyuko tsuyo nesoke funi. Yumawowa na kashimuta yunehe ro ko.",
     "sentence": "So shirehiso raso ro murutesa miheko nurakata, kano hireseni nesufuto koshime rotarare fuhesachi su nukuhi.",
+    "times": Array [
+      "Yoruni",
+      "Hatase",
+      "Yoki",
+      "Seku",
+      "Fufukiko",
+    ],
     "tuple": Array [
       "Cherry",
       "Road",
@@ -442,6 +577,12 @@ Array [
     "oneOf": "red",
     "paragraph": "Sateharu murirese sosema wa horore nu ne totatsuho. Mufuniyu yarune yuya reyurese reyaho chikoro nonunuhe sanuru, yuta so ku notsurifu hemiso rorikomu. Su nosoha hoku rawo kiku serunota. Tsura chitsu sukakuri tsu soyu, sa hateke fumuta ma yaro.",
     "sentence": "Chi wa ma yakiku nomate te yoku.",
+    "times": Array [
+      "Rotase",
+      "Kotsu",
+      "Fuke",
+      "Kerameso",
+    ],
     "tuple": Array [
       "Parkway",
       "Road",
@@ -459,6 +600,11 @@ Array [
     "oneOf": "green",
     "paragraph": "Re ta taya fuwoyoka yakimayo sunufuha ru ri, woserote yawo teyaro taka hinasari chino shi sukanuchi. Miyaru he newo mokaruchi te ki wo yofusa, ke susawanu ya hokenitsu ruhirunu tachitayo ma rechi. Nohemite mi runisu shirawama sawose ro, tamo sanoyare none yo hi. To yuhero hikiniyo suhekire saheyo rayonu nuke. Ketasashi romine torosa muwawara mi, mane ka tama marokimi mowori su.",
     "sentence": "Hehi ka rakufuyu so makofu ri tenakosu se, yumaku rohome ho mahi romushi kuhowoke meritsu kinu.",
+    "times": Array [
+      "Nihiya",
+      "Shiwoyuya",
+      "Yuhoheto",
+    ],
     "tuple": Array [
       "Parkway",
       "Drive",
@@ -476,6 +622,10 @@ Array [
     "oneOf": "blue",
     "paragraph": "Rukuku hi yo hi so wowowaro, te nata kitsumuwo nukikuru kara mitsuhi ni. Hoyunoka waro momi yaworu seyonu hahatsu kakisu ri. Nare roteka shi mahanu woya musu moyahase hotaku, mi ri monahe yusumewa tsutanotsu nokenori. Tatsusawa mukowowo yumumuha kura samimeto ta hesanami, numika tsumohihi natorowo tosu ra chifunu.",
     "sentence": "Sere me ha chiwaroku mifu.",
+    "times": Array [
+      "Nehishitsu",
+      "Nisana",
+    ],
     "tuple": Array [
       "Parkway",
       "Road",
@@ -493,6 +643,13 @@ Array [
     "oneOf": "blue",
     "paragraph": "Kewotachi mimomo raro ranishime raku memu, hinimu hirehowo wokanu ka toratsumu chimotsu. Nu mufutafu hawasa mechirora muyusa chimureku hachiname. Yawa tofutoso mu sakahi nihetenu, ha keno tenu nene nehota tekimume ha. Ramune reru satewayo tsumuchino mu. Shi somoki nara nayu mehe mikete miho tara.",
     "sentence": "Hiya rekukaku yawanaha niso refume, nanosaka teta sa kowaku shisekichi karesenu ni ta.",
+    "times": Array [
+      "Keteya",
+      "Mehe",
+      "Roseko",
+      "Nasafumu",
+      "Yoyase",
+    ],
     "tuple": Array [
       "Parkway",
       "Street",
@@ -510,6 +667,12 @@ Array [
     "oneOf": "red",
     "paragraph": "Ruruyuto tare tsumo metemu meyareso chika, sumumema nonuriku meniki kimitafu ru hasamo riwakiro wo. Fuhisumi ki tanamose keshisuko nurano ronu, hewoku chikaso hayu raruno tomoremu sehari sehiwate saso. Nusuki rutetesa re mefunihe suchi. Misuki tsumunuwa horukuke kato shi rekanako samiyo hetamomi.",
     "sentence": "Wa shi honi miwomoshi hana.",
+    "times": Array [
+      "Kumaremi",
+      "Kushifu",
+      "Yufukare",
+      "Rena",
+    ],
     "tuple": Array [
       "Cherry",
       "Road",
@@ -527,6 +690,12 @@ Array [
     "oneOf": "green",
     "paragraph": "Hikura numumike naya henu yo wa, mehomi ka ru hiwo kishi soni. Moyoheta hichikori kowako kiyo hihakaru kechi, kemokeko chiho mechimiwa tayu neya yoru. Ro fu fusatsu neri fumu chiriri re mohakeni, maso wo komiroke me nushirome wofusa. Wayuyu ne ro nuwanito neshi, se nowo na sa rawashiyu na.",
     "sentence": "Nu hiri chinatsuri suriru honimiso.",
+    "times": Array [
+      "Ratoyuki",
+      "Kate",
+      "Neri",
+      "Kiki",
+    ],
     "tuple": Array [
       "Privet",
       "Drive",
@@ -544,6 +713,13 @@ Array [
     "oneOf": "green",
     "paragraph": "Rukowo rakichi fu mo romo sekomotsu kiyo, hofutsusu me fusoyumo waseta nuhe nanoko ke. Rikara hihi mewa sehekoka he, ma ruke ro takuhehi teteteyu yanihi mahaseto. Me yochitsu rirunuki yami sesu nayo. Saranira kunutsuhi ruyate ruyuma komanini se rutsu, nuho kimifu seno yominuku marutema hihi nuchishihi ro. Ta chiwota fuwara se yate hemora me, yomayowo rayofuchi ya me mi suresane shiha fumo.",
     "sentence": "Hososa miru hehise nanetsu wo, rumuno no shi kuyanu ritasosa techinuwa.",
+    "times": Array [
+      "Setsu",
+      "Rahiho",
+      "Tsunoso",
+      "Furimoho",
+      "Heteka",
+    ],
     "tuple": Array [
       "Privet",
       "Road",
@@ -561,6 +737,10 @@ Array [
     "oneOf": "red",
     "paragraph": "Nerote kenehare rewokinu homuchimo mi reho. Tsuwahichi ha shihi kiwawa sere risetatsu sukinohi. Fu teru wahe komi masasose henachifu. Ma tokanumo hi natsuhana kinoka hoha, katehe hise kuchiwo yu re mekihe kisa.",
     "sentence": "Surarene kamamu rinuketsu ha konu tsuhiwachi.",
+    "times": Array [
+      "Toshi",
+      "Tasachisa",
+    ],
     "tuple": Array [
       "Cherry",
       "Street",
@@ -578,6 +758,11 @@ Array [
     "oneOf": "red",
     "paragraph": "Keroniya ya he ho kiru hoku. Tarahiwa hi mesu kushi yunusana, nuko ra meni nu sehaya ne. To mechi ya rofuchiri wonisese tomeyohe, sehoka nefure noshishise yayutowa fuhahehi. Nato nukunu nakonatsu hi waneruso kuruhehe ha, rimotena norune mewa mutaki more. Yuyora tore kufu mamu wa.",
     "sentence": "Womotsu kami sare mikawamo rochi totachi hireyo, waniri nutsu shisete chi ko teyo.",
+    "times": Array [
+      "Kuwa",
+      "Yawo",
+      "Newaraya",
+    ],
     "tuple": Array [
       "Parkway",
       "Drive",
@@ -595,6 +780,12 @@ Array [
     "oneOf": "green",
     "paragraph": "Womatsuso mishiraru hawariho sahoma mokumu ni waroshichi rumahechi. Mu neho nosohe wokaheri mano wa keho yamiyoha, ku fukute mawo hi ri nutoro ko. Warenena haki tosefuno mira rohinuha koso. Shinire to merasa wo tonima tonu wayonete mamomusa.",
     "sentence": "Nenuna kinaheta wayuroku ruhini shihane hire sotoko.",
+    "times": Array [
+      "Soma",
+      "Nira",
+      "Hari",
+      "Totochiha",
+    ],
     "tuple": Array [
       "Parkway",
       "Drive",
@@ -612,6 +803,13 @@ Array [
     "oneOf": "green",
     "paragraph": "Sukeya chike rusoshima rekusuchi te. Reho runuho mita ne rota ku ku. Shiho chiro shiyare rumemi wateko wahe koneku seyawa. No ma yukori ta wotomiro mikoya yuhi. Yuchinamo reho fuhiwa ho nokutoru wohoso.",
     "sentence": "Rene shimuteka nosonoto yo monune matowayo morotowa safu, sonohe noworaka wasesose chimuwo tsu yonutsufu sushitaha.",
+    "times": Array [
+      "Tamuwasa",
+      "Noruwo",
+      "Hasoma",
+      "Suneme",
+      "Mereyu",
+    ],
     "tuple": Array [
       "Privet",
       "Street",
@@ -629,6 +827,10 @@ Array [
     "oneOf": "red",
     "paragraph": "Seshiko minotoma re risahe te, yosuki here fuma yuhiniko he. Kuyukiki yasono se ni ku keshi susona yorihe. Ko woha sosu tsuni ra chi kaki fu. Nehoneshi nu wo yo ko chi mesaha chihe.",
     "sentence": "Mema mokimi wafu koro musuka sashiyu.",
+    "times": Array [
+      "Ninihehi",
+      "Hese",
+    ],
     "tuple": Array [
       "Parkway",
       "Road",
@@ -646,6 +848,11 @@ Array [
     "oneOf": "red",
     "paragraph": "Ru mu yo kayamochi rotohe rami. Hehakanu nutsusa hemusa chiyotama shirekane kuniwoto shitsu fusenito, sa chirina mora fumino hi riha yu merero. Sune ki nawamotsu yu kirachi tsuhaki. Nonenahi nayu tehikomi hahokane kikeki. Te ko se tomuta to na nirureku miwa.",
     "sentence": "Fure ho wanushine hitsuha roware, ka sonari remo roko kata ru kirimu.",
+    "times": Array [
+      "Yuya",
+      "Nomishi",
+      "Kenumaro",
+    ],
     "tuple": Array [
       "Privet",
       "Road",
@@ -663,6 +870,12 @@ Array [
     "oneOf": "green",
     "paragraph": "Kukumumo kuwasa saresuyu rekakamu nisu. Rimumo teku kesora kakifu hososo sunasowa ma, maka ta kirishi raha nuyoni kiriyufu kukutori hitaka. Mohe resowate meka hano toya he, sosaki monasuni numoke mesumani wasuso fu. Tohiho suwa ha ki nayohayu.",
     "sentence": "Numiyani yukishi kasohora ka kefu somuri ho.",
+    "times": Array [
+      "Nushisaho",
+      "Sesasechi",
+      "Hetsuheyu",
+      "Newa",
+    ],
     "tuple": Array [
       "Parkway",
       "Drive",
@@ -680,6 +893,13 @@ Array [
     "oneOf": "green",
     "paragraph": "Ya tosewa muwani nehemasu kisuka. Nifu te ramatsu suyo ruta ruyowo ku. Mamawa tenatsuko ke netsumako rakeso fumo kitotashi tatsukoshi. Rimi roremi se tsu yowowana none ne. Yororuta na rorofute satamo reririta yoya ri.",
     "sentence": "Ha womawa muhaya suwarato keha haki rosa, teno mi ro sase kochi.",
+    "times": Array [
+      "Nusateni",
+      "Rafuto",
+      "Rumura",
+      "Some",
+      "Meno",
+    ],
     "tuple": Array [
       "Privet",
       "Road",
@@ -697,6 +917,11 @@ Array [
     "oneOf": "blue",
     "paragraph": "So nemohona tsunashire muhe he kiko muwotsuho ho, re tsuwoke sotsunuke hesaya sune ne. Resufuri mina niyu fusako naharisa kera, mefuyoyu rachiku shiri wo nomo. Nito nukeri marori shi koreketo kasoyoto, ka merisatsu rare ku manaheno nokatsu hakahoni. Ruruyu fusenato wakoke se so nirumu no. Womakuru yamu he nu muhimi, hi yuyo kukoneka norakiho tokuta sorisetsu ke.",
     "sentence": "Wa maka seyote shishi woresome ri funakato, nu hamima so nu tsumaka ranateso.",
+    "times": Array [
+      "Rasuwome",
+      "Kika",
+      "Hachini",
+    ],
     "tuple": Array [
       "Parkway",
       "Street",
@@ -714,6 +939,10 @@ Array [
     "oneOf": "red",
     "paragraph": "Shiki hi fuso kiku se, no rawo he yoma tetsu teseho heya. Momikohi soteya yamuseme mo nuwa fu se. Toraha kimusero matawa mukeyu runikame ri kosotero. Sa nehe tefuchino teshifutsu rakewo naninu, kite rumena ke kosane wayowahi.",
     "sentence": "Niwani tashimami rono temeteni komowa ku wotashitsu nu.",
+    "times": Array [
+      "Nihiko",
+      "Fufuki",
+    ],
     "tuple": Array [
       "Cherry",
       "Drive",
@@ -731,6 +960,13 @@ Array [
     "oneOf": "blue",
     "paragraph": "Tawa homo te fu shi teshi sa. Mutamochi seketa ri mikotemo ne, rorishi no rarohano kuchishimi ya. Kiyuwa mame wakeyu kasemo hisomo, roroteno soso tsunuyumu tokiro sutane ka. Nonemi ra rase suchi rayume tsuraho. Ri royasase tsushini shishina chi tehahimi kanu rehimeni.",
     "sentence": "Menate ruronu muhe rerosa shi, wa yuke hirurefu sushisa sekuro sehochino.",
+    "times": Array [
+      "Sarahe",
+      "Tsuwofufu",
+      "Shiyu",
+      "Nuhi",
+      "Kumuyana",
+    ],
     "tuple": Array [
       "Cherry",
       "Street",
@@ -748,6 +984,12 @@ Array [
     "oneOf": "red",
     "paragraph": "Hisere hoyachi nowo na meshi yo na. Ta kamu tenimeme se hakete kotero horuyuyo. Kehete mofu neshi mayaru motoro henusero ware machinosu. Na soke wo ha tokitsuyo shi hokita, sukuma ki rekamosu meheyuro shiwokako shi kikenoto kochi.",
     "sentence": "Sewa ho kurochi nu mufune tsu tororiya.",
+    "times": Array [
+      "Mafuroyo",
+      "Hewawa",
+      "Hichiwa",
+      "Tohe",
+    ],
     "tuple": Array [
       "Parkway",
       "Road",
@@ -765,6 +1007,11 @@ Array [
     "oneOf": "green",
     "paragraph": "Kirehetsu fu tonaro tsushi rohomima mishi wama remeketo. Rechi chisoteke woteta hi ne yo to saso, rehekine ko nono kikuta tsuha woki wowano komoru. Maki ho chi risaro sahano. Me yonarimi chiyo keyake to setsuhiwo. Meno fushifu haraki ratenu rasehomu riyuyo nutonu.",
     "sentence": "Muruha nihana rinu re chiho sa susute, mikerono yanosuyu ramo chisoho kumuhoto shihikafu.",
+    "times": Array [
+      "Yakisu",
+      "Sererunu",
+      "Sureni",
+    ],
     "tuple": Array [
       "Cherry",
       "Drive",
@@ -782,6 +1029,10 @@ Array [
     "oneOf": "blue",
     "paragraph": "Kikuhi me hiyuworo somasu ma kero, kesekuyu satsusu chi mayuna rata shina memuyo. Kihiki kuyurise tofuyori ro yayuyu nimo toku su. Nune ri mewoha tomume he tote rokahafu. Heyome serimo hose hito nutototo.",
     "sentence": "Womeyune wo sanonema kayo sokenu.",
+    "times": Array [
+      "Nikitesu",
+      "Wochi",
+    ],
     "tuple": Array [
       "Cherry",
       "Road",
@@ -799,6 +1050,13 @@ Array [
     "oneOf": "green",
     "paragraph": "Homa ruhokoso se chi chiritena tane nahohe ro, so samuko yumi resorora sa raya romanimu misato. Hi tsute yomamo memonosu kako ko hakoroka ki. Rochito maru yoyosu reya kerusa. Heyo shihime chineruna retsusore tsunata tato, muha sekeno na wasusena ne chimune chiki. Rimana ya neni re nenironi kotekutsu, chite hini tsusemuso wo moru futsuho.",
     "sentence": "Rechi mohechiyu meroshi koki temakichi ta ma wo, shi mososhini chiso memi so risu.",
+    "times": Array [
+      "Hetsuki",
+      "Wawome",
+      "Minasa",
+      "Rehesone",
+      "Samu",
+    ],
     "tuple": Array [
       "Privet",
       "Road",
@@ -816,6 +1074,12 @@ Array [
     "oneOf": "blue",
     "paragraph": "Nekuko so niriwo watsu nu munutoke merama. Seya neheke ho mewa sata tokomahe. Yuketero mutosure chi hiyoshita yu chino tokawo terani. Rerisa hine wa korereku yukiyuhi tore yuchikushi hemikone.",
     "sentence": "Wohiyu yamu wahoyu rosa saharahe raso toratatsu.",
+    "times": Array [
+      "Remeto",
+      "Nawa",
+      "Wamumo",
+      "Nanohi",
+    ],
     "tuple": Array [
       "Cherry",
       "Drive",
@@ -833,6 +1097,11 @@ Array [
     "oneOf": "blue",
     "paragraph": "Nimiki ma ne chi mokotsuro. Nihahenu nuyatoshi sumeha wata muminiya miri fukanetsu yu, risa mimene nosehoshi sotetsumi he. Kukinasa rosakeni nesefuse rotsu wachiku kamashi. Ta ku ra hachitsuya to kiyoka me mima, niru nachi yu ya he mowatsune. Kemu hehesomo teke muhi ruhikoto kiminewa, tachi kisetoya roseke kosare nokawo.",
     "sentence": "Nikowohe nami wo ra sumuhimi wamotashi fuyaho teha, sa waheka nosaraya mu tayara kirenutsu.",
+    "times": Array [
+      "Tatetono",
+      "Yokasoka",
+      "Fusuho",
+    ],
     "tuple": Array [
       "Cherry",
       "Drive",
@@ -850,6 +1119,10 @@ Array [
     "oneOf": "red",
     "paragraph": "Somachima nehehamo tahiyaka warimere tsusu hayakahe na. Wanu sashirani rahama wachiruso ranato tafu kamo. Hamo korowo ro chiteke tohemaro rechiwo mashimi ni. Rutayume shiwomiso wasenunu sa womoru rutote.",
     "sentence": "Mi kiyochime miheyuho chisahemi rumiyoke sa hi.",
+    "times": Array [
+      "Hikiko",
+      "Morishi",
+    ],
     "tuple": Array [
       "Cherry",
       "Street",

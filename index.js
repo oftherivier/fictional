@@ -1,6 +1,7 @@
 exports.hash = require('./hash')
 exports.oneOf = require('./oneOf')
 exports.tuple = require('./tuple')
+exports.times = require('./times')
 exports.join = require('./join')
 
 exports.int = require('./int')
