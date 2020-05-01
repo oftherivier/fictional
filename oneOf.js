@@ -1,7 +1,7 @@
 var hash = require('./hash')
 
 function oneOf(a, b) {
-  return a != null && b != null ? oneOfMain(a, b) : oneOfCurried(a)
+  return b != null ? oneOfMain(a, b) : oneOfCurried(a)
 }
 
 function oneOfMain(input, samples) {
