@@ -1,11 +1,12 @@
 var tuple = require('./tuple')
+var flatten = require('./internal/flatten')
 
 function join(a, b, c) {
   return b != null && c == null ? joinCurried(a, b) : joinMain(a, b, c)
 }
 
 function joinMain(id, joiner, makerFns) {
-  var result = tuple(id, makerFns)
+  var result = flatten(tuple(id, makerFns))
   return typeof joiner === 'function' ? joiner(result) : result.join(joiner)
 }
 

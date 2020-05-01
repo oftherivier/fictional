@@ -6,3 +6,9 @@ tap.test('function as joiner', t => {
   t.equals(result, 'a b')
   t.end()
 })
+
+tap.test('flattening results', t => {
+  const result = join(23, ' ', [() => 'a', () => ['b', ['c']]])
+  t.equals(result, 'a b c')
+  t.end()
+})
