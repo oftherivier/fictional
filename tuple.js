@@ -1,4 +1,5 @@
 var hash = require('./hash')
+var resolve = require('./internal/resolve')
 
 function tuple(a, b) {
   return b != null ? tupleMain(a, b) : tupleCurried(a)
@@ -12,7 +13,7 @@ function tupleMain(input, fns) {
 
   while (++i < n) {
     id = hash([id, 'tuple', i])
-    results.push(fns[i](id))
+    results.push(resolve(fns[i], id))
   }
 
   return results
