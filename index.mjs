@@ -1,4 +1,5 @@
 export { default as hash } from './has'
+
 export { default as oneOf } from './oneOf'
 export { default as someOf } from './someOf'
 export { default as tuple } from './tuple'

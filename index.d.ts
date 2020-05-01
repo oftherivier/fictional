@@ -6,47 +6,178 @@ export type JSONSerializable = PlainNested<JSONPrimitive>
 
 export type Input = JSONSerializable
 
+export type Range = number | [number, number]
+
+export type Maker<V = unknown> = ((input: Input) => V) | V
+
 export function hash(input: Input): number
-
-export function int(input: Input): number
-export function float(input: Input): number
-export function word(input: Input): string
 export function bool(input: Input): boolean
-export function dateString(input: Input): Date
+export function dateString(input: Input): string
 
-declare function oneOf<Sample>(samples: Sample[]): (input: Input) => Sample
+export interface IntOptions {
+  min: number
+  max: number
+}
 
-declare function oneOf<Sample>(input: Input, samples: Sample[]): Sample
+export interface Int {
+  (input: Input, options?: Partial<IntOptions>): number
+  options(overrides?: Partial<IntOptions>): this
+}
+
+declare const int: Int
+
+export { int }
+
+export interface FloatOptions {
+  min: number
+  max: number
+}
+
+export interface Float {
+  (input: Input, options?: Partial<FloatOptions>): number
+  options(overrides?: Partial<FloatOptions>): this
+}
+
+declare const float: Float
+
+export { float }
+
+export interface WordOptions {
+  capitalize: boolean
+  minSyllables: number
+  maxSyllables: number
+}
+
+export interface Word {
+  (input: Input, options?: Partial<WordOptions>): string
+  options(overrides?: Partial<WordOptions>): this
+}
+
+declare const word: Word
+
+export { word }
+
+export interface WordsOptions {
+  min: number
+  max: number
+  minSyllables: number
+  maxSyllables: number
+  capitalize: boolean | 'first' | 'all'
+}
+
+export interface Words {
+  (input: Input, options?: Partial<WordsOptions>): string
+  options(overrides?: Partial<WordsOptions>): this
+}
+
+declare const words: Words
+
+export { words }
+
+export interface SentenceOptions extends WordsOptions {
+  minClauses: number
+  maxClauses: number
+  minWords: number
+  maxWords: number
+}
+
+export interface Sentence {
+  (input: Input, options?: Partial<SentenceOptions>): string
+  options(overrides?: Partial<SentenceOptions>): this
+}
+
+declare const sentence: Sentence
+
+export { sentence }
+
+export interface ParagraphOptions extends WordsOptions {
+  minSentences: number
+  maxSentences: number
+}
+
+export interface Paragraph {
+  (input: Input, options?: Partial<ParagraphOptions>): string
+  options(overrides?: Partial<ParagraphOptions>): this
+}
+
+declare const paragraph: Paragraph
+
+export { paragraph }
+
+export interface OneOf {
+  <M extends Maker>(samples: M[]): (input: Input) => MakerResult<M>
+  <M extends Maker>(input: Input, samples: M[]): MakerResult<M>
+}
+
+declare const oneOf: OneOf
 
 export { oneOf }
 
-declare function tuple<Fns extends TupleFns>(
-  fns: Fns
-): (input: Input) => TupleReturnType<Fns>
+export interface SomeOf {
+  <M extends Maker>(range: Range, samples: M[]): (
+    input: Input
+  ) => MakerResult<M>[]
+  <M extends Maker>(input: Input, range: Range, samples: M[]): MakerResult<M>[]
+}
 
-declare function tuple<Fns extends TupleFns>(
-  input: Input,
-  fns: Fns
-): TupleReturnType<Fns>
+declare const someOf: SomeOf
+
+export { someOf }
+
+export interface Times {
+  <R>(range: Range, maker: Maker<R>): (input: Input) => R[]
+  <R>(input: Input, range: Range, maker: Maker<R>): R[]
+}
+
+declare const times: Times
+
+export { times }
+
+export interface Join {
+  (input: Input, joiner: string, makers: Maker[]): string
+  <M extends Maker, R>(
+    input: Input,
+    joiner: (results: MakerResult<M>[]) => R,
+    makers: M[]
+  ): R
+  <R>(joiner: string, makers: Maker[]): (input: Input) => string
+  <M extends Maker, R>(joiner: (results: MakerResult<M>[]) => R, makers: M[]): (
+    input: Input
+  ) => R
+}
+
+declare const join: Join
+
+export { join }
+
+export interface Tuple {
+  <Makers extends AnyMakers>(makers: Makers): (
+    input: Input
+  ) => TupleReturnType<Makers>
+  <Makers extends AnyMakers>(input: Input, makers: Makers): TupleReturnType<
+    Makers
+  >
+}
+
+declare const tuple: Tuple
 
 export { tuple }
 
-// TODO support the array/tuple form for items
-export type TupleFn<R = unknown> = (input: Input) => R
+type MakerResult<M> = M extends Maker<infer R> ? R : never
 
-export type TupleReturnType<Fns extends TupleFns> = Fns extends TupleFns1<
+export type TupleReturnType<Makers extends AnyMakers> = Makers extends Makers1<
   infer V1
 >
   ? [V1]
-  : Fns extends TupleFns2<infer V1, infer V2>
+  : Makers extends Makers2<infer V1, infer V2>
   ? [V1, V2]
-  : Fns extends TupleFns3<infer V1, infer V2, infer V3>
+  : Makers extends Makers3<infer V1, infer V2, infer V3>
   ? [V1, V2, V3]
-  : Fns extends TupleFns4<infer V1, infer V2, infer V3, infer V4>
+  : Makers extends Makers4<infer V1, infer V2, infer V3, infer V4>
   ? [V1, V2, V3, V4]
-  : Fns extends TupleFns5<infer V1, infer V2, infer V3, infer V4, infer V5>
+  : Makers extends Makers5<infer V1, infer V2, infer V3, infer V4, infer V5>
   ? [V1, V2, V3, V4, V5]
-  : Fns extends TupleFns6<
+  : Makers extends Makers6<
       infer V1,
       infer V2,
       infer V3,
@@ -55,7 +186,7 @@ export type TupleReturnType<Fns extends TupleFns> = Fns extends TupleFns1<
       infer V6
     >
   ? [V1, V2, V3, V4, V5, V6]
-  : Fns extends TupleFns7<
+  : Makers extends Makers7<
       infer V1,
       infer V2,
       infer V3,
@@ -65,7 +196,7 @@ export type TupleReturnType<Fns extends TupleFns> = Fns extends TupleFns1<
       infer V7
     >
   ? [V1, V2, V3, V4, V5, V6, V7]
-  : Fns extends TupleFns8<
+  : Makers extends Makers8<
       infer V1,
       infer V2,
       infer V3,
@@ -76,7 +207,7 @@ export type TupleReturnType<Fns extends TupleFns> = Fns extends TupleFns1<
       infer V8
     >
   ? [V1, V2, V3, V4, V5, V6, V7, V8]
-  : Fns extends TupleFns9<
+  : Makers extends Makers9<
       infer V1,
       infer V2,
       infer V3,
@@ -88,7 +219,7 @@ export type TupleReturnType<Fns extends TupleFns> = Fns extends TupleFns1<
       infer V9
     >
   ? [V1, V2, V3, V4, V5, V6, V7, V8, V9]
-  : Fns extends TupleFns10<
+  : Makers extends Makers10<
       infer V1,
       infer V2,
       infer V3,
@@ -101,7 +232,7 @@ export type TupleReturnType<Fns extends TupleFns> = Fns extends TupleFns1<
       infer V10
     >
   ? [V1, V2, V3, V4, V5, V6, V7, V8, V9, V10]
-  : Fns extends TupleFns11<
+  : Makers extends Makers11<
       infer V1,
       infer V2,
       infer V3,
@@ -115,7 +246,7 @@ export type TupleReturnType<Fns extends TupleFns> = Fns extends TupleFns1<
       infer V11
     >
   ? [V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11]
-  : Fns extends TupleFns12<
+  : Makers extends Makers12<
       infer V1,
       infer V2,
       infer V3,
@@ -130,7 +261,7 @@ export type TupleReturnType<Fns extends TupleFns> = Fns extends TupleFns1<
       infer V12
     >
   ? [V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12]
-  : Fns extends TupleFns13<
+  : Makers extends Makers13<
       infer V1,
       infer V2,
       infer V3,
@@ -146,7 +277,7 @@ export type TupleReturnType<Fns extends TupleFns> = Fns extends TupleFns1<
       infer V13
     >
   ? [V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12, V13]
-  : Fns extends TupleFns14<
+  : Makers extends Makers14<
       infer V1,
       infer V2,
       infer V3,
@@ -163,7 +294,7 @@ export type TupleReturnType<Fns extends TupleFns> = Fns extends TupleFns1<
       infer V14
     >
   ? [V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12, V13, V14]
-  : Fns extends TupleFns15<
+  : Makers extends Makers15<
       infer V1,
       infer V2,
       infer V3,
@@ -181,7 +312,7 @@ export type TupleReturnType<Fns extends TupleFns> = Fns extends TupleFns1<
       infer V15
     >
   ? [V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12, V13, V14, V15]
-  : Fns extends TupleFns16<
+  : Makers extends Makers16<
       infer V1,
       infer V2,
       infer V3,
@@ -202,53 +333,49 @@ export type TupleReturnType<Fns extends TupleFns> = Fns extends TupleFns1<
   ? [V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12, V13, V14, V15, V16]
   : never
 
-type TupleFns =
-  | TupleFns1
-  | TupleFns2
-  | TupleFns3
-  | TupleFns4
-  | TupleFns5
-  | TupleFns6
-  | TupleFns7
-  | TupleFns8
-  | TupleFns9
-  | TupleFns10
-  | TupleFns11
-  | TupleFns12
-  | TupleFns13
-  | TupleFns14
-  | TupleFns15
-  | TupleFns16
+type AnyMakers =
+  | Makers1
+  | Makers2
+  | Makers3
+  | Makers4
+  | Makers5
+  | Makers6
+  | Makers7
+  | Makers8
+  | Makers9
+  | Makers10
+  | Makers11
+  | Makers12
+  | Makers13
+  | Makers14
+  | Makers15
+  | Makers16
 
-type TupleFns1<V1 = any> = [TupleFn<V1>]
-type TupleFns2<V1 = any, V2 = any> = [TupleFn<V1>, TupleFn<V2>]
-type TupleFns3<V1 = any, V2 = any, V3 = any> = [
-  TupleFn<V1>,
-  TupleFn<V2>,
-  TupleFn<V3>
+type Makers1<V1 = any> = [Maker<V1>]
+type Makers2<V1 = any, V2 = any> = [Maker<V1>, Maker<V2>]
+type Makers3<V1 = any, V2 = any, V3 = any> = [Maker<V1>, Maker<V2>, Maker<V3>]
+type Makers4<V1 = any, V2 = any, V3 = any, V4 = any> = [
+  Maker<V1>,
+  Maker<V2>,
+  Maker<V3>,
+  Maker<V4>
 ]
-type TupleFns4<V1 = any, V2 = any, V3 = any, V4 = any> = [
-  TupleFn<V1>,
-  TupleFn<V2>,
-  TupleFn<V3>,
-  TupleFn<V4>
+type Makers5<V1 = any, V2 = any, V3 = any, V4 = any, V5 = any> = [
+  Maker<V1>,
+  Maker<V2>,
+  Maker<V3>,
+  Maker<V4>,
+  Maker<V5>
 ]
-type TupleFns5<V1 = any, V2 = any, V3 = any, V4 = any, V5 = any> = [
-  TupleFn<V1>,
-  TupleFn<V2>,
-  TupleFn<V3>,
-  TupleFn<V4>,
-  TupleFn<V5>
+type Makers6<V1 = any, V2 = any, V3 = any, V4 = any, V5 = any, V6 = any> = [
+  Maker<V1>,
+  Maker<V2>,
+  Maker<V3>,
+  Maker<V4>,
+  Maker<V5>,
+  Maker<V6>
 ]
-type TupleFns6<V1 = any, V2 = any, V3 = any, V4 = any, V5 = any, V6 = any> = [
-  TupleFn<V1>,
-  TupleFn<V2>,
-  TupleFn<V3>,
-  TupleFn<V4>,
-  TupleFn<V5>,
-  TupleFn<V6>
-]
-type TupleFns7<
+type Makers7<
   V1 = any,
   V2 = any,
   V3 = any,
@@ -257,15 +384,15 @@ type TupleFns7<
   V6 = any,
   V7 = any
 > = [
-  TupleFn<V1>,
-  TupleFn<V2>,
-  TupleFn<V3>,
-  TupleFn<V4>,
-  TupleFn<V5>,
-  TupleFn<V6>,
-  TupleFn<V7>
+  Maker<V1>,
+  Maker<V2>,
+  Maker<V3>,
+  Maker<V4>,
+  Maker<V5>,
+  Maker<V6>,
+  Maker<V7>
 ]
-type TupleFns8<
+type Makers8<
   V1 = any,
   V2 = any,
   V3 = any,
@@ -275,16 +402,16 @@ type TupleFns8<
   V7 = any,
   V8 = any
 > = [
-  TupleFn<V1>,
-  TupleFn<V2>,
-  TupleFn<V3>,
-  TupleFn<V4>,
-  TupleFn<V5>,
-  TupleFn<V6>,
-  TupleFn<V7>,
-  TupleFn<V8>
+  Maker<V1>,
+  Maker<V2>,
+  Maker<V3>,
+  Maker<V4>,
+  Maker<V5>,
+  Maker<V6>,
+  Maker<V7>,
+  Maker<V8>
 ]
-type TupleFns9<
+type Makers9<
   V1 = any,
   V2 = any,
   V3 = any,
@@ -295,17 +422,17 @@ type TupleFns9<
   V8 = any,
   V9 = any
 > = [
-  TupleFn<V1>,
-  TupleFn<V2>,
-  TupleFn<V3>,
-  TupleFn<V4>,
-  TupleFn<V5>,
-  TupleFn<V6>,
-  TupleFn<V7>,
-  TupleFn<V8>,
-  TupleFn<V9>
+  Maker<V1>,
+  Maker<V2>,
+  Maker<V3>,
+  Maker<V4>,
+  Maker<V5>,
+  Maker<V6>,
+  Maker<V7>,
+  Maker<V8>,
+  Maker<V9>
 ]
-type TupleFns10<
+type Makers10<
   V1 = any,
   V2 = any,
   V3 = any,
@@ -317,18 +444,18 @@ type TupleFns10<
   V9 = any,
   V10 = any
 > = [
-  TupleFn<V1>,
-  TupleFn<V2>,
-  TupleFn<V3>,
-  TupleFn<V4>,
-  TupleFn<V5>,
-  TupleFn<V6>,
-  TupleFn<V7>,
-  TupleFn<V8>,
-  TupleFn<V9>,
-  TupleFn<V10>
+  Maker<V1>,
+  Maker<V2>,
+  Maker<V3>,
+  Maker<V4>,
+  Maker<V5>,
+  Maker<V6>,
+  Maker<V7>,
+  Maker<V8>,
+  Maker<V9>,
+  Maker<V10>
 ]
-type TupleFns11<
+type Makers11<
   V1 = any,
   V2 = any,
   V3 = any,
@@ -341,19 +468,19 @@ type TupleFns11<
   V10 = any,
   V11 = any
 > = [
-  TupleFn<V1>,
-  TupleFn<V2>,
-  TupleFn<V3>,
-  TupleFn<V4>,
-  TupleFn<V5>,
-  TupleFn<V6>,
-  TupleFn<V7>,
-  TupleFn<V8>,
-  TupleFn<V9>,
-  TupleFn<V10>,
-  TupleFn<V11>
+  Maker<V1>,
+  Maker<V2>,
+  Maker<V3>,
+  Maker<V4>,
+  Maker<V5>,
+  Maker<V6>,
+  Maker<V7>,
+  Maker<V8>,
+  Maker<V9>,
+  Maker<V10>,
+  Maker<V11>
 ]
-type TupleFns12<
+type Makers12<
   V1 = any,
   V2 = any,
   V3 = any,
@@ -367,20 +494,20 @@ type TupleFns12<
   V11 = any,
   V12 = any
 > = [
-  TupleFn<V1>,
-  TupleFn<V2>,
-  TupleFn<V3>,
-  TupleFn<V4>,
-  TupleFn<V5>,
-  TupleFn<V6>,
-  TupleFn<V7>,
-  TupleFn<V8>,
-  TupleFn<V9>,
-  TupleFn<V10>,
-  TupleFn<V11>,
-  TupleFn<V12>
+  Maker<V1>,
+  Maker<V2>,
+  Maker<V3>,
+  Maker<V4>,
+  Maker<V5>,
+  Maker<V6>,
+  Maker<V7>,
+  Maker<V8>,
+  Maker<V9>,
+  Maker<V10>,
+  Maker<V11>,
+  Maker<V12>
 ]
-type TupleFns13<
+type Makers13<
   V1 = any,
   V2 = any,
   V3 = any,
@@ -395,21 +522,21 @@ type TupleFns13<
   V12 = any,
   V13 = any
 > = [
-  TupleFn<V1>,
-  TupleFn<V2>,
-  TupleFn<V3>,
-  TupleFn<V4>,
-  TupleFn<V5>,
-  TupleFn<V6>,
-  TupleFn<V7>,
-  TupleFn<V8>,
-  TupleFn<V9>,
-  TupleFn<V10>,
-  TupleFn<V11>,
-  TupleFn<V12>,
-  TupleFn<V13>
+  Maker<V1>,
+  Maker<V2>,
+  Maker<V3>,
+  Maker<V4>,
+  Maker<V5>,
+  Maker<V6>,
+  Maker<V7>,
+  Maker<V8>,
+  Maker<V9>,
+  Maker<V10>,
+  Maker<V11>,
+  Maker<V12>,
+  Maker<V13>
 ]
-type TupleFns14<
+type Makers14<
   V1 = any,
   V2 = any,
   V3 = any,
@@ -425,22 +552,22 @@ type TupleFns14<
   V13 = any,
   V14 = any
 > = [
-  TupleFn<V1>,
-  TupleFn<V2>,
-  TupleFn<V3>,
-  TupleFn<V4>,
-  TupleFn<V5>,
-  TupleFn<V6>,
-  TupleFn<V7>,
-  TupleFn<V8>,
-  TupleFn<V9>,
-  TupleFn<V10>,
-  TupleFn<V11>,
-  TupleFn<V12>,
-  TupleFn<V13>,
-  TupleFn<V14>
+  Maker<V1>,
+  Maker<V2>,
+  Maker<V3>,
+  Maker<V4>,
+  Maker<V5>,
+  Maker<V6>,
+  Maker<V7>,
+  Maker<V8>,
+  Maker<V9>,
+  Maker<V10>,
+  Maker<V11>,
+  Maker<V12>,
+  Maker<V13>,
+  Maker<V14>
 ]
-type TupleFns15<
+type Makers15<
   V1 = any,
   V2 = any,
   V3 = any,
@@ -457,23 +584,23 @@ type TupleFns15<
   V14 = any,
   V15 = any
 > = [
-  TupleFn<V1>,
-  TupleFn<V2>,
-  TupleFn<V3>,
-  TupleFn<V4>,
-  TupleFn<V5>,
-  TupleFn<V6>,
-  TupleFn<V7>,
-  TupleFn<V8>,
-  TupleFn<V9>,
-  TupleFn<V10>,
-  TupleFn<V11>,
-  TupleFn<V12>,
-  TupleFn<V13>,
-  TupleFn<V14>,
-  TupleFn<V15>
+  Maker<V1>,
+  Maker<V2>,
+  Maker<V3>,
+  Maker<V4>,
+  Maker<V5>,
+  Maker<V6>,
+  Maker<V7>,
+  Maker<V8>,
+  Maker<V9>,
+  Maker<V10>,
+  Maker<V11>,
+  Maker<V12>,
+  Maker<V13>,
+  Maker<V14>,
+  Maker<V15>
 ]
-type TupleFns16<
+type Makers16<
   V1 = any,
   V2 = any,
   V3 = any,
@@ -491,20 +618,20 @@ type TupleFns16<
   V15 = any,
   V16 = any
 > = [
-  TupleFn<V1>,
-  TupleFn<V2>,
-  TupleFn<V3>,
-  TupleFn<V4>,
-  TupleFn<V5>,
-  TupleFn<V6>,
-  TupleFn<V7>,
-  TupleFn<V8>,
-  TupleFn<V9>,
-  TupleFn<V10>,
-  TupleFn<V11>,
-  TupleFn<V12>,
-  TupleFn<V13>,
-  TupleFn<V14>,
-  TupleFn<V15>,
-  TupleFn<V16>
+  Maker<V1>,
+  Maker<V2>,
+  Maker<V3>,
+  Maker<V4>,
+  Maker<V5>,
+  Maker<V6>,
+  Maker<V7>,
+  Maker<V8>,
+  Maker<V9>,
+  Maker<V10>,
+  Maker<V11>,
+  Maker<V12>,
+  Maker<V13>,
+  Maker<V14>,
+  Maker<V15>,
+  Maker<V16>
 ]
