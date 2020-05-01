@@ -24,15 +24,17 @@ function words(input, opts) {
 
   id = hash([id, 'words', i])
 
-  var result = word(id, {
+  var firstOpts = conj(opts, {
     minSyllables: minSyllables,
     capitalize: shouldCapitalizeFirst
   })
 
-  var restOpts = {
+  var restOpts = conj(opts, {
     minSyllables: minSyllables,
     capitalize: shouldCapitalizeAll
-  }
+  })
+
+  var result = word(id, firstOpts)
 
   while (++i < n) {
     id = hash([id, 'words', i])

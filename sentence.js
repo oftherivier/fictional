@@ -6,15 +6,13 @@ var words = require('./words')
 
 var DEFAULT_MIN_CLAUSES = 1
 var DEFAULT_MAX_CLAUSES = 2
-var DEFAULT_MIN_SYLLABLES = 1
 var DEFAULT_MIN_WORDS = 5
 var DEFAULT_MAX_WORDS = 8
 
 function sentence(input, opts) {
   opts = opts || 0
-  var minSyllables = defaults(opts.minSyllables, DEFAULT_MIN_SYLLABLES)
   var minWords = defaults(opts.minWords, DEFAULT_MIN_WORDS)
-  var maxWords = defaults(opts.minWords, DEFAULT_MAX_WORDS)
+  var maxWords = defaults(opts.maxWords, DEFAULT_MAX_WORDS)
   var minClauses = defaults(opts.minClauses, DEFAULT_MIN_CLAUSES)
   var maxClauses = defaults(opts.maxClauses, DEFAULT_MAX_CLAUSES)
 
@@ -26,8 +24,7 @@ function sentence(input, opts) {
   var firstOpts = conj(opts, {
     capitalize: true,
     min: minWords,
-    max: maxWords,
-    minSyllables: minSyllables
+    max: maxWords
   })
 
   var restOpts = conj(firstOpts, { capitalize: false })
