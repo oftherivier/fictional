@@ -1,3 +1,4 @@
 .yarn
 .nyc_output
 dist
+tap-snapshots

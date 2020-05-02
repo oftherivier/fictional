@@ -46,6 +46,7 @@ export interface WordOptions {
   capitalize: boolean
   minSyllables: number
   maxSyllables: number
+  unicode: boolean | number
 }
 
 export interface Word {
@@ -63,6 +64,7 @@ export interface WordsOptions {
   minSyllables: number
   maxSyllables: number
   capitalize: boolean | 'first' | 'all'
+  unicode: boolean | number
 }
 
 export interface Words {

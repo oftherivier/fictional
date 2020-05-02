@@ -1,6 +1,8 @@
 var hash = require('./hash')
 var conj = require('./utils/conj')
 var fit = require('./utils/fit')
+var flip = require('./utils/flip')
+var unicodify = require('./utils/unicodify')
 var defaults = require('./utils/defaults')
 
 var SYLLABLES = [
@@ -51,12 +53,14 @@ var SYLLABLES_LEN = SYLLABLES.length
 var DEFAULT_MIN_SYLLABLES = 2
 var DEFAULT_MAX_SYLLABLES = 4
 var DEFAULT_CAPITALIZE = true
+var DEFAULT_UNICODE = 0.382
 
 function word(input, opts) {
   opts = opts || 0
   var shouldCapitalize = defaults(opts.capitalize, DEFAULT_CAPITALIZE)
   var minSyllables = defaults(opts.minSyllables, DEFAULT_MIN_SYLLABLES)
   var maxSyllables = defaults(opts.maxSyllables, DEFAULT_MAX_SYLLABLES)
+  var unicodeProbability = defaults(opts.unicode, DEFAULT_UNICODE)
   var id = hash(input)
   var n = fit(id, minSyllables, maxSyllables)
 
@@ -66,6 +70,10 @@ function word(input, opts) {
   while (++i < n) {
     id = hash([id, 'word', i])
     result += SYLLABLES[id % SYLLABLES_LEN]
+  }
+
+  if (flip(id, unicodeProbability)) {
+    result = unicodify(id, result)
   }
 
   if (shouldCapitalize) {
