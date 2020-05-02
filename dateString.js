@@ -1,5 +1,5 @@
 var hash = require('./hash')
-var fit = require('./internal/fit')
+var fit = require('./utils/fit')
 
 var MIN_YEAR = 1980
 var MAX_YEAR = 2019

@@ -1,5 +1,5 @@
 const tap = require('tap')
-const flatten = require('../../internal/flatten')
+const flatten = require('../../utils/flatten')
 
 tap.test('flatten', t => {
   t.deepEquals(flatten([[1, [2, [[3], [[[4]]]]]]]), [1, 2, 3, 4])

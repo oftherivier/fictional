@@ -1,5 +1,5 @@
 var hash = require('./hash')
-var fit = require('./internal/fit')
+var fit = require('./utils/fit')
 
 function times(a, b, c) {
   return b != null && c != null ? timesMain(a, b, c) : timesCurried(a, b)

@@ -1,5 +1,5 @@
 var hash = require('./hash')
-var resolve = require('./internal/resolve')
+var resolve = require('./utils/resolve')
 
 function tuple(a, b) {
   return b != null ? tupleMain(a, b) : tupleCurried(a)

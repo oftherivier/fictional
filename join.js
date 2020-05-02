@@ -1,5 +1,5 @@
 var tuple = require('./tuple')
-var flatten = require('./internal/flatten')
+var flatten = require('./utils/flatten')
 
 function join(a, b, c) {
   return b != null && c == null ? joinCurried(a, b) : joinMain(a, b, c)

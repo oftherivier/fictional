@@ -1,7 +1,7 @@
 var hash = require('./hash')
-var conj = require('./internal/conj')
-var fit = require('./internal/fit')
-var defaults = require('./internal/defaults')
+var conj = require('./utils/conj')
+var fit = require('./utils/fit')
+var defaults = require('./utils/defaults')
 var sentence = require('./sentence')
 
 var DEFAULT_MIN_SENTENCES = 4

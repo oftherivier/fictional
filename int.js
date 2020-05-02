@@ -1,6 +1,6 @@
 var hash = require('./hash')
-var fit = require('./internal/fit')
-var conj = require('./internal/conj')
+var fit = require('./utils/fit')
+var conj = require('./utils/conj')
 
 function int(input, opts) {
   opts = opts || 0

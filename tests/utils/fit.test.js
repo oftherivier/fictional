@@ -1,5 +1,5 @@
 const tap = require('tap')
-const fit = require('../../internal/fit')
+const fit = require('../../utils/fit')
 
 tap.test('lo != nil && hi != nil', t => {
   t.equals(fit(23, 2, 21), 5)

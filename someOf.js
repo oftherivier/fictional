@@ -1,6 +1,6 @@
 var hash = require('./hash')
-var fit = require('./internal/fit')
-var resolve = require('./internal/resolve')
+var fit = require('./utils/fit')
+var resolve = require('./utils/resolve')
 
 function someOf(a, b, c) {
   return b != null && c != null ? someOfMain(a, b, c) : someOfCurried(a, b)
