@@ -53,15 +53,15 @@ var SYLLABLES_LEN = SYLLABLES.length
 var DEFAULT_MIN_SYLLABLES = 2
 var DEFAULT_MAX_SYLLABLES = 4
 var DEFAULT_CAPITALIZE = true
-var DEFAULT_UNICODE = 0.382
+var DEFAULT_UNICODE = true
 
 function word(input, opts) {
   opts = opts || 0
   var shouldCapitalize = defaults(opts.capitalize, DEFAULT_CAPITALIZE)
   var minSyllables = defaults(opts.minSyllables, DEFAULT_MIN_SYLLABLES)
   var maxSyllables = defaults(opts.maxSyllables, DEFAULT_MAX_SYLLABLES)
-  var unicodeProbability = defaults(opts.unicode, DEFAULT_UNICODE)
-  var id = hash(input)
+  var pUnicode = defaults(opts.unicode, DEFAULT_UNICODE)
+  var id = hash([input, 'word'])
   var n = fit(id, minSyllables, maxSyllables)
 
   var result = ''
@@ -72,7 +72,7 @@ function word(input, opts) {
     result += SYLLABLES[id % SYLLABLES_LEN]
   }
 
-  if (flip(id, unicodeProbability)) {
+  if (flip(id, pUnicode)) {
     result = unicodify(id, result)
   }
 

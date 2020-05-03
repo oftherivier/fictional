@@ -8,6 +8,7 @@ var DEFAULT_MIN_CLAUSES = 1
 var DEFAULT_MAX_CLAUSES = 2
 var DEFAULT_MIN_WORDS = 5
 var DEFAULT_MAX_WORDS = 8
+var DEFAULT_UNICODE = 0.382
 
 function sentence(input, opts) {
   opts = opts || 0
@@ -15,6 +16,7 @@ function sentence(input, opts) {
   var maxWords = defaults(opts.maxWords, DEFAULT_MAX_WORDS)
   var minClauses = defaults(opts.minClauses, DEFAULT_MIN_CLAUSES)
   var maxClauses = defaults(opts.maxClauses, DEFAULT_MAX_CLAUSES)
+  var unicode = defaults(opts.unicode, DEFAULT_UNICODE)
 
   var id = hash(input)
   var n = fit(id, minClauses, maxClauses)
@@ -24,7 +26,8 @@ function sentence(input, opts) {
   var firstOpts = conj(opts, {
     capitalize: true,
     min: minWords,
-    max: maxWords
+    max: maxWords,
+    unicode: unicode
   })
 
   var restOpts = conj(firstOpts, { capitalize: false })
