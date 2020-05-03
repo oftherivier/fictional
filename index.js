@@ -9,6 +9,7 @@ exports.oneOfWeighted = require('./oneOfWeighted')
 
 exports.int = require('./int')
 exports.float = require('./float')
+exports.char = require('./char')
 exports.word = require('./word')
 exports.words = require('./words')
 exports.sentence = require('./sentence')

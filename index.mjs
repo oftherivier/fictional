@@ -9,6 +9,7 @@ export { default as oneOfWeighted } from './oneOfWeighted'
 
 export { default as int } from './int'
 export { default as float } from './float'
+export { default as char } from './char'
 export { default as word } from './word'
 export { default as words } from './words'
 export { default as sentence } from './sentence'

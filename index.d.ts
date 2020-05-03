@@ -43,6 +43,19 @@ declare const float: Float
 
 export { float }
 
+export interface CharOptions {
+  ranges: [number, number][]
+}
+
+export interface Char {
+  (input: Input, options?: Partial<Char>): string
+  options(overrides?: Partial<Char>): this
+}
+
+declare const char: Char
+
+export { char }
+
 export interface WordOptions {
   capitalize: boolean
   minSyllables: number
