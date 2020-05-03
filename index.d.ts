@@ -9,6 +9,7 @@ export type Input = JSONSerializable
 export type Range = number | [number, number]
 
 export type Maker<V = unknown> = ((input: Input) => V) | V
+export type WeightedMaker<V = unknown> = [number, Maker<V>]
 
 export function hash(input: Input): number
 export function bool(input: Input): boolean
@@ -115,6 +116,17 @@ declare const oneOf: OneOf
 
 export { oneOf }
 
+export interface OneOfWeighted {
+  <M extends WeightedMaker>(samples: M[]): (
+    input: Input
+  ) => WeightedMakerResult<M>
+  <M extends WeightedMaker>(input: Input, samples: M[]): WeightedMakerResult<M>
+}
+
+declare const oneOfWeighted: OneOfWeighted
+
+export { oneOfWeighted }
+
 export interface SomeOf {
   <M extends Maker>(range: Range, samples: M[]): (
     input: Input
@@ -166,6 +178,7 @@ declare const tuple: Tuple
 export { tuple }
 
 type MakerResult<M> = M extends Maker<infer R> ? R : never
+type WeightedMakerResult<M> = M extends WeightedMaker<infer R> ? R : never
 
 export type TupleReturnType<Makers extends AnyMakers> = Makers extends Makers1<
   infer V1

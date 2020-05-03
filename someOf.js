@@ -21,7 +21,7 @@ function someOfMain(input, range, samples) {
     chosenIndex = id % remainingLen
     chosen = remaining[chosenIndex]
     remaining.splice(chosenIndex, 1)
-    results.push(resolve(chosen))
+    results.push(resolve(id, chosen))
   }
 
   return results

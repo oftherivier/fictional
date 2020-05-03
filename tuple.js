@@ -13,7 +13,7 @@ function tupleMain(input, fns) {
 
   while (++i < n) {
     id = hash([id, 'tuple', i])
-    results.push(resolve(fns[i], id))
+    results.push(resolve(id, fns[i]))
   }
 
   return results

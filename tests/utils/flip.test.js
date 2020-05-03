@@ -1,5 +1,6 @@
 const tap = require('tap')
 const flip = require('../../utils/flip')
+const { diffBetween } = require('../utils')
 
 const DIFF_THRESHOLD = 0.05
 
@@ -26,36 +27,17 @@ const INPUT_PROBABILITIES = [
 tap.test(
   `averages to within ${DIFF_THRESHOLD * 100}% of the given probability`,
   t => {
-    INPUT_PROBABILITIES.forEach(test)
-
-    function test(p) {
-      let j = -1
+    for (const p of INPUT_PROBABILITIES) {
+      let i = -1
       const results = []
-
-      while (++j < 10000) {
-        results.push(+flip(j, p))
-      }
+      while (++i < 10000) results.push(+flip(i, p))
 
       const mean = results.reduce((a, b) => a + b) / results.length
-      const diff = diffOf(mean, p)
-      t.assert(
-        diff <= DIFF_THRESHOLD,
-        `(p = ${p}) Diff ${diff} > ${DIFF_THRESHOLD}`
-      )
+      const diff = diffBetween(mean, p)
+
+      t.assert(diff <= DIFF_THRESHOLD)
     }
 
     t.end()
   }
 )
-
-function diffOf(a, b) {
-  if (a === b) {
-    return 0
-  }
-
-  if (a > b) {
-    return diffOf(b, a)
-  }
-
-  return (b - a) / (b || 1)
-}

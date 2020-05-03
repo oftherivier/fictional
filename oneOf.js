@@ -1,4 +1,5 @@
 var hash = require('./hash')
+var resolve = require('./utils/resolve')
 
 function oneOf(a, b) {
   return b != null ? oneOfMain(a, b) : oneOfCurried(a)
@@ -6,8 +7,7 @@ function oneOf(a, b) {
 
 function oneOfMain(input, samples) {
   var id = hash(input)
-  var result = samples[id % samples.length]
-  return typeof result === 'function' ? result(hash([id, 'oneOf'])) : result
+  return resolve(id, samples[id % samples.length])
 }
 
 function oneOfCurried(samples) {

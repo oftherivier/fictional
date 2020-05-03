@@ -1,10 +1,18 @@
 const fictional = require('..')
 const tap = require('tap')
 
-const { oneOf, someOf, tuple, join, times, word } = fictional
+const { oneOf, oneOfWeighted, someOf, tuple, join, times, word } = fictional
 
 const curriedMakerDefs = [
   [oneOf, ['red', 'green', 'blue']],
+  [
+    oneOfWeighted,
+    [
+      [0.6, 'red'],
+      [0.1, 'green'],
+      [0.3, 'blue']
+    ]
+  ],
   [
     someOf,
     [3, 5],

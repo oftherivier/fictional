@@ -1,10 +1,11 @@
 export { default as hash } from './has'
 
-export { default as oneOf } from './oneOf'
 export { default as someOf } from './someOf'
 export { default as tuple } from './tuple'
 export { default as times } from './times'
 export { default as join } from './join'
+export { default as oneOf } from './oneOf'
+export { default as oneOfWeighted } from './oneOfWeighted'
 
 export { default as int } from './int'
 export { default as float } from './float'

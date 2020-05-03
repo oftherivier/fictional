@@ -5,6 +5,7 @@ exports.someOf = require('./someOf')
 exports.tuple = require('./tuple')
 exports.times = require('./times')
 exports.join = require('./join')
+exports.oneOfWeighted = require('./oneOfWeighted')
 
 exports.int = require('./int')
 exports.float = require('./float')

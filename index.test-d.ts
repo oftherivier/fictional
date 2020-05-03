@@ -7,16 +7,23 @@ import {
   float,
   word,
   tuple,
-  oneOf,
   someOf,
   times,
-  join
+  join,
+  oneOf,
+  oneOfWeighted
 } from '.'
 
 // ## function items
 expectType<[number, string]>(tuple(null, [int, word]))
 expectType<string>(join(null, ' ', [int, word]))
 expectType<number | string>(oneOf(null, [int, word]))
+expectType<number | string>(
+  oneOfWeighted(null, [
+    [0.6, int],
+    [0.4, word]
+  ])
+)
 expectType<(number | string)[]>(someOf(null, [2, 3], [int, word]))
 expectType<number[]>(times(null, [2, 3], int))
 
@@ -24,6 +31,12 @@ expectType<number[]>(times(null, [2, 3], int))
 expectType<[number, string]>(tuple(null, [2, '!']))
 expectType<string>(join(null, ' ', [2, '!']))
 expectType<number | string>(oneOf(null, [2, '!']))
+expectType<number | string>(
+  oneOfWeighted(null, [
+    [0.6, 2],
+    [0.4, '!']
+  ])
+)
 expectType<(number | string)[]>(someOf(null, [3, 3], [2, '!']))
 expectType<number[]>(times(null, [2, 3], 23))
 
@@ -31,6 +44,12 @@ expectType<number[]>(times(null, [2, 3], 23))
 expectType<(input: Input) => [number]>(tuple([int]))
 expectType<(input: Input) => string>(join(' ', [int, word]))
 expectType<(input: Input) => number>(oneOf([2, 3]))
+expectType<(input: Input) => number>(
+  oneOfWeighted([
+    [0.6, 2],
+    [0.6, 3]
+  ])
+)
 expectType<(input: Input) => string[]>(someOf([3, 3], ['a', 'b']))
 expectType<(input: Input) => string[]>(times([2, 3], word))
 
