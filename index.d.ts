@@ -61,8 +61,8 @@ export interface CharOptions {
 }
 
 export interface Char {
-  (input: Input, options?: Partial<Char>): string
-  options(overrides?: Partial<Char>): this
+  (input: Input, options?: Partial<CharOptions>): string
+  options(overrides?: Partial<CharOptions>): this
 }
 
 declare const char: Char
