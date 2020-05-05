@@ -13,7 +13,6 @@ export type WeightedMaker<V = unknown> = [number, Maker<V>]
 
 export function hash(input: Input): number
 export function bool(input: Input): boolean
-export function dateString(input: Input): string
 
 export interface IntOptions {
   min: number
@@ -42,6 +41,20 @@ export interface Float {
 declare const float: Float
 
 export { float }
+
+export interface DateStringOptions {
+  minYear: number
+  maxYear: number
+}
+
+export interface DateString {
+  (input: Input, options?: Partial<DateStringOptions>): string
+  options(overrides?: Partial<DateStringOptions>): this
+}
+
+declare const dateString: DateString
+
+export { dateString }
 
 export interface CharOptions {
   ranges: [number, number][]
