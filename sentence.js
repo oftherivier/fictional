@@ -24,7 +24,7 @@ function sentence(input, opts) {
   id = hash([id, 'sentence', i])
 
   var firstOpts = conj(opts, {
-    capitalize: true,
+    capitalize: 'first',
     min: minWords,
     max: maxWords,
     unicode: unicode

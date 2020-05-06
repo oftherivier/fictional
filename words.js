@@ -7,14 +7,14 @@ var word = require('./word')
 var DEFAULT_MIN_SYLLABLES = 1
 var DEFAULT_MIN_WORDS = 2
 var DEFAULT_MAX_WORDS = 3
-var DEFAULT_CAPITALIZE = true
+var DEFAULT_CAPITALIZE = 'first'
 
 function words(input, opts) {
   opts = opts || 0
   var minSyllables = defaults(opts.minSyllables, DEFAULT_MIN_SYLLABLES)
   var capitalize = defaults(opts.capitalize, DEFAULT_CAPITALIZE)
-  var shouldCapitalizeFirst = capitalize || capitalize === 'first'
-  var shouldCapitalizeAll = capitalize === 'all'
+  var shouldCapitalizeAll = capitalize === true || capitalize === 'all'
+  var shouldCapitalizeFirst = shouldCapitalizeAll || capitalize === 'first'
   var min = defaults(opts.min, DEFAULT_MIN_WORDS)
   var max = defaults(opts.max, DEFAULT_MAX_WORDS)
 
