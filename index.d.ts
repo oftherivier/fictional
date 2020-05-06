@@ -203,8 +203,27 @@ declare const tuple: Tuple
 
 export { tuple }
 
+export interface Shape {
+  <Makers extends { [s: string]: Maker<unknown> }>(makers: Makers): (
+    input: Input
+  ) => ShapeReturnType<Makers>
+  <Makers extends { [s: string]: Maker<unknown> }>(
+    input: Input,
+    makers: Makers
+  ): ShapeReturnType<Makers>
+}
+
+declare const shape: Shape
+
+export { shape }
+
 type MakerResult<M> = M extends Maker<infer R> ? R : never
+
 type WeightedMakerResult<M> = M extends WeightedMaker<infer R> ? R : never
+
+type ShapeReturnType<Makers extends { [s: string]: Maker<unknown> }> = {
+  [K in keyof Makers]: MakerResult<Makers[K]>
+}
 
 export type TupleReturnType<Makers extends AnyMakers> = Makers extends Makers1<
   infer V1

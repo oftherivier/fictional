@@ -2,6 +2,7 @@ export { default as hash } from './has'
 
 export { default as someOf } from './someOf'
 export { default as tuple } from './tuple'
+export { default as shape } from './shape'
 export { default as times } from './times'
 export { default as join } from './join'
 export { default as oneOf } from './oneOf'

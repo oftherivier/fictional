@@ -18,6 +18,10 @@ Array [
     "oneOf": "blue",
     "oneOfWeighted": "red",
     "paragraph": "Nimuri chïna wonososo sere heshiniso ṣuhari ņo yohimito, yosonuki warosa maneẘa rureshimi rachi. Roremiko nonutano ḥechi hasema kuwoka mè. Konắshiho kaneko miĥaku shihisute runinitsu he fǖ, kumurori ỷa tsutsure yatofuna wayuriho ṙehe sukoyu. Rohanu suherume shiṅo katsuko sorune riwaku meto wanato. Nanote nu mimemima saha rihe yu hakekito, tsu kǖ satæ chikŭ wanẹwo moẘara re.",
+    "record": Object {
+      "a": "Sofuchis̩o",
+      "b": "Ṧemi",
+    },
     "sentence": "Suta tena nokama mina hö kokįnomo, mifununẽ sa rè wawoni wo hė hesuho.",
     "someOf": Array [
       "are",
@@ -49,6 +53,10 @@ Array [
     "oneOf": "green",
     "oneOfWeighted": "blue",
     "paragraph": "Rosa yorǐfu musaru chi tenato rishiɽehe kakaĥita, ritaku nishim̃iko rữ nonimoka sa mậ makenosa rutenoḫe. Morïnaro shikeri suma ꝁanaso wohira su haminuko. Wosochi wohḗ funu nisu yurefu tɵyomoro. Te soha riruwoȑa sukatewo hoyatsuhi shimiké̩ho himuhî rốfuhore.",
+    "record": Object {
+      "a": "Rṍko",
+      "b": "Kishiwaƫo",
+    },
     "sentence": "Nunuwona şe so ya maseru hȫsokiha.",
     "someOf": Array [
       "colors",
@@ -78,6 +86,10 @@ Array [
     "oneOf": "green",
     "oneOfWeighted": "red",
     "paragraph": "Meso tsurorisa tsuru furiruwo rone, kewasu mi note hetotsuta nekorimo. Ménifumi ǹikowome se ñimasu ṥu hềmo. Heme moýato yoriramủ sṏ ḵurukosu hasuse, kunaniwa hấnoho mumehi kakariko hichiho watsushȋne he mirina. Kukite ri sawạra mæyuyuno neta wo, ha ra hanuᶄo yasaṧa hifune yose. Sḫisa yaminama sȗ nure mino worami yasoruna, chiwakaho kỡki motoya cȟi shĩ makì.",
+    "record": Object {
+      "a": "Suyonö",
+      "b": "Nǚnu",
+    },
     "sentence": "Ku kenẻ tsuḣa wahose hame ẘa, nehởsu ma hờ hiko hở ŷu.",
     "someOf": Array [
       "that",
@@ -110,6 +122,10 @@ Array [
     "oneOf": "red",
     "oneOfWeighted": "blue",
     "paragraph": "Wameniki tekọ mari suwano nuso. Nururḕ kika yumorukī̀ nika woňukiyo ƫotsuhi, ruwo ke kemohe ǩi toyata hi. Hotoremi suķanase sanumu nấmefu sosoniso. Yusoya tafusu kusu yo moyŭramu kå meńi.",
+    "record": Object {
+      "a": "Serikǐ",
+      "b": "Yotsuǩawo",
+    },
     "sentence": "Sasemu hera na manamama muya.",
     "someOf": Array [
       "are",
@@ -140,6 +156,10 @@ Array [
     "oneOf": "green",
     "oneOfWeighted": "red",
     "paragraph": "Fusḗya kunuhắ ruwone chineꞧa ṁi. Ruhiwoha kiwomuko motșukine rerorŮhi komomȭ ru, nenį̃ro sano ṅimiwachi chitsu funĭ yo. Hako ro so horōsote hahiǹoko hetöro, tamota me tokitsure tsųreni nafu tesosorū́. Rahosoyo kayata yone rimṹ riheyṻ. Mohosese ṃihakamu shiminisø yɵ ḿokesa tsu wasu, ra ÿoku suyuko ᶄo keshi ýa.",
+    "record": Object {
+      "a": "Kayaƒu",
+      "b": "Shįso",
+    },
     "sentence": "Ẉomi teƒu wa tṧu m̃a kósu muku, șamesema nakechi mowako ƈhi to yofuneka řanuwana.",
     "someOf": Array [
       "is",
@@ -170,6 +190,10 @@ Array [
     "oneOf": "red",
     "oneOfWeighted": "blue",
     "paragraph": "Yaho teḳuka na sowỗreme retoso, yōrofu ru no nòmi sahemậmu. Hȉna yore sakomayu kamar̃emo susǜ su wo tenunaro, ri yắme riki wochine reya menoha tsusu. Kawanė́ kamimora rikune mảchichi fuƒusuwo suhoƫsuru ťa kamo. Ẉamoraru nè̩ re heĉhi miramä ri ta mỉ, kase honomuma sekữ moko narachi ɍi.",
+    "record": Object {
+      "a": "Tḙne",
+      "b": "Hakutșu",
+    },
     "sentence": "Mehiwona wo homuku fushïseto ke ṝe nŭ.",
     "someOf": Array [
       "that",
@@ -198,6 +222,10 @@ Array [
     "oneOf": "red",
     "oneOfWeighted": "green",
     "paragraph": "Rĩre toya kihi ni ruṝorimu. Temeno rishi se mehị ŧeta manashi tsuṅani wana, mahaƙe menihḯra ku waŕena royore ňachimi kochi. Më kě semu no shirewa risoroshi ku. Soẇo sowa namureșe notasu kamosaha, tocȟi namekushi hiyu ri fusu takirena nɨmo. Mesuchi shise ne mafusochi yanufuka ẘahaha hose munes̩hito.",
+    "record": Object {
+      "a": "Mṑna",
+      "b": "Nɇka",
+    },
     "sentence": "Yâ royutohi sộru nayo ru kokuhase ruto fu, műwa renömako toshi hā tonimoru yosumanu wosởyo hahomi.",
     "someOf": Array [
       "i",
@@ -229,6 +257,10 @@ Array [
     "oneOf": "blue",
     "oneOfWeighted": "red",
     "paragraph": "Ko chi hokito homu na ⱪa, ṥu nu soto fuẅaki rukasē tsuhatė. Tofumuna kosờya shi ma no sec̈hise. Ŝa he ma re ko. Ḣi su yoro kǖ hekahȁ runushi, hekimi nomu ɍu kefu fumȧhe horutǟ.",
+    "record": Object {
+      "a": "Rorunuŷu",
+      "b": "Mukotetà",
+    },
     "sentence": "Mokŏtsuko haremiho mo ne yahiẗe himesḧite yașhihasu yokiṧhi.",
     "someOf": Array [
       "you",
@@ -261,6 +293,10 @@ Array [
     "oneOf": "green",
     "oneOfWeighted": "red",
     "paragraph": "Hitosote ṉi munem̃o çhiyomi koho ho shinuho ṉorowa, ne semetsū̃wa wo ňo no yosekeko fȕnurunu wakoyu. Rų misȕto tanehe nikafu retsu tsunake nasawo, tsumomutsu ǩi suⱨa nomene roremawa. Rereṁu ƒuhe noho kimonusê̄ kari, me rirufuhe no ho kera sukowashi memiyoya yuřochi. Tefuyame sǚ kukiṃo temonits̩u nǐshi kato. Nimoyo ho mi re hā nĩre ňe.",
+    "record": Object {
+      "a": "Teresufǜ",
+      "b": "Rusĥi",
+    },
     "sentence": "Tonaka hi fuyayata kate serimi tsurinewa ninesamo ha, ŝayamamo sechi tsunehoku ḵosa hetamuko.",
     "someOf": Array [
       "it",
@@ -291,6 +327,10 @@ Array [
     "oneOf": "red",
     "oneOfWeighted": "blue",
     "paragraph": "Raha se shiƙoya sě tefu sohitsu su, heɍomamu yaṅutora keso tamiso su küwora. Kesǒ yahikina ra kinashichi tsuķunime kutsuchitsu ȓinoto tomu. Tese meruyo kōseme nunuyṓki yora ɏuwawoku. Ṉemiha kashirita ho ȓeku tsuke.",
+    "record": Object {
+      "a": "Yǻkekeso",
+      "b": "Ḱikoyu",
+    },
     "sentence": "Wa seseyo rạ mataha ri niḟu.",
     "someOf": Array [
       "i",
@@ -319,6 +359,10 @@ Array [
     "oneOf": "blue",
     "oneOfWeighted": "red",
     "paragraph": "Ri neteni ru ňu ta fȕraku me wahara. Wợne no taṧa nome ẖayunera yohễta. Ňesusa kế hahȏ hamu ẗanoretsu ku haẁora. Hem̃otsu senesaso kayaru ṋusasate semuni, ǩitsu tesekofu chiyu yokemu tasonore.",
+    "record": Object {
+      "a": "Nëhi",
+      "b": "Surẹku",
+    },
     "sentence": "Mi wosa ya tehờ rihȏchi marononi heke me.",
     "someOf": Array [
       "are",
@@ -349,6 +393,10 @@ Array [
     "oneOf": "blue",
     "oneOfWeighted": "blue",
     "paragraph": "Yunomomu hosa yasu takahi riyurure shiwo. Somȧnome munuhi hor̃emi sæ kesoma muranu samuhợho. Yu hḁri yukeho mi yu wakake wawowo kikuỹare. Rumuyori tsu sokũnami taku kikó womiretsu soterusu rurara, renikishi tawa ṣonamo fushi yų̃te tsứ. Ŵoso he wanetsuhe te risewami shitoshi.",
+    "record": Object {
+      "a": "Merũchi",
+      "b": "Kemamǐre",
+    },
     "sentence": "Hiriḳuho no ruka nǻ mĭfuhe taku yo rarehatsu, chikiyǜ yakowaṁi soshihifu tsutậru rokeme ħa muku.",
     "someOf": Array [
       "too",
@@ -380,6 +428,10 @@ Array [
     "oneOf": "blue",
     "oneOfWeighted": "red",
     "paragraph": "Ranuroyo ririra muyumawa ꞧokikero wasoré̩ni rowo kareto hṍ. Wonefuno nichima romanimu yoyome hỏyani sumakeru na, muyanu kė́noru kehe tsukĩ yo. Nehaki nu ri ꞩa kekṍto shisuniki ẗe, fufutsu chirewőku nimaki kukikuka yỏrato. Sasǜ kasekume keku ra nuko chichinari tsunoȟi, romonuru hi noyunu ho he sahoyomo.",
+    "record": Object {
+      "a": "Chinihihą́",
+      "b": "Kǻmuka",
+    },
     "sentence": "Ra ke kise nenoyo tomo yunako hõsowa hini.",
     "someOf": Array [
       "you",
@@ -412,6 +464,10 @@ Array [
     "oneOf": "blue",
     "oneOfWeighted": "red",
     "paragraph": "Ya wàkochi nakote hewasona yớrihi wamiha, tẚ ṱara r̃ihe wonự hamena toyỏ. Mi m̃e yotosữ hihi muniyuta ne yote yone. Moyọ kimihiyu yȱmimiru se r̃ochi, nȗ rė̃sa yutofu ʈoku norakuta mu rosekiho. Ỵo rere kimu ýoru teyaya tefumi kiǩiyatsu muwò. Nohase rewose netamo ra chimumonu yuho.",
+    "record": Object {
+      "a": "Mahaťo",
+      "b": "Neṛe",
+    },
     "sentence": "Ruhako moyashi keⱪunimo murorurḁ sǘri sumḯhara mṏ ẁoriyo, nusa ko rựsoyora rufukane shimuto chisaꞧo.",
     "someOf": Array [
       "256",
@@ -445,6 +501,10 @@ Array [
     "oneOf": "blue",
     "oneOfWeighted": "blue",
     "paragraph": "Mashi tsusekiho woki ñu woshiňe meṅa chisasemo. Tḕma katamine yoņinini rošoto sawofu kaţsu shisenenu. Hochise mo se hȃ rowakota toyo tocẖike ma, saheri misato kohiýame ⱦe misawomu. Somuro tsusachi shi ǩoke yaƙera chinomi tamusữ maɽo, ke wa te rȋmo nayṑyashi.",
+    "record": Object {
+      "a": "Hokā",
+      "b": "Ẇoto",
+    },
     "sentence": "Koho su tayako ru tanaru shiko m̃o kinomohi.",
     "someOf": Array [
       "it",
@@ -475,6 +535,10 @@ Array [
     "oneOf": "blue",
     "oneOfWeighted": "red",
     "paragraph": "Ñi sohō nushimesa rutachiha mineta muhe miworo roke. Kifǜre hohano yaso wawa ꞩhi, sete ra nerahiha sesu remẚkayo. Keyore hesoro natemaka chir̃o yuteḟumu ru sorutsuku funi. Ḿishinoke ta kȉ heso ṭsume. Ⱦsu minisefu tsukaŗonu rasokaya mumushi futsu reru meta, kure tates̩hinu hi satekema yatễ tata ruyosoki.",
+    "record": Object {
+      "a": "Tsuminȭ",
+      "b": "Ýuhefu",
+    },
     "sentence": "Yohikare kofuha yofusa kesa ḿo neṡa, nafuta tsu nahonato rusurâho mominoho yahi.",
     "someOf": Array [
       "colors",
@@ -506,6 +570,10 @@ Array [
     "oneOf": "blue",
     "oneOfWeighted": "blue",
     "paragraph": "Rikohệ nokeša sa ka kachirutsu ni. Chimira remichi neró̩ho mekakiŝe numa nɨ sonuyu yồheka. Tamu wąkeyoka hȱmu ĥemikoru ᶄi sosakeyo, muhokenệ misuno yukakito tokuhaha ȟechifu fukumi shï. Fumehara se hesoko ke fu suhohoya nate.",
+    "record": Object {
+      "a": "Ronurøri",
+      "b": "Ruyakefṹ",
+    },
     "sentence": "No sewaki to sarỉ no ruhewo.",
     "someOf": Array [
       "that",
@@ -538,6 +606,10 @@ Array [
     "oneOf": "blue",
     "oneOfWeighted": "blue",
     "paragraph": "Fufuką̃su wasonaku kure muku ni mumera setoshika sứkamo. Tokǐyo himọ ke yayu kakēra tṍ ȳushinuho miya, tsunu tṣu tsuyằ roruraṁi takota woħi. Marichiru nįwake chimeke nǡ muri momiṁa tatechi, ra warimeku miro riho yaŧe ya tsushimeyu. Ƒu waremo ta yumo shiraseyo, ma rotato kime ketonu shisaroyu chitâyuke soho. Chineho wą̃ne funirḗ sokiȳo temiho kameya, nusuňata ĥa nushiseyo kone mukeku tahikohe.",
+    "record": Object {
+      "a": "Tsunemė",
+      "b": "Kiţa",
+    },
     "sentence": "Nōrohi wotǟso yukesote rurira muhayo, hataḥeki miro chi mu harurifu kinese kumu.",
     "someOf": Array [
       "think",
@@ -571,6 +643,10 @@ Array [
     "oneOf": "blue",
     "oneOfWeighted": "red",
     "paragraph": "Kiru mumetsṳse hokorasu tsu surimasu, roke shiwȏ hi hashinu ẘahe. Ku ṩhi nusanarɵ ȓaterime so nuni yurani rune, yusesefu reyusete sanuto fuma hehehė́no ho shitororư mushi. Fǚ mahaṃa mu tsutefuri su. Mǎro noneyo wahe sảyoku yukenu ka yunè kushimi.",
+    "record": Object {
+      "a": "Kįmu",
+      "b": "Yumaḿo",
+    },
     "sentence": "Yahimite nȋ meṭe miterų̃wa tỗ.",
     "someOf": Array [
       "is",
@@ -601,6 +677,10 @@ Array [
     "oneOf": "blue",
     "oneOfWeighted": "red",
     "paragraph": "Katsu chiki hemoru hosesá ʈe sosumi taẖake, wa fuchi muwasu no chihetsuma. Hiwokeshi ṋahi yakohi waⱪa kesowo rose sesareru somonẫ. Sahiwarû muko mokī̀ho ňi kûyuho ro tsutɵmo. Re fushi yasesa s̩o shimuki ꝁofuna wǻsake fuhe, hite someshino rochi kæyoku satṡuhate netø tsuhini keyu. Hi ki mimore fuƫo morɵ ma ha ᶄa, kuminasa ninihe hashitani yumeka ne fùnuku womawa.",
+    "record": Object {
+      "a": "Kǡhaku",
+      "b": "Yū́ka",
+    },
     "sentence": "Tena kȱ henakosu mi watsuruyu sasuhima hḁmumoka hohe, nuretaha sű hihosatsu ka yöyo wanekṷku fuwȧyu here.",
     "someOf": Array [
       "256",
@@ -632,6 +712,10 @@ Array [
     "oneOf": "blue",
     "oneOfWeighted": "red",
     "paragraph": "Šhike heṩohako hefusoni kimi nehosu nokake kihi, nosȏkisa sumise sǿno koru ri ᶄu. Na rokitese ni ẖiyochi woyoṁani ko, tewóno ḿu mumochi marotohi suromano. Mehahehe tǿke suhi su ĥi hitekowa. Ḣa tekuwa rihakina toki kaķe mi kikoho, ta rụyu kuyu ru nayochiki ɏu. Koro riremo yosehȫ tenoẙu yashi resahosu ni.",
+    "record": Object {
+      "a": "Mitsuyã",
+      "b": "Chiñi",
+    },
     "sentence": "Teyowa nukėyu ṡo rawami ꝁe kisani, kimesome ra morahamu funė́ro keśe keme mitatonu.",
     "someOf": Array [
       "that",
@@ -665,6 +749,10 @@ Array [
     "oneOf": "red",
     "oneOfWeighted": "blue",
     "paragraph": "Yohiku ḱi kir̃ahi muwo kerayo rakeṋa, hewo kuhiteme rokaneke toÿu tako nỉrasu nekosakả tachichiro. Sušo kiyahi hǎ heṁuko no rų́ ḿi, ruꞧute kihinisa here wowo samufuho. Ƙe kusuna noshiki konu sosusaka roka mimiku mesomi. Metā netoyuso tehane ŷa ỷo ĥa ros̩u.",
+    "record": Object {
+      "a": "Chiseȟi",
+      "b": "Kurakɨ",
+    },
     "sentence": "Sutesunu raka ÿo wa toyotṏ tsumoyo merisu ŧsuro.",
     "someOf": Array [
       "too",
@@ -695,6 +783,10 @@ Array [
     "oneOf": "green",
     "oneOfWeighted": "green",
     "paragraph": "Neyoma sehi ŷotsuku maṁu mȋ yoketako, hayu chihisasu keriro funotane ḫetamuno. Hakusakį̃ yữka womi kuki tasotano nahochike sera. Sutatare tễharehi ⱪimahama rumuwako rȕ so neyukire. Rasaⱪoma ⱦoha ƙisoho hi yổtsukuso mịse niname, wo ⱪahatsu yananuẉa końiru terefuko. Homatare susotsuko ḳa tetṧu kṵni r̃anoha muhekaho, mɨsu susȫrefu nuwarumo semimê nakichi.",
+    "record": Object {
+      "a": "Kutafumễ",
+      "b": "Tsuröhe",
+    },
     "sentence": "Mi şhi sako ⱨorisami rimẽsoto, wayōkeho wa hinisa fu nima.",
     "someOf": Array [
       "i",
@@ -725,6 +817,10 @@ Array [
     "oneOf": "blue",
     "oneOfWeighted": "blue",
     "paragraph": "Ro mi ŵo kứki tsunihẹ. Ñoshime maka taḿite șu mishiruṁi rḕ. Nuniwo ñehe nara keyaro ỹafu. Hǻhemo suwore sumohe tsukunare tsumo.",
+    "record": Object {
+      "a": "Kiwahê",
+      "b": "Koyotsuhⱥ",
+    },
     "sentence": "Yuniwo yochishi seta chifuchi ṩohoshi.",
     "someOf": Array [
       "i",
@@ -755,6 +851,10 @@ Array [
     "oneOf": "blue",
     "oneOfWeighted": "red",
     "paragraph": "Chiroṇa konaya ho wonoke yunomu suto tsu, tanayuwo hosakachi wo fuyaṛo rȯ. Romi kororo nehonu mờ murawotȏ tsu kayā̀ri ɽonone, su tete suku chìmenehi kamamū́ tsū̃. Kayo ru maka ma ro kureyu ne, mikenewả nṹsurato ċhiyo teyoshiwa rǎ kefuha. Taho totasa nini wa nɨ neyakute fuyato keteya, kene ho chikitayu makaho hayuketa toha wokaƙi sune. Yonarotsu ḳe tsứkemone kohɨto ré ṭo.",
+    "record": Object {
+      "a": "Mohểka",
+      "b": "Rịkunema",
+    },
     "sentence": "Sa mifunoyu towo ma mewomeno neḿuha kohorocẖi, roshi yukasanu mamirỉra mǜniko ketakahe retehowa ho kokiku.",
     "someOf": Array [
       "are",
@@ -788,6 +888,10 @@ Array [
     "oneOf": "red",
     "oneOfWeighted": "red",
     "paragraph": "Kaḩiyamo wokihete minite tsu tsukuno hȫ to yoheseyu. Chirahimo hareto kafǔ rametoyo mǡkishi kỉchino yarohohi kuȳoha, hayu ka hi rimeĥisu riraḥe neyofuso. ƫa tsunuse fus̩o soňi rịko ḫayorute. Chisa tem̃o kurisuru r̃e risa, me wokisa yȯsuho nu ṅema.",
+    "record": Object {
+      "a": "Rehỉka",
+      "b": "Rẩhofura",
+    },
     "sentence": "Hi kȅ to minefu kumota ya muma.",
     "someOf": Array [
       "too",
@@ -818,6 +922,10 @@ Array [
     "oneOf": "green",
     "oneOfWeighted": "red",
     "paragraph": "Rō ŧe sani nakumutȯ kusameya nehokura ki hä, wanasoru ṉichi sasuṁo ruyo ruɏanuho yoⱨa tsu hahakoya. Kinusa ya kewa kasorichi he re yu kekøru, te tsumatoya țsu haretomi tsufuwằki komamuno ša ṝiya. Wonoyumo ku keniẘa watomiṫo notsune ẙa, miri chiṛeromi rihe ṧu yũ. Nỉ kerire kimoyuke riwariwa hinanɇ rekaho hamu. Mayasuke ǩukeke honene wonunuku ńo, nufu ta yono hanisesu nawari me.",
+    "record": Object {
+      "a": "Rẚsenu",
+      "b": "Rosȁ",
+    },
     "sentence": "Hisa no suṋutsuchi shi kimeyu ru chiwasetsu hī, kesoko mohisa kě soma reyafu numirito masosu hehe.",
     "someOf": Array [
       "think",
@@ -848,6 +956,10 @@ Array [
     "oneOf": "blue",
     "oneOfWeighted": "red",
     "paragraph": "Kusomo nê̄ hi hi te tokamiwa, rū̀ hoka tochinama ꞩunamire tȯchi maṥachi ri. Norihanề risḁ mefu kunumo roroku rekuta tanuni ya. Woku rakoṃu tsų kosotšu kawo hami roȑosaha fusaɽa, ki hi nḝtsuho yusunehá yorunishi susosunu. Hofū́sere yumotȍya riḩechiri yờre sahowaku su samukeꞧa, suyorī sochimichi seᶄisose nuṩa ka niharu.",
+    "record": Object {
+      "a": "Kenorowằ",
+      "b": "Řitani",
+    },
     "sentence": "Toya šo yo sariwanu yữtsu.",
     "someOf": Array [
       "colors",
@@ -878,6 +990,10 @@ Array [
     "oneOf": "blue",
     "oneOfWeighted": "green",
     "paragraph": "Hayatsune tsuķite sefu nehichike chimȇ meyo, shirahi hetohimo seshimo te hinaroki nayawa. Su sumareru homụyo yukimayo nõkime sekèshihe totorehe. Sṷki sohehefu ko yuwomǒ tsuhoroshi, shi numi yúyo rama koyoso wohohofu ri. Rataru teya nusoṩhite wokufumi ka. Ri meȓore rềso riko sôta tsumuhe mesa honu.",
+    "record": Object {
+      "a": "Waꞩu",
+      "b": "Naroṡa",
+    },
     "sentence": "Ḟuso yuninetë ketetama kakȉ ƈhikeki, chineneku hera ṡhi yoyofu shikikufu yatsukeka re to.",
     "someOf": Array [
       "too",
@@ -911,6 +1027,10 @@ Array [
     "oneOf": "red",
     "oneOfWeighted": "green",
     "paragraph": "Chį̃surese hoṉu keka niyashi fukiyuhe funɇ, newonite romusoha namoyo mirasühe ṫa worome nunimate ra. Mumumawo no kemorasḧi riwohemà muhota ruša, romimu womuhi ḥohi satefu noyunẩso mimifu mahimeki sḣiya. Wariro semoțosu he yofuyuha sachi. Konanứ wasonịte fų́murune niku mữ hānoheho rimoro yờremuchi.",
+    "record": Object {
+      "a": "Merìru",
+      "b": "Hinomṑmu",
+    },
     "sentence": "No chi kore tsuyanohi ŷora.",
     "someOf": Array [
       "beautiful",
@@ -941,6 +1061,10 @@ Array [
     "oneOf": "green",
     "oneOfWeighted": "red",
     "paragraph": "Runą́wo shimumero tớyo muḱe nā rű, neⱪiwa ṣo se yahe rutsǘ wowo. Shimuhayu chikerẵwa wakame heȑe tsumĭkuhi mïno, miheȟimu ḵeshi rǟnihochi raha sare kimu. Ra mi hahohi häyo towo şotsumu ta suyahoṧe, kumu ra takomayo tsu sakohesa tehori. Keşaka ma mo hofuhane ȳaya, m̃a neẅo ki hȯ tewatoho ma.",
+    "record": Object {
+      "a": "Wosā̀",
+      "b": "Tėnaka",
+    },
     "sentence": "Ţsu riho funeranu mesohi woyomamà.",
     "someOf": Array [
       "think",
@@ -972,6 +1096,10 @@ Array [
     "oneOf": "green",
     "oneOfWeighted": "blue",
     "paragraph": "Sumuyo nachina nŭ re rẹhe tokokene ħonu, ninomaȓu su wãmiyame heśoke mesṷ ruyote tė. Fuñuchi yäna nuḧo rufusuhe hi, kõ niyu nǚ ronïshimo tokukowo moroke wokosakợ. Fu merohȧ nahechiwa funa ņima sewo. Kakakeku riminuwo tosute chinete kunoseꝁu no soyu, waho kakeṟo rire tsuremasu nosukori kashi ruwakiwo me. Mu sớmehe kuyato se setsu tsumṓka ka, riwatsuma nohehayu me shi ħe kewowȁsu hiro yum̃a.",
+    "record": Object {
+      "a": "Ņehi",
+      "b": "Ñukiwosa",
+    },
     "sentence": "Semuta soshi tsuwani mushirí mi, nikeḵo ṃi ẉa nuteki kekuseyo hohas̩enu.",
     "someOf": Array [
       "i",
@@ -1004,6 +1132,10 @@ Array [
     "oneOf": "red",
     "oneOfWeighted": "blue",
     "paragraph": "Teꝁota takoritsu keyaranu haṥeruka mu heḳi. Kokefufu mu yore womare roshi somihari nitãhota. Mo ṙaho yuyu tota kurumihi wasosĥiso. Rȯ ṫewosono shï terimane mitsuyo mimo, yasowo soro rayaꝁo ńo ki nesaḿi teke.",
+    "record": Object {
+      "a": "Kumitǟ",
+      "b": "Chinṳmo",
+    },
     "sentence": "Muritoya yarufu mukukeke ẖa mohe fumohiro.",
     "someOf": Array [
       "i",
@@ -1032,6 +1164,10 @@ Array [
     "oneOf": "red",
     "oneOfWeighted": "blue",
     "paragraph": "Rehekowa nu ḿi ȓu chiŕo reẁa. Rireteki mi mosa rahe hokoteto, riyằ ya wasu yả mimiso ŝe. Mo yona ṛo seyumito mamuhata fuʈsukuno, neyuho minấhi yowarusu nerehoki horutamu. Tochi wamắni roẇanomi ha keyahihe ninerusu nu, rihofṷne tonane yawa ratamʉ muku. Meheẖi yumȉ raķo same me.",
+    "record": Object {
+      "a": "Ɽahoke",
+      "b": "Noħamano",
+    },
     "sentence": "ᶄukete mute tochi ḵiyohoko rose shihisợ nochika, nɨmoru wane hitộnu rṵ ẘa kiyȧ.",
     "someOf": Array [
       "i",
@@ -1061,6 +1197,10 @@ Array [
     "oneOf": "green",
     "oneOfWeighted": "red",
     "paragraph": "Wakikoko kenutoyo yaterū́su noheri rokuyu nợ henochino wachiyuno. Sⱨi tsuta mayachi mosowome yaka se sayu kurakiko, ka sófumu rusu mo sa himeso ⱨa. Ṩanayumi keke fureroke mamo hahatsuwa meku. Hakeyu ya kusani ťa nemimi woho seyonotsu tarukako.",
+    "record": Object {
+      "a": "Womèyoho",
+      "b": "Ṅoru",
+    },
     "sentence": "Raṧena rayʉtaru woshikaka misema kashihe yaho mowane.",
     "someOf": Array [
       "are",
@@ -1092,6 +1232,10 @@ Array [
     "oneOf": "green",
     "oneOfWeighted": "red",
     "paragraph": "Fuchihi seru saȟonoso yotoyurẫ hi. Shine marīyo nime hằ hoyo ma tsu. Kayự kasu fusomu kuyấre yuteṉo ʈsuki keshimi tǫsune. Nu rờ muwata ḿa ṭsuhosehi nukuta yuhe. Yorokomi maha shihamu ṁo yakurara mehamu.",
+    "record": Object {
+      "a": "Kuworuǹi",
+      "b": "Yukỏ",
+    },
     "sentence": "Nushi saresaku hetoneshi mu wanį̃chi rotsusuno shihenita mashi, ḟusuku rekohafu tesukese futena rǿ masehine menuroshi.",
     "someOf": Array [
       "are",
@@ -1124,6 +1268,10 @@ Array [
     "oneOf": "red",
     "oneOfWeighted": "red",
     "paragraph": "Nisuma fuwonura ha wasusa he, kireyo hahe ŗemo nekameru ṁa. Koreseyo fukomo su ťe ri ņome ṫsushiyu shikohe. Te nawa sumi wắta ki mi wosê yo. Satemate ro to so ni ḱi narokȱ ẁamu.",
+    "record": Object {
+      "a": "Runarenẳ",
+      "b": "Fuşhinomo",
+    },
     "sentence": "Ɍimo ȓimume kaƒu yote katoko nihoma.",
     "someOf": Array [
       "beautiful",
@@ -1152,6 +1300,10 @@ Array [
     "oneOf": "red",
     "oneOfWeighted": "blue",
     "paragraph": "Ne ņo yo nototari rurina keso. Temumimȏ rorehi hichiru noną́moyo ḿorumafu kahȁnime yaki rumewofu, ka rekirở tsume sarefu ńa yaré̩ ne yar̃asu. Rohi me renehisa ho romure kuhayù. Wachinuħe fukậ kasakune kayakuto washihe. Ku sę wo kuriɏu wo ṟu hesonoho ķaru.",
+    "record": Object {
+      "a": "Ṋeharahi",
+      "b": "Yus̈oho",
+    },
     "sentence": "Miki kɨ hosoritsu rerasa noyuchî, na sutsure sehḕ yuki keỳo nį̃ neriku.",
     "someOf": Array [
       "it",
@@ -1181,6 +1333,10 @@ Array [
     "oneOf": "green",
     "oneOfWeighted": "blue",
     "paragraph": "Yashisose rɇnura kihihaha ĥonesoyo keme. Teŵoha tṏra chiremi kakeri ħowoke susehako so, kiŝo no kusuhe nika shitsuyo tsumimuya shiħomise fukoshi. M̃eno ruyoyahi kamu muke ṇisu ǩe, nemora hanenoka rusẚho tsusohano sonune rȯ. Ŗuhono mekę̃ ne ro somumomo.",
+    "record": Object {
+      "a": "Ɍiwo",
+      "b": "Yuwỡsuna",
+    },
     "sentence": "Tayaniyo rū́natsu shiheyuwo rẽ kinǡ kuråre ṛa.",
     "someOf": Array [
       "is",
@@ -1212,6 +1368,10 @@ Array [
     "oneOf": "green",
     "oneOfWeighted": "blue",
     "paragraph": "Rỉ tokuri worone takashimo yurōmo. Kuwa ṡhi tsutohi suke hȧmi meyuro ro. Nusaka kamumayo wo rukiyuyo fuⱦomi sųho hashinisu merekimu. S̈uhe reriśu mī̀ yặ newahifu tsuru sờ. Reneyoyổ ṃo chiwamono resoto yosukuwa yủke rố.",
+    "record": Object {
+      "a": "Ṁosomi",
+      "b": "Ǹurate",
+    },
     "sentence": "Ro miruta chirate wokesemo kama hec̈hi soya, rese ṥe mi yoru renu.",
     "someOf": Array [
       "that",
@@ -1244,6 +1404,10 @@ Array [
     "oneOf": "blue",
     "oneOfWeighted": "red",
     "paragraph": "Fu serimos̈e hesĥiniki mis̩hi ṫa samo nâsatesa he, hẚ kasete wawahika musushi setsu ku. Memofuyo ruro hễru tamōko tonasora numa, hanuǩahi tesewo mesa kắ saya. More yamuchi suhiwa tsu ỹusukota toyoruri, na mureyotꞩu roma yo seromeya nomome yasewayo. Kikisa shihenemu temecħi sa te ruyaşa ri. Sumurasa mǿhe ką čhi kukichi, mi nira maseshira yoyarine yahita seyȍmeke ṧu.",
+    "record": Object {
+      "a": "Ňiyomohi",
+      "b": "Shikihê̄",
+    },
     "sentence": "Wa tema hosuse royo kukataru ḱo hatsumoro, ro kuraso ṧe yo ỷukefu ketanošo.",
     "someOf": Array [
       "you",
@@ -1275,6 +1439,10 @@ Array [
     "oneOf": "red",
     "oneOfWeighted": "green",
     "paragraph": "Kòre wa kefu hono ni, chi chito sa ỵame nemê neyàme hafu. Keyareru kenửho mirochiro ṝi wṓru ru he. Metsure tsų̃kurutsu kawora katosa towằkoha tsʉ tehikimu. M̃i mani sȏrinere soruhofu yusoshi nutona, taku muyuma shi yoteke tsurushitẫ.",
+    "record": Object {
+      "a": "Tsṷsushiso",
+      "b": "Moŗechine",
+    },
     "sentence": "Niyore notsusesa royø karoshise mokờwo ya sĕwoyura ko.",
     "someOf": Array [
       "256",
@@ -1303,6 +1471,10 @@ Array [
     "oneOf": "blue",
     "oneOfWeighted": "red",
     "paragraph": "Rǐme resų kȇ ṫsu ne hiso kǘ. Chirutsuwo runosu fu tanawoho ṛe, woriĥa so mikoruta hokusoṧa sơ. Yahata wahe yokefū́ fusora ṃewoha, susoromi tsutả kishiyawo fȕmuwa satsuhi ro. Notsuke ra hosu woya menuya ḧasuke. Tsu fushiteṯo kahoṉu hashiyo ki roŵoreka neka kuỳumuke.",
+    "record": Object {
+      "a": "Ṝasaro",
+      "b": "Nashiwasà",
+    },
     "sentence": "Ṃukimo waruma nini sayuni ra, ńu neke mohochiwo kochime miher̃u fuwarito.",
     "someOf": Array [
       "is",
@@ -1336,6 +1508,10 @@ Array [
     "oneOf": "red",
     "oneOfWeighted": "red",
     "paragraph": "Fuẏoro mirǜta secḥi ku roňo shi ha. Sa hihi numarana su s̩enayo mutafu toṡekowo. Shiniyu niha soru suwori fumiyo senukoɽa hete konitsuha. Re meko so ṩhi saratsuwa kử chirano, teheta ṟe kechikeso kanuhǻwo rureƙiho nu kitổyoyo teshi.",
+    "record": Object {
+      "a": "Miwonõ",
+      "b": "Ŝota",
+    },
     "sentence": "Yaýu chi kunima wo wanarȋ ǩe kosariha.",
     "someOf": Array [
       "colors",
@@ -1366,6 +1542,10 @@ Array [
     "oneOf": "green",
     "oneOfWeighted": "blue",
     "paragraph": "Kihiṱeyo mu ṉisoku mini tesemoha wotsǔ rowo yoŵamiha. Yaho natetằtsu tashiku ne wo fu ne roƙe, hasarefu ma mớke chihire hesa suto chimịso rurura. Roke ꝁa ḵu mukaṃe taᶄumu. Kė́ mesehito tsựka metafu ru yumumani. Rako sariho yukaka narī̀ne nosoyora rorika waseto.",
+    "record": Object {
+      "a": "Kuyarữ",
+      "b": "Sasḧisunu",
+    },
     "sentence": "Setawa ranehe nesa ka taso ri sohemo, furunihi kotemowa mayu temeho towakota noyușoko.",
     "someOf": Array [
       "that",
@@ -1396,6 +1576,10 @@ Array [
     "oneOf": "blue",
     "oneOfWeighted": "blue",
     "paragraph": "Ƙeshisa kė serateku ţsumuso ḣa riḟu, shikenayo hiteṃu ku wonana nuyẳ sūho tsuṧafu. Kitsuchi nemahiko tsų́moteri ko rinato rosu nesū̃ ro. Taki ro kayȁmo mirohằ ƒu ṁotsu yorohiṱe. Hinễko sumami wanu kanǜ fuhemiso.",
+    "record": Object {
+      "a": "Riteminȯ",
+      "b": "Tohóta",
+    },
     "sentence": "Kesomuwa he chisuhawo hoka sehoyo.",
     "someOf": Array [
       "i",
@@ -1426,6 +1610,10 @@ Array [
     "oneOf": "green",
     "oneOfWeighted": "blue",
     "paragraph": "Tahe hehimiƒu ẏa nu hakutomu nano risuẉo na, nu suroni wóke rokihono wa mise fururḯku hekuki. Ta sorã kehako koruwochi kori re ḱumihenu ṧu. Mosuro ṅuno keyaꞩhi ruho rakońa. Shihờ muṃuka tawosầha nufuniyo kasomi heri, same naṋuku ki haworemi mi kareto kuwa. Sǚshichi ru kari ts̩u ronatamu chitesumi, chisu miyu tohiyuso ḿi ỳufu śekewo.",
+    "record": Object {
+      "a": "Yunèwa",
+      "b": "Kewỗ",
+    },
     "sentence": "Maro wofusowa tanosu ninắ konuhoru ta sa tsu, ṃo morȅmafu sake sero tꞩu ȟeyo.",
     "someOf": Array [
       "colors",
@@ -1458,6 +1646,10 @@ Array [
     "oneOf": "blue",
     "oneOfWeighted": "red",
     "paragraph": "Misamu ṁa kenare ḫamo ra miyurahi ķosato. Ķuto riyone ḿo fuyo rere tsutayani. Rishiyoya kishiteno se neteritsu sa teṟe kutane futsura. Somike rằse ȳa shimewaḿu muṅomeki chikù fururoro ņomeyaro.",
+    "record": Object {
+      "a": "Chihẚki",
+      "b": "Tafŭ",
+    },
     "sentence": "Shiŷase nina tḗhochi roka sawateru hem̃i ḱonewaro.",
     "someOf": Array [
       "think",
@@ -1490,6 +1682,10 @@ Array [
     "oneOf": "blue",
     "oneOfWeighted": "blue",
     "paragraph": "Mutoma su ţa ka shihomushi. Yarimito ramosota koyate torį yotekeḳu hæya washirori hâ, tsura sėmose ninetsuke noyuÿoki mu. Ratsurẩfu tohichiku kisésanu kise tsuyasa serakị. Hi ní ne niyosochi nį̃ yotsunu mę̃ ɍewo, raki mishį̃ wa ḳi ⱪa ronamawố. Seta rïhiheyo sore suhi manetoha hihekiyo, tsuso nateseto toruchi tahiņu mikore.",
+    "record": Object {
+      "a": "Nihiỷafu",
+      "b": "Heṙa",
+    },
     "sentence": "Himetsuni seku wa hǐ manuhase karawowa sesori menẹ, ra yosewo shiyoruno c̈hi kihanṑ nenahona.",
     "someOf": Array [
       "that",
@@ -1521,6 +1717,10 @@ Array [
     "oneOf": "red",
     "oneOfWeighted": "red",
     "paragraph": "Tsukimifu tecḥikase reketsuchī shiꝁunota rũma shikiwana ṙa. Soku rumiriwo rachime fukemika rā̀heme ņoyo ŗuko. Toto hokesê̄ ñe rokuna ýokahesu noyumi wakewa so. Fumekine hǫmamono nememaya ro moȳoya ḵinisu.",
+    "record": Object {
+      "a": "Maɽami",
+      "b": "Karṍ",
+    },
     "sentence": "Sế ketsukota kȃmafusa seņohiwa tamemȭya ḟu fu.",
     "someOf": Array [
       "256",

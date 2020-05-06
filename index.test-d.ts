@@ -7,6 +7,7 @@ import {
   float,
   word,
   tuple,
+  shape,
   someOf,
   times,
   join,
@@ -26,6 +27,15 @@ expectType<number | string>(
 )
 expectType<(number | string)[]>(someOf(null, [2, 3], [int, word]))
 expectType<number[]>(times(null, [2, 3], int))
+expectType<{
+  a: number
+  b: string
+}>(
+  shape(null, {
+    a: int,
+    b: word
+  })
+)
 
 // ## constant items
 expectType<[number, string]>(tuple(null, [2, '!']))
@@ -39,6 +49,15 @@ expectType<number | string>(
 )
 expectType<(number | string)[]>(someOf(null, [3, 3], [2, '!']))
 expectType<number[]>(times(null, [2, 3], 23))
+expectType<{
+  a: number
+  b: string
+}>(
+  shape(null, {
+    a: 2,
+    b: '!'
+  })
+)
 
 // ## currying
 expectType<(input: Input) => [number]>(tuple([int]))
@@ -52,6 +71,19 @@ expectType<(input: Input) => number>(
 )
 expectType<(input: Input) => string[]>(someOf([3, 3], ['a', 'b']))
 expectType<(input: Input) => string[]>(times([2, 3], word))
+expectType<
+  (
+    input: Input
+  ) => {
+    a: number
+    b: string
+  }
+>(
+  shape({
+    a: int,
+    b: word
+  })
+)
 
 // ## join: joiner types
 declare function numJoiner(v: (number | string)[]): number
