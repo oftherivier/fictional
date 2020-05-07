@@ -35,10 +35,18 @@ function words(input, opts) {
   })
 
   var result = word(id, firstOpts)
+  var next = result
+  var prev
 
   while (++i < n) {
-    id = hash([id, 'words', i])
-    result += ' ' + word(id, restOpts)
+    prev = next
+
+    do {
+      id = hash([id, 'words', i])
+      next = word(id, restOpts)
+    } while (next.length === prev.length)
+
+    result += ' ' + next
   }
 
   return result

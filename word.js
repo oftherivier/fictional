@@ -6,46 +6,34 @@ var unicodify = require('./utils/unicodify')
 var defaults = require('./utils/defaults')
 
 var SYLLABLES = [
+  'a',
   'ka',
   'ki',
-  'ku',
   'ke',
   'ko',
   'ta',
   'chi',
-  'tsu',
-  'te',
-  'to',
-  'sa',
   'shi',
-  'su',
-  'se',
   'so',
   'na',
   'ni',
-  'nu',
-  'ne',
   'no',
+  'ra',
   'ha',
-  'hi',
-  'fu',
-  'he',
-  'ho',
+  'hy',
   'ma',
   'mi',
   'mu',
   'me',
   'mo',
-  'ya',
   'yu',
   'yo',
-  'ra',
-  'ri',
-  'ru',
-  're',
-  'ro',
-  'wa',
-  'wo'
+  'kai',
+  'va',
+  'vi',
+  'kin',
+  'rae',
+  'cea'
 ]
 
 var SYLLABLES_LEN = SYLLABLES.length
@@ -65,11 +53,19 @@ function word(input, opts) {
   var n = fit(id, minSyllables, maxSyllables)
 
   var result = ''
+  var next = ''
+  var prev
   var i = -1
 
   while (++i < n) {
-    id = hash([id, 'word', i])
-    result += SYLLABLES[id % SYLLABLES_LEN]
+    prev = next
+
+    do {
+      id = hash([id, 'word', i])
+      next = SYLLABLES[id % SYLLABLES_LEN]
+    } while (!syllablesMatch(prev, next))
+
+    result += next
   }
 
   if (flip(id, pUnicode)) {
@@ -97,4 +93,10 @@ module.exports = word
 
 function capitalize(s) {
   return s[0].toUpperCase() + s.slice(1)
+}
+
+function syllablesMatch(prev, next) {
+  var prevLen = prev.length
+  var lastPrev = prev[prevLen - 1]
+  return prev !== next && lastPrev !== next[0] && lastPrev !== next[1]
 }
