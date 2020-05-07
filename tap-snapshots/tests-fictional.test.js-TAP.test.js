@@ -17,12 +17,12 @@ Array [
     "join": "Cherry Road",
     "oneOf": "blue",
     "oneOfWeighted": "red",
-    "paragraph": "Nimuri chïna wonososo sere heshiniso ṣuhari ņo yohimito, yosonuki warosa maneẘa rureshimi rachi. Roremiko nonutano ḥechi hasema kuwoka mè. Konắshiho kaneko miĥaku shihisute runinitsu he fǖ, kumurori ỷa tsutsure yatofuna wayuriho ṙehe sukoyu. Rohanu suherume shiṅo katsuko sorune riwaku meto wanato. Nanote nu mimemima saha rihe yu hakekito, tsu kǖ satæ chikŭ wanẹwo moẘara re.",
-    "record": Object {
-      "a": "Sofuchis̩o",
-      "b": "Ṧemi",
+    "paragraph": "Nimuri chïna wonososo sere heshiniso ṣuhari ņo yohimito, yosonuki warosa maneẘa rureshimi rachi. Roremiko nonutano ẖechi hasema kuwoka mę́. Konąshiho kaneko miħaku shihisute runinitsu he fǖ, kumurori ỳa tsutsure yatofuna wayuriho ṙehe sukoyu. Rohanu suherume shiṅo katsuko sorune riwaku meto wanato. Nanote nu mimemima saha rihe yu hakekito, tsu kǖ satâ chikŭ wanȅwo moẘara re.",
+    "sentence": "Suta tena nokama mina hö kokįnomo, mifununḕ sa rë wawoni wo hé hesuho.",
+    "shape": Object {
+      "a": "Kuheyatṩu",
+      "b": "Sanekoṃe",
     },
-    "sentence": "Suta tena nokama mina hö kokįnomo, mifununẽ sa rè wawoni wo hė hesuho.",
     "someOf": Array [
       "are",
       "too",
@@ -39,7 +39,7 @@ Array [
       "Cherry",
       "Road",
     ],
-    "word": "Kehową́",
+    "word": "Kehowå",
     "words": "Neyû tahɵ ṣo",
   },
   Object {
@@ -52,12 +52,12 @@ Array [
     "join": "Parkway Street",
     "oneOf": "green",
     "oneOfWeighted": "blue",
-    "paragraph": "Rosa yorǐfu musaru chi tenato rishiɽehe kakaĥita, ritaku nishim̃iko rữ nonimoka sa mậ makenosa rutenoḫe. Morïnaro shikeri suma ꝁanaso wohira su haminuko. Wosochi wohḗ funu nisu yurefu tɵyomoro. Te soha riruwoȑa sukatewo hoyatsuhi shimiké̩ho himuhî rốfuhore.",
-    "record": Object {
-      "a": "Rṍko",
-      "b": "Kishiwaƫo",
-    },
+    "paragraph": "Rosa yorǐfu musaru chi tenato rishiɽehe kakaḩita, ritaku nishim̃iko rữ nonimoka sa mẚ makenosa rutenoḥe. Morïnaro shikeri suma ǩanaso wohira su haminuko. Wosochi wohḗ funu nisu yurefu tɵyomoro. Te soha riruwoȑa sukatewo hoyatsuhi shimikḕho himuhî rốfuhore.",
     "sentence": "Nunuwona şe so ya maseru hȫsokiha.",
+    "shape": Object {
+      "a": "Ṭaha",
+      "b": "Saḵoku",
+    },
     "someOf": Array [
       "colors",
       "it",
@@ -72,7 +72,7 @@ Array [
       "Parkway",
       "Street",
     ],
-    "word": "Furêyoma",
+    "word": "Furéyoma",
     "words": "Soẘonare suwahis̩e",
   },
   Object {
@@ -85,12 +85,12 @@ Array [
     "join": "Parkway Street",
     "oneOf": "green",
     "oneOfWeighted": "red",
-    "paragraph": "Meso tsurorisa tsuru furiruwo rone, kewasu mi note hetotsuta nekorimo. Ménifumi ǹikowome se ñimasu ṥu hềmo. Heme moýato yoriramủ sṏ ḵurukosu hasuse, kunaniwa hấnoho mumehi kakariko hichiho watsushȋne he mirina. Kukite ri sawạra mæyuyuno neta wo, ha ra hanuᶄo yasaṧa hifune yose. Sḫisa yaminama sȗ nure mino worami yasoruna, chiwakaho kỡki motoya cȟi shĩ makì.",
-    "record": Object {
-      "a": "Suyonö",
-      "b": "Nǚnu",
+    "paragraph": "Meso tsurorisa tsuru furiruwo rone, kewasu mi note hetotsuta nekorimo. Mễnifumi ǹikowome se ñimasu ṥu hė́mo. Heme moỹato yoriramủ sṏ ḳurukosu hasuse, kunaniwa hḁnoho mumehi kakariko hichiho watsushȋne he mirina. Kukite ri sawą́ra mẵyuyuno neta wo, ha ra hanuᶄo yasaṧa hifune yose. Sḫisa yaminama sȗ nure mino worami yasoruna, chiwakaho kỡki motoya cȟi shĩ makì.",
+    "sentence": "Ku kenẹ tsuȟa wahose hame ẘa, nehởsu ma hờ hiko hở ẏu.",
+    "shape": Object {
+      "a": "Wahoħo",
+      "b": "Hė́yonuke",
     },
-    "sentence": "Ku kenẻ tsuḣa wahose hame ẘa, nehởsu ma hờ hiko hở ŷu.",
     "someOf": Array [
       "that",
       "beautiful",
@@ -98,10 +98,10 @@ Array [
       "think",
     ],
     "times": Array [
-      "Neƙihonu",
+      "Neǩihonu",
       "Wȭmo",
-      "Nohḁfuyu",
-      "Honă",
+      "Nohẩfuyu",
+      "Honậ",
       "Seẏawa",
     ],
     "tuple": Array [
@@ -109,7 +109,7 @@ Array [
       "Street",
     ],
     "word": "Tomữ",
-    "words": "Richį̃te hasëmi toyoćhi",
+    "words": "Richį̃te hasḕmi toyoćhi",
   },
   Object {
     "bool": false,
@@ -121,12 +121,12 @@ Array [
     "join": "Privet Road",
     "oneOf": "red",
     "oneOfWeighted": "blue",
-    "paragraph": "Wameniki tekọ mari suwano nuso. Nururḕ kika yumorukī̀ nika woňukiyo ƫotsuhi, ruwo ke kemohe ǩi toyata hi. Hotoremi suķanase sanumu nấmefu sosoniso. Yusoya tafusu kusu yo moyŭramu kå meńi.",
-    "record": Object {
-      "a": "Serikǐ",
-      "b": "Yotsuǩawo",
-    },
+    "paragraph": "Wameniki tekọ mari suwano nuso. Nururễ kika yumorukī̀ nika woňukiyo ʈotsuhi, ruwo ke kemohe ꝁi toyata hi. Hotoremi suḳanase sanumu nǟmefu sosoniso. Yusoya tafusu kusu yo moyŭramu kā̀ meńi.",
     "sentence": "Sasemu hera na manamama muya.",
+    "shape": Object {
+      "a": "Hireḣayu",
+      "b": "Mowáru",
+    },
     "someOf": Array [
       "are",
       "you",
@@ -136,13 +136,13 @@ Array [
       "Saḿo",
       "Ruńiyoma",
       "Wotsǜwoma",
-      "Wanậma",
+      "Wanạma",
     ],
     "tuple": Array [
       "Privet",
       "Road",
     ],
-    "word": "Hiteķi",
+    "word": "Hiteḱi",
     "words": "Kớ woṛesere",
   },
   Object {
@@ -155,12 +155,12 @@ Array [
     "join": "Cherry Road",
     "oneOf": "green",
     "oneOfWeighted": "red",
-    "paragraph": "Fusḗya kunuhắ ruwone chineꞧa ṁi. Ruhiwoha kiwomuko motșukine rerorŮhi komomȭ ru, nenį̃ro sano ṅimiwachi chitsu funĭ yo. Hako ro so horōsote hahiǹoko hetöro, tamota me tokitsure tsųreni nafu tesosorū́. Rahosoyo kayata yone rimṹ riheyṻ. Mohosese ṃihakamu shiminisø yɵ ḿokesa tsu wasu, ra ÿoku suyuko ᶄo keshi ýa.",
-    "record": Object {
-      "a": "Kayaƒu",
-      "b": "Shįso",
-    },
+    "paragraph": "Fusēya kunuhā ruwone chineꞧa ṁi. Ruhiwoha kiwomuko motșukine rerorŮhi komomȭ ru, nenį̃ro sano ṅimiwachi chitsu funĭ yo. Hako ro so horōsote hahiǹoko hetöro, tamota me tokitsure tsųreni nafu tesosorū́. Rahosoyo kayata yone rimṹ riheyṻ. Mohosese ṃihakamu shiminisø yɵ ḿokesa tsu wasu, ra ýoku suyuko ḱo keshi ƴa.",
     "sentence": "Ẉomi teƒu wa tṧu m̃a kósu muku, șamesema nakechi mowako ƈhi to yofuneka řanuwana.",
+    "shape": Object {
+      "a": "Tomṷyu",
+      "b": "Niḟutani",
+    },
     "someOf": Array [
       "is",
       "think",
@@ -169,15 +169,15 @@ Array [
     ],
     "times": Array [
       "Kunố",
-      "Niƴomi",
+      "Niȳomi",
       "Řasu",
     ],
     "tuple": Array [
       "Cherry",
       "Road",
     ],
-    "word": "Tekokă",
-    "words": "Mȉyanuki nanaǩise hȇ",
+    "word": "Tekokặ",
+    "words": "Mȉyanuki nanaǩise hẽ",
   },
   Object {
     "bool": false,
@@ -189,12 +189,12 @@ Array [
     "join": "Cherry Road",
     "oneOf": "red",
     "oneOfWeighted": "blue",
-    "paragraph": "Yaho teḳuka na sowỗreme retoso, yōrofu ru no nòmi sahemậmu. Hȉna yore sakomayu kamar̃emo susǜ su wo tenunaro, ri yắme riki wochine reya menoha tsusu. Kawanė́ kamimora rikune mảchichi fuƒusuwo suhoƫsuru ťa kamo. Ẉamoraru nè̩ re heĉhi miramä ri ta mỉ, kase honomuma sekữ moko narachi ɍi.",
-    "record": Object {
-      "a": "Tḙne",
-      "b": "Hakutșu",
-    },
+    "paragraph": "Yaho teḱuka na sowỗreme retoso, yōrofu ru no nòmi sahemȁmu. Hȉna yore sakomayu kamar̃emo susǜ su wo tenunaro, ri yắme riki wochine reya menoha tsusu. Kawanẽ kamimora rikune mǎchichi fuƒusuwo suhoťsuru ṯa kamo. Ẉamoraru nế re heĉhi miramḁ ri ta mỉ, kase honomuma sekữ moko narachi ɍi.",
     "sentence": "Mehiwona wo homuku fushïseto ke ṝe nŭ.",
+    "shape": Object {
+      "a": "Chifuńi",
+      "b": "Ruṝewose",
+    },
     "someOf": Array [
       "that",
       "beautiful",
@@ -209,7 +209,7 @@ Array [
       "Road",
     ],
     "word": "Seşerika",
-    "words": "Nả më",
+    "words": "Nǟ mĕ",
   },
   Object {
     "bool": true,
@@ -221,30 +221,30 @@ Array [
     "join": "Cherry Road",
     "oneOf": "red",
     "oneOfWeighted": "green",
-    "paragraph": "Rĩre toya kihi ni ruṝorimu. Temeno rishi se mehị ŧeta manashi tsuṅani wana, mahaƙe menihḯra ku waŕena royore ňachimi kochi. Më kě semu no shirewa risoroshi ku. Soẇo sowa namureșe notasu kamosaha, tocȟi namekushi hiyu ri fusu takirena nɨmo. Mesuchi shise ne mafusochi yanufuka ẘahaha hose munes̩hito.",
-    "record": Object {
-      "a": "Mṑna",
-      "b": "Nɇka",
+    "paragraph": "Rĩre toya kihi ni ruṝorimu. Temeno rishi se mehị ṭeta manashi tsuṅani wana, mahaƙe menihḯra ku waŕena royore ňachimi kochi. Mȅ kḕ semu no shirewa risoroshi ku. Soẇo sowa namureșe notasu kamosaha, tocẖi namekushi hiyu ri fusu takirena nɨmo. Mesuchi shise ne mafusochi yanufuka ẘahaha hose munes̩hito.",
+    "sentence": "Yä royutohi sộru nayo ru kokuhase ruto fu, műwa renömako toshi hẚ tonimoru yosumanu wosởyo hahomi.",
+    "shape": Object {
+      "a": "Moẉahi",
+      "b": "Hẚna",
     },
-    "sentence": "Yâ royutohi sộru nayo ru kokuhase ruto fu, műwa renömako toshi hā tonimoru yosumanu wosởyo hahomi.",
     "someOf": Array [
       "i",
       "it",
       "256",
     ],
     "times": Array [
-      "Reḵetsu",
+      "Reḳetsu",
       "Saseȓe",
       "Nȋwachi",
-      "Reťohi",
+      "Reẗohi",
       "Mịnomi",
     ],
     "tuple": Array [
       "Cherry",
       "Road",
     ],
-    "word": "Hèka",
-    "words": "Hirahikę́ nuẏosa ȟa",
+    "word": "Hė̃ka",
+    "words": "Hirahikệ nuŷosa ĥa",
   },
   Object {
     "bool": false,
@@ -256,12 +256,12 @@ Array [
     "join": "Cherry Drive",
     "oneOf": "blue",
     "oneOfWeighted": "red",
-    "paragraph": "Ko chi hokito homu na ⱪa, ṥu nu soto fuẅaki rukasē tsuhatė. Tofumuna kosờya shi ma no sec̈hise. Ŝa he ma re ko. Ḣi su yoro kǖ hekahȁ runushi, hekimi nomu ɍu kefu fumȧhe horutǟ.",
-    "record": Object {
-      "a": "Rorunuŷu",
-      "b": "Mukotetà",
+    "paragraph": "Ko chi hokito homu na ǩa, ṥu nu soto fuẅaki rukasề tsuhatè̩. Tofumuna kosờya shi ma no sec̈hise. Ŝa he ma re ko. Ḥi su yoro kǖ hekahằ runushi, hekimi nomu ɍu kefu fumẩhe horutạ.",
+    "sentence": "Mokŏtsuko haremiho mo ne yahițe himesȟite yașhihasu yokiṧhi.",
+    "shape": Object {
+      "a": "Kinǐ",
+      "b": "Rimurė",
     },
-    "sentence": "Mokŏtsuko haremiho mo ne yahiẗe himesḧite yașhihasu yokiṧhi.",
     "someOf": Array [
       "you",
       "that",
@@ -273,14 +273,14 @@ Array [
       "Seḟuhi",
       "Yȧfu",
       "Ņemumo",
-      "Riteẙa",
+      "Riteýa",
     ],
     "tuple": Array [
       "Cherry",
       "Drive",
     ],
     "word": "Nenotø",
-    "words": "Wahosȟi řeke",
+    "words": "Wahosḧi řeke",
   },
   Object {
     "bool": true,
@@ -292,12 +292,12 @@ Array [
     "join": "Cherry Drive",
     "oneOf": "green",
     "oneOfWeighted": "red",
-    "paragraph": "Hitosote ṉi munem̃o çhiyomi koho ho shinuho ṉorowa, ne semetsū̃wa wo ňo no yosekeko fȕnurunu wakoyu. Rų misȕto tanehe nikafu retsu tsunake nasawo, tsumomutsu ǩi suⱨa nomene roremawa. Rereṁu ƒuhe noho kimonusê̄ kari, me rirufuhe no ho kera sukowashi memiyoya yuřochi. Tefuyame sǚ kukiṃo temonits̩u nǐshi kato. Nimoyo ho mi re hā nĩre ňe.",
-    "record": Object {
-      "a": "Teresufǜ",
-      "b": "Rusĥi",
+    "paragraph": "Hitosote ṉi munem̃o çhiyomi koho ho shinuho ṉorowa, ne semetsū̃wa wo ňo no yosekeko fȕnurunu wakoyu. Rų misȕto tanehe nikafu retsu tsunake nasawo, tsumomutsu ķi suȟa nomene roremawa. Rereṁu ƒuhe noho kimonusę̃ kari, me rirufuhe no ho kera sukowashi memiyoya yuřochi. Tefuyame sǚ kukiṃo temonits̩u nǐshi kato. Nimoyo ho mi re hẵ nĩre ňe.",
+    "sentence": "Tonaka hi fuyayata kate serimi tsurinewa ninesamo ha, ŝayamamo sechi tsunehoku ḱosa hetamuko.",
+    "shape": Object {
+      "a": "Ranoḿi",
+      "b": "Ṁine",
     },
-    "sentence": "Tonaka hi fuyayata kate serimi tsurinewa ninesamo ha, ŝayamamo sechi tsunehoku ḵosa hetamuko.",
     "someOf": Array [
       "it",
       "that",
@@ -305,8 +305,8 @@ Array [
       "colors",
     ],
     "times": Array [
-      "Mếmikuro",
-      "Ǩushiko",
+      "Mẽmikuro",
+      "Ḱushiko",
       "Noꞧawa",
     ],
     "tuple": Array [
@@ -314,7 +314,7 @@ Array [
       "Drive",
     ],
     "word": "Kuruhį̃sa",
-    "words": "Fukồ ṃi ḧesa",
+    "words": "Fukồ ṃi ĥesa",
   },
   Object {
     "bool": false,
@@ -326,12 +326,12 @@ Array [
     "join": "Privet Drive",
     "oneOf": "red",
     "oneOfWeighted": "blue",
-    "paragraph": "Raha se shiƙoya sě tefu sohitsu su, heɍomamu yaṅutora keso tamiso su küwora. Kesǒ yahikina ra kinashichi tsuķunime kutsuchitsu ȓinoto tomu. Tese meruyo kōseme nunuyṓki yora ɏuwawoku. Ṉemiha kashirita ho ȓeku tsuke.",
-    "record": Object {
-      "a": "Yǻkekeso",
-      "b": "Ḱikoyu",
+    "paragraph": "Raha se shiꝁoya sē tefu sohitsu su, heɍomamu yaṅutora keso tamiso su küwora. Kesǒ yahikina ra kinashichi tsuḱunime kutsuchitsu ȓinoto tomu. Tese meruyo kōseme nunuyṓki yora ȳuwawoku. Ṉemiha kashirita ho ȓeku tsuke.",
+    "sentence": "Wa seseyo rȃ mataha ri niḟu.",
+    "shape": Object {
+      "a": "Tamȋ",
+      "b": "Tomả",
     },
-    "sentence": "Wa seseyo rạ mataha ri niḟu.",
     "someOf": Array [
       "i",
       "think",
@@ -345,8 +345,8 @@ Array [
       "Privet",
       "Drive",
     ],
-    "word": "Nẵho",
-    "words": "Waḧe hȅ",
+    "word": "Nā̀ho",
+    "words": "Waḫe hè̩",
   },
   Object {
     "bool": false,
@@ -358,12 +358,12 @@ Array [
     "join": "Privet Road",
     "oneOf": "blue",
     "oneOfWeighted": "red",
-    "paragraph": "Ri neteni ru ňu ta fȕraku me wahara. Wợne no taṧa nome ẖayunera yohễta. Ňesusa kế hahȏ hamu ẗanoretsu ku haẁora. Hem̃otsu senesaso kayaru ṋusasate semuni, ǩitsu tesekofu chiyu yokemu tasonore.",
-    "record": Object {
-      "a": "Nëhi",
-      "b": "Surẹku",
-    },
+    "paragraph": "Ri neteni ru ňu ta fȕraku me wahara. Wợne no taṧa nome ḣayunera yohḕta. Ňesusa ké̩ hahȏ hamu ẗanoretsu ku haẁora. Hem̃otsu senesaso kayaru ṋusasate semuni, ķitsu tesekofu chiyu yokemu tasonore.",
     "sentence": "Mi wosa ya tehờ rihȏchi marononi heke me.",
+    "shape": Object {
+      "a": "Yuẏomura",
+      "b": "Retekerä",
+    },
     "someOf": Array [
       "are",
       "256",
@@ -379,7 +379,7 @@ Array [
       "Privet",
       "Road",
     ],
-    "word": "Hekḁka",
+    "word": "Hekäka",
     "words": "Ṙo ṇesufu",
   },
   Object {
@@ -392,12 +392,12 @@ Array [
     "join": "Cherry Drive",
     "oneOf": "blue",
     "oneOfWeighted": "blue",
-    "paragraph": "Yunomomu hosa yasu takahi riyurure shiwo. Somȧnome munuhi hor̃emi sæ kesoma muranu samuhợho. Yu hḁri yukeho mi yu wakake wawowo kikuỹare. Rumuyori tsu sokũnami taku kikó womiretsu soterusu rurara, renikishi tawa ṣonamo fushi yų̃te tsứ. Ŵoso he wanetsuhe te risewami shitoshi.",
-    "record": Object {
-      "a": "Merũchi",
-      "b": "Kemamǐre",
+    "paragraph": "Yunomomu hosa yasu takahi riyurure shiwo. Somȃnome munuhi hor̃emi są̃ kesoma muranu samuhợho. Yu hǎri yukeho mi yu wakake wawowo kikuỵare. Rumuyori tsu sokũnami taku kikó womiretsu soterusu rurara, renikishi tawa ṣonamo fushi yų̃te tsứ. Ŵoso he wanetsuhe te risewami shitoshi.",
+    "sentence": "Hiriḵuho no ruka nẫ mĭfuhe taku yo rarehatsu, chikiyǜ yakowaṁi soshihifu tsutẩru rokeme ḣa muku.",
+    "shape": Object {
+      "a": "Nohokę́",
+      "b": "Taminiyȭ",
     },
-    "sentence": "Hiriḳuho no ruka nǻ mĭfuhe taku yo rarehatsu, chikiyǜ yakowaṁi soshihifu tsutậru rokeme ħa muku.",
     "someOf": Array [
       "too",
       "256",
@@ -406,8 +406,8 @@ Array [
       "it",
     ],
     "times": Array [
-      "Micħimo",
-      "Mahehiɏo",
+      "Micḣimo",
+      "Mahehiỵo",
       "Rų́nasaru",
     ],
     "tuple": Array [
@@ -427,12 +427,12 @@ Array [
     "join": "Cherry Street",
     "oneOf": "blue",
     "oneOfWeighted": "red",
-    "paragraph": "Ranuroyo ririra muyumawa ꞧokikero wasoré̩ni rowo kareto hṍ. Wonefuno nichima romanimu yoyome hỏyani sumakeru na, muyanu kė́noru kehe tsukĩ yo. Nehaki nu ri ꞩa kekṍto shisuniki ẗe, fufutsu chirewőku nimaki kukikuka yỏrato. Sasǜ kasekume keku ra nuko chichinari tsunoȟi, romonuru hi noyunu ho he sahoyomo.",
-    "record": Object {
-      "a": "Chinihihą́",
-      "b": "Kǻmuka",
-    },
+    "paragraph": "Ranuroyo ririra muyumawa ꞧokikero wasoréni rowo kareto hṍ. Wonefuno nichima romanimu yoyome hỏyani sumakeru na, muyanu kė̃noru kehe tsukĩ yo. Nehaki nu ri ꞩa kekṍto shisuniki ŧe, fufutsu chirewőku nimaki kukikuka yỏrato. Sasǜ kasekume keku ra nuko chichinari tsunoȟi, romonuru hi noyunu ho he sahoyomo.",
     "sentence": "Ra ke kise nenoyo tomo yunako hõsowa hini.",
+    "shape": Object {
+      "a": "Tsừkerera",
+      "b": "Koşase",
+    },
     "someOf": Array [
       "you",
       "that",
@@ -444,14 +444,14 @@ Array [
       "Rūhine",
       "Nuheňumi",
       "Roṟo",
-      "Hoỷo",
+      "Hoŷo",
     ],
     "tuple": Array [
       "Cherry",
       "Street",
     ],
     "word": "Herochỉwa",
-    "words": "Ną́rome ɏuki",
+    "words": "Nȁrome ẏuki",
   },
   Object {
     "bool": true,
@@ -463,12 +463,12 @@ Array [
     "join": "Privet Road",
     "oneOf": "blue",
     "oneOfWeighted": "red",
-    "paragraph": "Ya wàkochi nakote hewasona yớrihi wamiha, tẚ ṱara r̃ihe wonự hamena toyỏ. Mi m̃e yotosữ hihi muniyuta ne yote yone. Moyọ kimihiyu yȱmimiru se r̃ochi, nȗ rė̃sa yutofu ʈoku norakuta mu rosekiho. Ỵo rere kimu ýoru teyaya tefumi kiǩiyatsu muwò. Nohase rewose netamo ra chimumonu yuho.",
-    "record": Object {
-      "a": "Mahaťo",
-      "b": "Neṛe",
+    "paragraph": "Ya wặkochi nakote hewasona yớrihi wamiha, tả ṭara r̃ihe wonự hamena toyỏ. Mi m̃e yotosữ hihi muniyuta ne yote yone. Moyọ kimihiyu yȱmimiru se r̃ochi, nȗ rếsa yutofu ẗoku norakuta mu rosekiho. Ỹo rere kimu ẙoru teyaya tefumi kiǩiyatsu muwò. Nohase rewose netamo ra chimumonu yuho.",
+    "sentence": "Ruhako moyashi keƙunimo murorurằ sǘri sumḯhara mṏ ẁoriyo, nusa ko rựsoyora rufukane shimuto chisaꞧo.",
+    "shape": Object {
+      "a": "Hinutɵ",
+      "b": "Henukaẃo",
     },
-    "sentence": "Ruhako moyashi keⱪunimo murorurḁ sǘri sumḯhara mṏ ẁoriyo, nusa ko rựsoyora rufukane shimuto chisaꞧo.",
     "someOf": Array [
       "256",
       "beautiful",
@@ -477,10 +477,10 @@ Array [
       "are",
     ],
     "times": Array [
-      "Heyaḳoyo",
-      "Rǟrufu",
+      "Heyaꝁoyo",
+      "Rẫrufu",
       "Meraŝhiku",
-      "Teriḵu",
+      "Teriķu",
       "Taṟe",
     ],
     "tuple": Array [
@@ -500,12 +500,12 @@ Array [
     "join": "Parkway Drive",
     "oneOf": "blue",
     "oneOfWeighted": "blue",
-    "paragraph": "Mashi tsusekiho woki ñu woshiňe meṅa chisasemo. Tḕma katamine yoņinini rošoto sawofu kaţsu shisenenu. Hochise mo se hȃ rowakota toyo tocẖike ma, saheri misato kohiýame ⱦe misawomu. Somuro tsusachi shi ǩoke yaƙera chinomi tamusữ maɽo, ke wa te rȋmo nayṑyashi.",
-    "record": Object {
-      "a": "Hokā",
-      "b": "Ẇoto",
-    },
+    "paragraph": "Mashi tsusekiho woki ñu woshiňe meṅa chisasemo. Tė́ma katamine yoņinini rošoto sawofu kaţsu shisenenu. Hochise mo se hǎ rowakota toyo tocȟike ma, saheri misato kohiŷame ṱe misawomu. Somuro tsusachi shi ḱoke yaƙera chinomi tamusữ maɽo, ke wa te rȋmo nayṑyashi.",
     "sentence": "Koho su tayako ru tanaru shiko m̃o kinomohi.",
+    "shape": Object {
+      "a": "Yusokesŭ",
+      "b": "Ramộto",
+    },
     "someOf": Array [
       "it",
       "colors",
@@ -514,7 +514,7 @@ Array [
       "i",
     ],
     "times": Array [
-      "Tånete",
+      "Tẫnete",
       "Ħiyo",
     ],
     "tuple": Array [
@@ -534,12 +534,12 @@ Array [
     "join": "Cherry Road",
     "oneOf": "blue",
     "oneOfWeighted": "red",
-    "paragraph": "Ñi sohō nushimesa rutachiha mineta muhe miworo roke. Kifǜre hohano yaso wawa ꞩhi, sete ra nerahiha sesu remẚkayo. Keyore hesoro natemaka chir̃o yuteḟumu ru sorutsuku funi. Ḿishinoke ta kȉ heso ṭsume. Ⱦsu minisefu tsukaŗonu rasokaya mumushi futsu reru meta, kure tates̩hinu hi satekema yatễ tata ruyosoki.",
-    "record": Object {
-      "a": "Tsuminȭ",
-      "b": "Ýuhefu",
+    "paragraph": "Ñi sohō nushimesa rutachiha mineta muhe miworo roke. Kifǜre hohano yaso wawa ꞩhi, sete ra nerahiha sesu remą́kayo. Keyore hesoro natemaka chir̃o yuteḟumu ru sorutsuku funi. Ḿishinoke ta kȉ heso ƫsume. Ṱsu minisefu tsukaŗonu rasokaya mumushi futsu reru meta, kure tates̩hinu hi satekema yaté̩ tata ruyosoki.",
+    "sentence": "Yohikare kofuha yofusa kesa ḿo neṡa, nafuta tsu nahonato rusuràho mominoho yahi.",
+    "shape": Object {
+      "a": "Soǩa",
+      "b": "Kȭhosaro",
     },
-    "sentence": "Yohikare kofuha yofusa kesa ḿo neṡa, nafuta tsu nahonato rusurâho mominoho yahi.",
     "someOf": Array [
       "colors",
       "is",
@@ -557,7 +557,7 @@ Array [
       "Road",
     ],
     "word": "Koshỉtsu",
-    "words": "Hïyayu roƙi wänume",
+    "words": "Hïyayu roƙi wãnume",
   },
   Object {
     "bool": false,
@@ -569,12 +569,12 @@ Array [
     "join": "Privet Road",
     "oneOf": "blue",
     "oneOfWeighted": "blue",
-    "paragraph": "Rikohệ nokeša sa ka kachirutsu ni. Chimira remichi neró̩ho mekakiŝe numa nɨ sonuyu yồheka. Tamu wąkeyoka hȱmu ĥemikoru ᶄi sosakeyo, muhokenệ misuno yukakito tokuhaha ȟechifu fukumi shï. Fumehara se hesoko ke fu suhohoya nate.",
-    "record": Object {
-      "a": "Ronurøri",
-      "b": "Ruyakefṹ",
-    },
+    "paragraph": "Rikohḕ nokeša sa ka kachirutsu ni. Chimira remichi neró̩ho mekakiŝe numa nɨ sonuyu yồheka. Tamu wǻkeyoka hȱmu ĥemikoru ķi sosakeyo, muhokenē misuno yukakito tokuhaha ẖechifu fukumi shï. Fumehara se hesoko ke fu suhohoya nate.",
     "sentence": "No sewaki to sarỉ no ruhewo.",
+    "shape": Object {
+      "a": "Sếnesowa",
+      "b": "Kḯtere",
+    },
     "someOf": Array [
       "that",
       "colors",
@@ -583,16 +583,16 @@ Array [
       "it",
     ],
     "times": Array [
-      "Ruḫete",
+      "Ruḣete",
       "S̈awo",
-      "Ỹawa",
+      "Ỷawa",
       "Somǜ",
     ],
     "tuple": Array [
       "Privet",
       "Road",
     ],
-    "word": "Yonoręse",
+    "word": "Yonorèse",
     "words": "Tasunar̃i ńoyo",
   },
   Object {
@@ -605,12 +605,12 @@ Array [
     "join": "Parkway Road",
     "oneOf": "blue",
     "oneOfWeighted": "blue",
-    "paragraph": "Fufuką̃su wasonaku kure muku ni mumera setoshika sứkamo. Tokǐyo himọ ke yayu kakēra tṍ ȳushinuho miya, tsunu tṣu tsuyằ roruraṁi takota woħi. Marichiru nįwake chimeke nǡ muri momiṁa tatechi, ra warimeku miro riho yaŧe ya tsushimeyu. Ƒu waremo ta yumo shiraseyo, ma rotato kime ketonu shisaroyu chitâyuke soho. Chineho wą̃ne funirḗ sokiȳo temiho kameya, nusuňata ĥa nushiseyo kone mukeku tahikohe.",
-    "record": Object {
-      "a": "Tsunemė",
-      "b": "Kiţa",
+    "paragraph": "Fufukẩsu wasonaku kure muku ni mumera setoshika sứkamo. Tokǐyo himọ ke yayu kakḗra tṍ ƴushinuho miya, tsunu tṣu tsuyá roruraṁi takota woḩi. Marichiru nįwake chimeke nạ muri momiṁa tatechi, ra warimeku miro riho yaṱe ya tsushimeyu. Ƒu waremo ta yumo shiraseyo, ma rotato kime ketonu shisaroyu chitą́yuke soho. Chineho wẵne funirę́ sokiỵo temiho kameya, nusuňata ḩa nushiseyo kone mukeku tahikohe.",
+    "sentence": "Nōrohi wotāso yukesote rurira muhayo, hataħeki miro chi mu harurifu kinese kumu.",
+    "shape": Object {
+      "a": "Taseÿa",
+      "b": "Ķeshine",
     },
-    "sentence": "Nōrohi wotǟso yukesote rurira muhayo, hataḥeki miro chi mu harurifu kinese kumu.",
     "someOf": Array [
       "think",
       "are",
@@ -619,17 +619,17 @@ Array [
       "colors",
     ],
     "times": Array [
-      "Ḵemoyo",
+      "Ǩemoyo",
       "Hamimarǚ",
       "Heṁufu",
-      "Nunḗtsu",
+      "Nunȅtsu",
       "Kurí",
     ],
     "tuple": Array [
       "Parkway",
       "Road",
     ],
-    "word": "Hækonuwa",
+    "word": "Häkonuwa",
     "words": "Hanoničhi rimekuňa şeku",
   },
   Object {
@@ -642,12 +642,12 @@ Array [
     "join": "Cherry Drive",
     "oneOf": "blue",
     "oneOfWeighted": "red",
-    "paragraph": "Kiru mumetsṳse hokorasu tsu surimasu, roke shiwȏ hi hashinu ẘahe. Ku ṩhi nusanarɵ ȓaterime so nuni yurani rune, yusesefu reyusete sanuto fuma hehehė́no ho shitororư mushi. Fǚ mahaṃa mu tsutefuri su. Mǎro noneyo wahe sảyoku yukenu ka yunè kushimi.",
-    "record": Object {
-      "a": "Kįmu",
-      "b": "Yumaḿo",
+    "paragraph": "Kiru mumetsṳse hokorasu tsu surimasu, roke shiwȏ hi hashinu ẘahe. Ku ṩhi nusanarɵ ȓaterime so nuni yurani rune, yusesefu reyusete sanuto fuma hehehȅno ho shitororư mushi. Fǚ mahaṃa mu tsutefuri su. Máro noneyo wahe sḁyoku yukenu ka yunḗ kushimi.",
+    "sentence": "Yahimite nȋ meťe miterų̃wa tỗ.",
+    "shape": Object {
+      "a": "Haṯa",
+      "b": "Tờmori",
     },
-    "sentence": "Yahimite nȋ meṭe miterų̃wa tỗ.",
     "someOf": Array [
       "is",
       "it",
@@ -676,12 +676,12 @@ Array [
     "join": "Cherry Street",
     "oneOf": "blue",
     "oneOfWeighted": "red",
-    "paragraph": "Katsu chiki hemoru hosesá ʈe sosumi taẖake, wa fuchi muwasu no chihetsuma. Hiwokeshi ṋahi yakohi waⱪa kesowo rose sesareru somonẫ. Sahiwarû muko mokī̀ho ňi kûyuho ro tsutɵmo. Re fushi yasesa s̩o shimuki ꝁofuna wǻsake fuhe, hite someshino rochi kæyoku satṡuhate netø tsuhini keyu. Hi ki mimore fuƫo morɵ ma ha ᶄa, kuminasa ninihe hashitani yumeka ne fùnuku womawa.",
-    "record": Object {
-      "a": "Kǡhaku",
-      "b": "Yū́ka",
+    "paragraph": "Katsu chiki hemoru hosesá ţe sosumi taḥake, wa fuchi muwasu no chihetsuma. Hiwokeshi ṋahi yakohi waḵa kesowo rose sesareru somonã. Sahiwarû muko mokī̀ho ňi kûyuho ro tsutɵmo. Re fushi yasesa s̩o shimuki ꝁofuna wȁsake fuhe, hite someshino rochi käyoku satṡuhate netø tsuhini keyu. Hi ki mimore fuŧo morɵ ma ha ḳa, kuminasa ninihe hashitani yumeka ne fùnuku womawa.",
+    "sentence": "Tena kȱ henakosu mi watsuruyu sasuhima hẳmumoka hohe, nuretaha sű hihosatsu ka yöyo wanekṷku fuwầyu here.",
+    "shape": Object {
+      "a": "Rę̃ma",
+      "b": "KŮwa",
     },
-    "sentence": "Tena kȱ henakosu mi watsuruyu sasuhima hḁmumoka hohe, nuretaha sű hihosatsu ka yöyo wanekṷku fuwȧyu here.",
     "someOf": Array [
       "256",
       "it",
@@ -690,8 +690,8 @@ Array [
       "are",
     ],
     "times": Array [
-      "Soḱayune",
-      "Yokȁyu",
+      "Soḳayune",
+      "Yokäyu",
       "Kuṃiho",
     ],
     "tuple": Array [
@@ -699,7 +699,7 @@ Array [
       "Street",
     ],
     "word": "Shiseḟuno",
-    "words": "Rị moȳone kawaꞩhime",
+    "words": "Rị moỳone kawaꞩhime",
   },
   Object {
     "bool": true,
@@ -711,12 +711,12 @@ Array [
     "join": "Cherry Road",
     "oneOf": "blue",
     "oneOfWeighted": "red",
-    "paragraph": "Šhike heṩohako hefusoni kimi nehosu nokake kihi, nosȏkisa sumise sǿno koru ri ᶄu. Na rokitese ni ẖiyochi woyoṁani ko, tewóno ḿu mumochi marotohi suromano. Mehahehe tǿke suhi su ĥi hitekowa. Ḣa tekuwa rihakina toki kaķe mi kikoho, ta rụyu kuyu ru nayochiki ɏu. Koro riremo yosehȫ tenoẙu yashi resahosu ni.",
-    "record": Object {
-      "a": "Mitsuyã",
-      "b": "Chiñi",
+    "paragraph": "Šhike heṩohako hefusoni kimi nehosu nokake kihi, nosȏkisa sumise sǿno koru ri ꝁu. Na rokitese ni ḣiyochi woyoṁani ko, tewóno ḿu mumochi marotohi suromano. Mehahehe tǿke suhi su ḧi hitekowa. Ḥa tekuwa rihakina toki kaƙe mi kikoho, ta rụyu kuyu ru nayochiki ẏu. Koro riremo yosehȫ tenoỷu yashi resahosu ni.",
+    "sentence": "Teyowa nukéyu ṡo rawami ḵe kisani, kimesome ra morahamu funę́ro keśe keme mitatonu.",
+    "shape": Object {
+      "a": "Ḫitsusora",
+      "b": "Tāri",
     },
-    "sentence": "Teyowa nukėyu ṡo rawami ꝁe kisani, kimesome ra morahamu funė́ro keśe keme mitatonu.",
     "someOf": Array [
       "that",
       "beautiful",
@@ -729,14 +729,14 @@ Array [
       "Yuhǒ",
       "Ruňo",
       "Nutsuŝuhe",
-      "Nokặkima",
+      "Noką́kima",
     ],
     "tuple": Array [
       "Cherry",
       "Road",
     ],
     "word": "Roseñe",
-    "words": "Wȯ saḱu meneķine",
+    "words": "Wȯ saǩu meneķine",
   },
   Object {
     "bool": false,
@@ -748,12 +748,12 @@ Array [
     "join": "Parkway Street",
     "oneOf": "red",
     "oneOfWeighted": "blue",
-    "paragraph": "Yohiku ḱi kir̃ahi muwo kerayo rakeṋa, hewo kuhiteme rokaneke toÿu tako nỉrasu nekosakả tachichiro. Sušo kiyahi hǎ heṁuko no rų́ ḿi, ruꞧute kihinisa here wowo samufuho. Ƙe kusuna noshiki konu sosusaka roka mimiku mesomi. Metā netoyuso tehane ŷa ỷo ĥa ros̩u.",
-    "record": Object {
-      "a": "Chiseȟi",
-      "b": "Kurakɨ",
+    "paragraph": "Yohiku ꝁi kir̃ahi muwo kerayo rakeṋa, hewo kuhiteme rokaneke toỳu tako nỉrasu nekosakả tachichiro. Sušo kiyahi hã heṁuko no rų́ ḿi, ruꞧute kihinisa here wowo samufuho. Ǩe kusuna noshiki konu sosusaka roka mimiku mesomi. Metá netoyuso tehane ỳa ẏo ḣa ros̩u.",
+    "sentence": "Sutesunu raka ẙo wa toyotṏ tsumoyo merisu țsuro.",
+    "shape": Object {
+      "a": "Sḧisani",
+      "b": "Tohæ",
     },
-    "sentence": "Sutesunu raka ÿo wa toyotṏ tsumoyo merisu ŧsuro.",
     "someOf": Array [
       "too",
       "think",
@@ -770,7 +770,7 @@ Array [
       "Street",
     ],
     "word": "Ṁiniwase",
-    "words": "Nė́ māmo",
+    "words": "Në mấmo",
   },
   Object {
     "bool": true,
@@ -782,12 +782,12 @@ Array [
     "join": "Parkway Road",
     "oneOf": "green",
     "oneOfWeighted": "green",
-    "paragraph": "Neyoma sehi ŷotsuku maṁu mȋ yoketako, hayu chihisasu keriro funotane ḫetamuno. Hakusakį̃ yữka womi kuki tasotano nahochike sera. Sutatare tễharehi ⱪimahama rumuwako rȕ so neyukire. Rasaⱪoma ⱦoha ƙisoho hi yổtsukuso mịse niname, wo ⱪahatsu yananuẉa końiru terefuko. Homatare susotsuko ḳa tetṧu kṵni r̃anoha muhekaho, mɨsu susȫrefu nuwarumo semimê nakichi.",
-    "record": Object {
-      "a": "Kutafumễ",
-      "b": "Tsuröhe",
+    "paragraph": "Neyoma sehi ỳotsuku maṁu mȋ yoketako, hayu chihisasu keriro funotane ḧetamuno. Hakusakį̃ yữka womi kuki tasotano nahochike sera. Sutatare těharehi ǩimahama rumuwako rȕ so neyukire. Rasaḱoma ʈoha ḳisoho hi yổtsukuso mịse niname, wo ḱahatsu yananuẉa końiru terefuko. Homatare susotsuko ꝁa tetṧu kṵni r̃anoha muhekaho, mɨsu susȫrefu nuwarumo semimé nakichi.",
+    "sentence": "Mi şhi sako ḫorisami rimésoto, wayōkeho wa hinisa fu nima.",
+    "shape": Object {
+      "a": "Wảya",
+      "b": "Tesaṃeshi",
     },
-    "sentence": "Mi şhi sako ⱨorisami rimẽsoto, wayōkeho wa hinisa fu nima.",
     "someOf": Array [
       "i",
       "beautiful",
@@ -797,14 +797,14 @@ Array [
     "times": Array [
       "Motosṷ",
       "Narumom̃o",
-      "Kokiⱨe",
+      "Kokiḫe",
     ],
     "tuple": Array [
       "Parkway",
       "Road",
     ],
     "word": "Śhihi",
-    "words": "Ýokasuha ẃo ratařo",
+    "words": "Ẏokasuha ẃo ratařo",
   },
   Object {
     "bool": false,
@@ -816,12 +816,12 @@ Array [
     "join": "Cherry Road",
     "oneOf": "blue",
     "oneOfWeighted": "blue",
-    "paragraph": "Ro mi ŵo kứki tsunihẹ. Ñoshime maka taḿite șu mishiruṁi rḕ. Nuniwo ñehe nara keyaro ỹafu. Hǻhemo suwore sumohe tsukunare tsumo.",
-    "record": Object {
-      "a": "Kiwahê",
-      "b": "Koyotsuhⱥ",
-    },
+    "paragraph": "Ro mi ŵo kứki tsunihē. Ñoshime maka taḿite șu mishiruṁi rẹ. Nuniwo ñehe nara keyaro ẙafu. Hàhemo suwore sumohe tsukunare tsumo.",
     "sentence": "Yuniwo yochishi seta chifuchi ṩohoshi.",
+    "shape": Object {
+      "a": "Ninakȉhe",
+      "b": "Họteyana",
+    },
     "someOf": Array [
       "i",
       "is",
@@ -838,7 +838,7 @@ Array [
       "Road",
     ],
     "word": "Tataḟu",
-    "words": "Kukařa kể",
+    "words": "Kukařa ké",
   },
   Object {
     "bool": true,
@@ -850,12 +850,12 @@ Array [
     "join": "Privet Street",
     "oneOf": "blue",
     "oneOfWeighted": "red",
-    "paragraph": "Chiroṇa konaya ho wonoke yunomu suto tsu, tanayuwo hosakachi wo fuyaṛo rȯ. Romi kororo nehonu mờ murawotȏ tsu kayā̀ri ɽonone, su tete suku chìmenehi kamamū́ tsū̃. Kayo ru maka ma ro kureyu ne, mikenewả nṹsurato ċhiyo teyoshiwa rǎ kefuha. Taho totasa nini wa nɨ neyakute fuyato keteya, kene ho chikitayu makaho hayuketa toha wokaƙi sune. Yonarotsu ḳe tsứkemone kohɨto ré ṭo.",
-    "record": Object {
-      "a": "Mohểka",
-      "b": "Rịkunema",
+    "paragraph": "Chiroṇa konaya ho wonoke yunomu suto tsu, tanayuwo hosakachi wo fuyaṛo rȯ. Romi kororo nehonu mờ murawotȏ tsu kayảri ɽonone, su tete suku chìmenehi kamamū́ tsū̃. Kayo ru maka ma ro kureyu ne, mikenewæ nṹsurato ċhiyo teyoshiwa rầ kefuha. Taho totasa nini wa nɨ neyakute fuyato keteya, kene ho chikitayu makaho hayuketa toha wokaƙi sune. Yonarotsu ƙe tsứkemone kohɨto rè ţo.",
+    "sentence": "Sa mifunoyu towo ma mewomeno neḿuha kohorocḩi, roshi yukasanu mamirỉra mǜniko ketakahe retehowa ho kokiku.",
+    "shape": Object {
+      "a": "Yom̃iyato",
+      "b": "Ỷamuchi",
     },
-    "sentence": "Sa mifunoyu towo ma mewomeno neḿuha kohorocẖi, roshi yukasanu mamirỉra mǜniko ketakahe retehowa ho kokiku.",
     "someOf": Array [
       "are",
       "you",
@@ -864,18 +864,18 @@ Array [
       "beautiful",
     ],
     "times": Array [
-      "Cȟitofu",
+      "Cḩitofu",
       "Watsųfure",
       "Heṉi",
-      "Nanæyoko",
+      "Nanąyoko",
       "Yaminí",
     ],
     "tuple": Array [
       "Privet",
       "Street",
     ],
-    "word": "Hokatė́",
-    "words": "Ħe mǘ hawoṃe",
+    "word": "Hokatē",
+    "words": "Ḫe mǘ hawoṃe",
   },
   Object {
     "bool": false,
@@ -887,12 +887,12 @@ Array [
     "join": "Privet Road",
     "oneOf": "red",
     "oneOfWeighted": "red",
-    "paragraph": "Kaḩiyamo wokihete minite tsu tsukuno hȫ to yoheseyu. Chirahimo hareto kafǔ rametoyo mǡkishi kỉchino yarohohi kuȳoha, hayu ka hi rimeĥisu riraḥe neyofuso. ƫa tsunuse fus̩o soňi rịko ḫayorute. Chisa tem̃o kurisuru r̃e risa, me wokisa yȯsuho nu ṅema.",
-    "record": Object {
-      "a": "Rehỉka",
-      "b": "Rẩhofura",
+    "paragraph": "Kaḩiyamo wokihete minite tsu tsukuno hȫ to yoheseyu. Chirahimo hareto kafǔ rametoyo mãkishi kỉchino yarohohi kuƴoha, hayu ka hi rimeħisu riraḣe neyofuso. Ța tsunuse fus̩o soňi rịko ḫayorute. Chisa tem̃o kurisuru r̃e risa, me wokisa yȯsuho nu ṅema.",
+    "sentence": "Hi kḛ to minefu kumota ya muma.",
+    "shape": Object {
+      "a": "Teṁi",
+      "b": "Ṥakuseyo",
     },
-    "sentence": "Hi kȅ to minefu kumota ya muma.",
     "someOf": Array [
       "too",
       "are",
@@ -921,12 +921,12 @@ Array [
     "join": "Parkway Road",
     "oneOf": "green",
     "oneOfWeighted": "red",
-    "paragraph": "Rō ŧe sani nakumutȯ kusameya nehokura ki hä, wanasoru ṉichi sasuṁo ruyo ruɏanuho yoⱨa tsu hahakoya. Kinusa ya kewa kasorichi he re yu kekøru, te tsumatoya țsu haretomi tsufuwằki komamuno ša ṝiya. Wonoyumo ku keniẘa watomiṫo notsune ẙa, miri chiṛeromi rihe ṧu yũ. Nỉ kerire kimoyuke riwariwa hinanɇ rekaho hamu. Mayasuke ǩukeke honene wonunuku ńo, nufu ta yono hanisesu nawari me.",
-    "record": Object {
-      "a": "Rẚsenu",
-      "b": "Rosȁ",
+    "paragraph": "Rō ťe sani nakumutȯ kusameya nehokura ki hâ, wanasoru ṉichi sasuṁo ruyo ruẏanuho yoḣa tsu hahakoya. Kinusa ya kewa kasorichi he re yu kekøru, te tsumatoya ṭsu haretomi tsufuwæki komamuno ša ṝiya. Wonoyumo ku keniẘa watomiŧo notsune ƴa, miri chiṛeromi rihe ṧu yũ. Nỉ kerire kimoyuke riwariwa hinanẽ rekaho hamu. Mayasuke ḳukeke honene wonunuku ńo, nufu ta yono hanisesu nawari me.",
+    "sentence": "Hisa no suṋutsuchi shi kimeyu ru chiwasetsu hī, kesoko mohisa kę̃ soma reyafu numirito masosu hehe.",
+    "shape": Object {
+      "a": "Kiḿo",
+      "b": "Yonɨ",
     },
-    "sentence": "Hisa no suṋutsuchi shi kimeyu ru chiwasetsu hī, kesoko mohisa kě soma reyafu numirito masosu hehe.",
     "someOf": Array [
       "think",
       "beautiful",
@@ -942,8 +942,8 @@ Array [
       "Parkway",
       "Road",
     ],
-    "word": "Shikạ",
-    "words": "Suręru chɨ rȋka",
+    "word": "Shiką̃",
+    "words": "Suréru chɨ rȋka",
   },
   Object {
     "bool": false,
@@ -955,12 +955,12 @@ Array [
     "join": "Privet Road",
     "oneOf": "blue",
     "oneOfWeighted": "red",
-    "paragraph": "Kusomo nê̄ hi hi te tokamiwa, rū̀ hoka tochinama ꞩunamire tȯchi maṥachi ri. Norihanề risḁ mefu kunumo roroku rekuta tanuni ya. Woku rakoṃu tsų kosotšu kawo hami roȑosaha fusaɽa, ki hi nḝtsuho yusunehá yorunishi susosunu. Hofū́sere yumotȍya riḩechiri yờre sahowaku su samukeꞧa, suyorī sochimichi seᶄisose nuṩa ka niharu.",
-    "record": Object {
-      "a": "Kenorowằ",
-      "b": "Řitani",
-    },
+    "paragraph": "Kusomo nē hi hi te tokamiwa, rū̀ hoka tochinama ꞩunamire tȯchi maṥachi ri. Norihanẹ risā mefu kunumo roroku rekuta tanuni ya. Woku rakoṃu tsų kosotšu kawo hami roȑosaha fusaɽa, ki hi nę̃tsuho yusunehá yorunishi susosunu. Hofū́sere yumotȍya riẖechiri yờre sahowaku su samukeꞧa, suyorī sochimichi seķisose nuṩa ka niharu.",
     "sentence": "Toya šo yo sariwanu yữtsu.",
+    "shape": Object {
+      "a": "Katỡ",
+      "b": "Taheriñi",
+    },
     "someOf": Array [
       "colors",
       "too",
@@ -969,7 +969,7 @@ Array [
       "i",
     ],
     "times": Array [
-      "Kakɇse",
+      "Kaké̩se",
       "Sôho",
     ],
     "tuple": Array [
@@ -977,7 +977,7 @@ Array [
       "Road",
     ],
     "word": "Ṝoteya",
-    "words": "Tǻ ḟu",
+    "words": "Tẩ ḟu",
   },
   Object {
     "bool": true,
@@ -989,12 +989,12 @@ Array [
     "join": "Cherry Street",
     "oneOf": "blue",
     "oneOfWeighted": "green",
-    "paragraph": "Hayatsune tsuķite sefu nehichike chimȇ meyo, shirahi hetohimo seshimo te hinaroki nayawa. Su sumareru homụyo yukimayo nõkime sekèshihe totorehe. Sṷki sohehefu ko yuwomǒ tsuhoroshi, shi numi yúyo rama koyoso wohohofu ri. Rataru teya nusoṩhite wokufumi ka. Ri meȓore rềso riko sôta tsumuhe mesa honu.",
-    "record": Object {
-      "a": "Waꞩu",
-      "b": "Naroṡa",
+    "paragraph": "Hayatsune tsuḳite sefu nehichike chimé̩ meyo, shirahi hetohimo seshimo te hinaroki nayawa. Su sumareru homụyo yukimayo nõkime sekḛshihe totorehe. Sṷki sohehefu ko yuwomǒ tsuhoroshi, shi numi yúyo rama koyoso wohohofu ri. Rataru teya nusoṩhite wokufumi ka. Ri meȓore rę̃so riko sôta tsumuhe mesa honu.",
+    "sentence": "Ḟuso yuninetę ketetama kakȉ ƈhikeki, chineneku hera ṡhi yoyofu shikikufu yatsukeka re to.",
+    "shape": Object {
+      "a": "Ṩahe",
+      "b": "Țsuki",
     },
-    "sentence": "Ḟuso yuninetë ketetama kakȉ ƈhikeki, chineneku hera ṡhi yoyofu shikikufu yatsukeka re to.",
     "someOf": Array [
       "too",
       "is",
@@ -1003,18 +1003,18 @@ Array [
       "are",
     ],
     "times": Array [
-      "Nḁnu",
+      "Nānu",
       "Kamṑ",
       "Nǒko",
-      "Miṯasoha",
-      "Koƙotera",
+      "Miťasoha",
+      "Koᶄotera",
     ],
     "tuple": Array [
       "Cherry",
       "Street",
     ],
     "word": "Hįnukoku",
-    "words": "Rateɏu śusa nḛtotsu",
+    "words": "Rateŷu śusa nētotsu",
   },
   Object {
     "bool": false,
@@ -1026,12 +1026,12 @@ Array [
     "join": "Parkway Street",
     "oneOf": "red",
     "oneOfWeighted": "green",
-    "paragraph": "Chį̃surese hoṉu keka niyashi fukiyuhe funɇ, newonite romusoha namoyo mirasühe ṫa worome nunimate ra. Mumumawo no kemorasḧi riwohemà muhota ruša, romimu womuhi ḥohi satefu noyunẩso mimifu mahimeki sḣiya. Wariro semoțosu he yofuyuha sachi. Konanứ wasonịte fų́murune niku mữ hānoheho rimoro yờremuchi.",
-    "record": Object {
-      "a": "Merìru",
-      "b": "Hinomṑmu",
+    "paragraph": "Chį̃surese hoṉu keka niyashi fukiyuhe funḛ, newonite romusoha namoyo mirasühe ṱa worome nunimate ra. Mumumawo no kemorasḧi riwohemẳ muhota ruša, romimu womuhi ḣohi satefu noyunẚso mimifu mahimeki sħiya. Wariro semoťosu he yofuyuha sachi. Konanứ wasonịte fų́murune niku mữ hằnoheho rimoro yờremuchi.",
+    "sentence": "No chi kore tsuyanohi ȳora.",
+    "shape": Object {
+      "a": "Kamuchiņo",
+      "b": "Rameȟo",
     },
-    "sentence": "No chi kore tsuyanohi ŷora.",
     "someOf": Array [
       "beautiful",
       "256",
@@ -1039,7 +1039,7 @@ Array [
     ],
     "times": Array [
       "Nanuwồ",
-      "Mǡne",
+      "Mẚne",
       "Shíko",
       "Mʉke",
     ],
@@ -1048,7 +1048,7 @@ Array [
       "Street",
     ],
     "word": "Keṟo",
-    "words": "Ɏo noķona",
+    "words": "Ỵo noꝁona",
   },
   Object {
     "bool": false,
@@ -1060,12 +1060,12 @@ Array [
     "join": "Privet Street",
     "oneOf": "green",
     "oneOfWeighted": "red",
-    "paragraph": "Runą́wo shimumero tớyo muḱe nā rű, neⱪiwa ṣo se yahe rutsǘ wowo. Shimuhayu chikerẵwa wakame heȑe tsumĭkuhi mïno, miheȟimu ḵeshi rǟnihochi raha sare kimu. Ra mi hahohi häyo towo şotsumu ta suyahoṧe, kumu ra takomayo tsu sakohesa tehori. Keşaka ma mo hofuhane ȳaya, m̃a neẅo ki hȯ tewatoho ma.",
-    "record": Object {
-      "a": "Wosā̀",
-      "b": "Tėnaka",
+    "paragraph": "Runǻwo shimumero tớyo muḳe nầ rű, neḵiwa ṣo se yahe rutsǘ wowo. Shimuhayu chikerȃwa wakame heȑe tsumĭkuhi mïno, miheḥimu ḵeshi rẳnihochi raha sare kimu. Ra mi hahohi hąyo towo şotsumu ta suyahoṧe, kumu ra takomayo tsu sakohesa tehori. Keşaka ma mo hofuhane ẙaya, m̃a neẅo ki hȯ tewatoho ma.",
+    "sentence": "Ṯsu riho funeranu mesohi woyomamặ.",
+    "shape": Object {
+      "a": "Kasochihą",
+      "b": "Toḱu",
     },
-    "sentence": "Ţsu riho funeranu mesohi woyomamà.",
     "someOf": Array [
       "think",
       "too",
@@ -1076,14 +1076,14 @@ Array [
       "Ꞩechiha",
       "Ṁeru",
       "S̩eyu",
-      "Tosɇnaya",
+      "Tosệnaya",
     ],
     "tuple": Array [
       "Privet",
       "Street",
     ],
-    "word": "Cħine",
-    "words": "Kàyo kamųkoya",
+    "word": "Cḣine",
+    "words": "Ką̃yo kamųkoya",
   },
   Object {
     "bool": true,
@@ -1095,12 +1095,12 @@ Array [
     "join": "Cherry Street",
     "oneOf": "green",
     "oneOfWeighted": "blue",
-    "paragraph": "Sumuyo nachina nŭ re rẹhe tokokene ħonu, ninomaȓu su wãmiyame heśoke mesṷ ruyote tė. Fuñuchi yäna nuḧo rufusuhe hi, kõ niyu nǚ ronïshimo tokukowo moroke wokosakợ. Fu merohȧ nahechiwa funa ņima sewo. Kakakeku riminuwo tosute chinete kunoseꝁu no soyu, waho kakeṟo rire tsuremasu nosukori kashi ruwakiwo me. Mu sớmehe kuyato se setsu tsumṓka ka, riwatsuma nohehayu me shi ħe kewowȁsu hiro yum̃a.",
-    "record": Object {
-      "a": "Ņehi",
-      "b": "Ñukiwosa",
+    "paragraph": "Sumuyo nachina nŭ re rê̄he tokokene ḧonu, ninomaȓu su wąmiyame heśoke mesṷ ruyote tē. Fuñuchi yǡna nuȟo rufusuhe hi, kõ niyu nǚ ronïshimo tokukowo moroke wokosakợ. Fu merohẳ nahechiwa funa ņima sewo. Kakakeku riminuwo tosute chinete kunoseꝁu no soyu, waho kakeṟo rire tsuremasu nosukori kashi ruwakiwo me. Mu sớmehe kuyato se setsu tsumṓka ka, riwatsuma nohehayu me shi ḧe kewową́su hiro yum̃a.",
+    "sentence": "Semuta soshi tsuwani mushirí mi, nikeᶄo ṃi ẉa nuteki kekuseyo hohas̩enu.",
+    "shape": Object {
+      "a": "Maƙine",
+      "b": "Yukimȧta",
     },
-    "sentence": "Semuta soshi tsuwani mushirí mi, nikeḵo ṃi ẉa nuteki kekuseyo hohas̩enu.",
     "someOf": Array [
       "i",
       "think",
@@ -1108,18 +1108,18 @@ Array [
       "too",
     ],
     "times": Array [
-      "Mufuţa",
+      "Mufuťa",
       "Neṃe",
       "Ňinariku",
       "Hihahechỉ",
-      "Tḗsumashi",
+      "Té̩sumashi",
     ],
     "tuple": Array [
       "Cherry",
       "Street",
     ],
     "word": "Ḿiwamo",
-    "words": "Ŷashinuho suhǿwa ṟo",
+    "words": "Ȳashinuho suhǿwa ṟo",
   },
   Object {
     "bool": false,
@@ -1131,12 +1131,12 @@ Array [
     "join": "Parkway Drive",
     "oneOf": "red",
     "oneOfWeighted": "blue",
-    "paragraph": "Teꝁota takoritsu keyaranu haṥeruka mu heḳi. Kokefufu mu yore womare roshi somihari nitãhota. Mo ṙaho yuyu tota kurumihi wasosĥiso. Rȯ ṫewosono shï terimane mitsuyo mimo, yasowo soro rayaꝁo ńo ki nesaḿi teke.",
-    "record": Object {
-      "a": "Kumitǟ",
-      "b": "Chinṳmo",
+    "paragraph": "Teḱota takoritsu keyaranu haṥeruka mu heḵi. Kokefufu mu yore womare roshi somihari nitåhota. Mo ṙaho yuyu tota kurumihi wasosḩiso. Rȯ ẗewosono shï terimane mitsuyo mimo, yasowo soro rayaḱo ńo ki nesaḿi teke.",
+    "sentence": "Muritoya yarufu mukukeke ḫa mohe fumohiro.",
+    "shape": Object {
+      "a": "Totekēna",
+      "b": "Somoḩota",
     },
-    "sentence": "Muritoya yarufu mukukeke ẖa mohe fumohiro.",
     "someOf": Array [
       "i",
       "256",
@@ -1151,7 +1151,7 @@ Array [
       "Drive",
     ],
     "word": "Nishíhere",
-    "words": "Roḵuta heḱuru",
+    "words": "Roḱuta heķuru",
   },
   Object {
     "bool": true,
@@ -1163,12 +1163,12 @@ Array [
     "join": "Parkway Street",
     "oneOf": "red",
     "oneOfWeighted": "blue",
-    "paragraph": "Rehekowa nu ḿi ȓu chiŕo reẁa. Rireteki mi mosa rahe hokoteto, riyằ ya wasu yả mimiso ŝe. Mo yona ṛo seyumito mamuhata fuʈsukuno, neyuho minấhi yowarusu nerehoki horutamu. Tochi wamắni roẇanomi ha keyahihe ninerusu nu, rihofṷne tonane yawa ratamʉ muku. Meheẖi yumȉ raķo same me.",
-    "record": Object {
-      "a": "Ɽahoke",
-      "b": "Noħamano",
+    "paragraph": "Rehekowa nu ḿi ȓu chiŕo reẁa. Rireteki mi mosa rahe hokoteto, riyấ ya wasu yá mimiso ŝe. Mo yona ṛo seyumito mamuhata fuƫsukuno, neyuho minǻhi yowarusu nerehoki horutamu. Tochi wamåni roẇanomi ha keyahihe ninerusu nu, rihofṷne tonane yawa ratamʉ muku. Meheḥi yumȉ raǩo same me.",
+    "sentence": "Ḵukete mute tochi ᶄiyohoko rose shihisợ nochika, nɨmoru wane hitộnu rṵ ẘa kiyą.",
+    "shape": Object {
+      "a": "Yȫsu",
+      "b": "Yahãma",
     },
-    "sentence": "ᶄukete mute tochi ḵiyohoko rose shihisợ nochika, nɨmoru wane hitộnu rṵ ẘa kiyȧ.",
     "someOf": Array [
       "i",
       "you",
@@ -1176,15 +1176,15 @@ Array [
     ],
     "times": Array [
       "Ñesukuka",
-      "Noⱪora",
+      "Noᶄora",
       "Neṇi",
     ],
     "tuple": Array [
       "Parkway",
       "Street",
     ],
-    "word": "Hḗme",
-    "words": "Hoŝhiko ỳa mī̀mu",
+    "word": "Hẹme",
+    "words": "Hoŝhiko ỵa mī̀mu",
   },
   Object {
     "bool": false,
@@ -1196,12 +1196,12 @@ Array [
     "join": "Parkway Street",
     "oneOf": "green",
     "oneOfWeighted": "red",
-    "paragraph": "Wakikoko kenutoyo yaterū́su noheri rokuyu nợ henochino wachiyuno. Sⱨi tsuta mayachi mosowome yaka se sayu kurakiko, ka sófumu rusu mo sa himeso ⱨa. Ṩanayumi keke fureroke mamo hahatsuwa meku. Hakeyu ya kusani ťa nemimi woho seyonotsu tarukako.",
-    "record": Object {
-      "a": "Womèyoho",
-      "b": "Ṅoru",
-    },
+    "paragraph": "Wakikoko kenutoyo yaterū́su noheri rokuyu nợ henochino wachiyuno. Sḩi tsuta mayachi mosowome yaka se sayu kurakiko, ka sófumu rusu mo sa himeso ḥa. Ṩanayumi keke fureroke mamo hahatsuwa meku. Hakeyu ya kusani ẗa nemimi woho seyonotsu tarukako.",
     "sentence": "Raṧena rayʉtaru woshikaka misema kashihe yaho mowane.",
+    "shape": Object {
+      "a": "Ronosơ",
+      "b": "Sỏri",
+    },
     "someOf": Array [
       "are",
       "that",
@@ -1209,8 +1209,8 @@ Array [
       "too",
     ],
     "times": Array [
-      "Nomiķaku",
-      "Riwåmi",
+      "Nomiꝁaku",
+      "Riwǟmi",
       "Kunar̃e",
       "Yuyớma",
     ],
@@ -1219,7 +1219,7 @@ Array [
       "Street",
     ],
     "word": "Koᶄa",
-    "words": "Rutoȳa suŕa",
+    "words": "Rutoÿa suŕa",
   },
   Object {
     "bool": true,
@@ -1231,12 +1231,12 @@ Array [
     "join": "Privet Drive",
     "oneOf": "green",
     "oneOfWeighted": "red",
-    "paragraph": "Fuchihi seru saȟonoso yotoyurẫ hi. Shine marīyo nime hằ hoyo ma tsu. Kayự kasu fusomu kuyấre yuteṉo ʈsuki keshimi tǫsune. Nu rờ muwata ḿa ṭsuhosehi nukuta yuhe. Yorokomi maha shihamu ṁo yakurara mehamu.",
-    "record": Object {
-      "a": "Kuworuǹi",
-      "b": "Yukỏ",
-    },
+    "paragraph": "Fuchihi seru saḩonoso yotoyurā̀ hi. Shine marīyo nime hấ hoyo ma tsu. Kayự kasu fusomu kuyâre yuteṉo ṭsuki keshimi tǫsune. Nu rờ muwata ḿa ŧsuhosehi nukuta yuhe. Yorokomi maha shihamu ṁo yakurara mehamu.",
     "sentence": "Nushi saresaku hetoneshi mu wanį̃chi rotsusuno shihenita mashi, ḟusuku rekohafu tesukese futena rǿ masehine menuroshi.",
+    "shape": Object {
+      "a": "Shikiḳuta",
+      "b": "Saṃa",
+    },
     "someOf": Array [
       "are",
       "that",
@@ -1245,17 +1245,17 @@ Array [
     ],
     "times": Array [
       "Kurứnu",
-      "Sutsumëke",
+      "Sutsumęke",
       "Ṡhimayo",
-      "Hȅtomi",
-      "Kằmo",
+      "Hè̩tomi",
+      "Kấmo",
     ],
     "tuple": Array [
       "Privet",
       "Drive",
     ],
-    "word": "Noyatē",
-    "words": "Cħiko wamukàka mĭchi",
+    "word": "Noyatê̄",
+    "words": "Cħiko wamukảka mĭchi",
   },
   Object {
     "bool": false,
@@ -1267,12 +1267,12 @@ Array [
     "join": "Cherry Road",
     "oneOf": "red",
     "oneOfWeighted": "red",
-    "paragraph": "Nisuma fuwonura ha wasusa he, kireyo hahe ŗemo nekameru ṁa. Koreseyo fukomo su ťe ri ņome ṫsushiyu shikohe. Te nawa sumi wắta ki mi wosê yo. Satemate ro to so ni ḱi narokȱ ẁamu.",
-    "record": Object {
-      "a": "Runarenẳ",
-      "b": "Fuşhinomo",
-    },
+    "paragraph": "Nisuma fuwonura ha wasusa he, kireyo hahe ŗemo nekameru ṁa. Koreseyo fukomo su ʈe ri ņome ţsushiyu shikohe. Te nawa sumi wảta ki mi wosḝ yo. Satemate ro to so ni ꝁi narokȱ ẁamu.",
     "sentence": "Ɍimo ȓimume kaƒu yote katoko nihoma.",
+    "shape": Object {
+      "a": "Konṷke",
+      "b": "M̃ununenu",
+    },
     "someOf": Array [
       "beautiful",
       "is",
@@ -1299,12 +1299,12 @@ Array [
     "join": "Parkway Drive",
     "oneOf": "red",
     "oneOfWeighted": "blue",
-    "paragraph": "Ne ņo yo nototari rurina keso. Temumimȏ rorehi hichiru noną́moyo ḿorumafu kahȁnime yaki rumewofu, ka rekirở tsume sarefu ńa yaré̩ ne yar̃asu. Rohi me renehisa ho romure kuhayù. Wachinuħe fukậ kasakune kayakuto washihe. Ku sę wo kuriɏu wo ṟu hesonoho ķaru.",
-    "record": Object {
-      "a": "Ṋeharahi",
-      "b": "Yus̈oho",
+    "paragraph": "Ne ņo yo nototari rurina keso. Temumimȏ rorehi hichiru nonặmoyo ḿorumafu kahǎnime yaki rumewofu, ka rekirở tsume sarefu ńa yarē ne yar̃asu. Rohi me renehisa ho romure kuhayù. Wachinuħe fukä kasakune kayakuto washihe. Ku sḙ wo kuriýu wo ṟu hesonoho ķaru.",
+    "sentence": "Miki kɨ hosoritsu rerasa noyuchî, na sutsure sehề yuki keỳo nį̃ neriku.",
+    "shape": Object {
+      "a": "H̱asaki",
+      "b": "Hekʉ",
     },
-    "sentence": "Miki kɨ hosoritsu rerasa noyuchî, na sutsure sehḕ yuki keỳo nį̃ neriku.",
     "someOf": Array [
       "it",
       "256",
@@ -1313,14 +1313,14 @@ Array [
     "times": Array [
       "Ɽisu",
       "Hȉshishihe",
-      "Tatểraso",
+      "Tatè̩raso",
     ],
     "tuple": Array [
       "Parkway",
       "Drive",
     ],
-    "word": "Ruhẳ",
-    "words": "Nașara ṁi saraÿo",
+    "word": "Ruhǻ",
+    "words": "Nașara ṁi saraỳo",
   },
   Object {
     "bool": false,
@@ -1332,12 +1332,12 @@ Array [
     "join": "Parkway Drive",
     "oneOf": "green",
     "oneOfWeighted": "blue",
-    "paragraph": "Yashisose rɇnura kihihaha ĥonesoyo keme. Teŵoha tṏra chiremi kakeri ħowoke susehako so, kiŝo no kusuhe nika shitsuyo tsumimuya shiħomise fukoshi. M̃eno ruyoyahi kamu muke ṇisu ǩe, nemora hanenoka rusẚho tsusohano sonune rȯ. Ŗuhono mekę̃ ne ro somumomo.",
-    "record": Object {
-      "a": "Ɍiwo",
-      "b": "Yuwỡsuna",
+    "paragraph": "Yashisose rẹnura kihihaha ḫonesoyo keme. Teŵoha tṏra chiremi kakeri ḫowoke susehako so, kiŝo no kusuhe nika shitsuyo tsumimuya shiĥomise fukoshi. M̃eno ruyoyahi kamu muke ṇisu ᶄe, nemora hanenoka rusẫho tsusohano sonune rȯ. Ŗuhono mekẽ ne ro somumomo.",
+    "sentence": "Tayaniyo rū́natsu shiheyuwo rè̩ kiną̃ kurāre ṛa.",
+    "shape": Object {
+      "a": "Tę́tsu",
+      "b": "Ǹeyawo",
     },
-    "sentence": "Tayaniyo rū́natsu shiheyuwo rẽ kinǡ kuråre ṛa.",
     "someOf": Array [
       "is",
       "that",
@@ -1345,7 +1345,7 @@ Array [
       "colors",
     ],
     "times": Array [
-      "Tặnu",
+      "Tȃnu",
       "Ẇari",
       "Kỗme",
       "Hisuňewo",
@@ -1354,8 +1354,8 @@ Array [
       "Parkway",
       "Drive",
     ],
-    "word": "Ṭokoma",
-    "words": "Rimū́chiri ḧoki",
+    "word": "Ṫokoma",
+    "words": "Rimū́chiri ḥoki",
   },
   Object {
     "bool": true,
@@ -1367,12 +1367,12 @@ Array [
     "join": "Cherry Drive",
     "oneOf": "green",
     "oneOfWeighted": "blue",
-    "paragraph": "Rỉ tokuri worone takashimo yurōmo. Kuwa ṡhi tsutohi suke hȧmi meyuro ro. Nusaka kamumayo wo rukiyuyo fuⱦomi sųho hashinisu merekimu. S̈uhe reriśu mī̀ yặ newahifu tsuru sờ. Reneyoyổ ṃo chiwamono resoto yosukuwa yủke rố.",
-    "record": Object {
-      "a": "Ṁosomi",
-      "b": "Ǹurate",
-    },
+    "paragraph": "Rỉ tokuri worone takashimo yurōmo. Kuwa ṡhi tsutohi suke hạmi meyuro ro. Nusaka kamumayo wo rukiyuyo fuʈomi sųho hashinisu merekimu. S̈uhe reriśu mī̀ yằ newahifu tsuru sờ. Reneyoyổ ṃo chiwamono resoto yosukuwa yủke rố.",
     "sentence": "Ro miruta chirate wokesemo kama hec̈hi soya, rese ṥe mi yoru renu.",
+    "shape": Object {
+      "a": "Rotsurǘ",
+      "b": "Kirurekơ",
+    },
     "someOf": Array [
       "that",
       "colors",
@@ -1382,16 +1382,16 @@ Array [
     "times": Array [
       "Hichinemǐ",
       "Woẅometo",
-      "Seratặ",
-      "Hệto",
-      "Ṯsuna",
+      "Seratā̀",
+      "Héto",
+      "Ţsuna",
     ],
     "tuple": Array [
       "Cherry",
       "Drive",
     ],
     "word": "Keherotšu",
-    "words": "Šo nǫtsunewo sề",
+    "words": "Šo nǫtsunewo sḝ",
   },
   Object {
     "bool": true,
@@ -1403,12 +1403,12 @@ Array [
     "join": "Parkway Drive",
     "oneOf": "blue",
     "oneOfWeighted": "red",
-    "paragraph": "Fu serimos̈e hesĥiniki mis̩hi ṫa samo nâsatesa he, hẚ kasete wawahika musushi setsu ku. Memofuyo ruro hễru tamōko tonasora numa, hanuǩahi tesewo mesa kắ saya. More yamuchi suhiwa tsu ỹusukota toyoruri, na mureyotꞩu roma yo seromeya nomome yasewayo. Kikisa shihenemu temecħi sa te ruyaşa ri. Sumurasa mǿhe ką čhi kukichi, mi nira maseshira yoyarine yahita seyȍmeke ṧu.",
-    "record": Object {
-      "a": "Ňiyomohi",
-      "b": "Shikihê̄",
+    "paragraph": "Fu serimos̈e hesḣiniki mis̩hi ṯa samo násatesa he, hẩ kasete wawahika musushi setsu ku. Memofuyo ruro hę̃ru tamōko tonasora numa, hanuᶄahi tesewo mesa kǟ saya. More yamuchi suhiwa tsu ýusukota toyoruri, na mureyotꞩu roma yo seromeya nomome yasewayo. Kikisa shihenemu temecẖi sa te ruyaşa ri. Sumurasa mǿhe kẩ čhi kukichi, mi nira maseshira yoyarine yahita seyȍmeke ṧu.",
+    "sentence": "Wa tema hosuse royo kukataru ᶄo hatsumoro, ro kuraso ṧe yo ȳukefu ketanošo.",
+    "shape": Object {
+      "a": "Ṛina",
+      "b": "Sộchiseno",
     },
-    "sentence": "Wa tema hosuse royo kukataru ḱo hatsumoro, ro kuraso ṧe yo ỷukefu ketanošo.",
     "someOf": Array [
       "you",
       "it",
@@ -1417,16 +1417,16 @@ Array [
       "are",
     ],
     "times": Array [
-      "Rimềya",
-      "Mⱥmesesu",
-      "Wotsuⱨo",
+      "Rimḛya",
+      "Mãmesesu",
+      "Wotsuḫo",
     ],
     "tuple": Array [
       "Parkway",
       "Drive",
     ],
-    "word": "Hosuḥo",
-    "words": "Mầwo seẗeriyo meǩohohi",
+    "word": "Hosuĥo",
+    "words": "Mǡwo sețeriyo meḵohohi",
   },
   Object {
     "bool": false,
@@ -1438,12 +1438,12 @@ Array [
     "join": "Parkway Road",
     "oneOf": "red",
     "oneOfWeighted": "green",
-    "paragraph": "Kòre wa kefu hono ni, chi chito sa ỵame nemê neyàme hafu. Keyareru kenửho mirochiro ṝi wṓru ru he. Metsure tsų̃kurutsu kawora katosa towằkoha tsʉ tehikimu. M̃i mani sȏrinere soruhofu yusoshi nutona, taku muyuma shi yoteke tsurushitẫ.",
-    "record": Object {
-      "a": "Tsṷsushiso",
-      "b": "Moŗechine",
+    "paragraph": "Kòre wa kefu hono ni, chi chito sa ẙame nemḕ neyăme hafu. Keyareru kenửho mirochiro ṝi wṓru ru he. Metsure tsų̃kurutsu kawora katosa towækoha tsʉ tehikimu. M̃i mani sȏrinere soruhofu yusoshi nutona, taku muyuma shi yoteke tsurushitẫ.",
+    "sentence": "Niyore notsusesa royø karoshise mokờwo ya sệwoyura ko.",
+    "shape": Object {
+      "a": "Narǐsora",
+      "b": "Kusaƒuna",
     },
-    "sentence": "Niyore notsusesa royø karoshise mokờwo ya sĕwoyura ko.",
     "someOf": Array [
       "256",
       "that",
@@ -1458,7 +1458,7 @@ Array [
       "Road",
     ],
     "word": "Miŵafuchi",
-    "words": "Sḣiyaso ǹeketsume",
+    "words": "Sḩiyaso ǹeketsume",
   },
   Object {
     "bool": true,
@@ -1470,12 +1470,12 @@ Array [
     "join": "Cherry Drive",
     "oneOf": "blue",
     "oneOfWeighted": "red",
-    "paragraph": "Rǐme resų kȇ ṫsu ne hiso kǘ. Chirutsuwo runosu fu tanawoho ṛe, woriĥa so mikoruta hokusoṧa sơ. Yahata wahe yokefū́ fusora ṃewoha, susoromi tsutả kishiyawo fȕmuwa satsuhi ro. Notsuke ra hosu woya menuya ḧasuke. Tsu fushiteṯo kahoṉu hashiyo ki roŵoreka neka kuỳumuke.",
-    "record": Object {
-      "a": "Ṝasaro",
-      "b": "Nashiwasà",
-    },
+    "paragraph": "Rǐme resų kȅ ƫsu ne hiso kǘ. Chirutsuwo runosu fu tanawoho ṛe, woriḧa so mikoruta hokusoṧa sơ. Yahata wahe yokefū́ fusora ṃewoha, susoromi tsutæ kishiyawo fȕmuwa satsuhi ro. Notsuke ra hosu woya menuya ḧasuke. Tsu fushiteťo kahoṉu hashiyo ki roŵoreka neka kuƴumuke.",
     "sentence": "Ṃukimo waruma nini sayuni ra, ńu neke mohochiwo kochime miher̃u fuwarito.",
+    "shape": Object {
+      "a": "Kǎno",
+      "b": "Ƙisenumo",
+    },
     "someOf": Array [
       "is",
       "think",
@@ -1484,18 +1484,18 @@ Array [
       "beautiful",
     ],
     "times": Array [
-      "Hiꝁena",
+      "Hiķena",
       "Ņimu",
       "Ņiyatsu",
       "Wohorơhi",
-      "Soyoṱsusu",
+      "Soyoʈsusu",
     ],
     "tuple": Array [
       "Cherry",
       "Drive",
     ],
-    "word": "Hamininắ",
-    "words": "Yoshîtochi ʈa řehikosu",
+    "word": "Hamininậ",
+    "words": "Yoshîtochi ẗa řehikosu",
   },
   Object {
     "bool": false,
@@ -1507,29 +1507,29 @@ Array [
     "join": "Cherry Road",
     "oneOf": "red",
     "oneOfWeighted": "red",
-    "paragraph": "Fuẏoro mirǜta secḥi ku roňo shi ha. Sa hihi numarana su s̩enayo mutafu toṡekowo. Shiniyu niha soru suwori fumiyo senukoɽa hete konitsuha. Re meko so ṩhi saratsuwa kử chirano, teheta ṟe kechikeso kanuhǻwo rureƙiho nu kitổyoyo teshi.",
-    "record": Object {
-      "a": "Miwonõ",
-      "b": "Ŝota",
+    "paragraph": "Fuƴoro mirǜta secḥi ku roňo shi ha. Sa hihi numarana su s̩enayo mutafu toṡekowo. Shiniyu niha soru suwori fumiyo senukoɽa hete konitsuha. Re meko so ṩhi saratsuwa kử chirano, teheta ṟe kechikeso kanuhẩwo rureḵiho nu kitổyoyo teshi.",
+    "sentence": "Yaẏu chi kunima wo wanarȋ ᶄe kosariha.",
+    "shape": Object {
+      "a": "Shiḱewa",
+      "b": "Kesệ",
     },
-    "sentence": "Yaýu chi kunima wo wanarȋ ǩe kosariha.",
     "someOf": Array [
       "colors",
       "i",
       "think",
     ],
     "times": Array [
-      "Mȃshimaha",
-      "Hiḥo",
+      "Mȧshimaha",
+      "Hiȟo",
       "Ṥuma",
-      "Meꝁu",
+      "Meᶄu",
     ],
     "tuple": Array [
       "Cherry",
       "Road",
     ],
     "word": "Ṣame",
-    "words": "Tåyo honʉno",
+    "words": "Tấyo honʉno",
   },
   Object {
     "bool": true,
@@ -1541,12 +1541,12 @@ Array [
     "join": "Cherry Street",
     "oneOf": "green",
     "oneOfWeighted": "blue",
-    "paragraph": "Kihiṱeyo mu ṉisoku mini tesemoha wotsǔ rowo yoŵamiha. Yaho natetằtsu tashiku ne wo fu ne roƙe, hasarefu ma mớke chihire hesa suto chimịso rurura. Roke ꝁa ḵu mukaṃe taᶄumu. Kė́ mesehito tsựka metafu ru yumumani. Rako sariho yukaka narī̀ne nosoyora rorika waseto.",
-    "record": Object {
-      "a": "Kuyarữ",
-      "b": "Sasḧisunu",
-    },
+    "paragraph": "Kihiẗeyo mu ṉisoku mini tesemoha wotsǔ rowo yoŵamiha. Yaho natetẚtsu tashiku ne wo fu ne roᶄe, hasarefu ma mớke chihire hesa suto chimịso rurura. Roke ḱa ḵu mukaṃe taḳumu. Kë mesehito tsựka metafu ru yumumani. Rako sariho yukaka narī̀ne nosoyora rorika waseto.",
     "sentence": "Setawa ranehe nesa ka taso ri sohemo, furunihi kotemowa mayu temeho towakota noyușoko.",
+    "shape": Object {
+      "a": "Soreȓoko",
+      "b": "Rṻmo",
+    },
     "someOf": Array [
       "that",
       "are",
@@ -1554,16 +1554,16 @@ Array [
       "you",
     ],
     "times": Array [
-      "Hė̃satawa",
+      "Hḕsatawa",
       "Kukeṥara",
-      "Ⱨoke",
+      "Ȟoke",
     ],
     "tuple": Array [
       "Cherry",
       "Street",
     ],
     "word": "Sumafǘ",
-    "words": "Šusurike nahễru riyą́wo",
+    "words": "Šusurike nahė̃ru riyàwo",
   },
   Object {
     "bool": false,
@@ -1575,12 +1575,12 @@ Array [
     "join": "Privet Drive",
     "oneOf": "blue",
     "oneOfWeighted": "blue",
-    "paragraph": "Ƙeshisa kė serateku ţsumuso ḣa riḟu, shikenayo hiteṃu ku wonana nuyẳ sūho tsuṧafu. Kitsuchi nemahiko tsų́moteri ko rinato rosu nesū̃ ro. Taki ro kayȁmo mirohằ ƒu ṁotsu yorohiṱe. Hinễko sumami wanu kanǜ fuhemiso.",
-    "record": Object {
-      "a": "Riteminȯ",
-      "b": "Tohóta",
-    },
+    "paragraph": "Ꝁeshisa kě serateku ṫsumuso ẖa riḟu, shikenayo hiteṃu ku wonana nuyȧ sūho tsuṧafu. Kitsuchi nemahiko tsų́moteri ko rinato rosu nesū̃ ro. Taki ro kayámo mirohȧ ƒu ṁotsu yorohiṯe. Hinę́ko sumami wanu kanǜ fuhemiso.",
     "sentence": "Kesomuwa he chisuhawo hoka sehoyo.",
+    "shape": Object {
+      "a": "Fusḩiso",
+      "b": "Mewǻ",
+    },
     "someOf": Array [
       "i",
       "colors",
@@ -1597,7 +1597,7 @@ Array [
       "Drive",
     ],
     "word": "Risɵwaru",
-    "words": "Ṋononu ⱦa",
+    "words": "Ṋononu ța",
   },
   Object {
     "bool": true,
@@ -1609,12 +1609,12 @@ Array [
     "join": "Cherry Drive",
     "oneOf": "green",
     "oneOfWeighted": "blue",
-    "paragraph": "Tahe hehimiƒu ẏa nu hakutomu nano risuẉo na, nu suroni wóke rokihono wa mise fururḯku hekuki. Ta sorã kehako koruwochi kori re ḱumihenu ṧu. Mosuro ṅuno keyaꞩhi ruho rakońa. Shihờ muṃuka tawosầha nufuniyo kasomi heri, same naṋuku ki haworemi mi kareto kuwa. Sǚshichi ru kari ts̩u ronatamu chitesumi, chisu miyu tohiyuso ḿi ỳufu śekewo.",
-    "record": Object {
-      "a": "Yunèwa",
-      "b": "Kewỗ",
+    "paragraph": "Tahe hehimiƒu ŷa nu hakutomu nano risuẉo na, nu suroni wóke rokihono wa mise fururḯku hekuki. Ta sorȧ kehako koruwochi kori re ḳumihenu ṧu. Mosuro ṅuno keyaꞩhi ruho rakońa. Shihờ muṃuka tawosȁha nufuniyo kasomi heri, same naṋuku ki haworemi mi kareto kuwa. Sǚshichi ru kari ts̩u ronatamu chitesumi, chisu miyu tohiyuso ḿi ỹufu śekewo.",
+    "sentence": "Maro wofusowa tanosu ninǎ konuhoru ta sa tsu, ṃo morēmafu sake sero tꞩu ẖeyo.",
+    "shape": Object {
+      "a": "Ŷusu",
+      "b": "Tekofȗ",
     },
-    "sentence": "Maro wofusowa tanosu ninắ konuhoru ta sa tsu, ṃo morȅmafu sake sero tꞩu ȟeyo.",
     "someOf": Array [
       "colors",
       "256",
@@ -1622,7 +1622,7 @@ Array [
       "you",
     ],
     "times": Array [
-      "Ťoyuwo",
+      "ƫoyuwo",
       "Kikeċhi",
       "Maḿu",
       "Kȋyato",
@@ -1632,8 +1632,8 @@ Array [
       "Cherry",
       "Drive",
     ],
-    "word": "Hokeƙehi",
-    "words": "Roṃisono hoyänitsu ŵo",
+    "word": "Hokeǩehi",
+    "words": "Roṃisono hoyậnitsu ŵo",
   },
   Object {
     "bool": false,
@@ -1645,12 +1645,12 @@ Array [
     "join": "Cherry Drive",
     "oneOf": "blue",
     "oneOfWeighted": "red",
-    "paragraph": "Misamu ṁa kenare ḫamo ra miyurahi ķosato. Ķuto riyone ḿo fuyo rere tsutayani. Rishiyoya kishiteno se neteritsu sa teṟe kutane futsura. Somike rằse ȳa shimewaḿu muṅomeki chikù fururoro ņomeyaro.",
-    "record": Object {
-      "a": "Chihẚki",
-      "b": "Tafŭ",
+    "paragraph": "Misamu ṁa kenare ḧamo ra miyurahi ǩosato. Ǩuto riyone ḿo fuyo rere tsutayani. Rishiyoya kishiteno se neteritsu sa teṟe kutane futsura. Somike rȃse ÿa shimewaḿu muṅomeki chikù fururoro ņomeyaro.",
+    "sentence": "Shiẙase nina tęhochi roka sawateru hem̃i ḱonewaro.",
+    "shape": Object {
+      "a": "Riyȏ",
+      "b": "Komȉ",
     },
-    "sentence": "Shiŷase nina tḗhochi roka sawateru hem̃i ḱonewaro.",
     "someOf": Array [
       "think",
       "is",
@@ -1669,7 +1669,7 @@ Array [
       "Drive",
     ],
     "word": "Yańe",
-    "words": "Seŕi ȟonuwo",
+    "words": "Seŕi ẖonuwo",
   },
   Object {
     "bool": true,
@@ -1681,12 +1681,12 @@ Array [
     "join": "Cherry Road",
     "oneOf": "blue",
     "oneOfWeighted": "blue",
-    "paragraph": "Mutoma su ţa ka shihomushi. Yarimito ramosota koyate torį yotekeḳu hæya washirori hâ, tsura sėmose ninetsuke noyuÿoki mu. Ratsurẩfu tohichiku kisésanu kise tsuyasa serakị. Hi ní ne niyosochi nį̃ yotsunu mę̃ ɍewo, raki mishį̃ wa ḳi ⱪa ronamawố. Seta rïhiheyo sore suhi manetoha hihekiyo, tsuso nateseto toruchi tahiņu mikore.",
-    "record": Object {
-      "a": "Nihiỷafu",
-      "b": "Heṙa",
+    "paragraph": "Mutoma su ŧa ka shihomushi. Yarimito ramosota koyate torį yotekeᶄu hắya washirori hẩ, tsura sęmose ninetsuke noyuỳoki mu. Ratsurậfu tohichiku kisẻsanu kise tsuyasa serakị. Hi ní ne niyosochi nį̃ yotsunu mę́ ɍewo, raki mishį̃ wa ǩi ᶄa ronamawố. Seta rïhiheyo sore suhi manetoha hihekiyo, tsuso nateseto toruchi tahiņu mikore.",
+    "sentence": "Himetsuni seku wa hǐ manuhase karawowa sesori menḗ, ra yosewo shiyoruno c̈hi kihanṑ nenahona.",
+    "shape": Object {
+      "a": "Ṉomi",
+      "b": "Hiṅihiro",
     },
-    "sentence": "Himetsuni seku wa hǐ manuhase karawowa sesori menẹ, ra yosewo shiyoruno c̈hi kihanṑ nenahona.",
     "someOf": Array [
       "that",
       "are",
@@ -1695,7 +1695,7 @@ Array [
       "you",
     ],
     "times": Array [
-      "Cⱨiro",
+      "Cḫiro",
       "Roṋu",
       "Ḿewa",
     ],
@@ -1704,7 +1704,7 @@ Array [
       "Road",
     ],
     "word": "Sehakū́wa",
-    "words": "Hechiyở tè tặ",
+    "words": "Hechiyở tȅ tậ",
   },
   Object {
     "bool": false,
@@ -1716,12 +1716,12 @@ Array [
     "join": "Parkway Street",
     "oneOf": "red",
     "oneOfWeighted": "red",
-    "paragraph": "Tsukimifu tecḥikase reketsuchī shiꝁunota rũma shikiwana ṙa. Soku rumiriwo rachime fukemika rā̀heme ņoyo ŗuko. Toto hokesê̄ ñe rokuna ýokahesu noyumi wakewa so. Fumekine hǫmamono nememaya ro moȳoya ḵinisu.",
-    "record": Object {
-      "a": "Maɽami",
-      "b": "Karṍ",
+    "paragraph": "Tsukimifu tecḣikase reketsuchī shiƙunota rũma shikiwana ṙa. Soku rumiriwo rachime fukemika rặheme ņoyo ŗuko. Toto hokesė̃ ñe rokuna ỳokahesu noyumi wakewa so. Fumekine hǫmamono nememaya ro moŷoya ḱinisu.",
+    "sentence": "Sḛ ketsukota kãmafusa seņohiwa tamemȭya ḟu fu.",
+    "shape": Object {
+      "a": "Tsŭwo",
+      "b": "Rorirįmo",
     },
-    "sentence": "Sế ketsukota kȃmafusa seņohiwa tamemȭya ḟu fu.",
     "someOf": Array [
       "256",
       "it",
@@ -1736,7 +1736,7 @@ Array [
       "Street",
     ],
     "word": "Nurȍ",
-    "words": "Yò ĥariyute",
+    "words": "Yò ḧariyute",
   },
 ]
 `

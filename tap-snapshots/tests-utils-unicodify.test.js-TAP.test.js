@@ -7,10 +7,10 @@
 'use strict'
 exports[`tests/utils/unicodify.test.js TAP unicodification > must match snapshot 1`] = `
 Array [
-  "fifṭeen",
+  "fifʈeen",
   "ṩtitches",
   "aṇd",
-  "ā",
+  "ạ",
   "sṏft",
   "parođy",
 ]
