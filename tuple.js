@@ -6,13 +6,13 @@ function tuple(a, b) {
 }
 
 function tupleMain(input, fns) {
-  var id = hash(input)
+  var id = hash([input, 'tuple'])
   var n = fns.length
   var i = -1
   var results = []
 
   while (++i < n) {
-    id = hash([id, 'tuple', i])
+    id = hash(id)
     results.push(resolve(id, fns[i]))
   }
 

@@ -6,14 +6,14 @@ function times(a, b, c) {
 }
 
 function timesMain(input, range, maker) {
-  var id = hash(input)
+  var id = hash([input, 'times'])
   var n = typeof range === 'number' ? range : fit(id, range[0], range[1])
   var i = -1
   var results = []
 
   if (typeof maker === 'function')
     while (++i < n) {
-      id = hash([id, 'times', i])
+      id = hash(id)
       results.push(maker(id))
     }
   else while (++i < n) results.push(maker)

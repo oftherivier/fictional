@@ -18,7 +18,7 @@ function words(input, opts) {
   var min = defaults(opts.min, DEFAULT_MIN_WORDS)
   var max = defaults(opts.max, DEFAULT_MAX_WORDS)
 
-  var id = hash(input)
+  var id = hash([input, 'words'])
   var n = fit(id, min, max)
   var i = 0
 

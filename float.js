@@ -4,11 +4,11 @@ var fit = require('./utils/fit')
 
 function float(input, opts) {
   opts = opts || 0
+
   var min = opts.min
   var max = opts.max
-
-  var whole = hash([input, 'float', 0])
-  var v = +(whole + '.' + hash([whole, 'float', 1]))
+  var whole = hash([input, 'float'])
+  var v = +(whole + '.' + hash(whole))
 
   return fit(v, min, max)
 }

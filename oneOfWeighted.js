@@ -10,10 +10,10 @@ function oneOfWeighted(a, b) {
 
 function oneOfWeightedMain(input, samples) {
   samples = parseSamples(samples)
-  var id = hash(input)
-  var i = -1
+  var id = hash([input, 'oneOfWeighted'])
   var n = samples.length
   var pRemaining = 1
+  var i = -1
   var sample
   var p
 

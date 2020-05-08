@@ -12,15 +12,15 @@ function paragraph(input, opts) {
   var minSentences = defaults(opts.minSentences, DEFAULT_MIN_SENTENCES)
   var maxSentences = defaults(opts.maxSentences, DEFAULT_MAX_SENTENCES)
 
-  var id = hash(input)
+  var id = hash([input, 'paragraph'])
   var n = fit(id, minSentences, maxSentences)
   var i = 0
-  id = hash([id, 'paragraph', i])
 
+  id = hash(id)
   var result = sentence(id, opts)
 
   while (++i < n) {
-    id = hash([id, 'paragraph', i])
+    id = hash(id)
     result += ' ' + sentence(id, opts)
   }
 

@@ -27,10 +27,10 @@ function char(input, opts) {
   opts = opts || 0
   var ranges = defaults(opts.ranges, DEFAULT_RANGES)
 
-  var id = hash([input, 'char', 0])
+  var id = hash([input, 'char'])
   var range = ranges[id % ranges.length]
 
-  id = hash([id, 'char', 1])
+  id = hash(id)
   return fromCodePoint(fit(id, range[0], range[1]))
 }
 

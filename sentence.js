@@ -18,10 +18,10 @@ function sentence(input, opts) {
   var maxClauses = defaults(opts.maxClauses, DEFAULT_MAX_CLAUSES)
   var unicode = defaults(opts.unicode, DEFAULT_UNICODE)
 
-  var id = hash(input)
+  var id = hash([input, 'sentence'])
   var n = fit(id, minClauses, maxClauses)
   var i = 0
-  id = hash([id, 'sentence', i])
+  id = hash(id)
 
   var firstOpts = conj(opts, {
     capitalize: 'first',
@@ -35,7 +35,7 @@ function sentence(input, opts) {
   var result = words(id, firstOpts)
 
   while (++i < n) {
-    id = hash([id, 'sentence', i])
+    id = hash(id)
     result += ', ' + words(id, restOpts)
   }
 

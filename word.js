@@ -61,7 +61,7 @@ function word(input, opts) {
     prev = next
 
     do {
-      id = hash([id, 'word', i])
+      id = hash(id)
       next = SYLLABLES[id % SYLLABLES_LEN]
     } while (!syllablesMatch(prev, next))
 

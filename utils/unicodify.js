@@ -193,11 +193,11 @@ var VARIANTS = {
 }
 
 module.exports = function unicodify(id, word) {
-  id = hash([id, 'unicodify', 0])
+  id = hash([id, 'unicodify'])
   var wordLen = word.length
   var i = id % wordLen
 
-  id = hash([id, 'unicodify', 1])
+  id = hash(id)
 
   var letter = wordLen === 1 ? word : word[i]
 

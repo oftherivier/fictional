@@ -7,7 +7,7 @@ function someOf(a, b, c) {
 }
 
 function someOfMain(input, range, samples) {
-  var id = hash(input)
+  var id = hash([input, 'someOf'])
   var n = typeof range === 'number' ? range : fit(id, range[0], range[1])
   var i = -1
   var results = []
@@ -17,7 +17,7 @@ function someOfMain(input, range, samples) {
   var chosen
 
   while (++i < n && (remainingLen = remaining.length)) {
-    id = hash([id, 'someOf', i])
+    id = hash(id)
     chosenIndex = id % remainingLen
     chosen = remaining[chosenIndex]
     remaining.splice(chosenIndex, 1)

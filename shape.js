@@ -8,12 +8,12 @@ function shape(a, b) {
 }
 
 function shapeMain(input, properties) {
-  var id = hash(input)
+  var id = hash([input, 'shape'])
   var results = {}
 
   for (var k in properties) {
     if (hasOwnProperty.call(properties, k)) {
-      results[k] = resolve(hash([id, 'shape', k]), properties[k])
+      results[k] = resolve(hash([id, k]), properties[k])
     }
   }
 

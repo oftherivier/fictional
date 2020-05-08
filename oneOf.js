@@ -6,7 +6,7 @@ function oneOf(a, b) {
 }
 
 function oneOfMain(input, samples) {
-  var id = hash(input)
+  var id = hash([input, 'oneOf'])
   return resolve(id, samples[id % samples.length])
 }
 
