@@ -4,8 +4,8 @@ var fit = require('./utils/fit')
 var defaults = require('./utils/defaults')
 var sentence = require('./sentence')
 
-var DEFAULT_MIN_SENTENCES = 4
-var DEFAULT_MAX_SENTENCES = 5
+var DEFAULT_MIN_SENTENCES = 3
+var DEFAULT_MAX_SENTENCES = 7
 
 function paragraph(input, opts) {
   opts = opts || 0
