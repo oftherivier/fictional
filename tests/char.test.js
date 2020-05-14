@@ -1,15 +1,33 @@
 const tap = require('tap')
-const { times } = require('..')
+const { char } = require('..')
 
-tap.test('non-fn makers', t => {
-  t.deepEquals(times(null, [2, 2], 23), [23, 23])
+tap.test('char.inRanges: tuple ranges', t => {
+  let i = -1
+  const fn = char.inRanges([
+    [0x61, 0x62],
+    [0x63, 0x64]
+  ])
+  const results = new Set()
+
+  while (++i < 100) {
+    results.add(fn(i))
+  }
+
+  t.deepEqual([...results].sort(), ['a', 'b', 'c', 'd'])
   t.end()
 })
 
-tap.test('constant count', t => {
-  t.deepEquals(
-    times(null, 2, () => 23),
-    [23, 23]
-  )
+tap.test('char.inRanges: composition', t => {
+  let i = -1
+  const ab = char.inRanges([[0x61, 0x62]])
+  const cd = char.inRanges([[0x63, 0x64]])
+  const fn = char.inRanges([ab, cd])
+  const results = new Set()
+
+  while (++i < 100) {
+    results.add(fn(i))
+  }
+
+  t.deepEqual([...results].sort(), ['a', 'b', 'c', 'd'])
   t.end()
 })

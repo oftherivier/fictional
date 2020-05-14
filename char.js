@@ -1,47 +1,76 @@
 var hash = require('./hash')
-var conj = require('./utils/conj')
-var defaults = require('./utils/defaults')
-var fit = require('./utils/fit')
+var fitRanges = require('./utils/fitRanges')
 var fromCodePoint = require('./utils/fromCodePoint')
 
-var DEFAULT_RANGES = [
-  // ascii lower
+var char = charInRanges([
+  // ascii
   [0x61, 0x7a],
 
-  // ascii upper
-  [0x41, 0x5a],
+  // latin1
+  [0x0020, 0x007e],
+  [0x00a0, 0x00ff]
+])
 
-  // latin-1 supplement lower
+char.inRanges = charInRanges
+
+char.unicode = char
+char.ascii = charInRanges([[0x61, 0x7a]])
+char.latin1 = charInRanges([
+  [0x0020, 0x007e],
+  [0x00a0, 0x00ff]
+])
+char.asciiLower = charInRanges([[0x61, 0x7a]])
+char.asciiUpper = charInRanges([[0x41, 0x5a]])
+char.digit = charInRanges([[0x30, 0x39]])
+char.latin1Upper = charInRanges([
   [0xdf, 0xf6],
-  [0xf8, 0xff],
-
-  // latin-1 supplement upper
+  [0xf8, 0xff]
+])
+char.latin1Lower = charInRanges([
   [0xc0, 0xd6],
-  [0xd8, 0xde],
+  [0xd8, 0xde]
+])
 
-  // digits
-  [0x30, 0x39]
-]
+char.asciiLetter = charInRanges([char.asciiLower, char.asciiUpper])
+char.latin1Letter = charInRanges([char.latin1Lower, char.latin1Upper])
+char.alphanumeric = charInRanges([char.asciiLetter, char.digit])
+char.lower = charInRanges([char.asciiLower, char.latin1Lower])
+char.upper = charInRanges([char.latin1Upper, char.latin1Upper])
+char.letter = charInRanges([char.asciiLetter, char.latin1Letter])
 
-function char(input, opts) {
-  opts = opts || 0
-  var ranges = defaults(opts.ranges, DEFAULT_RANGES)
+function charInRanges(ranges) {
+  ranges = normalizeRanges(ranges)
+  var fitFn = fitRanges(ranges)
 
-  var id = hash([input, 'char'])
-  var range = ranges[id % ranges.length]
+  charFn.__fictional_char = {
+    ranges: ranges
+  }
 
-  id = hash(id)
-  return fromCodePoint(fit(id, range[0], range[1]))
-}
-
-char.options = function charOptions(opts) {
-  var base = this
-  charFn.options = char.options
   return charFn
 
-  function charFn(input, overrides) {
-    return base(input, conj(opts, overrides))
+  function charFn(input) {
+    return fromCodePoint(fitFn(hash([input, 'char'])))
   }
+}
+
+function normalizeRanges(ranges) {
+  ranges = [].concat(ranges)
+  var results = []
+  var i = -1
+  var n = ranges.length
+  var range
+
+  while (++i < n) {
+    range = ranges[i]
+
+    if (range.__fictional_char) {
+      results.push.apply(results, range.__fictional_char.ranges)
+    } else {
+      results.push(range)
+    }
+  }
+
+  return results
 }
 
 module.exports = char

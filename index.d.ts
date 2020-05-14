@@ -56,13 +56,31 @@ declare const dateString: DateString
 
 export { dateString }
 
-export interface CharOptions {
-  ranges: [number, number][]
+export interface CharFn {
+  __fictional_char: unknown
+  (input: Input): string
 }
 
-export interface Char {
-  (input: Input, options?: Partial<CharOptions>): string
-  options(overrides?: Partial<CharOptions>): this
+export type CharRange = [number, number] | CharFn
+
+export interface Char extends CharFn {
+  inRanges(ranges: CharRange[]): Char
+
+  ascii: CharFn
+  latin1: CharFn
+
+  digit: CharFn
+  asciiLower: CharFn
+  asciiUpper: CharFn
+  latin1Upper: CharFn
+  latin1Lower: CharFn
+
+  asciiLetter: CharFn
+  latin1Letter: CharFn
+  alphanumeric: CharFn
+  lower: CharFn
+  upper: CharFn
+  letter: CharFn
 }
 
 declare const char: Char

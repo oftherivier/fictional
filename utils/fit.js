@@ -1,20 +1,20 @@
-module.exports = function fit(v, lo, hi) {
+module.exports = function fit(v, min, max) {
   var whole
   var decimals
 
-  lo = lo || 0
+  min = min || 0
 
-  if (hi == null) {
-    return v > lo ? v : v + lo
+  if (max == null) {
+    return v > min ? v : v + min
   }
 
-  hi = Math.max(hi, lo)
+  max = Math.max(max, min)
 
-  if (lo === hi) {
-    return lo
+  if (min === max) {
+    return min
   }
 
-  if (lo <= v && v <= hi) {
+  if (min <= v && v <= max) {
     return v
   }
 
@@ -24,10 +24,10 @@ module.exports = function fit(v, lo, hi) {
   if (whole !== v) {
     // avoid rounding errors via intermediate string
     decimals = decimalsOf(v)
-    hi = hi - 1
+    max = max - 1
   }
 
-  return (whole % (hi + 1 - lo)) + lo + decimals
+  return (whole % (max + 1 - min)) + min + decimals
 }
 
 function decimalsOf(v) {
