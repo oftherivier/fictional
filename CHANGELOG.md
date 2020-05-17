@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/oftherivier/fictional/compare/v0.1.0...v0.2.0) (2020-05-17)
+
+
+### Features
+
+* **char:** Change char range shorthands ([037b216](https://github.com/oftherivier/fictional/commit/037b2167fe69292ab273a96f1b5e212562080375))
+* Faster char() for ranges < 256 ([ea745ea](https://github.com/oftherivier/fictional/commit/ea745ea44fb342b60fd31c5dde967c342d54c74b))
+
 ## 0.1.0 (2020-05-16)
 
 
