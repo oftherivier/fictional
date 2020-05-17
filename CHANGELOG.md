@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/oftherivier/fictional/compare/v0.2.0...v0.3.0) (2020-05-17)
+
+
+### Features
+
+* Use simpler hash inputs to improve performance ([f501fdf](https://github.com/oftherivier/fictional/commit/f501fdf74d3a284c6d5b4603bbb51a7e120f0b6e))
+
 ## [0.2.0](https://github.com/oftherivier/fictional/compare/v0.1.0...v0.2.0) (2020-05-17)
 
 
