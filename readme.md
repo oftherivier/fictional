@@ -44,6 +44,7 @@ user('id-1')
 }
 ```
 
+- [Why](#why)
 - [Overview](#overview)
   - [Makers](#overview-makers)
   - [Composition](#overview-makers)
@@ -425,6 +426,36 @@ Fictional ships with makers for a predefined set of character ranges. Similar to
 * `char.latin1Upper`: Upper case Latin-1 Supplement letters
 
 ##### <a name="char-in-ranges" href="#char-in-ranges">#</a> `char.inRanges(ranges)`
+
+Takes in an array of `[min, max]` pairs, where `min` and `max` are integers specifying the minimum and maximum possible [Unicode code point](https://en.wikipedia.org/wiki/List_of_Unicode_characters) values for a desired range of characters, and returns a maker function that will return characters in those given ranges.
+
+```js
+const symbols = char.inRanges([
+  // misc symbols
+  [0x2600, 0x26ff],
+
+  // emoticons
+  [0x1f600, 0x1f64f]
+])
+
+symbols('id-23')
+// =>
+'⛑'
+```
+
+`char.inRanges` is designed to allow characters in the ranges given to all have a similar likelihood of being returned.
+
+To allow for composition, each item in the array of `ranges` can also be a pre-defined character range, or another character range defined using `char.inRanges()`:
+
+```js
+const misc = char.inRanges([[0x2600, 0x26ff]])
+const emoticons = char.inRanges([[0x1f600, 0x1f64f]])
+const letterOrSymbol = char.inRanges([misc, emoticons, char.letter])
+
+letterOrSymbol('id-3')
+// =>
+'⛵'
+```
 
 #### <a name="word" href="#word">#</a> `word(id[, options])`
 
