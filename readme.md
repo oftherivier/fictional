@@ -388,17 +388,17 @@ Takes in an identifying [`input`](#overview-makers) value and returns a string w
 ```js
 char('id-23')
 // =>
-'u'
+'h'
 ```
 
-The generated character will be any [ASCII](https://en.wikipedia.org/wiki/ASCII) or [Latin-1 Supplement](https://en.wikipedia.org/wiki/Latin-1_Supplement_(Unicode_block)) character. Alternative character ranges are listed [below](#char-ranges). To choose your own range of characters, see [`char.inRanges()`](#char-in-ranges).
+The generated character will be an alphanumeric: lower and upper case ASCII letters and digits 0 to 9. Alternative character ranges are listed [below](#char-ranges). To choose your own range of characters, see [`char.inRanges()`](#char-in-ranges).
 
 ##### Predefined character ranges
 
 ```js
 char.ascii('id-2')
 // =>
-'g'
+'='
 
 char.digit('id-3')
 // =>
@@ -407,18 +407,22 @@ char.digit('id-3')
 
 Fictional ships with makers for a predefined set of character ranges. Similar to `char()`, these makers take in only an identifying [`input`](#overview-makers) value as an argument and return a string with a single character. The following ranges are available:
 
-* `char.ascii`: Any [ASCII](https://en.wikipedia.org/wiki/ASCII) character
+* `char.ascii`: Any ASCII character
 * `char.digit`: Characters for numbers 0 to 9
-* `char.alphanumeric`: Characters for both numbers 0 to 9 and lower and upper case ASCII letters
-* `char.letter`: Lower and upper case letters from [ASCII](https://en.wikipedia.org/wiki/ASCII) or [Latin-1 Supplement](https://en.wikipedia.org/wiki/Latin-1_Supplement_(Unicode_block))
-* `char.lower`: Lower case letters from ASCII or Latin-1 Supplement
-* `char.upper`: Upper case letters from ASCII or Latin-1 Supplement
-* `char.asciiLower`: Lower case [ASCII](https://en.wikipedia.org/wiki/ASCII) letters
-* `char.asciiUpper`: Upper case ASCII letters
-* `char.latin1Lower`: Lower case [Latin-1 Supplement](https://en.wikipedia.org/wiki/Latin-1_Supplement_(Unicode_block)) letters
-* `char.latin1Upper`: Upper case Latin-1 Supplement letters
-* `char.asciiLetter`: Lower and upper case ASCII letters
+* `char.alphanumeric` (alias: `char`): lower and upper case ASCII letters and digits 0 to 9
+* `char.letter` (alias: `char.asciiLetter`): Lower and upper case ASCII letters
+* `char.lower` (alias: `asciiLower`): Lower case ASCII letters
+* `char.upper` (alias `char.asciiUpper`): Upper case ASCII letters
+
+* `char.unicode`: Any character from the ASCII and [Latin-1 Supplement](https://en.wikipedia.org/wiki/Latin-1_Supplement_(Unicode_block)) unicode blocks
+* `char.unicodeLetter`: Lower and upper case letters from the ASCII and Latin-1 Supplement unicode blocks
+* `char.unicodeLower`: Lower case letters from the ASCII and Latin-1 Supplement unicode blocks
+* `char.unicodeUpper`: Upper case letters from the ASCII and Latin-1 Supplement unicode blocks
+
+* `char.latin1`: Any character from the Latin-1 Supplement unicode block
 * `char.latin1Letter`: Lower and upper case Latin-1 Supplement letters
+* `char.latin1Lower`: Lower case Latin-1 Supplement letters
+* `char.latin1Upper`: Upper case Latin-1 Supplement letters
 
 ##### <a name="char-in-ranges" href="#char-in-ranges">#</a> `char.inRanges(ranges)`
 
@@ -596,7 +600,7 @@ join('id-2', '', [
   times(3, char.alphanumeric)
 ])
 // =>
-'M1jL'
+'o1jL'
 ```
 
 #### <a name="oneOf" href="#oneOf">#</a> `oneOf(input, values)`
@@ -649,7 +653,7 @@ If an item in `values` is a maker, that maker will be called and the result will
 someOf('id-3', [1, 2], [int, word, char])
 // =>
 [
-  'Í',
+  'F',
   'Yoranö'
 ]
 ```
@@ -688,8 +692,8 @@ Takes in an identifying [`input`](#overview-makers) value and an array of makers
 tuple('id-23', [char, char])
 // =>
 [
-  'ï',
-  'w'
+  '2',
+  'V'
 ]
 ```
 
@@ -699,7 +703,7 @@ If an item in the `value` array is not a function, that value will be used as-is
 tuple('id-2', [char, '!'])
 // =>
 [
-  'í',
+  'w',
   '!'
 ]
 ```
