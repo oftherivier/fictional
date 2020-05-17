@@ -7,15 +7,15 @@ import { word } from 'fictional'
 
 word('id-1')
 // =>
-'Soțaceami'
+'Kehaṥhino'
 
 word('id-2')
 // =>
-'Rakẻkoa'
+'Kăira'
 
 word('id-1')
 // =>
-'Soțaceami'
+'Kehaṥhino'
 ```
 
 ```js
@@ -28,19 +28,19 @@ const user = shape({
 user('id-1')
 // =>
 {
-  name: 'Miʋaso Chirẚeyumo'
+  name: 'Ram̃e Śo'
 }
 
 user('id-2')
 // =>
 {
-  name: 'Hymukȋko Ṿi'
+  name: 'Nòha Ceanöme Nivamö'
 }
 
 user('id-1')
 // =>
 {
-  name: 'Miʋaso Chirẚeyumo'
+  name: 'Ram̃e Śo'
 }
 ```
 
@@ -102,10 +102,10 @@ const user = shape({
 user('id-1')
 // =>
 {
-  id: 3999899282,
+  id: 2275785302,
   name: {
-    first: 'Yokiňso',
-    last: 'Cḝayomuso'
+    first: 'Vimémo',
+    last: 'Kikăvimo'
   }
 }
 ```
@@ -140,7 +140,7 @@ import { word } from 'fictional'
 // `word` is a maker
 word('id-1')
 // =>
-'Soțaceami'
+'Kehaṥhino'
 ```
 
 The given input can be any JSON-serializable value. For any two calls to the
@@ -159,14 +159,14 @@ word({
   b: 23
 })
 // =>
-'Hykė́a'
+'Vimã'
 
 word({
   b: 23,
   a: 21
 })
 // =>
-'Hykė́a'
+'Vimã'
 ```
 
 ### <a name="overview-composition" href="#overview-composition">#</a> Composition
@@ -183,11 +183,11 @@ const streetAddress = join(' ', [
 
 streetAddress('id-1')
 // =>
-'52 Ceasỡ Drive'
+'200 Nṏmeta Drive'
 
 streetAddress('id-2')
 // =>
-'62 Noḱashi Avenue'
+'73 Vằyo Street'
 ```
 
 Some makers take in identifying value as the only required argument and return. These kinds of makers are described in the docs as [_primary_ makers](#primaries). [`word()`](#word) is an example of such a maker.
@@ -202,8 +202,8 @@ Under the hood, composition makers re-hash the identifying value each time a mak
 tuple('id-1', [word, word])
 // =>
 [
-  'Kȋna',
-  'Ceasỡ'
+  'Noanơ',
+  'Nṏmeta'
 ]
 
 // this is roughly the same as doing
@@ -217,14 +217,14 @@ Many makers accept an options object as an argument for configuring how the gene
 ```js
 int('id-1')
 // =>
-3378196653
+3234238292
 
 int('id-1', {
   min: 1,
   max: 99
 })
 // =>
-52
+66
 ```
 
 As a convenience, it is also possible to extend these makers to use specific options by using the `.options()` api:
@@ -237,11 +237,11 @@ const newInt = int.options({
 
 newInt('id-1')
 // =>
-52
+66
 
 newInt('id-2')
 // =>
-21
+70
 ```
 
 `.options()` returns a new function that will call the original maker function with the given arguments. It is still possible to provide options when calling the returned function. In this case, these options will override any options given to `.options()`:
@@ -254,7 +254,7 @@ const newInt = int.options({
 
 newInt('id-1', { max: 3 })
 // =>
-1
+3
 ```
 
 `.options()` can also be called on the returned function, to further extend the maker:
@@ -266,11 +266,11 @@ const newInt = int
 
 newInt('id-1')
 // =>
-52
+66
 
 newInt('id-2')
 // =>
-21
+70
 ```
 
 ### <a name="overview-currying" href="#overview-currying">#</a> Currying
@@ -285,11 +285,11 @@ const companyName = join(' ', [
 
 companyName('id-1')
 // =>
-'Kȋna Incorporated'
+'Noanơ Systems'
 
 companyName('id-2')
 // =>
-'Hayuḧa Systems'
+'Ķaivayo Incorporated'
 ```
 
 ## <a name="api-ref" href="#api-ref">#</a> API Reference
@@ -303,7 +303,7 @@ Takes in an identifying [`input`](#overview-makers) value and returns an integer
 ```js
 int('id-23')
 // =>
-1502773981
+3545223396
 ```
 
 ##### `options`
@@ -317,7 +317,7 @@ int('id-2', {
   max: 99
 })
 // =>
-18
+75
 ```
 
 #### <a name="bool" href="#int">#</a> `bool(id)`
@@ -338,7 +338,7 @@ with both a whole and decimal segment.
 ```js
 float('id-23')
 // =>
-3724045374.389043
+2566366893.329032
 ```
 
 ##### `options`
@@ -352,7 +352,7 @@ float('id-2', {
   max: 99
 })
 // =>
-46.41418815
+68.29029673
 ```
 
 #### <a name="dateString" href="#date-string">#</a> `dateString(id[, options])`
@@ -389,7 +389,7 @@ Takes in an identifying [`input`](#overview-makers) value and returns a string w
 ```js
 char('id-23')
 // =>
-'h'
+'W'
 ```
 
 The generated character will be an alphanumeric: lower and upper case ASCII letters and digits 0 to 9. Alternative character ranges are listed [below](#char-ranges). To choose your own range of characters, see [`char.inRanges()`](#char-in-ranges).
@@ -399,11 +399,11 @@ The generated character will be an alphanumeric: lower and upper case ASCII lett
 ```js
 char.ascii('id-2')
 // =>
-'='
+'.'
 
 char.digit('id-3')
 // =>
-'5'
+'8'
 ```
 
 Fictional ships with makers for a predefined set of character ranges. Similar to `char()`, these makers take in only an identifying [`input`](#overview-makers) value as an argument and return a string with a single character. The following ranges are available:
@@ -438,9 +438,9 @@ const symbols = char.inRanges([
   [0x1f600, 0x1f64f]
 ])
 
-symbols('id-23')
+symbols('id-1')
 // =>
-'⛑'
+'♄'
 ```
 
 `char.inRanges` is designed to allow characters in the ranges given to all have a similar likelihood of being returned.
@@ -452,9 +452,9 @@ const misc = char.inRanges([[0x2600, 0x26ff]])
 const emoticons = char.inRanges([[0x1f600, 0x1f64f]])
 const letterOrSymbol = char.inRanges([misc, emoticons, char.letter])
 
-letterOrSymbol('id-3')
+letterOrSymbol('id-2')
 // =>
-'⛵'
+'⚫'
 ```
 
 #### <a name="word" href="#word">#</a> `word(id[, options])`
@@ -465,7 +465,7 @@ resembling a fictitious word.
 ```js
 word('id-23')
 // =>
-'Vamīra'
+'Ḥacea'
 ```
 
 ##### `options`
@@ -488,7 +488,7 @@ word('id-2', {
   unicode: 0.382
 })
 // =>
-'Rakekoakeko'
+'Kairayokin'
 ```
 
 #### <a name="words" href="#words">#</a> `words(id[, options])`
@@ -499,7 +499,7 @@ resembling fictitious words.
 ```js
 words('id-23')
 // =>
-'Ƈhi ṅorako yựnakinra'
+'Vǟyo šhihanikai'
 ```
 
 ##### `options`
@@ -525,7 +525,7 @@ words('id-2', {
   capitalize: 'all'
 })
 // =>
-'Hami S̩okiva Kin Ķota Mặniceako'
+'Kai Va Movà Nikṓmu Hy Kin Mukai Rae'
 ```
 
 #### <a name="sentence" href="#sentence">#</a> `sentence(id[, options])`
@@ -535,7 +535,7 @@ Takes in an identifying [`input`](#overview-makers) value and returns a string v
 ```js
 sentence('id-23')
 // =>
-'Vihamiko munina nimomuno mu rǻemunami m̃inomu nâso raechinoni, hycẖi kima m̃aceamu mimo yumayoha manikai ceahy mö.'
+'Ṅinamechi kaiyoha kinsokani ʋiso ketẫmema vimokaĩta ceashiha ke.'
 ```
 
 ##### `options`
@@ -559,7 +559,7 @@ sentence('id-2', {
   unicode: 0.9
 })
 // =>
-'Chḯ yuraemỡkai taǩo, miḫa mų́ nam̃u.'
+'Tẚ kikamụna, hyṅi ṃomumi, kaichikeko ḿako.'
 ```
 
 #### <a name="paragraph" href="#paragraph">#</a> `paragraph(id[, options])`
@@ -569,7 +569,7 @@ Takes in an identifying [`input`](#overview-makers) value and returns a string v
 ```js
 paragraph('id-23')
 // =>
-'Tamoraeƙai vayukàiha namusoni meyushi sokimoshi vạmi kæinome. Mani monicea rayuvayo nike komeha kaihÿso yutaṋokai, mukikai muso chiakin namuno hakia rae havimőchi. Kaiǹani kiyo va kaimû munonishi meka. Kai ḱeyukaihy taḱo vakevi rachimu ka, yoḳai hykinravi ṽivakeka chita keyumino nimoka kakinchia make. Mokiṉo niceasokį̃ kīn shimuǩachi hame ṽirae, hy vakoyu na raenova chishimena sõmenoma niyukakin.'
+'Nầmu chiƫakinchi chimona kinƙishi hamu yȭ, no ceakinko ceaso hamishiha sḧimo. No ceakinko ceaso hamishiha sḧimo, yokin manokai raemi keraemu mukema ko. Yokin manokai raemi keraemu mukema ko, kiranoshi kihymota raȅyu vamo ra. Kiranoshi kihymota raȅyu vamo ra.'
 ```
 
 ##### `options`
@@ -592,7 +592,7 @@ paragraph('id-2', {
   unicode: 0.9
 })
 // =>
-'Ħa kinasŏ ỷo kamǔ kaịva, cħikakiyo viṃevi mẳchimona raekẵi m̃a hỳshi. Kïnraemu ĉea soni rầ nokaimakȉ kaikečhi. Mễnira shir̃achimu ṇi nakīn ṉi vakįracea, kaichiỹu sotashitầ kokashi miƙo somikaȋ yokâ ṅa metakiha. Ḧymahy nihyvǡme mimuso ḫa hacềakinmu, ȼea kamoceaƴo ramȍtavi cẖikaso ꝁimahyme yorắetakin. Rakintayu cḫime m̃ikai ceamonī̀no yú, ȑano mikeṽimo yokɨ kishìyushi ceayus̩o maceȁyo.'
+'Kaichikeko ḿako vimekacḫi mǚ nanokínmi nǫ niḵame. Shicḫiyomi kė̃ yǔmamu nakeyoki mîyo raeṽashirae kaȉceachi yurȁe. Şo rahƴha soꝁinki cėashi kầ yokaiko. Kamḯna kohaƙin råmu ꝁi shiḥavi ṉi, naċhi mȧ michi kemổ kiraenayu. Naċhi mȧ michi kemổ kiraenayu, kaħyni nơkinkaino merayō hắ r̃a nichiḿo. Kaħyni nơkinkaino merayō hắ r̃a nichiḿo, kavimêna shiƴo moshiṟa ṋavi chi kǻ. Kavimêna shiƴo moshiṟa ṋavi chi kǻ.'
 ```
 
 ### <a name="composition" href="#composition">#</a> Composition
@@ -604,7 +604,7 @@ Takes in an identifying [`input`](#overview-makers) value and an array of makers
 ```js
 join('id-23', ' ', [word, oneOf(['Street', 'Drive'])])
 // =>
-'Vakinmo̩ Drive'
+'Kinvinaceằ Drive'
 ```
 
 If an item in the `value` array is not a function, that value will be used as-is:
@@ -612,7 +612,7 @@ If an item in the `value` array is not a function, that value will be used as-is
 ```js
 join('id-2', ' ', [word, 'Drive'])
 // =>
-'Hayuḧa Drive'
+'Ķaivayo Drive'
 ```
 
 `joiner` can also be a function, in which case it will be called with the results of resolving each item in `values` as input:
@@ -620,7 +620,7 @@ join('id-2', ' ', [word, 'Drive'])
 ```js
 join('id-3', ([a, b, c]) => `${a}-${b} ${c}`, [word, word, word])
 // =>
-'Haẙu-Kishinokề Ḿami'
+'Kê̄yo-Yohaƙin Kȱha'
 ```
 
 If any of the items in `values` resolves to a nested array, that array will be flattened (regardless of nesting depth):
@@ -631,7 +631,7 @@ join('id-2', '', [
   times(3, char.alphanumeric)
 ])
 // =>
-'o1jL'
+'st9q'
 ```
 
 #### <a name="oneOf" href="#oneOf">#</a> `oneOf(input, values)`
@@ -649,7 +649,7 @@ If an item in `values` is a maker, that maker will be called and the result will
 ```js
 oneOf('id-2', [int, word, char])
 // =>
-1892367499
+2902967576
 ```
 
 #### <a name="someOf" href="#someOf">#</a> `someOf(input, range, values)`
@@ -660,8 +660,7 @@ Takes in an identifying [`input`](#overview-makers) value and an array of `value
 someOf('id-23', [1, 2], ['red', 'green', 'blue'])
 // =>
 [
-  'blue',
-  'green'
+  'red'
 ]
 ```
 
@@ -684,8 +683,7 @@ If an item in `values` is a maker, that maker will be called and the result will
 someOf('id-3', [1, 2], [int, word, char])
 // =>
 [
-  'F',
-  'Yoranö'
+  'a'
 ]
 ```
 
@@ -697,10 +695,10 @@ Takes in an identifying [`input`](#overview-makers) value and a `maker`, calls t
 times('id-23', [4, 5], word)
 // =>
 [
-  'Rashikotǻ',
-  'Mą́sochira',
-  'Ṃia',
-  'Kẫshi'
+  'Nokïnvi',
+  'Kinvinaceằ',
+  'Vinaceằ',
+  'Nacė́ashimu'
 ]
 ```
 
@@ -710,8 +708,8 @@ As shown above, `range` can be a tuple array of the minimum and maximum possible
 times('id-2', 2, word)
 // =>
 [
-  'Ṯasomua',
-  'Noḿe'
+  'Kaivaƴokin',
+  'Ķaivayo'
 ]
 ```
 
@@ -723,8 +721,8 @@ Takes in an identifying [`input`](#overview-makers) value and an array of makers
 tuple('id-23', [char, char])
 // =>
 [
-  '2',
-  'V'
+  'B',
+  'v'
 ]
 ```
 
@@ -734,7 +732,7 @@ If an item in the `value` array is not a function, that value will be used as-is
 tuple('id-2', [char, '!'])
 // =>
 [
-  'w',
+  'C',
   '!'
 ]
 ```
@@ -750,8 +748,8 @@ shape('id-23', {
 })
 // =>
 {
-  firstName: 'Kệsovi',
-  lastName: 'Ñiceano'
+  firstName: 'Ĥayu',
+  lastName: 'Møraekake'
 }
 ```
 
@@ -764,7 +762,7 @@ shape('id-23', {
 })
 // =>
 {
-  name: 'Ñokashi Yṹvikaimu',
+  name: 'Nocḫishi Chis̈hi',
   active: true
 }
 ```
@@ -792,7 +790,7 @@ oneOfWeighted('id-2', [
   [0.05, int]
 ])
 // =>
-'Viṣo'
+'Kaivaƴokin'
 ```
 
 For each `[probability, value]` pair in the array of `values`, if the given `probability` is not a number, that probability will be considered _unassigned_. All items with unassigned probabilities will receive an equal share of the remaining probability after accounting for all items with assigned probabilities (all items for which a number value was given for their probability). In the example below, `'green'` and `'blue'` will both have a probability of `0.4` of being returned (`(1 - 0.2) / 2`).
@@ -804,7 +802,7 @@ oneOfWeighted('id-23', [
   [null, 'blue']
 ])
 // =>
-'blue'
+'green'
 ```
 
 ## <a name="install-use" href="#install-use">#</a> Install & Use

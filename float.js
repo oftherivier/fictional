@@ -7,7 +7,9 @@ function float(input, opts) {
 
   var min = opts.min
   var max = opts.max
-  var whole = hash([input, 'float'])
+
+  // rehash to differentiate from `int`
+  var whole = hash(hash(input))
   var v = +(whole + '.' + hash(whole))
 
   return fit(v, min, max)

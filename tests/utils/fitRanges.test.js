@@ -3,14 +3,14 @@ const hash = require('../../hash')
 const fitRanges = require('../../utils/fitRanges')
 
 function oneOf(values) {
-  return input => values[hash([input, 'fitRanges']) % values.length]
+  return id => values[id % values.length]
 }
 
 function run(fn, max) {
   const n = 10000
   let i = -1
   const results = Array(max + 1).fill(0)
-  while (++i < n) results[fn(i)]++
+  while (++i < n) results[fn(hash(i))]++
   return results
 }
 

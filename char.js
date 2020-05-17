@@ -51,7 +51,7 @@ function charInRanges(ranges) {
   return charFn
 
   function charFn(input) {
-    return fromCodePoint(fitFn(hash([input, 'char'])))
+    return fromCodePoint(fitFn(hash(input)))
   }
 }
 

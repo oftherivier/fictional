@@ -7,7 +7,7 @@ function someOf(a, b, c) {
 }
 
 function someOfMain(input, range, samples) {
-  var id = hash([input, 'someOf'])
+  var id = hash(input)
   var n = typeof range === 'number' ? range : fit(id, range[0], range[1])
   var i = -1
   var results = []

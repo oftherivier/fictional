@@ -1,4 +1,5 @@
 var hash = require('./hash')
+var hash2 = hash.hash2
 var resolve = require('./utils/resolve')
 
 var hasOwnProperty = Object.prototype.hasOwnProperty
@@ -8,12 +9,12 @@ function shape(a, b) {
 }
 
 function shapeMain(input, properties) {
-  var id = hash([input, 'shape'])
+  var id = hash(input)
   var results = {}
 
   for (var k in properties) {
     if (hasOwnProperty.call(properties, k)) {
-      results[k] = resolve(hash([id, k]), properties[k])
+      results[k] = resolve(hash2(id, k), properties[k])
     }
   }
 

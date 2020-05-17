@@ -18,7 +18,7 @@ function sentence(input, opts) {
   var maxClauses = defaults(opts.maxClauses, DEFAULT_MAX_CLAUSES)
   var unicode = defaults(opts.unicode, DEFAULT_UNICODE)
 
-  var id = hash([input, 'sentence'])
+  var id = hash(input)
   var n = fit(id, minClauses, maxClauses)
   var i = 0
   id = hash(id)

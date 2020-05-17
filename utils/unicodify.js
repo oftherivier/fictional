@@ -193,7 +193,6 @@ var VARIANTS = {
 }
 
 module.exports = function unicodify(id, word) {
-  id = hash([id, 'unicodify'])
   var wordLen = word.length
   var i = id % wordLen
 

@@ -49,7 +49,7 @@ function word(input, opts) {
   var minSyllables = defaults(opts.minSyllables, DEFAULT_MIN_SYLLABLES)
   var maxSyllables = defaults(opts.maxSyllables, DEFAULT_MAX_SYLLABLES)
   var pUnicode = defaults(opts.unicode, DEFAULT_UNICODE)
-  var id = hash([input, 'word'])
+  var id = hash(input)
   var n = fit(id, minSyllables, maxSyllables)
 
   var result = ''

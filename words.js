@@ -1,4 +1,5 @@
 var hash = require('./hash')
+var hash3 = hash.hash3
 var conj = require('./utils/conj')
 var fit = require('./utils/fit')
 var defaults = require('./utils/defaults')
@@ -18,11 +19,11 @@ function words(input, opts) {
   var min = defaults(opts.min, DEFAULT_MIN_WORDS)
   var max = defaults(opts.max, DEFAULT_MAX_WORDS)
 
-  var id = hash([input, 'words'])
+  var id = hash(input)
   var n = fit(id, min, max)
   var i = 0
 
-  id = hash([id, 'words', i])
+  id = hash3(id, 'words', i)
 
   var firstOpts = conj(opts, {
     minSyllables: minSyllables,
@@ -42,7 +43,7 @@ function words(input, opts) {
     prev = next
 
     do {
-      id = hash([id, 'words', i])
+      id = hash3(id, 'words', i)
       next = word(id, restOpts)
     } while (next.length === prev.length)
 

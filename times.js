@@ -6,7 +6,7 @@ function times(a, b, c) {
 }
 
 function timesMain(input, range, maker) {
-  var id = hash([input, 'times'])
+  var id = hash(input)
   var n = typeof range === 'number' ? range : fit(id, range[0], range[1])
   var i = -1
   var results = []

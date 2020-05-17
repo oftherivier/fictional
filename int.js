@@ -6,7 +6,7 @@ function int(input, opts) {
   opts = opts || 0
   var min = opts.min
   var max = opts.max
-  var id = hash([input, 'int'])
+  var id = hash(input)
   return fit(id, min, max)
 }
 

@@ -1,4 +1,3 @@
-var hash = require('../hash')
 var expandRange = require('./expandRange')
 
 module.exports = function fitRanges(ranges, valuesThreshold) {
@@ -23,8 +22,8 @@ module.exports = function fitRanges(ranges, valuesThreshold) {
 }
 
 function fitRangesByOffsets(segments, size) {
-  return function fitRangesByOffsetsFn(input) {
-    var key = hash([input, 'fitRanges']) % size
+  return function fitRangesByOffsetsFn(id) {
+    var key = id % size
 
     var l = 0
     var r = segments.length - 1
@@ -51,8 +50,8 @@ function fitRangesByOffsets(segments, size) {
 function fitRangesByValues(values) {
   var n = values.length
 
-  return function fitRangesByValuesFn(input) {
-    return values[hash([input, 'fitRanges']) % n]
+  return function fitRangesByValuesFn(id) {
+    return values[id % n]
   }
 }
 

@@ -1,5 +1,3 @@
-var hash = require('../hash')
-
 module.exports = function flip(id, p) {
   p = +p
 
@@ -11,6 +9,5 @@ module.exports = function flip(id, p) {
     return true
   }
 
-  id = hash([id, 'flip'])
   return id % (1 / p) < 1
 }
