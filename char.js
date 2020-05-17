@@ -2,6 +2,8 @@ var hash = require('./hash')
 var fitRanges = require('./utils/fitRanges')
 var fromCodePoint = require('./utils/fromCodePoint')
 
+var VALUES_THRESHOLD = 256
+
 var char = charInRanges([
   // ascii
   [0x61, 0x7a],
@@ -40,7 +42,7 @@ char.letter = charInRanges([char.asciiLetter, char.latin1Letter])
 
 function charInRanges(ranges) {
   ranges = normalizeRanges(ranges)
-  var fitFn = fitRanges(ranges)
+  var fitFn = fitRanges(ranges, VALUES_THRESHOLD)
 
   charFn.__fictional_char = {
     ranges: ranges

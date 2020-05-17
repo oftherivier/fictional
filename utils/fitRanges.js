@@ -1,22 +1,33 @@
 var hash = require('../hash')
+var expandRange = require('./expandRange')
 
-module.exports = function fitRanges(ranges) {
+module.exports = function fitRanges(ranges, valuesThreshold) {
   if (!ranges.length) {
     throw new Error('Empty range set given to fitRanges()')
   }
 
-  var meta = computeRangeMetadata(ranges.slice().sort(compareRanges))
-  var offsets = meta.offsets
+  var meta = computeRangeMetadata(
+    ranges.slice().sort(compareRanges),
+    valuesThreshold
+  )
+  var values = meta.values
+  var segments = meta.segments
   var size = meta.size
 
-  fitRangesFn.meta = meta
-  return fitRangesFn
+  var fn = values
+    ? fitRangesByValues(values)
+    : fitRangesByOffsets(segments, size)
 
-  function fitRangesFn(input) {
+  fn.meta = meta
+  return fn
+}
+
+function fitRangesByOffsets(segments, size) {
+  return function fitRangesByOffsetsFn(input) {
     var key = hash([input, 'fitRanges']) % size
 
     var l = 0
-    var r = offsets.length - 1
+    var r = segments.length - 1
     var m
     var d
     var min
@@ -24,9 +35,9 @@ module.exports = function fitRanges(ranges) {
 
     while (l <= r) {
       m = Math.floor((l + r) / 2)
-      d = offsets[m]
-      min = d.min
-      max = d.max
+      d = segments[m]
+      min = d.modMin
+      max = d.modMax
 
       if (key > max) l = m + 1
       else if (key < min) r = m - 1
@@ -34,6 +45,14 @@ module.exports = function fitRanges(ranges) {
     }
 
     throw new Error('Unexpectedly reached end of fitRanges()')
+  }
+}
+
+function fitRangesByValues(values) {
+  var n = values.length
+
+  return function fitRangesByValuesFn(input) {
+    return values[hash([input, 'fitRanges']) % n]
   }
 }
 
@@ -49,8 +68,8 @@ function compareRanges(a, b) {
   return diff
 }
 
-function computeRangeMetadata(ranges) {
-  var offsets = []
+function computeRangeMetadata(ranges, valuesThreshold) {
+  var segments = []
   var n = ranges.length
   var i = 0
 
@@ -71,9 +90,11 @@ function computeRangeMetadata(ranges) {
     if (nextMin > currentMax + 1) {
       modMax = modMin + (currentMax - currentMin)
 
-      offsets.push({
-        min: modMin,
-        max: modMax,
+      segments.push({
+        modMin: modMin,
+        modMax: modMax,
+        min: currentMin,
+        max: currentMax,
         offset: currentMin - modMin
       })
 
@@ -85,10 +106,11 @@ function computeRangeMetadata(ranges) {
     currentMax = Math.max(currentMax, nextMax)
   }
 
-  offsets.push({
-    ranges: ranges,
-    min: modMin,
-    max: modMin + (currentMax - currentMin),
+  segments.push({
+    modMin: modMin,
+    modMax: modMin + (currentMax - currentMin),
+    min: currentMin,
+    max: currentMax,
     offset: currentMin - modMin
   })
 
@@ -96,7 +118,22 @@ function computeRangeMetadata(ranges) {
 
   return {
     ranges: ranges,
-    offsets: offsets,
-    size: size
+    segments: segments,
+    size: size,
+    values: size <= valuesThreshold ? computeRangeValues(segments) : null
   }
+}
+
+function computeRangeValues(segments) {
+  var i = -1
+  var n = segments.length
+  var d
+  var results = []
+
+  while (++i < n) {
+    d = segments[i]
+    results.push.apply(results, expandRange(d.min, d.max))
+  }
+
+  return results
 }
