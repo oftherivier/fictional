@@ -36,5 +36,15 @@
   "dependencies": {
     "fast-json-stable-stringify": "^2.1.0",
     "string-hash": "^1.1.3"
-  }
+  },
+  "keywords": [
+    "deterministic",
+    "fake",
+    "data",
+    "generator",
+    "fictional",
+    "fixtures",
+    "unit",
+    "testing"
+  ]
 }
