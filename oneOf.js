@@ -1,4 +1,5 @@
 var hash = require('./hash')
+var hash2 = hash.hash2
 var resolve = require('./utils/resolve')
 
 function oneOf(a, b) {
@@ -6,7 +7,7 @@ function oneOf(a, b) {
 }
 
 function oneOfMain(input, samples) {
-  var id = hash(input)
+  var id = hash2(input, 'oneOf')
   return resolve(id, samples[id % samples.length])
 }
 

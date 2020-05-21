@@ -1,4 +1,5 @@
 var hash = require('./hash')
+var hash2 = hash.hash2
 var conj = require('./utils/conj')
 var fit = require('./utils/fit')
 var defaults = require('./utils/defaults')
@@ -12,7 +13,7 @@ function paragraph(input, opts) {
   var minSentences = defaults(opts.minSentences, DEFAULT_MIN_SENTENCES)
   var maxSentences = defaults(opts.maxSentences, DEFAULT_MAX_SENTENCES)
 
-  var id = hash(input)
+  var id = hash2(input, 'paragraph')
   var n = fit(id, minSentences, maxSentences)
   var i = 0
 

@@ -1,4 +1,5 @@
 var hash = require('./hash')
+var hash2 = hash.hash2
 var flip = require('./utils/flip')
 var resolve = require('./utils/resolve')
 
@@ -10,7 +11,7 @@ function oneOfWeighted(a, b) {
 
 function oneOfWeightedMain(input, samples) {
   samples = parseSamples(samples)
-  var id = hash(input)
+  var id = hash2(input, 'oneOfWeighted')
   var n = samples.length
   var pRemaining = 1
   var i = -1

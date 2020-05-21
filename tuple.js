@@ -1,4 +1,5 @@
 var hash = require('./hash')
+var hash2 = hash.hash2
 var resolve = require('./utils/resolve')
 
 function tuple(a, b) {
@@ -6,7 +7,7 @@ function tuple(a, b) {
 }
 
 function tupleMain(input, fns) {
-  var id = hash(input)
+  var id = hash2(input, 'tuple')
   var n = fns.length
   var i = -1
   var results = []

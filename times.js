@@ -1,4 +1,5 @@
 var hash = require('./hash')
+var hash2 = hash.hash2
 var fit = require('./utils/fit')
 
 function times(a, b, c) {
@@ -6,7 +7,7 @@ function times(a, b, c) {
 }
 
 function timesMain(input, range, maker) {
-  var id = hash(input)
+  var id = hash2(input, 'times')
   var n = typeof range === 'number' ? range : fit(id, range[0], range[1])
   var i = -1
   var results = []

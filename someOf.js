@@ -1,4 +1,5 @@
 var hash = require('./hash')
+var hash2 = hash.hash2
 var fit = require('./utils/fit')
 var resolve = require('./utils/resolve')
 
@@ -7,7 +8,7 @@ function someOf(a, b, c) {
 }
 
 function someOfMain(input, range, samples) {
-  var id = hash(input)
+  var id = hash2(input, 'someOf')
   var n = typeof range === 'number' ? range : fit(id, range[0], range[1])
   var i = -1
   var results = []

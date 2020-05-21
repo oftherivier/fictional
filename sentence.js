@@ -1,4 +1,5 @@
 var hash = require('./hash')
+var hash2 = hash.hash2
 var conj = require('./utils/conj')
 var fit = require('./utils/fit')
 var defaults = require('./utils/defaults')
@@ -18,7 +19,7 @@ function sentence(input, opts) {
   var maxClauses = defaults(opts.maxClauses, DEFAULT_MAX_CLAUSES)
   var unicode = defaults(opts.unicode, DEFAULT_UNICODE)
 
-  var id = hash(input)
+  var id = hash2(input, 'sentence')
   var n = fit(id, minClauses, maxClauses)
   var i = 0
   id = hash(id)

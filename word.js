@@ -1,4 +1,5 @@
 var hash = require('./hash')
+var hash2 = hash.hash2
 var conj = require('./utils/conj')
 var fit = require('./utils/fit')
 var flip = require('./utils/flip')
@@ -49,7 +50,7 @@ function word(input, opts) {
   var minSyllables = defaults(opts.minSyllables, DEFAULT_MIN_SYLLABLES)
   var maxSyllables = defaults(opts.maxSyllables, DEFAULT_MAX_SYLLABLES)
   var pUnicode = defaults(opts.unicode, DEFAULT_UNICODE)
-  var id = hash(input)
+  var id = hash2(input, 'word')
   var n = fit(id, minSyllables, maxSyllables)
 
   var result = ''
