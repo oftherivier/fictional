@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.0](https://github.com/oftherivier/fictional/compare/v0.3.0...v0.4.0) (2020-05-21)
+
+
+### Features
+
+* Improve quality of results via namespaced hashes again ([0f86278](https://github.com/oftherivier/fictional/commit/0f862787db0f6a298f9a8a25d70943bce96c4ede))
+
 ## [0.3.0](https://github.com/oftherivier/fictional/compare/v0.2.0...v0.3.0) (2020-05-17)
 
 
