@@ -1,10 +1,10 @@
-const tap = require('tap')
+const test = require('ava')
 const { oneOfWeighted } = require('..')
 const { diffBetween } = require('./utils')
 
 const DIFF_THRESHOLD = 0.05
 
-tap.test(
+test(
   `averages to within ${DIFF_THRESHOLD * 100}% of the given probabilities`,
   t => {
     const n = 10000
@@ -28,11 +28,10 @@ tap.test(
     t.assert(diffBetween(sums.green / n, 0.1) <= DIFF_THRESHOLD)
     t.assert(diffBetween(sums.blue / n, 0.3) <= DIFF_THRESHOLD)
 
-    t.end()
   }
 )
 
-tap.test(`unassigned probabilities`, t => {
+test(`unassigned probabilities`, t => {
   const n = 10000
   let i = -1
 
@@ -53,18 +52,16 @@ tap.test(`unassigned probabilities`, t => {
 
   t.assert(diffBetween(sums.b / n, 0.5) <= DIFF_THRESHOLD)
 
-  t.end()
 })
 
-tap.test(`empty samples`, t => {
+test(`empty samples`, t => {
   t.throws(() => {
     oneOfWeighted(null, [])
   })
 
-  t.end()
 })
 
-tap.test(`probabilities add up to < 1`, t => {
+test(`probabilities add up to < 1`, t => {
   t.throws(() =>
     oneOfWeighted(null, [
       [0.2, 'a'],
@@ -72,10 +69,9 @@ tap.test(`probabilities add up to < 1`, t => {
     ])
   )
 
-  t.end()
 })
 
-tap.test(`probabilities add up to > 1`, t => {
+test(`probabilities add up to > 1`, t => {
   t.throws(() =>
     oneOfWeighted(null, [
       [0.2, 'a'],
@@ -83,10 +79,9 @@ tap.test(`probabilities add up to > 1`, t => {
     ])
   )
 
-  t.end()
 })
 
-tap.test(`omitted probabilities`, t => {
+test(`omitted probabilities`, t => {
   t.throws(() =>
     oneOfWeighted(null, [
       [0.2, 'a'],
@@ -94,5 +89,4 @@ tap.test(`omitted probabilities`, t => {
     ])
   )
 
-  t.end()
 })

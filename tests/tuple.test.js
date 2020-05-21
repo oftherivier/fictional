@@ -1,7 +1,6 @@
-const tap = require('tap')
+const test = require('ava')
 const { tuple } = require('..')
 
-tap.test('non-fn makers', t => {
-  t.deepEquals(tuple(null, [() => 2, 3]), [2, 3])
-  t.end()
+test('non-fn makers', t => {
+  t.deepEqual(tuple(null, [() => 2, 3]), [2, 3])
 })

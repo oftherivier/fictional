@@ -1,15 +1,13 @@
-const tap = require('tap')
+const test = require('ava')
 const { times } = require('..')
 
-tap.test('non-fn makers', t => {
-  t.deepEquals(times(null, [2, 2], 23), [23, 23])
-  t.end()
+test('non-fn makers', t => {
+  t.deepEqual(times(null, [2, 2], 23), [23, 23])
 })
 
-tap.test('constant count', t => {
-  t.deepEquals(
+test('constant count', t => {
+  t.deepEqual(
     times(null, 2, () => 23),
     [23, 23]
   )
-  t.end()
 })

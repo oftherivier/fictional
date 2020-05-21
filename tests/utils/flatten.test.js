@@ -1,12 +1,10 @@
-const tap = require('tap')
+const test = require('ava')
 const flatten = require('../../utils/flatten')
 
-tap.test('flatten', t => {
-  t.deepEquals(flatten([[1, [2, [[3], [[[4]]]]]]]), [1, 2, 3, 4])
-  t.end()
+test('flatten', t => {
+  t.deepEqual(flatten([[1, [2, [[3], [[[4]]]]]]]), [1, 2, 3, 4])
 })
 
-tap.test('empty items', t => {
-  t.deepEquals(flatten([2, [], 3]), [2, 3])
-  t.end()
+test('empty items', t => {
+  t.deepEqual(flatten([2, [], 3]), [2, 3])
 })

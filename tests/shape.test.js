@@ -1,8 +1,8 @@
-const tap = require('tap')
+const test = require('ava')
 const { shape } = require('..')
 
-tap.test('non-fn makers', t => {
-  t.deepEquals(
+test('non-fn makers', t => {
+  t.deepEqual(
     shape(null, {
       a: () => 2,
       b: 3
@@ -12,5 +12,4 @@ tap.test('non-fn makers', t => {
       b: 3
     }
   )
-  t.end()
 })

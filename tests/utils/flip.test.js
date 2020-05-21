@@ -1,4 +1,4 @@
-const tap = require('tap')
+const test = require('ava')
 const flip = require('../../utils/flip')
 const { diffBetween } = require('../utils')
 
@@ -24,7 +24,7 @@ const INPUT_PROBABILITIES = [
   0.9
 ]
 
-tap.test(
+test(
   `averages to within ${DIFF_THRESHOLD * 100}% of the given probability`,
   t => {
     for (const p of INPUT_PROBABILITIES) {
@@ -38,6 +38,5 @@ tap.test(
       t.assert(diff <= DIFF_THRESHOLD)
     }
 
-    t.end()
   }
 )

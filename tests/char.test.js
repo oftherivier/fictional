@@ -1,7 +1,7 @@
-const tap = require('tap')
+const test = require('ava')
 const { char } = require('..')
 
-tap.test('char.inRanges: tuple ranges', t => {
+test('char.inRanges: tuple ranges', t => {
   let i = -1
   const fn = char.inRanges([
     [0x61, 0x62],
@@ -14,10 +14,9 @@ tap.test('char.inRanges: tuple ranges', t => {
   }
 
   t.deepEqual([...results].sort(), ['a', 'b', 'c', 'd'])
-  t.end()
 })
 
-tap.test('char.inRanges: composition', t => {
+test('char.inRanges: composition', t => {
   let i = -1
   const ab = char.inRanges([[0x61, 0x62]])
   const cd = char.inRanges([[0x63, 0x64]])
@@ -29,5 +28,4 @@ tap.test('char.inRanges: composition', t => {
   }
 
   t.deepEqual([...results].sort(), ['a', 'b', 'c', 'd'])
-  t.end()
 })

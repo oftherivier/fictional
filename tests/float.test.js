@@ -1,7 +1,7 @@
-const tap = require('tap')
+const test = require('ava')
 const { float } = require('..')
 
-tap.test('min and max', t => {
+test('min and max', t => {
   let i = -1
 
   while (++i < 50) {
@@ -9,5 +9,4 @@ tap.test('min and max', t => {
     t.assert(3 <= result && result <= 5)
   }
 
-  t.end()
 })

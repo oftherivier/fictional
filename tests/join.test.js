@@ -1,14 +1,12 @@
-const tap = require('tap')
+const test = require('ava')
 const { join } = require('..')
 
-tap.test('function as joiner', t => {
+test('function as joiner', t => {
   const result = join(23, vals => vals.join(' '), [() => 'a', () => 'b'])
-  t.equals(result, 'a b')
-  t.end()
+  t.is(result, 'a b')
 })
 
-tap.test('flattening results', t => {
+test('flattening results', t => {
   const result = join(23, ' ', [() => 'a', () => ['b', ['c']]])
-  t.equals(result, 'a b c')
-  t.end()
+  t.is(result, 'a b c')
 })

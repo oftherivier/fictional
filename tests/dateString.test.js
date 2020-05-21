@@ -1,7 +1,7 @@
-const tap = require('tap')
+const test = require('ava')
 const { dateString } = require('..')
 
-tap.test('minYear and maxYear', t => {
+test('minYear and maxYear', t => {
   let i = -1
 
   while (++i < 50) {
@@ -14,5 +14,4 @@ tap.test('minYear and maxYear', t => {
     t.assert(2030 <= year && year <= 2089)
   }
 
-  t.end()
 })

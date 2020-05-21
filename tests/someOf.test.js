@@ -1,7 +1,7 @@
-const tap = require('tap')
+const test = require('ava')
 const { someOf } = require('..')
 
-tap.test('no repeats', t => {
+test('no repeats', t => {
   let i = -1
 
   while (++i < 50) {
@@ -23,24 +23,21 @@ tap.test('no repeats', t => {
       ]
     )
 
-    t.equals(result.length, new Set(result.slice().sort()).size)
+    t.is(result.length, new Set(result.slice().sort()).size)
   }
 
-  t.end()
 })
 
-tap.test('constant count', t => {
+test('constant count', t => {
   let i = -1
 
   while (++i < 50) {
-    t.equals(someOf(i, 2, ['a', 'b', 'c', 'd']).length, 2)
+    t.is(someOf(i, 2, ['a', 'b', 'c', 'd']).length, 2)
   }
 
-  t.end()
 })
 
-tap.test('samples exhausted before count', t => {
+test('samples exhausted before count', t => {
   const result = someOf(null, [5, 5], ['i', 'think'])
-  t.equals(result.length, 2)
-  t.end()
+  t.is(result.length, 2)
 })
