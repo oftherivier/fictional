@@ -12,6 +12,13 @@
   "repository": "git@github.com:oftherivier/fictional.git",
   "author": "Justin van der Merwe",
   "license": "MIT",
+  "files": [
+    "*.js",
+    "utils/*.js",
+    "*.mjs",
+    "dist",
+    "index.d.ts"
+  ],
   "oftherivier": {
     "type": "es5",
     "src": "index.js"
