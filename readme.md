@@ -837,7 +837,7 @@ const word = require('fictional/word')
 It can also be used a `<script>`:
 
 ```html
-<script crossorigin src="https://unpkg.com/fictional/umd/fictional.js"></script>
+<script crossorigin src="https://unpkg.com/fictional/dist/umd/fictional.js"></script>
 
 <script>
   fictional.word('some-identifier')
