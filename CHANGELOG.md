@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.3](https://github.com/oftherivier/fictional/compare/v0.4.2...v0.4.3) (2020-05-24)
+
+
+### Bug Fixes
+
+* **esm:** Fix paths for conditional exports ([9bf236c](https://github.com/oftherivier/fictional/commit/9bf236cea86ac1e89a2b24c93378c0a093984267))
+
 ### [0.4.2](https://github.com/oftherivier/fictional/compare/v0.4.1...v0.4.2) (2020-05-24)
 
 
