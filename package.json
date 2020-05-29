@@ -8,7 +8,14 @@
     "import": "./index.mjs",
     "require": "./index.js"
   },
-  "repository": "git@github.com:oftherivier/fictional.git",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/oftherivier/fictional.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oftherivier/fictional/issues"
+  },
+  "homepage": "https://github.com/oftherivier/fictional",
   "author": "Justin van der Merwe",
   "license": "MIT",
   "files": [
