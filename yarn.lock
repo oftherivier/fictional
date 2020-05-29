@@ -918,10 +918,10 @@
     "@nodelib/fs.scandir" "2.1.3"
     fastq "^1.6.0"
 
-"@oftherivier/tools@0.1.38":
-  version "0.1.38"
-  resolved "https://registry.yarnpkg.com/@oftherivier/tools/-/tools-0.1.38.tgz#38f7a67e8c4d374d9ad50775036017a6c055b769"
-  integrity sha512-RPRWGQPG21Ahh84pKHGqRA3QbxT+jLrrSuZ/MW2+yt8/LHOS/RZaM9sGitmCvqQSZzUZUZHoBE6Ag1kYdy3yDQ==
+"@oftherivier/tools@0.1.41":
+  version "0.1.41"
+  resolved "https://registry.yarnpkg.com/@oftherivier/tools/-/tools-0.1.41.tgz#8ffc450f0c6fd9336e9f9bc8c435daeacb2e5f73"
+  integrity sha512-9+oGdtdG4HyMsX+TxK/n+pcvoZcwfhKDQl2X5Iq8vkoXec8iDXtVFDppTc9Jp0md5bqpp9BOADGRY8PRmIAKAQ==
   dependencies:
     "@ava/babel" "^1.0.1"
     "@babel/cli" "^7.8.4"
