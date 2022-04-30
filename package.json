@@ -48,6 +48,7 @@
   },
   "dependencies": {
     "fast-json-stable-stringify": "^2.1.0",
+    "md5": "^2.3.0",
     "string-hash": "^1.1.3"
   },
   "keywords": [

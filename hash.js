@@ -1,3 +1,4 @@
+var md5 = require('md5')
 var stringHash = require('string-hash')
 var stringify = require('fast-json-stable-stringify')
 
@@ -12,7 +13,7 @@ hash.hash3 = function hash3(a, b, c) {
 }
 
 function hash(input) {
-  return stringHash(stringify(input) + SALT)
+  return stringHash(md5(stringify(input) + SALT))
 }
 
 module.exports = hash
