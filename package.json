@@ -1,7 +1,7 @@
 {
   "name": "fictional",
   "description": "Generate fake data deterministically from a given input",
-  "version": "0.4.11",
+  "version": "0.4.12",
   "type": "commonjs",
   "main": "index.js",
   "exports": {

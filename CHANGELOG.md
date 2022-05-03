@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.12](https://github.com/oftherivier/fictional/compare/v0.4.11...v0.4.12) (2022-05-03)
+
 ### [0.4.11](https://github.com/oftherivier/fictional/compare/v0.4.10...v0.4.11) (2022-05-02)
 
 ### [0.4.10](https://github.com/oftherivier/fictional/compare/v0.4.9...v0.4.10) (2022-05-02)
