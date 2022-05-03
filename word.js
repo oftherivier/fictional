@@ -42,7 +42,7 @@ var SYLLABLES_LEN = SYLLABLES.length
 var DEFAULT_MIN_SYLLABLES = 2
 var DEFAULT_MAX_SYLLABLES = 4
 var DEFAULT_CAPITALIZE = true
-var DEFAULT_UNICODE = false
+var DEFAULT_UNICODE = true
 
 function word(input, opts) {
   opts = opts || 0

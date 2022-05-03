@@ -472,7 +472,7 @@ word('id-23')
 
 - **`capitalize=true`:** whether or not the word should start with an upper case
   letter
-- **`unicode=false`:** whether or not the string should contain non-ascii unicode
+- **`unicode=true`:** whether or not the string should contain non-ascii unicode
   characters. If `true` is given, each returned word will always contain a
   single unicode character. If `false` is given, each returned word will never
   contain non-ascii characters. If a value between `0` and `1` is given, that
@@ -508,7 +508,7 @@ words('id-23')
   returned strings will contain.
 - **`capitalize='first'`:** whether or not the words should start with upper
   case letters. If `true` or `'all'` is given, each string returned will start with an upper case letter in each word. If `'first'` is given, for each string returned, only the first word will start with an upper case letter. If `false` is given, each string returned will always contain only lower case letters.
-- **`unicode=false`:** whether or not the string should contain non-ascii unicode
+- **`unicode=true`:** whether or not the string should contain non-ascii unicode
   characters. If `true` is given, each returned word will always contain a
   single unicode character. If `false` is given, each returned word will never
   contain non-ascii characters. If a value between `0` and `1` is given, that
