@@ -29,11 +29,6 @@
     "type": "es5",
     "src": "index.js"
   },
-  "renovate": {
-    "extends": [
-      "github>oftherivier/tools"
-    ]
-  },
   "scripts": {
     "build": "otr build",
     "lint": "otr lint",
