@@ -1,4 +1,3 @@
-import { expectType } from 'tsd'
 import {
   Input,
   Int,
@@ -14,6 +13,9 @@ import {
   oneOf,
   oneOfWeighted
 } from '.'
+
+export const expectType = <T>(value: T) => {
+};
 
 // ## function items
 expectType<[number, string]>(tuple(null, [int, word]))
