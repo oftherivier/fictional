@@ -30,16 +30,14 @@
     "src": "index.js"
   },
   "scripts": {
-    "build": "otr build",
-    "lint": "otr lint",
-    "format": "otr format",
-    "test": "otr test",
-    "release": "otr release",
-    "typetest": "otr typetest",
-    "checks": "yarn lint && yarn typetest && yarn test"
-  },
-  "devDependencies": {
-    "@oftherivier/tools": "*"
+    "build": "yarn tool build",
+    "lint": "yarn tool lint",
+    "format": "yarn tool format",
+    "test": "yarn tool test",
+    "release": "yarn tool release",
+    "typetest": "yarn tool typetest",
+    "checks": "yarn lint && yarn typetest && yarn test",
+    "tool": "npx @oftherivier/tools"
   },
   "dependencies": {
     "fast-json-stable-stringify": "^2.1.0",
