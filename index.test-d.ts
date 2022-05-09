@@ -14,8 +14,7 @@ import {
   oneOfWeighted
 } from '.'
 
-export const expectType = <T>(value: T) => {
-};
+export const expectType = <T>(value: T) => {};
 
 // ## function items
 expectType<[number, string]>(tuple(null, [int, word]))
