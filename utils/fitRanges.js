@@ -1,4 +1,5 @@
 var expandRange = require('./expandRange')
+var Decimal = require('decimal.js')
 
 module.exports = function fitRanges(ranges, valuesThreshold) {
   if (!ranges.length) {
@@ -23,7 +24,7 @@ module.exports = function fitRanges(ranges, valuesThreshold) {
 
 function fitRangesByOffsets(segments, size) {
   return function fitRangesByOffsetsFn(id) {
-    var key = id % size
+    var key = +Decimal(id).mod(size)
 
     var l = 0
     var r = segments.length - 1
@@ -51,7 +52,7 @@ function fitRangesByValues(values) {
   var n = values.length
 
   return function fitRangesByValuesFn(id) {
-    return values[id % n]
+    return values[id.mod(n)]
   }
 }
 

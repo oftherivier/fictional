@@ -40,9 +40,9 @@
     "tool": "npx @oftherivier/tools"
   },
   "dependencies": {
+    "decimal.js": "^10.4.0",
     "fast-json-stable-stringify": "^2.1.0",
-    "md5": "^2.3.0",
-    "string-hash": "^1.1.3"
+    "md5": "^2.3.0"
   },
   "keywords": [
     "deterministic",

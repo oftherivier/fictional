@@ -1,13 +1,16 @@
-module.exports = function flip(id, p) {
-  p = +p
+var Decimal = require('decimal.js')
 
-  if (p === 0) {
+module.exports = function flip(id, p) {
+  p = typeof p === 'boolean' ? +p : p
+  p = Decimal(p)
+
+  if (p.eq(0)) {
     return false
   }
 
-  if (p === 1) {
+  if (p.eq(1)) {
     return true
   }
 
-  return id % (1 / p) < 1
+  return Decimal(id).mod(Decimal(1).div(p)).lt(1)
 }
