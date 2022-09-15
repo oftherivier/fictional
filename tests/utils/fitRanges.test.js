@@ -7,7 +7,7 @@ function oneOf(values) {
 }
 
 function run(fn, max) {
-  const n = 10
+  const n = 1000
   let i = -1
   const results = Array(max + 1).fill(0)
   while (++i < n) results[fn(hash(i))]++
