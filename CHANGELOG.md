@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0](https://github.com/oftherivier/fictional/compare/v0.4.15...v0.5.0) (2022-09-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* Use only md5 for hashing (remove string-hash)
+
+### Features
+
+* Use only md5 for hashing (remove string-hash) ([05d2354](https://github.com/oftherivier/fictional/commit/05d2354997febcad38d9b2ae7625024ab541d495)), closes [#29](https://github.com/oftherivier/fictional/issues/29)
+
 ### [0.4.15](https://github.com/oftherivier/fictional/compare/v0.4.14...v0.4.15) (2022-07-14)
 
 ### [0.4.14](https://github.com/oftherivier/fictional/compare/v0.4.13...v0.4.14) (2022-07-14)
