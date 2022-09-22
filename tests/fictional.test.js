@@ -1,5 +1,6 @@
 const fictional = require('..')
 const test = require('ava')
+const Decimal = require('decimal.js')
 
 const {
   oneOf,
@@ -111,7 +112,13 @@ function callMakers(input) {
   const result = {}
 
   for (const name of Object.keys(makers)) {
-    result[name] = makers[name](input)
+    let value = makers[name](input)
+
+    if (value instanceof Decimal) {
+      value = `Decimal(${value.toString()})`
+    }
+
+    result[name] = value
   }
 
   return result
