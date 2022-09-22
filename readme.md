@@ -308,8 +308,7 @@ int('id-23')
 
 ##### `options`
 
-- **`min=0` and `max=Infinity`:** the minimum and maximum possible values for
-  returned numbers
+- **`min=1` and `max=Number.MAX_SAFE_INTEGER`:** the minimum and maximum possible values for returned numbers
 
 ```js
 int('id-2', {
@@ -343,8 +342,7 @@ float('id-23')
 
 ##### `options`
 
-- **`min=0` and `max=Infinity`:** the minimum and maximum possible values for
-  returned numbers
+- **`min=1` and `max=Number.MAX_SAFE_INTEGER`:** the minimum and maximum possible values for returned numbers
 
 ```js
 float('id-2', {

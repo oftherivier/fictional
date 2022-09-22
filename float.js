@@ -1,13 +1,14 @@
 var hash = require('./hash')
 var conj = require('./utils/conj')
 var fit = require('./utils/fit')
+var defaults = require('./utils/defaults')
 var Decimal = require('decimal.js')
 
 function float(input, opts) {
   opts = opts || 0
 
-  var min = opts.min
-  var max = opts.max
+  var min = defaults(opts.min, 0)
+  var max = defaults(opts.max, Number.MAX_SAFE_INTEGER)
 
   // rehash to differentiate from `int`
   var whole = hash(hash(input))
