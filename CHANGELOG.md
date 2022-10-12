@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.7.0](https://github.com/oftherivier/fictional/compare/v0.5.0...v0.7.0) (2022-10-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* Use Number.MAX_SAFE_INTEGER as the max for int() and float()
+
+### Features
+
+* Support forwarding options with oneOf() ([5e10736](https://github.com/oftherivier/fictional/commit/5e107361f8522a2f8d8c0b1da4f7adbb15357851))
+
+
+### Bug Fixes
+
+* Use Number.MAX_SAFE_INTEGER as the max for int() and float() ([9ebcef8](https://github.com/oftherivier/fictional/commit/9ebcef85957fa67b2e26a9938d8fd2fc88e6604d)), closes [#30](https://github.com/oftherivier/fictional/issues/30)
+
 ## [0.6.0](https://github.com/oftherivier/fictional/compare/v0.5.0...v0.6.0) (2022-10-12)
 
 
