@@ -1,6 +1,7 @@
 var hash = require('./hash')
 var conj = require('./utils/conj')
 var fit = require('./utils/fit')
+var decimalFit = require('./utils/decimalFit')
 var defaults = require('./utils/defaults')
 var Decimal = require('decimal.js')
 
@@ -12,11 +13,11 @@ function float(input, opts) {
 
   // rehash to differentiate from `int`
   var whole = hash(hash(input))
-  var decimal = hash(whole)
-  var decimalPlaces = decimal.toString().length
+
+  var decimalPlaces = decimalFit(hash(whole), 2, 8)
   var decimalDivisor = Decimal.pow(10, decimalPlaces)
 
-  var v = whole.add(decimal.div(decimalDivisor))
+  var v = decimalFit(whole, min, max).div(decimalDivisor)
 
   return fit(v, min, max)
 }
