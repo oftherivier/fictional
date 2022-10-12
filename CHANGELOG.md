@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.7.1](https://github.com/oftherivier/fictional/compare/v0.7.0...v0.7.1) (2022-10-12)
+
+
+### Bug Fixes
+
+* Fix float() to actually return floats again ([05cb879](https://github.com/oftherivier/fictional/commit/05cb879f4e3fe3f2f22b516b0c8c4c61ae2400a4))
+
 ## [0.7.0](https://github.com/oftherivier/fictional/compare/v0.5.0...v0.7.0) (2022-10-12)
 
 
