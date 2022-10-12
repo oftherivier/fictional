@@ -2,18 +2,18 @@ var hash = require('./hash')
 var hash2 = hash.hash2
 var resolve = require('./utils/resolve')
 
-function oneOf(a, b) {
-  return b != null ? oneOfMain(a, b) : oneOfCurried(a)
+function oneOf(a, b, c) {
+  return b != null ? oneOfMain(a, b, c) : oneOfCurried(a)
 }
 
-function oneOfMain(input, samples) {
+function oneOfMain(input, samples, options) {
   var id = hash2(input, 'oneOf')
-  return resolve(id, samples[id.mod(samples.length)])
+  return resolve(id, samples[id.mod(samples.length)], options)
 }
 
 function oneOfCurried(samples) {
-  return function oneOfCurriedFn(input) {
-    return oneOf(input, samples)
+  return function oneOfCurriedFn(input, options) {
+    return oneOf(input, samples, options)
   }
 }
 
