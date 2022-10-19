@@ -14,7 +14,7 @@ function float(input, opts) {
   // rehash to differentiate from `int`
   var whole = hash(hash(input))
 
-  var decimalPlaces = decimalFit(hash(whole), 2, 8)
+  var decimalPlaces = decimalFit(hash(whole), 2, 5)
   var decimalDivisor = Decimal.pow(10, decimalPlaces)
 
   var v = decimalFit(whole, min, max).div(decimalDivisor)
