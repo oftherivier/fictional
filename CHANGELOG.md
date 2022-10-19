@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.7.3](https://github.com/oftherivier/fictional/compare/v0.7.2...v0.7.3) (2022-10-19)
+
+
+### Bug Fixes
+
+* Limit float() to have max 5 decimal places ([a073d81](https://github.com/oftherivier/fictional/commit/a073d81da1a270cf58f7172f41c3e1f7174ed40c))
+
 ### [0.7.2](https://github.com/oftherivier/fictional/compare/v0.7.1...v0.7.2) (2022-10-17)
 
 
