@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.7.5](https://github.com/oftherivier/fictional/compare/v0.7.4...v0.7.5) (2022-10-25)
+
+
+### Bug Fixes
+
+* JSonSerializable typedefs to properly include nested types ([5d6e204](https://github.com/oftherivier/fictional/commit/5d6e20474d2abeb9dbc44f09ea6bd77fcc60df1b))
+
 ### [0.7.4](https://github.com/oftherivier/fictional/compare/v0.7.3...v0.7.4) (2022-10-19)
 
 ### [0.7.3](https://github.com/oftherivier/fictional/compare/v0.7.2...v0.7.3) (2022-10-19)
