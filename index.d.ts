@@ -1,6 +1,9 @@
 export type JSONPrimitive = null | number | string | boolean
 
-export type PlainNested<V> = V | { [s: string]: V } | Array<V>
+export type PlainNested<V> =
+  | V
+  | { [s: string]: PlainNested<V> }
+  | Array<PlainNested<V>>
 
 export type JSONSerializable = PlainNested<JSONPrimitive>
 
@@ -212,9 +215,10 @@ export interface Tuple {
   <Makers extends AnyMakers>(makers: Makers): (
     input: Input
   ) => TupleReturnType<Makers>
-  <Makers extends AnyMakers>(input: Input, makers: Makers): TupleReturnType<
-    Makers
-  >
+  <Makers extends AnyMakers>(
+    input: Input,
+    makers: Makers
+  ): TupleReturnType<Makers>
 }
 
 declare const tuple: Tuple
