@@ -194,7 +194,7 @@ var VARIANTS = {
 
 module.exports = function unicodify(id, word) {
   var wordLen = word.length
-  var i = id % wordLen
+  var i = +id.mod(wordLen)
 
   id = hash(id)
 
@@ -207,7 +207,7 @@ module.exports = function unicodify(id, word) {
     return word
   }
 
-  var variant = variants[id % variants.length]
+  var variant = variants[+id.mod(variants.length)]
   letter = letter === lower ? variant : variant.toUpperCase()
   return wordLen === 1 ? letter : word.slice(0, i) + letter + word.slice(i + 1)
 }
