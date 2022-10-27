@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.7.7](https://github.com/oftherivier/fictional/compare/v0.7.6...v0.7.7) (2022-10-27)
+
+
+### Bug Fixes
+
+* Change remaining % to .mod() to work with [#30](https://github.com/oftherivier/fictional/issues/30)'s change ([7fb8791](https://github.com/oftherivier/fictional/commit/7fb8791eb36d2d9400ddf4c4c4586470c02214a7)), closes [#32](https://github.com/oftherivier/fictional/issues/32)
+
 ### [0.7.6](https://github.com/oftherivier/fictional/compare/v0.7.5...v0.7.6) (2022-10-25)
 
 ### [0.7.5](https://github.com/oftherivier/fictional/compare/v0.7.4...v0.7.5) (2022-10-25)
