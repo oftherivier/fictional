@@ -1,9 +1,12 @@
 var { fast1a52 } = require('fnv-plus')
 var stringify = require('fast-json-stable-stringify')
+var createLimitCache = require('./utils/createLimitCache')
 
-function hash(input) {
+var cache = createLimitCache(100)
+
+var hash = cache.memoize(function hashFn(input) {
   return fast1a52(stringify(input) + hash.salt)
-}
+})
 
 hash.salt = 'chino'
 
