@@ -19,7 +19,7 @@ function someOfMain(input, range, samples) {
 
   while (++i < n && (remainingLen = remaining.length)) {
     id = hash(id)
-    chosenIndex = +id.mod(remainingLen)
+    chosenIndex = id % remainingLen
     chosen = remaining[chosenIndex]
     remaining.splice(chosenIndex, 1)
     results.push(resolve(id, chosen))
