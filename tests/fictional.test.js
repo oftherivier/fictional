@@ -1,17 +1,8 @@
 const fictional = require('..')
 const test = require('ava')
-const Decimal = require('decimal.js')
 
-const {
-  oneOf,
-  oneOfWeighted,
-  someOf,
-  tuple,
-  shape,
-  join,
-  times,
-  word
-} = fictional
+const { oneOf, oneOfWeighted, someOf, tuple, shape, join, times, word } =
+  fictional
 
 const curriedMakerDefs = [
   [oneOf, ['red', 'green', 'blue']],
@@ -88,7 +79,6 @@ test('consistency', t => {
   while (++i < 100) {
     t.deepEqual(callMakers(23), firstResult)
   }
-
 })
 
 test('curried makers', t => {
@@ -96,7 +86,6 @@ test('curried makers', t => {
     t.deepEqual(fn(23, ...args), fn(...args)(23))
     t.deepEqual(fn(null, ...args), fn(...args)(null))
   }
-
 })
 
 test('.options() chaining', t => {
@@ -105,20 +94,13 @@ test('.options() chaining', t => {
       t.assert(typeof fn.options({}).options({}).options === 'function')
     }
   }
-
 })
 
 function callMakers(input) {
   const result = {}
 
   for (const name of Object.keys(makers)) {
-    let value = makers[name](input)
-
-    if (value instanceof Decimal) {
-      value = `Decimal(${value.toString()})`
-    }
-
-    result[name] = value
+    result[name] = makers[name](input)
   }
 
   return result
