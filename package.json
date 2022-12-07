@@ -31,7 +31,7 @@
     "src": "index.js"
   },
   "scripts": {
-    "build": "yarn build:docs && yarn tool build",
+    "build": "yarn tool build && yarn build:docs",
     "build:docs": "./scripts/update-readme.sh",
     "lint": "yarn tool lint",
     "format": "yarn tool format",
