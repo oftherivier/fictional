@@ -2,6 +2,8 @@
 const fs = require('fs')
 const vm = require('vm')
 const util = require('util')
+const path = require('path')
+const { createRequire } = require('module')
 
 const readmePath = process.argv[2]
 const header = process.argv[3] || ''
@@ -105,7 +107,9 @@ const transformNode = node => {
     return node
   }
 
-  const context = vm.createContext({ require })
+  const context = vm.createContext({
+    require: createRequire(path.join(process.cwd(), 'tmp.js'))
+  })
   vm.runInContext(header, context)
 
   let result = ''
@@ -161,7 +165,7 @@ const stringify = nodes => {
 const isCodeBlockIndicatorLine = line => line.includes('```')
 
 const main = () => {
-  const currentReadme = fs.readFileSync(readmePath).toString()
+  const currentReadme = fs.readFileSync(readmePath).toString().trim()
   let nodes = parseReadme(currentReadme)
   nodes = nodes.map(transformNode)
   const result = stringify(nodes)
