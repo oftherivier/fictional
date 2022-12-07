@@ -23,14 +23,16 @@
     "utils/*.js",
     "*.mjs",
     "dist",
-    "index.d.ts"
+    "index.d.ts",
+    "scripts"
   ],
   "oftherivier": {
     "type": "es5",
     "src": "index.js"
   },
   "scripts": {
-    "build": "yarn tool build",
+    "build": "yarn build:docs && yarn tool build",
+    "build:docs": "./scripts/update-readme.sh",
     "lint": "yarn tool lint",
     "format": "yarn tool format",
     "test": "yarn tool test",

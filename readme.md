@@ -6,16 +6,13 @@ Generate fake data deterministically from a given input
 import { word } from 'fictional'
 
 word('id-1')
-// =>
-'Minanȯ'
+// => 'Maňi'
 
 word('id-2')
-// =>
-'Rayuấ'
+// => 'Konḯyo'
 
 word('id-1')
-// =>
-'Minanȯ'
+// => 'Maňi'
 ```
 
 ```js
@@ -26,22 +23,13 @@ const user = shape({
 })
 
 user('id-1')
-// =>
-{
-  name: 'Nįna Kaîmehyko'
-}
+// => { name: 'Maḱiso Ƙai' }
 
 user('id-2')
-// =>
-{
-  name: 'Ḣakenoyu Socẖi Shỉ'
-}
+// => { name: 'Ķenoni Ḧavi' }
 
 user('id-1')
-// =>
-{
-  name: 'Nįna Kaîmehyko'
-}
+// => { name: 'Maḱiso Ƙai' }
 ```
 
 - [Why](#why)
@@ -100,14 +88,7 @@ const user = shape({
 })
 
 user('id-1')
-// =>
-{
-  id: 677947713,
-  name: {
-    first: 'Kaiƴo',
-    last: 'Yoḱitame'
-  }
-}
+// => { id: 1777233961714688, name: { first: 'Nochỉ', last: 'Yoȁmena' } }
 ```
 
 To some extent, there are ways of achieving similar results with libraries like
@@ -139,8 +120,7 @@ import { word } from 'fictional'
 
 // `word` is a maker
 word('id-1')
-// =>
-'Minanȯ'
+// => 'Maňi'
 ```
 
 The given input can be any JSON-serializable value. For any two calls to the
@@ -158,15 +138,13 @@ word({
   a: 21,
   b: 23
 })
-// =>
-'Ṽitame'
+// => 'Nikaį̃'
 
 word({
   b: 23,
   a: 21
 })
-// =>
-'Ṽitame'
+// => 'Nikaį̃'
 ```
 
 ### <a name="overview-composition" href="#overview-composition">#</a> Composition
@@ -182,52 +160,59 @@ const streetAddress = join(' ', [
 ])
 
 streetAddress('id-1')
-// =>
-'46 Ṁuso Street'
+// => '95 Ņayu Avenue'
 
 streetAddress('id-2')
-// =>
-'80 Ceahÿ Street'
+// => '107 Ceąkikai Avenue'
 ```
 
-Some makers take in identifying value as the only required argument and return. These kinds of makers are described in the docs as [_primary_ makers](#primaries). [`word()`](#word) is an example of such a maker.
+Some makers take in identifying value as the only required argument and return.
+These kinds of makers are described in the docs as
+[_primary_ makers](#primaries). [`word()`](#word) is an example of such a maker.
 
-However, sometimes the data you need generated requires a combination of different makers. Fictional provides functions for doing this: they take in an identifying value and makers as arguments, and compose these makers in some way to produce a corresponding output. These kinds of makers are described in the docs as [_composition_ makers](#composition). [`join()`](#join) (shown above) is an example of a such a maker.
+However, sometimes the data you need generated requires a combination of
+different makers. Fictional provides functions for doing this: they take in an
+identifying value and makers as arguments, and compose these makers in some way
+to produce a corresponding output. These kinds of makers are described in the
+docs as [_composition_ makers](#composition). [`join()`](#join) (shown above) is
+an example of a such a maker.
 
-In the example above, a maker returning fictitious street addresses is formed by using [`join()`](#join) to compose [`int`](#int), [`word()`](#word), and other composing maker, [`oneOf`](#oneOf).
+In the example above, a maker returning fictitious street addresses is formed by
+using [`join()`](#join) to compose [`int`](#int), [`word()`](#word), and other
+composing maker, [`oneOf`](#oneOf).
 
-Under the hood, composition makers re-hash the identifying value each time a maker is given as input is used. This ensures that a unique value is generated for each maker provided, while still keeping the result deterministic. In the example below, the [`tuple()`](#tuple) maker ensures that each word in the returned array has a different value.
+Under the hood, composition makers re-hash the identifying value each time a
+maker is given as input is used. This ensures that a unique value is generated
+for each maker provided, while still keeping the result deterministic. In the
+example below, the [`tuple()`](#tuple) maker ensures that each word in the
+returned array has a different value.
 
 ```js
 tuple('id-1', [word, word])
-// =>
-[
-  'Șhihyceavi',
-  'Ṁuso'
-]
+// => [ 'Soraenaᶄin', 'Ņayu' ]
 
 // this is roughly the same as doing
-[word(hash('id-1')), word(hash(hash('id-1')))]
+word(hash('id-1')), word(hash(hash('id-1')))
 ```
 
 ### <a name="overview-options" href="#overview-options">#</a> Options
 
-Many makers accept an options object as an argument for configuring how the generated output looks:
+Many makers accept an options object as an argument for configuring how the
+generated output looks:
 
 ```js
 int('id-1')
-// =>
-3781622359
+// => 3649966559762717
 
 int('id-1', {
   min: 1,
   max: 99
 })
-// =>
-65
+// => 30
 ```
 
-As a convenience, it is also possible to extend these makers to use specific options by using the `.options()` api:
+As a convenience, it is also possible to extend these makers to use specific
+options by using the `.options()` api:
 
 ```js
 const newInt = int.options({
@@ -236,15 +221,16 @@ const newInt = int.options({
 })
 
 newInt('id-1')
-// =>
-65
+// => 30
 
 newInt('id-2')
-// =>
-61
+// => 28
 ```
 
-`.options()` returns a new function that will call the original maker function with the given arguments. It is still possible to provide options when calling the returned function. In this case, these options will override any options given to `.options()`:
+`.options()` returns a new function that will call the original maker function
+with the given arguments. It is still possible to provide options when calling
+the returned function. In this case, these options will override any options
+given to `.options()`:
 
 ```js
 const newInt = int.options({
@@ -253,43 +239,41 @@ const newInt = int.options({
 })
 
 newInt('id-1', { max: 3 })
-// =>
-2
+// => 3
 ```
 
-`.options()` can also be called on the returned function, to further extend the maker:
+`.options()` can also be called on the returned function, to further extend the
+maker:
 
 ```js
-const newInt = int
-  .options({ min: 1 })
-  .options({ max: 99 })
+const newInt = int.options({ min: 1 }).options({ max: 99 })
 
 newInt('id-1')
-// =>
-65
+// => 30
 
 newInt('id-2')
-// =>
-61
+// => 28
 ```
 
 ### <a name="overview-currying" href="#overview-currying">#</a> Currying
 
-[Composition makers](#composition) take in more than one required argument. If the identifying [`input`](#overview-makers) value is not given as an argument (one less than the required arguments is provided), then a new function will be returned. This function will take an identifying input value as its only argument, and call the original composition maker with both this argument and the other required arguments initially given. This limited form of [currying](https://en.wikipedia.org/wiki/Currying) can be convienent for composing makers:
+[Composition makers](#composition) take in more than one required argument. If
+the identifying [`input`](#overview-makers) value is not given as an argument
+(one less than the required arguments is provided), then a new function will be
+returned. This function will take an identifying input value as its only
+argument, and call the original composition maker with both this argument and
+the other required arguments initially given. This limited form of
+[currying](https://en.wikipedia.org/wiki/Currying) can be convienent for
+composing makers:
 
 ```js
-const companyName = join(' ', [
-  word,
-  oneOf(['Incorporated', 'Systems'])
-])
+const companyName = join(' ', [word, oneOf(['Incorporated', 'Systems'])])
 
 companyName('id-1')
-// =>
-'Șhihyceavi Systems'
+// => 'Soraenaᶄin Systems'
 
 companyName('id-2')
-// =>
-'Raeyuraḱe Systems'
+// => 'Mikochï Systems'
 ```
 
 ## <a name="api-ref" href="#api-ref">#</a> API Reference
@@ -298,25 +282,25 @@ companyName('id-2')
 
 #### <a name="int" href="#int">#</a> `int(input[, options])`
 
-Takes in an identifying [`input`](#overview-makers) value and returns an integer.
+Takes in an identifying [`input`](#overview-makers) value and returns an
+integer.
 
 ```js
 int('id-23')
-// =>
-292896007
+// => 1122185124439002
 ```
 
 ##### `options`
 
-- **`min=1` and `max=Number.MAX_SAFE_INTEGER`:** the minimum and maximum possible values for returned numbers
+- **`min=1` and `max=Number.MAX_SAFE_INTEGER`:** the minimum and maximum
+  possible values for returned numbers
 
 ```js
 int('id-2', {
   min: 2,
   max: 99
 })
-// =>
-8
+// => 65
 ```
 
 #### <a name="bool" href="#int">#</a> `bool(id)`
@@ -325,32 +309,30 @@ Takes in an identifying [`input`](#overview-makers) value and returns a boolean.
 
 ```js
 bool('id-23')
-// =>
-true
+// => false
 ```
 
 #### <a name="float" href="#float">#</a> `float(id[, options])`
 
-Takes in an identifying [`input`](#overview-makers) value and returns a number value
-with both a whole and decimal segment.
+Takes in an identifying [`input`](#overview-makers) value and returns a number
+value with both a whole and decimal segment.
 
 ```js
 float('id-23')
-// =>
-3710813343.2980433
+// => 40024184102876.65
 ```
 
 ##### `options`
 
-- **`min=1` and `max=Number.MAX_SAFE_INTEGER`:** the minimum and maximum possible values for returned numbers
+- **`min=1` and `max=Number.MAX_SAFE_INTEGER`:** the minimum and maximum
+  possible values for returned numbers
 
 ```js
 float('id-2', {
   min: 2,
   max: 99
 })
-// =>
-84.103263
+// => 2.004
 ```
 
 #### <a name="dateString" href="#date-string">#</a> `dateString(id[, options])`
@@ -362,8 +344,7 @@ format.
 
 ```js
 dateString('id-23')
-// =>
-'1987-08-20T07:13:44.000Z'
+// => '1982-07-23T18:52:24.000Z'
 ```
 
 ##### `options`
@@ -376,56 +357,69 @@ dateString('id-2', {
   minYear: 1980,
   maxYear: 2089
 })
-// =>
-'2062-01-21T12:25:17.000Z'
+// => '1985-04-08T03:23:31.000Z'
 ```
 
 #### <a name="char" href="#char">#</a> `char(input)`
 
-Takes in an identifying [`input`](#overview-makers) value and returns a string with a single character.
+Takes in an identifying [`input`](#overview-makers) value and returns a string
+with a single character.
 
 ```js
 char('id-23')
-// =>
-'9'
+// => 'o'
 ```
 
-The generated character will be an alphanumeric: lower and upper case ASCII letters and digits 0 to 9. Alternative character ranges are listed [below](#char-ranges). To choose your own range of characters, see [`char.inRanges()`](#char-in-ranges).
+The generated character will be an alphanumeric: lower and upper case ASCII
+letters and digits 0 to 9. Alternative character ranges are listed
+[below](#char-ranges). To choose your own range of characters, see
+[`char.inRanges()`](#char-in-ranges).
 
 ##### Predefined character ranges
 
 ```js
 char.ascii('id-2')
-// =>
-'Y'
+// => '\\'
 
 char.digit('id-3')
-// =>
-'3'
+// => '6'
 ```
 
-Fictional ships with makers for a predefined set of character ranges. Similar to `char()`, these makers take in only an identifying [`input`](#overview-makers) value as an argument and return a string with a single character. The following ranges are available:
+Fictional ships with makers for a predefined set of character ranges. Similar to
+`char()`, these makers take in only an identifying [`input`](#overview-makers)
+value as an argument and return a string with a single character. The following
+ranges are available:
 
-* `char.ascii`: Any ASCII character
-* `char.digit`: Characters for numbers 0 to 9
-* `char.alphanumeric` (alias: `char`): lower and upper case ASCII letters and digits 0 to 9
-* `char.letter` (alias: `char.asciiLetter`): Lower and upper case ASCII letters
-* `char.lower` (alias: `asciiLower`): Lower case ASCII letters
-* `char.upper` (alias `char.asciiUpper`): Upper case ASCII letters
+- `char.ascii`: Any ASCII character
+- `char.digit`: Characters for numbers 0 to 9
+- `char.alphanumeric` (alias: `char`): lower and upper case ASCII letters and
+  digits 0 to 9
+- `char.letter` (alias: `char.asciiLetter`): Lower and upper case ASCII letters
+- `char.lower` (alias: `asciiLower`): Lower case ASCII letters
+- `char.upper` (alias `char.asciiUpper`): Upper case ASCII letters
 
-* `char.unicode`: Any character from the ASCII and [Latin-1 Supplement](https://en.wikipedia.org/wiki/Latin-1_Supplement_(Unicode_block)) unicode blocks
-* `char.unicodeLetter`: Lower and upper case letters from the ASCII and Latin-1 Supplement unicode blocks
-* `char.unicodeLower`: Lower case letters from the ASCII and Latin-1 Supplement unicode blocks
-* `char.unicodeUpper`: Upper case letters from the ASCII and Latin-1 Supplement unicode blocks
+- `char.unicode`: Any character from the ASCII and
+  [Latin-1 Supplement](<https://en.wikipedia.org/wiki/Latin-1_Supplement_(Unicode_block)>)
+  unicode blocks
+- `char.unicodeLetter`: Lower and upper case letters from the ASCII and Latin-1
+  Supplement unicode blocks
+- `char.unicodeLower`: Lower case letters from the ASCII and Latin-1 Supplement
+  unicode blocks
+- `char.unicodeUpper`: Upper case letters from the ASCII and Latin-1 Supplement
+  unicode blocks
 
-* `char.latin1`: Any character from the Latin-1 Supplement unicode block
-* `char.latin1Letter`: Lower and upper case Latin-1 Supplement letters
-* `char.latin1Lower`: Lower case Latin-1 Supplement letters
-* `char.latin1Upper`: Upper case Latin-1 Supplement letters
+- `char.latin1`: Any character from the Latin-1 Supplement unicode block
+- `char.latin1Letter`: Lower and upper case Latin-1 Supplement letters
+- `char.latin1Lower`: Lower case Latin-1 Supplement letters
+- `char.latin1Upper`: Upper case Latin-1 Supplement letters
 
 ##### <a name="char-in-ranges" href="#char-in-ranges">#</a> `char.inRanges(ranges)`
 
-Takes in an array of `[min, max]` pairs, where `min` and `max` are integers specifying the minimum and maximum possible [Unicode code point](https://en.wikipedia.org/wiki/List_of_Unicode_characters) values for a desired range of characters, and returns a maker function that will return characters in those given ranges.
+Takes in an array of `[min, max]` pairs, where `min` and `max` are integers
+specifying the minimum and maximum possible
+[Unicode code point](https://en.wikipedia.org/wiki/List_of_Unicode_characters)
+values for a desired range of characters, and returns a maker function that will
+return characters in those given ranges.
 
 ```js
 const symbols = char.inRanges([
@@ -437,13 +431,15 @@ const symbols = char.inRanges([
 ])
 
 symbols('id-1')
-// =>
-'⚗'
+// => '⚭'
 ```
 
-`char.inRanges` is designed to allow characters in the ranges given to all have a similar likelihood of being returned.
+`char.inRanges` is designed to allow characters in the ranges given to all have
+a similar likelihood of being returned.
 
-To allow for composition, each item in the array of `ranges` can also be a pre-defined character range, or another character range defined using `char.inRanges()`:
+To allow for composition, each item in the array of `ranges` can also be a
+pre-defined character range, or another character range defined using
+`char.inRanges()`:
 
 ```js
 const misc = char.inRanges([[0x2600, 0x26ff]])
@@ -451,19 +447,17 @@ const emoticons = char.inRanges([[0x1f600, 0x1f64f]])
 const letterOrSymbol = char.inRanges([misc, emoticons, char.letter])
 
 letterOrSymbol('id-2')
-// =>
-'⚐'
+// => '⛟'
 ```
 
 #### <a name="word" href="#word">#</a> `word(id[, options])`
 
-Takes in an identifying [`input`](#overview-makers) value and returns a string value
-resembling a fictitious word.
+Takes in an identifying [`input`](#overview-makers) value and returns a string
+value resembling a fictitious word.
 
 ```js
 word('id-23')
-// =>
-'Mikẻmu'
+// => 'Kec̈hina'
 ```
 
 ##### `options`
@@ -485,19 +479,17 @@ word('id-2', {
   maxSyllables: 6,
   unicode: 0.382
 })
-// =>
-'Rayuashira'
+// => 'Końi'
 ```
 
 #### <a name="words" href="#words">#</a> `words(id[, options])`
 
-Takes in an identifying [`input`](#overview-makers) value and returns a string value
-resembling fictitious words.
+Takes in an identifying [`input`](#overview-makers) value and returns a string
+value resembling fictitious words.
 
 ```js
 words('id-23')
-// =>
-'Vạmu kekaicḧi yǫ'
+// => 'Hå ṟaechinoa'
 ```
 
 ##### `options`
@@ -505,7 +497,10 @@ words('id-23')
 - **`min=2` and `max=3`:** the minimum and maximum possible number of words that
   returned strings will contain.
 - **`capitalize='first'`:** whether or not the words should start with upper
-  case letters. If `true` or `'all'` is given, each string returned will start with an upper case letter in each word. If `'first'` is given, for each string returned, only the first word will start with an upper case letter. If `false` is given, each string returned will always contain only lower case letters.
+  case letters. If `true` or `'all'` is given, each string returned will start
+  with an upper case letter in each word. If `'first'` is given, for each string
+  returned, only the first word will start with an upper case letter. If `false`
+  is given, each string returned will always contain only lower case letters.
 - **`unicode=true`:** whether or not the string should contain non-ascii unicode
   characters. If `true` is given, each returned word will always contain a
   single unicode character. If `false` is given, each returned word will never
@@ -522,26 +517,28 @@ words('id-2', {
   unicode: 0.618,
   capitalize: 'all'
 })
-// =>
-'Shinomehy Hẩceaso Kenǒ Řa Kḯn'
+// => 'Koɍaekako Viko Maceaḱinva Rấminona Yu Naceá Kē Kảimukokin'
 ```
 
 #### <a name="sentence" href="#sentence">#</a> `sentence(id[, options])`
 
-Takes in an identifying [`input`](#overview-makers) value and returns a string value resembling a sentence of fictitious words.
+Takes in an identifying [`input`](#overview-makers) value and returns a string
+value resembling a sentence of fictitious words.
 
 ```js
 sentence('id-23')
-// =>
-'Ma rae soraeta viʈamoki ni mashikeyo vami ko.'
+// => 'Chime novitacea noraekǡi ɍa rakinshime komimeva, no shimemu kinvachi ʋi naʋiko.'
 ```
 
 ##### `options`
 
-- **`minClauses=1` and `maxClauses=2`:** the minimum and maximum possible number of clauses that a returned sentence will contain.
-- **`minWords=5` and `maxWords=8`:** the minimum and maximum possible number of words that each clause will contain.
-- **`unicode=0.382`:** whether or not the string should contain non-ascii unicode characters. If `true` is given, each returned word will always contain a
-  single unicode character. If `false` is given, each returned word will never
+- **`minClauses=1` and `maxClauses=2`:** the minimum and maximum possible number
+  of clauses that a returned sentence will contain.
+- **`minWords=5` and `maxWords=8`:** the minimum and maximum possible number of
+  words that each clause will contain.
+- **`unicode=0.382`:** whether or not the string should contain non-ascii
+  unicode characters. If `true` is given, each returned word will always contain
+  a single unicode character. If `false` is given, each returned word will never
   contain non-ascii characters. If a value between `0` and `1` is given, that
   value will represent the probability of a returned value containing a single
   unicode character.
@@ -556,27 +553,30 @@ sentence('id-2', {
   maxWords: 3,
   unicode: 0.9
 })
-// =>
-'Meami nomakeꝁi viraṅi, noyȗma nọchiso tasomæ.'
+// => 'Munońi maceayȗ vamo, chimoshĭ vamoḵi chį̃.'
 ```
 
 #### <a name="paragraph" href="#paragraph">#</a> `paragraph(id[, options])`
 
-Takes in an identifying [`input`](#overview-makers) value and returns a string value resembling a paragraph of fictitious words.
+Takes in an identifying [`input`](#overview-makers) value and returns a string
+value resembling a paragraph of fictitious words.
 
 ```js
 paragraph('id-23')
-// =>
-'Mu kovahyki nokano kehykicea na mŭraema keshikera, ceǟmo shimokena ræceaso ko murakimo maẖyni mō mekaiyu. Kayohyma vita meyotami shisohẏki yu móyuvimu mishihy yuhy. Rachika yusoramu kairae me hynikaimo shi, kikoceamo yu muashiso raeshi yu kaceaki ha. Ḿi sohaḩy metakeso ṟae ṿaso ceaniha vivamo makocea. Ka sovẩ shikaishịke yo meki, kincea mora machia mo shiyu. Mikë kåira ṽi korachį kinanȍ nakin soraevi yukira, mohy raeyṵ hamukin kavi kinmamu raeniyuni. Nitako s̈hihayo chikovirae mumekaimo kima cę̃asokano.'
+// => 'Raekaim̃ukin kikai nǡceanome shima vikam̃e ceanikaimo. Kivã vam̃e no yora yo nichiceani yumi, shihaceavi nǫkinmimu namumina ýu chiraemikai raení mesovâ. Rae hakekinva ǹi kai ceamuke, ki kinyokin moraekaimǚ moƙeni vă nanokimo havi. Hanichi vashikavi ceaẏo ḳo kộka shi nome. Yuko hakin tẚmimu kaikemi chino. Yoceầsoki yu kivȧ raeviva hấyo, ceaƴo ko mḕkaiyora ceashimoni yuhameni hani ke.'
 ```
 
 ##### `options`
 
-- **`minSentences=3` and `minSentences=7`:** the minimum and maximum possible number of sentences that a returned paragraph will contain.
-- **`minClauses=1` and `maxClauses=2`:** the minimum and maximum possible number of clauses that each sentence will contain.
-- **`minWords=5` and `maxWords=8`:** the minimum and maximum possible number of words that each clause will contain.
-- **`unicode=0.382`:** whether or not the string should contain non-ascii unicode characters. If `true` is given, each returned word will always contain a
-  single unicode character. If `false` is given, each returned word will never
+- **`minSentences=3` and `minSentences=7`:** the minimum and maximum possible
+  number of sentences that a returned paragraph will contain.
+- **`minClauses=1` and `maxClauses=2`:** the minimum and maximum possible number
+  of clauses that each sentence will contain.
+- **`minWords=5` and `maxWords=8`:** the minimum and maximum possible number of
+  words that each clause will contain.
+- **`unicode=0.382`:** whether or not the string should contain non-ascii
+  unicode characters. If `true` is given, each returned word will always contain
+  a single unicode character. If `false` is given, each returned word will never
   contain non-ascii characters. If a value between `0` and `1` is given, that
   value will represent the probability of a returned value containing a single
   unicode character.
@@ -589,187 +589,165 @@ paragraph('id-2', {
   minSentences: 3,
   unicode: 0.9
 })
-// =>
-'Ǹi ceami vakinkaȳo kimaṽi răshi nṓka mʉ ceamikąi. Vìkoaso mekashɨso kaćhi mehyǩin mashirąe soyuraevi kaiyuŗa. Nokê̄ raě maso kekanȱ sochi raƙeko chiñoshi mã, ᶄo taꝁinkahy yǚkakoka misȭceavi kȇ. Kiyuko kế kȉnmusova ḱinha shì. Koñami yokaiḣyra ňoshi soayuso ninaviḥy raķinmamu kǟi, ḱorahy vikaiyủ sħi m̃ora ꞧamimeyu nò ṛae taᶄinrae. Niyoraeýo ḱi yumǿ kovami ṥhiraeshike. Chikã ᶄi kaį̃ niňovirae soḵaiva ḿeyu cėako.'
+// => 'Mechike mitẚke ḧahykevi yǔna mivånimo r̃amivavi makiayū̃ komẩ, ṃerae ʋamome yoşhi kinčea munanỉna niraeshika. Hys̩hi yomenoƙai ṣhi raeramüchi hasoceayṷ shiceakikė́ yocḙani manở. Yoƈhi noṽamoki chiṁe mahy ḣy, ņakihy soyụani ɍa hǡkoakin ȳu hyvikǡ nota cḗamika. M̃eyovaso nă kemỏ masẖihyki tạ, ȳutamemi ṿashi kī̀n sohykoshi hyviraḿe nǫ.'
 ```
 
 ### <a name="composition" href="#composition">#</a> Composition
 
 #### <a name="join" href="#join">#</a> `join(input, joiner, values)`
 
-Takes in an identifying [`input`](#overview-makers) value and an array of makers as `values`, calls each with a unique identifying input, and joins the results with the given `joiner`.
+Takes in an identifying [`input`](#overview-makers) value and an array of makers
+as `values`, calls each with a unique identifying input, and joins the results
+with the given `joiner`.
 
 ```js
 join('id-23', ' ', [word, oneOf(['Street', 'Drive'])])
-// =>
-'Kinshiẏora Street'
+// => 'Sotaniḣy Drive'
 ```
 
-If an item in the `value` array is not a function, that value will be used as-is:
+If an item in the `value` array is not a function, that value will be used
+as-is:
 
 ```js
 join('id-2', ' ', [word, 'Drive'])
-// =>
-'Raeyuraḱe Drive'
+// => 'Mikochï Drive'
 ```
 
-`joiner` can also be a function, in which case it will be called with the results of resolving each item in `values` as input:
+`joiner` can also be a function, in which case it will be called with the
+results of resolving each item in `values` as input:
 
 ```js
 join('id-3', ([a, b, c]) => `${a}-${b} ${c}`, [word, word, word])
-// =>
-'Hakehysḩi-Mḯanokin Chisọkayu'
+// => 'Kiṅyu-Yoḳin Hañi'
 ```
 
-If any of the items in `values` resolves to a nested array, that array will be flattened (regardless of nesting depth):
+If any of the items in `values` resolves to a nested array, that array will be
+flattened (regardless of nesting depth):
 
 ```js
-join('id-2', '', [
-  char.letter,
-  times(3, char.alphanumeric)
-])
-// =>
-'vqD6'
+join('id-2', '', [char.letter, times(3, char.alphanumeric)])
+// => 'iSmi'
 ```
 
 #### <a name="oneOf" href="#oneOf">#</a> `oneOf(input, values)`
 
-Takes in an identifying [`input`](#overview-makers) value and an array of `values`, and returns an item in `values` that corresponds to that `input`:
+Takes in an identifying [`input`](#overview-makers) value and an array of
+`values`, and returns an item in `values` that corresponds to that `input`:
 
 ```js
 oneOf('id-23', ['red', 'green', 'blue'])
-// =>
-'blue'
+// => 'blue'
 ```
 
-If an item in `values` is a maker, that maker will be called and the result will be returned:
+If an item in `values` is a maker, that maker will be called and the result will
+be returned:
 
 ```js
 oneOf('id-2', [int, word, char])
-// =>
-'i'
+// => 'b'
 ```
 
 #### <a name="someOf" href="#someOf">#</a> `someOf(input, range, values)`
 
-Takes in an identifying [`input`](#overview-makers) value and an array of `values`, repeatedly picks items from that array a number of times within the given `range`. Each item will be picked no more than once.
+Takes in an identifying [`input`](#overview-makers) value and an array of
+`values`, repeatedly picks items from that array a number of times within the
+given `range`. Each item will be picked no more than once.
 
 ```js
 someOf('id-23', [1, 2], ['red', 'green', 'blue'])
-// =>
-[
-  'green'
-]
+// => [ 'blue', 'red' ]
 ```
 
-As shown above, `range` can be a tuple array of the minimum and maximum possible number of items that can be picked.
+As shown above, `range` can be a tuple array of the minimum and maximum possible
+number of items that can be picked.
 
-It can also be given as a number, in which case exactly that number of items will be picked:
+It can also be given as a number, in which case exactly that number of items
+will be picked:
 
 ```js
 someOf('id-2', 2, ['red', 'green', 'blue'])
-// =>
-[
-  'blue',
-  'red'
-]
+// => [ 'red', 'green' ]
 ```
 
-If an item in `values` is a maker, that maker will be called and the result will be returned:
+If an item in `values` is a maker, that maker will be called and the result will
+be returned:
 
 ```js
 someOf('id-3', [1, 2], [int, word, char])
-// =>
-[
-  2310357836,
-  'w'
-]
+// => [ 2671466139985107, 'Kisomanǿ' ]
 ```
 
 #### <a name="times" href="#times">#</a> `times(input, range, maker)`
 
-Takes in an identifying [`input`](#overview-makers) value and a `maker`, calls that maker repeatedly (each time with a unique input) for a number of times within the given `range`, and returns the results as an array:
+Takes in an identifying [`input`](#overview-makers) value and a `maker`, calls
+that maker repeatedly (each time with a unique input) for a number of times
+within the given `range`, and returns the results as an array:
 
 ```js
 times('id-23', [4, 5], word)
-// =>
-[
-  'Haṋihy',
-  'Nṏhano',
-  'Kaîmokai',
-  'Maḉeamita',
-  'Vametã'
-]
+// => [ 'Memuḥavi', 'Ķinvahy', 'Kaꞩhi', 'Ṁira' ]
 ```
 
-As shown above, `range` can be a tuple array of the minimum and maximum possible number of times the maker should be called. It can also be given as a number, in which case the given maker will be called exactly that number of times:
+As shown above, `range` can be a tuple array of the minimum and maximum possible
+number of times the maker should be called. It can also be given as a number, in
+which case the given maker will be called exactly that number of times:
 
 ```js
 times('id-2', 2, word)
-// =>
-[
-  'Ḿamoviso',
-  'Noṅi'
-]
+// => [ 'Ṱayuki', 'Ḵinko' ]
 ```
 
 #### <a name="tuple" href="#tuple">#</a> `tuple(input, values)`
 
-Takes in an identifying [`input`](#overview-makers) value and an array of makers as `values`, calls each with a unique identifying input, and returns the array of results.
+Takes in an identifying [`input`](#overview-makers) value and an array of makers
+as `values`, calls each with a unique identifying input, and returns the array
+of results.
 
 ```js
 tuple('id-23', [char, char])
-// =>
-[
-  'R',
-  'w'
-]
+// => [ '1', 'G' ]
 ```
 
-If an item in the `value` array is not a function, that value will be used as-is:
+If an item in the `value` array is not a function, that value will be used
+as-is:
 
 ```js
 tuple('id-2', [char, '!'])
-// =>
-[
-  'N',
-  '!'
-]
+// => [ 'O', '!' ]
 ```
 
 #### <a name="shape" href="#shape">#</a> `shape(input, properties)`
 
-Takes in an identifying [`input`](#overview-makers) value and an object of makers as `properties`, calls each property's value with a unique identifying input, and returns results as an object.
+Takes in an identifying [`input`](#overview-makers) value and an object of
+makers as `properties`, calls each property's value with a unique identifying
+input, and returns results as an object.
 
 ```js
 shape('id-23', {
   firstName: word,
   lastName: word
 })
-// =>
-{
-  firstName: 'Nimȫ',
-  lastName: 'Muhẩmimo'
-}
+// => { firstName: 'Mesomǡyo', lastName: 'Hyraēko' }
 ```
 
-If an item in the `properties` object is not a function, that value will be used as-is:
+If an item in the `properties` object is not a function, that value will be used
+as-is:
 
 ```js
 shape('id-23', {
   name: join(' ', [word, word]),
   active: true
 })
-// =>
-{
-  name: 'Kim̃uhy Ṽivakinchi',
-  active: true
-}
+// => { name: 'Hytamḗna Mohakờkai', active: true }
 ```
 
 #### <a name="oneOfWeighted" href="#oneOfWeighted">#</a> `oneOfWeighted(id, values)`
 
-Takes in an identifying [`input`](#overview-makers) value and a `value` array of consisting of `[probability, value]` pairs, and returns one of one of the values in that array. The likelihood of a particular `value` being returned will correspond to the `probability` given for it, where `probability` is a number between `0` and `1`.
+Takes in an identifying [`input`](#overview-makers) value and a `value` array of
+consisting of `[probability, value]` pairs, and returns one of one of the values
+in that array. The likelihood of a particular `value` being returned will
+correspond to the `probability` given for it, where `probability` is a number
+between `0` and `1`.
 
 ```js
 oneOfWeighted('id-23', [
@@ -777,11 +755,11 @@ oneOfWeighted('id-23', [
   [0.05, 'green'],
   [0.05, 'blue']
 ])
-// =>
-'red'
+// => 'red'
 ```
 
-If an item in `values` is a maker, that maker will be called and the result will be returned:
+If an item in `values` is a maker, that maker will be called and the result will
+be returned:
 
 ```js
 oneOfWeighted('id-2', [
@@ -789,11 +767,16 @@ oneOfWeighted('id-2', [
   [0.05, char],
   [0.05, int]
 ])
-// =>
-'Ÿutakinki'
+// => 'Tȃmenimu'
 ```
 
-For each `[probability, value]` pair in the array of `values`, if the given `probability` is not a number, that probability will be considered _unassigned_. All items with unassigned probabilities will receive an equal share of the remaining probability after accounting for all items with assigned probabilities (all items for which a number value was given for their probability). In the example below, `'green'` and `'blue'` will both have a probability of `0.4` of being returned (`(1 - 0.2) / 2`).
+For each `[probability, value]` pair in the array of `values`, if the given
+`probability` is not a number, that probability will be considered _unassigned_.
+All items with unassigned probabilities will receive an equal share of the
+remaining probability after accounting for all items with assigned probabilities
+(all items for which a number value was given for their probability). In the
+example below, `'green'` and `'blue'` will both have a probability of `0.4` of
+being returned (`(1 - 0.2) / 2`).
 
 ```js
 oneOfWeighted('id-23', [
@@ -801,8 +784,7 @@ oneOfWeighted('id-23', [
   [null, 'green'],
   [null, 'blue']
 ])
-// =>
-'green'
+// => 'green'
 ```
 
 ## <a name="install-use" href="#install-use">#</a> Install & Use
@@ -835,7 +817,10 @@ const word = require('fictional/word')
 It can also be used a `<script>`:
 
 ```html
-<script crossorigin src="https://unpkg.com/fictional/dist/umd/fictional.js"></script>
+<script
+  crossorigin
+  src="https://unpkg.com/fictional/dist/umd/fictional.js"
+></script>
 
 <script>
   fictional.word('some-identifier')
