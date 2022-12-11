@@ -1,4 +1,4 @@
-var siphash = require('sip-hash')
+var siphash = require('siphash')
 var stringify = require('fast-json-stable-stringify')
 var createLimitCache = require('./utils/createLimitCache')
 
@@ -10,7 +10,7 @@ var hash = cache.memoize(function hashFn(input) {
 
 hash.generateKey = siphash.string16_to_key.bind(siphash)
 
-hash.key = hash.generateKey('chino')
+hash.key = hash.generateKey('chinochinochino!')
 
 hash.hash2 = function hash2(a, b) {
   return hash(a) + hash(b)
