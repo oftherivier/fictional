@@ -1,4 +1,4 @@
-var siphash = require('siphash')
+var siphash = require('siphash/lib/siphash13')
 var stringify = require('fast-json-stable-stringify')
 var createLimitCache = require('./utils/createLimitCache')
 
