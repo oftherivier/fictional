@@ -41,7 +41,7 @@ function* sequence(input) {
   var current = hash(input)
 
   while (true) {
-    current = unsafeFastHash(current)
+    current = unsafeFastHash(current.toString(16))
     yield current
   }
 }
