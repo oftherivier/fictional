@@ -21,6 +21,8 @@ export interface Hash {
   (input: Input): number
   hash2(a: Input, b: Input): number
   hash3(a: Input, b: Input, c: Input): number
+  unsafeFastHash(input: Input): number
+  sequence(input: Input): Generator<number>
   combine(a: number, b: number): number
   setKey(key: HashKey): void
   generateKey(secret: string): HashKey
