@@ -74,7 +74,7 @@ For example, when generating api response data in tests, you need to rely on
 each field always mapping to the same generated value every test run. To
 illustrate, you could use fictional to generate some user entity in a test:
 
-```js
+````js
 import { word, shape, int } from 'fictional'
 
 const name = shape({
@@ -93,7 +93,8 @@ user('id-1')
   id: 5580496347489836,
   name: { first: 'Chiketaṡo', last: 'Nimukaīyo' }
 }
-*/```
+*/
+```
 
 To some extent, there are ways of achieving similar results with libraries like
 faker, but we haven't found ways that do not have practical limitations:
