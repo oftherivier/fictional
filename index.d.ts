@@ -15,6 +15,13 @@ export type Maker<V = unknown> = ((input: Input) => V) | V
 export type WeightedMaker<V = unknown> = [number, Maker<V>]
 
 export function hash(input: Input): number
+export interface hash {
+  (input: Input): number
+  hash2(a: Input, b: Input): number
+  hash3(a: Input, b: Input, c: Input): number
+  combine(a: number, b: number): number
+}
+
 export function bool(input: Input): boolean
 
 export interface IntOptions {
