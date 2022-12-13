@@ -130,7 +130,7 @@ const transformNode = node => {
         const stringifiedBlockResult = util.inspect(blockResult)
 
         if (stringifiedBlockResult.indexOf('\n') !== -1) {
-          result += `${block.value}\n/* =>\n${stringifiedBlockResult}\n*/`
+          result += `${block.value}\n/* =>\n${stringifiedBlockResult}\n*/\n`
         } else {
           result += `${block.value}\n// => ${stringifiedBlockResult}\n`
         }
