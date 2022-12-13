@@ -4,15 +4,19 @@ var createLimitCache = require('./utils/createLimitCache')
 
 var cache = createLimitCache(100)
 
+var generateKey = siphash.string16_to_key.bind(siphash)
+
+var hashKey = generateKey('chinochinochino!')
+
 var hash = cache.memoize(function hashFn(input) {
-  return siphash.hash_uint(hash.key, stringify(input))
+  return siphash.hash_uint(hashKey, stringify(input))
 })
 
-hash.generateKey = siphash.string16_to_key.bind(siphash)
+hash.generateKey = hash.generateKey
 
-hash.key = [
-  6952487140010339, 3343978465274083, 9727896446983715, 1255888658049814
-]
+hash.setKey = function setKey(key) {
+  hashKey = key
+}
 
 hash.hash2 = function hash2(a, b) {
   return combine(hash(a), hash(b))

@@ -14,12 +14,16 @@ export type Range = number | [number, number]
 export type Maker<V = unknown> = ((input: Input) => V) | V
 export type WeightedMaker<V = unknown> = [number, Maker<V>]
 
-export function hash(input: Input): number
-export interface hash {
+export const hash: Hash
+
+export type HashKey = [number, number, number, number]
+export interface Hash {
   (input: Input): number
   hash2(a: Input, b: Input): number
   hash3(a: Input, b: Input, c: Input): number
   combine(a: number, b: number): number
+  setKey(key: HashKey): void
+  generateKey(secret: string): HashKey
 }
 
 export function bool(input: Input): boolean
