@@ -50,8 +50,8 @@ function word(input, opts) {
   var minSyllables = defaults(opts.minSyllables, DEFAULT_MIN_SYLLABLES)
   var maxSyllables = defaults(opts.maxSyllables, DEFAULT_MAX_SYLLABLES)
   var pUnicode = defaults(opts.unicode, DEFAULT_UNICODE)
-  var id = hash2(input, 'word')
-  var n = fit(id, minSyllables, maxSyllables)
+  var ids = hash.sequence2(input, 'word')
+  var n = fit(ids.next().value, minSyllables, maxSyllables)
 
   var result = ''
   var next = ''
@@ -62,15 +62,14 @@ function word(input, opts) {
     prev = next
 
     do {
-      id = hash(id)
-      next = SYLLABLES[+id.mod(SYLLABLES_LEN)]
+      next = SYLLABLES[ids.next().value % SYLLABLES_LEN]
     } while (!syllablesMatch(prev, next))
 
     result += next
   }
 
-  if (flip(id, pUnicode)) {
-    result = unicodify(id, result)
+  if (flip(ids.next().value, pUnicode)) {
+    result = unicodify(ids.next().value, result)
   }
 
   if (shouldCapitalize) {

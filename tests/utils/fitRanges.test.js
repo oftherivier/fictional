@@ -3,7 +3,7 @@ const hash = require('../../hash')
 const fitRanges = require('../../utils/fitRanges')
 
 function oneOf(values) {
-  return id => values[id.mod(values.length)]
+  return id => values[id % values.length]
 }
 
 function run(fn, max) {

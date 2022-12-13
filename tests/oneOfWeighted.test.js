@@ -2,34 +2,32 @@ const test = require('ava')
 const { oneOfWeighted } = require('..')
 const { diffBetween } = require('./utils')
 
-const DIFF_THRESHOLD = 0.05
+const DIFF_THRESHOLD = 0.065
 
-test(
-  `averages to within ${DIFF_THRESHOLD * 100}% of the given probabilities`,
-  t => {
-    const n = 10000
-    let i = -1
+test(`averages to within ${
+  DIFF_THRESHOLD * 100
+}% of the given probabilities`, t => {
+  const n = 10000
+  let i = -1
 
-    const sums = {
-      red: 0,
-      green: 0,
-      blue: 0
-    }
-
-    const fn = oneOfWeighted([
-      [0.6, 'red'],
-      [0.1, 'green'],
-      [0.3, 'blue']
-    ])
-
-    while (++i < n) sums[fn(i)]++
-
-    t.assert(diffBetween(sums.red / n, 0.6) <= DIFF_THRESHOLD)
-    t.assert(diffBetween(sums.green / n, 0.1) <= DIFF_THRESHOLD)
-    t.assert(diffBetween(sums.blue / n, 0.3) <= DIFF_THRESHOLD)
-
+  const sums = {
+    red: 0,
+    green: 0,
+    blue: 0
   }
-)
+
+  const fn = oneOfWeighted([
+    [0.6, 'red'],
+    [0.1, 'green'],
+    [0.3, 'blue']
+  ])
+
+  while (++i < n) sums[fn(i)]++
+
+  t.assert(diffBetween(sums.red / n, 0.6) <= DIFF_THRESHOLD)
+  t.assert(diffBetween(sums.green / n, 0.1) <= DIFF_THRESHOLD)
+  t.assert(diffBetween(sums.blue / n, 0.3) <= DIFF_THRESHOLD)
+})
 
 test(`unassigned probabilities`, t => {
   const n = 10000
@@ -51,14 +49,12 @@ test(`unassigned probabilities`, t => {
   while (++i < n) sums[fn(i)]++
 
   t.assert(diffBetween(sums.b / n, 0.5) <= DIFF_THRESHOLD)
-
 })
 
 test(`empty samples`, t => {
   t.throws(() => {
     oneOfWeighted(null, [])
   })
-
 })
 
 test(`probabilities add up to < 1`, t => {
@@ -68,7 +64,6 @@ test(`probabilities add up to < 1`, t => {
       [0.3, 'b']
     ])
   )
-
 })
 
 test(`probabilities add up to > 1`, t => {
@@ -78,7 +73,6 @@ test(`probabilities add up to > 1`, t => {
       [0.9, 'b']
     ])
   )
-
 })
 
 test(`omitted probabilities`, t => {
@@ -88,5 +82,4 @@ test(`omitted probabilities`, t => {
       [0.9, 'b']
     ])
   )
-
 })

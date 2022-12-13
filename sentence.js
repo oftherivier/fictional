@@ -1,5 +1,4 @@
 var hash = require('./hash')
-var hash2 = hash.hash2
 var conj = require('./utils/conj')
 var fit = require('./utils/fit')
 var defaults = require('./utils/defaults')
@@ -19,10 +18,9 @@ function sentence(input, opts) {
   var maxClauses = defaults(opts.maxClauses, DEFAULT_MAX_CLAUSES)
   var unicode = defaults(opts.unicode, DEFAULT_UNICODE)
 
-  var id = hash2(input, 'sentence')
-  var n = fit(id, minClauses, maxClauses)
+  var ids = hash.sequence2(input, 'sentence')
+  var n = fit(ids.next().value, minClauses, maxClauses)
   var i = 0
-  id = hash(id)
 
   var firstOpts = conj(opts, {
     capitalize: 'first',
@@ -33,11 +31,10 @@ function sentence(input, opts) {
 
   var restOpts = conj(firstOpts, { capitalize: false })
 
-  var result = words(id, firstOpts)
+  var result = words(ids.next().value, firstOpts)
 
   while (++i < n) {
-    id = hash(id)
-    result += ', ' + words(id, restOpts)
+    result += ', ' + words(ids.next().value, restOpts)
   }
 
   return result + '.'

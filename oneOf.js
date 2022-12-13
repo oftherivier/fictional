@@ -8,7 +8,7 @@ function oneOf(a, b, c) {
 
 function oneOfMain(input, samples, options) {
   var id = hash2(input, 'oneOf')
-  return resolve(id, samples[id.mod(samples.length)], options)
+  return resolve(id, samples[id % samples.length], options)
 }
 
 function oneOfCurried(samples) {
