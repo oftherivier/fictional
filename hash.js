@@ -10,14 +10,25 @@ var hash = cache.memoize(function hashFn(input) {
 
 hash.generateKey = siphash.string16_to_key.bind(siphash)
 
-hash.key = hash.generateKey('chinochinochino!')
+hash.key = [
+  6952487140010339, 3343978465274083, 9727896446983715, 1255888658049814
+]
 
 hash.hash2 = function hash2(a, b) {
-  return hash(a) + hash(b)
+  return combine(hash(a), hash(b))
 }
 
 hash.hash3 = function hash3(a, b, c) {
-  return hash(a) + hash(b) + hash(c)
+  return combine(combine(hash(a), hash(b)), hash(c))
+}
+
+hash.combine = combine
+
+// context(justinvdm, 13 Dec 2022): Adapted from a snippet
+// from the boost c library:
+// https://stackoverflow.com/questions/5889238/why-is-xor-the-default-way-to-combine-hashes
+function combine(a, b) {
+  return (a ^ (b + 0x9e3779b9 + (a << 6) + (b >> 2))) >>> 0
 }
 
 module.exports = hash
