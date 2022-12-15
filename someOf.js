@@ -1,5 +1,4 @@
 var hash = require('./hash')
-var hash2 = hash.hash2
 var fit = require('./utils/fit')
 var resolve = require('./utils/resolve')
 
@@ -8,7 +7,7 @@ function someOf(a, b, c) {
 }
 
 function someOfMain(input, range, samples) {
-  var id = hash2(input, 'someOf')
+  var ids = hash.sequence2(input, 'someOf')
   var n = typeof range === 'number' ? range : fit(id, range[0], range[1])
   var i = -1
   var results = []
@@ -16,10 +15,11 @@ function someOfMain(input, range, samples) {
   var remainingLen
   var chosenIndex
   var chosen
+  var id
 
   while (++i < n && (remainingLen = remaining.length)) {
-    id = hash(id)
-    chosenIndex = +id.mod(remainingLen)
+    id = ids.next().value
+    chosenIndex = id % remainingLen
     chosen = remaining[chosenIndex]
     remaining.splice(chosenIndex, 1)
     results.push(resolve(id, chosen))

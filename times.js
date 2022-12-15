@@ -7,15 +7,17 @@ function times(a, b, c) {
 }
 
 function timesMain(input, range, maker) {
-  var id = hash2(input, 'times')
-  var n = typeof range === 'number' ? range : fit(id, range[0], range[1])
+  var ids = hash.sequence2(input, 'times')
+  var n =
+    typeof range === 'number'
+      ? range
+      : fit(ids.next().value, range[0], range[1])
   var i = -1
   var results = []
 
   if (typeof maker === 'function')
     while (++i < n) {
-      id = hash(id)
-      results.push(maker(id))
+      results.push(maker(ids.next().value))
     }
   else while (++i < n) results.push(maker)
 

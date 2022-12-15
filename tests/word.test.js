@@ -13,7 +13,7 @@ test('unicode', t => {
   t.assert(!hasUnicode(word(null, { unicode: 0 })))
   t.assert(hasUnicode(word(null, { unicode: 1 })))
   t.assert(hasUnicode(word(23, { unicode: 0.99 })))
-  t.assert(!hasUnicode(word(23, { unicode: 0.01 })))
+  t.assert(!hasUnicode(word(23, { unicode: 0.001 })))
 })
 
 function hasUnicode(s) {
