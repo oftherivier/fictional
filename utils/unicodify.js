@@ -196,7 +196,7 @@ module.exports = function unicodify(id, word) {
   var wordLen = word.length
   var i = id % wordLen
 
-  var id = hash(id)
+  id = hash(id)
 
   var letter = wordLen === 1 ? word : word[i]
 

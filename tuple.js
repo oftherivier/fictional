@@ -1,5 +1,4 @@
 var hash = require('./hash')
-var hash2 = hash.hash2
 var resolve = require('./utils/resolve')
 
 function tuple(a, b) {

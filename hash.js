@@ -40,6 +40,7 @@ function combine(a, b) {
   return unsafeFastHash(a.toString() + b.toString())
 }
 
+// eslint-disable-next-line es5/no-generators
 function* sequenceHash(initial) {
   var current = initial
   yield initial

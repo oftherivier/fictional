@@ -1,5 +1,4 @@
 var hash = require('./hash')
-var hash2 = hash.hash2
 var conj = require('./utils/conj')
 var fit = require('./utils/fit')
 var flip = require('./utils/flip')

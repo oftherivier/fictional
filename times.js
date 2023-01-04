@@ -1,5 +1,4 @@
 var hash = require('./hash')
-var hash2 = hash.hash2
 var fit = require('./utils/fit')
 
 function times(a, b, c) {
