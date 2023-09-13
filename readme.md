@@ -288,10 +288,7 @@ information about the input values can be inferred, then you'll need to generate
 and use your own key instead:
 
 ```js
-// Store this key somewhere safe
-const key = hash.generateKey('aSY3k#uf^dHlj12@')
-
-hash.setKey(key)
+const key = hash.setKey('aSY3k#uf^dHlj12@')
 ```
 
 ## <a name="api-ref" href="#api-ref">#</a> API Reference

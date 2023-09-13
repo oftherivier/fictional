@@ -1,6 +1,8 @@
-var unsafeFastHash = require('fnv-plus').fast1a52
+var fnv = require('fnv-plus')
 var siphash = require('siphash')
 var stringify = require('fast-json-stable-stringify')
+
+var unsafeFastHash = fnv.fast1a52
 
 var generateKey = siphash.string16_to_key.bind(siphash)
 
@@ -11,7 +13,14 @@ function hash(input) {
 }
 
 function setKey(key) {
-  hashKey = key
+  var key16bytes
+
+  if (typeof key === 'string') {
+    key16bytes = key.length === 16 ? key : fnv.fast1a64(key)
+    hashKey = generateKey(key16bytes)
+  } else {
+    hashKey = key
+  }
 }
 
 function hash2(a, b) {
