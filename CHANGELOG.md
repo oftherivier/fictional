@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.8.2](https://github.com/oftherivier/fictional/compare/v0.8.1...v0.8.2) (2023-09-13)
+
+
+### Features
+
+* Support string inputs for setKey() ([15e1cce](https://github.com/oftherivier/fictional/commit/15e1cce36d1b7d9bc9c6eaec273fcecbf2e89fcb))
+
 ### [0.8.1](https://github.com/oftherivier/fictional/compare/v0.8.0...v0.8.1) (2023-01-04)
 
 ### [0.7.7](https://github.com/oftherivier/fictional/compare/v0.7.6...v0.7.7) (2022-10-27)
