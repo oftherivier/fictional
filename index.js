@@ -17,3 +17,6 @@ exports.sentence = require('./sentence')
 exports.paragraph = require('./paragraph')
 exports.bool = require('./bool')
 exports.dateString = require('./dateString')
+
+exports.expandRange = require('./utils/expandRange')
+exports.fromCodePoint = require('./utils/fromCodePoint')

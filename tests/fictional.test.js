@@ -50,6 +50,8 @@ const curriedMakerDefs = [
   ]
 ]
 
+const nonMakerSet = new Set(['expandRange', 'fromCodePoint'])
+
 const curriedMakers = {}
 
 curriedMakerDefs.forEach(
@@ -57,7 +59,9 @@ curriedMakerDefs.forEach(
 )
 
 const makers = {
-  ...fictional,
+  ...Object.fromEntries(
+    Object.entries(fictional).filter(([name]) => !nonMakerSet.has(name))
+  ),
   ...curriedMakers
 }
 

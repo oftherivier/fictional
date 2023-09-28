@@ -734,3 +734,11 @@ type Makers16<
   Maker<V15>,
   Maker<V16>
 ]
+
+declare const expandRange: (a: number, b: number) => number[]
+
+export { expandRange }
+
+declare const fromCodePoint: (codePoint: number) => string
+
+export { fromCodePoint }
