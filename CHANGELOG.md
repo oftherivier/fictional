@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.8.5](https://github.com/oftherivier/fictional/compare/v0.8.4...v0.8.5) (2023-09-28)
+
+
+### Features
+
+* Expose expandRanges() and fromCodePoint() ([3e4b748](https://github.com/oftherivier/fictional/commit/3e4b74812ce3f01f789874474541c5f95dfb0d59))
+
 ### [0.8.4](https://github.com/oftherivier/fictional/compare/v0.8.3...v0.8.4) (2023-09-20)
 
 ### [0.8.3](https://github.com/oftherivier/fictional/compare/v0.8.2...v0.8.3) (2023-09-20)
