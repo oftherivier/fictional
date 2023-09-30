@@ -41,6 +41,7 @@ hash.sequence = sequence
 hash.sequence2 = sequence2
 hash.sequence3 = sequence3
 hash.sequenceHash = sequenceHash
+hash.sequenceNext = splitmix32
 
 hash.unsafeFastHash = unsafeFastHash
 hash.combine = combine
