@@ -41,6 +41,7 @@ hash.sequence = sequence
 hash.sequence2 = sequence2
 hash.sequence3 = sequence3
 hash.sequenceHash = sequenceHash
+hash.sequenceNext = splitmix32
 
 hash.unsafeFastHash = unsafeFastHash
 hash.combine = combine
@@ -49,13 +50,24 @@ function combine(a, b) {
   return unsafeFastHash(a.toString() + b.toString())
 }
 
+// Adapted from https:github.com/bryc/code/blob/master/jshash/PRNGs.md#splitmix32
+function splitmix32(a) {
+  a |= 0
+  a = (a + 0x9e3779b9) | 0
+  var t = a ^ (a >>> 16)
+  t = Math.imul(t, 0x21f0aaad)
+  t = t ^ (t >>> 15)
+  t = Math.imul(t, 0x735a2d97)
+  return (t = t ^ (t >>> 15)) >>> 0
+}
+
 // eslint-disable-next-line es5/no-generators
 function* sequenceHash(initial) {
   var current = initial
   yield initial
 
   while (true) {
-    current = unsafeFastHash(current.toString())
+    current = splitmix32(current)
     yield current
   }
 }

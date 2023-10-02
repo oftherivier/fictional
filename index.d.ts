@@ -27,6 +27,7 @@ export interface Hash {
   sequence2(a: Input, b: Input): Generator<number>
   sequence3(a: Input, b: Input, c: Input): Generator<number>
   sequenceHash(initial: number): Generator<number>
+  sequenceNext(current: number): number
   combine(a: number, b: number): number
   setKey(key: string | HashKey): void
   generateKey(secret: string): HashKey
