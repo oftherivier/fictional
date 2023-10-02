@@ -73,15 +73,15 @@ function* sequenceHash(initial) {
 }
 
 function sequence3(a, b) {
-  return sequencer(hash3(a, b))
+  return sequenceHash(hash3(a, b))
 }
 
 function sequence2(a, b) {
-  return sequencer(hash2(a, b))
+  return sequenceHash(hash2(a, b))
 }
 
 function sequence(input) {
-  return sequencer(hash(input))
+  return sequenceHash(hash(input))
 }
 
 module.exports = hash
