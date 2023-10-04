@@ -1,6 +1,14 @@
 var fnv = require('fnv-plus')
 var siphash = require('siphash')
-var stringify = require('fast-json-stable-stringify')
+
+var serializers = (global.__bench_serializers = {
+  'msgpack-lite': require('msgpack-lite').encode,
+  'msgpack.js': require('@ygoe/msgpack').serialize,
+  'msgpack-js': require('msgpack-js').encode,
+  '@msgpack/msgpack': require('@msgpack/msgpack').encode,
+  'fast-json-stable-stringify': require('fast-json-stable-stringify'),
+  sia: require('sializer').sia
+})
 
 var unsafeFastHash = fnv.fast1a52
 
@@ -9,7 +17,9 @@ var generateKey = siphash.string16_to_key.bind(siphash)
 var hashKey = generateKey('chinochinochino!')
 
 function hash(input) {
-  return siphash.hash_uint(hashKey, stringify(input))
+  var serializeFn =
+    serializers[global.__bench_serializer ?? 'fast-json-stable-stringify']
+  return siphash.hash_uint(hashKey, serializeFn(input))
 }
 
 function setKey(key) {
