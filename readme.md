@@ -479,9 +479,9 @@ word('id-23')
 
 - **`capitalize=true`:** whether or not the word should start with an upper case
   letter
-- **`unicode=true`:** whether or not the string should contain non-ascii unicode
-  characters. If `true` is given, each returned word will always contain a
-  single unicode character. If `false` is given, each returned word will never
+- **`unicode=false`:** whether or not the string should contain non-ascii
+  unicode characters. If `true` is given, each returned word will always contain
+  a single unicode character. If `false` is given, each returned word will never
   contain non-ascii characters. If a value between `0` and `1` is given, that
   value will represent the probability of a returned value containing a single
   unicode character.
@@ -516,9 +516,9 @@ words('id-23')
   with an upper case letter in each word. If `'first'` is given, for each string
   returned, only the first word will start with an upper case letter. If `false`
   is given, each string returned will always contain only lower case letters.
-- **`unicode=true`:** whether or not the string should contain non-ascii unicode
-  characters. If `true` is given, each returned word will always contain a
-  single unicode character. If `false` is given, each returned word will never
+- **`unicode=false`:** whether or not the string should contain non-ascii
+  unicode characters. If `true` is given, each returned word will always contain
+  a single unicode character. If `false` is given, each returned word will never
   contain non-ascii characters. If a value between `0` and `1` is given, that
   value will represent the probability of a returned value containing a single
   unicode character.
@@ -551,7 +551,7 @@ sentence('id-23')
   of clauses that a returned sentence will contain.
 - **`minWords=5` and `maxWords=8`:** the minimum and maximum possible number of
   words that each clause will contain.
-- **`unicode=0.382`:** whether or not the string should contain non-ascii
+- **`unicode=false`:** whether or not the string should contain non-ascii
   unicode characters. If `true` is given, each returned word will always contain
   a single unicode character. If `false` is given, each returned word will never
   contain non-ascii characters. If a value between `0` and `1` is given, that
@@ -589,7 +589,7 @@ paragraph('id-23')
   of clauses that each sentence will contain.
 - **`minWords=5` and `maxWords=8`:** the minimum and maximum possible number of
   words that each clause will contain.
-- **`unicode=0.382`:** whether or not the string should contain non-ascii
+- **`unicode=false`:** whether or not the string should contain non-ascii
   unicode characters. If `true` is given, each returned word will always contain
   a single unicode character. If `false` is given, each returned word will never
   contain non-ascii characters. If a value between `0` and `1` is given, that
