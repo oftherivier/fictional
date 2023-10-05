@@ -5,14 +5,12 @@ var fit = require('./utils/fit')
 var defaults = require('./utils/defaults')
 var word = require('./word')
 
-var DEFAULT_MIN_SYLLABLES = 1
 var DEFAULT_MIN_WORDS = 2
 var DEFAULT_MAX_WORDS = 3
 var DEFAULT_CAPITALIZE = 'first'
 
 function words(input, opts) {
   opts = opts || 0
-  var minSyllables = defaults(opts.minSyllables, DEFAULT_MIN_SYLLABLES)
   var capitalize = defaults(opts.capitalize, DEFAULT_CAPITALIZE)
   var shouldCapitalizeAll = capitalize === true || capitalize === 'all'
   var shouldCapitalizeFirst = shouldCapitalizeAll || capitalize === 'first'
@@ -26,12 +24,10 @@ function words(input, opts) {
   id = hash3(id, 'words', i)
 
   var firstOpts = conj(opts, {
-    minSyllables: minSyllables,
     capitalize: shouldCapitalizeFirst
   })
 
   var restOpts = conj(opts, {
-    minSyllables: minSyllables,
     capitalize: shouldCapitalizeAll
   })
 

@@ -8,7 +8,7 @@ var DEFAULT_MIN_CLAUSES = 1
 var DEFAULT_MAX_CLAUSES = 2
 var DEFAULT_MIN_WORDS = 5
 var DEFAULT_MAX_WORDS = 8
-var DEFAULT_UNICODE = 0.382
+var DEFAULT_UNICODE = 0
 
 function sentence(input, opts) {
   opts = opts || 0
