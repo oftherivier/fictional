@@ -50,7 +50,7 @@ function combine(a, b) {
   return unsafeFastHash(a.toString() + b.toString())
 }
 
-// Adapted from https:github.com/bryc/code/blob/master/jshash/PRNGs.md#splitmix32
+// Adapted from https://github.com/bryc/code/blob/master/jshash/PRNGs.md#splitmix32
 function splitmix32(a) {
   a |= 0
   a = (a + 0x9e3779b9) | 0

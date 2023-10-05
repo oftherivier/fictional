@@ -5,43 +5,14 @@ var flip = require('./utils/flip')
 var unicodify = require('./utils/unicodify')
 var defaults = require('./utils/defaults')
 
-var SYLLABLES = [
-  'a',
-  'ka',
-  'ki',
-  'ke',
-  'ko',
-  'ta',
-  'chi',
-  'shi',
-  'so',
-  'na',
-  'ni',
-  'no',
-  'ra',
-  'ha',
-  'hy',
-  'ma',
-  'mi',
-  'mu',
-  'me',
-  'mo',
-  'yu',
-  'yo',
-  'kai',
-  'va',
-  'vi',
-  'kin',
-  'rae',
-  'cea'
-]
+var LETTERS = require('./lorem.json')
 
-var SYLLABLES_LEN = SYLLABLES.length
+var INT_RANGE = 4294967296
 
 var DEFAULT_MIN_SYLLABLES = 2
 var DEFAULT_MAX_SYLLABLES = 4
-var DEFAULT_CAPITALIZE = true
-var DEFAULT_UNICODE = true
+var DEFAULT_CAPITALIZE = false
+var DEFAULT_UNICODE = 0
 
 function word(input, opts) {
   opts = opts || 0
@@ -49,26 +20,55 @@ function word(input, opts) {
   var minSyllables = defaults(opts.minSyllables, DEFAULT_MIN_SYLLABLES)
   var maxSyllables = defaults(opts.maxSyllables, DEFAULT_MAX_SYLLABLES)
   var pUnicode = defaults(opts.unicode, DEFAULT_UNICODE)
-  var ids = hash.sequence2(input, 'word')
-  var n = fit(ids.next().value, minSyllables, maxSyllables)
+  var id = hash.hash2(input, 'word')
+  var syllableLimit = fit(id, minSyllables, maxSyllables)
+
+  id = hash.sequenceNext(id)
 
   var result = ''
-  var next = ''
-  var prev
-  var i = -1
+  var prev = ''
+  var next
+  var probability
+  var candidates
+  var candidate
+  var candidatesLen
+  var candidateLetter
+  var candidateProbability
+  var nextProbabilityMark
+  var syllableCount = 0
+  var candidateIndex
 
-  while (++i < n) {
-    prev = next
+  do {
+    id = hash.sequenceNext(id)
+    probability = id / INT_RANGE
 
-    do {
-      next = SYLLABLES[ids.next().value % SYLLABLES_LEN]
-    } while (!syllablesMatch(prev, next))
+    nextProbabilityMark = 0
+    candidates = LETTERS[prev]
+    candidatesLen = candidates.length
+    candidateIndex = -1
+    next = null
 
+    while (++candidateIndex < candidatesLen && next == null) {
+      candidate = candidates[candidateIndex]
+      candidateLetter = candidate[0]
+      candidateProbability = candidate[1]
+
+      nextProbabilityMark += candidateProbability
+
+      if (probability <= nextProbabilityMark) {
+        next = candidateLetter
+      }
+    }
+
+    syllableCount++
     result += next
-  }
+    prev = next
+  } while (syllableCount < syllableLimit && next !== '')
 
-  if (flip(ids.next().value, pUnicode)) {
-    result = unicodify(ids.next().value, result)
+  id = hash.sequenceNext(id)
+
+  if (flip(id, pUnicode)) {
+    result = unicodify(id, result)
   }
 
   if (shouldCapitalize) {
@@ -92,10 +92,4 @@ module.exports = word
 
 function capitalize(s) {
   return s[0].toUpperCase() + s.slice(1)
-}
-
-function syllablesMatch(prev, next) {
-  var prevLen = prev.length
-  var lastPrev = prev[prevLen - 1]
-  return prev !== next && lastPrev !== next[0] && lastPrev !== next[1]
 }

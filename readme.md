@@ -6,13 +6,13 @@ Generate fake data deterministically from a given input
 import { word } from 'fictional'
 
 word('id-1')
-// => 'Hayuɍa'
+// => 'um'
 
 word('id-2')
-// => 'M̃ona'
+// => 'poter'
 
 word('id-1')
-// => 'Hayuɍa'
+// => 'um'
 ```
 
 ```js
@@ -23,13 +23,13 @@ const user = shape({
 })
 
 user('id-1')
-// => { name: 'Mẩ Minocḛayo Mokeƫa' }
+// => { name: 'Or Regione Ulit' }
 
 user('id-2')
-// => { name: 'Ǩamokeha Kèmoke' }
+// => { name: 'Et Quam' }
 
 user('id-1')
-// => { name: 'Mẩ Minocḛayo Mokeƫa' }
+// => { name: 'Or Regione Ulit' }
 ```
 
 - [Why](#why)
@@ -89,7 +89,7 @@ const user = shape({
 })
 
 user('id-1')
-// => { id: 4641209466322491, name: { first: 'Rachḯno', last: 'Vẚni' } }
+// => { id: 4641209466322491, name: { first: 'si', last: 'quaeren' } }
 ```
 
 To some extent, there are ways of achieving similar results with libraries like
@@ -121,7 +121,7 @@ import { word } from 'fictional'
 
 // `word` is a maker
 word('id-1')
-// => 'Hayuɍa'
+// => 'um'
 ```
 
 The given input can be any JSON-serializable value. For any two calls to the
@@ -139,13 +139,13 @@ word({
   a: 21,
   b: 23
 })
-// => 'Ḵaceanochi'
+// => 'quid'
 
 word({
   b: 23,
   a: 21
 })
-// => 'Ḵaceanochi'
+// => 'quid'
 ```
 
 ### <a name="overview-composition" href="#overview-composition">#</a> Composition
@@ -161,10 +161,10 @@ const streetAddress = join(' ', [
 ])
 
 streetAddress('id-1')
-// => '82 Tayunaṩhi Drive'
+// => '82 certa Drive'
 
 streetAddress('id-2')
-// => '132 Shimặkokai Street'
+// => '132 puto Street'
 ```
 
 Some makers take in identifying value as the only required argument and return.
@@ -190,7 +190,7 @@ returned array has a different value.
 
 ```js
 tuple('id-1', [word, word])
-// => [ 'Kimǒ', 'Tayunaṩhi' ]
+// => [ 'et', 'certa' ]
 
 // this is roughly the same as doing
 word(hash('id-1')), word(hash(hash('id-1')))
@@ -271,10 +271,10 @@ composing makers:
 const companyName = join(' ', [word, oneOf(['Incorporated', 'Systems'])])
 
 companyName('id-1')
-// => 'Kimǒ Incorporated'
+// => 'et Incorporated'
 
 companyName('id-2')
-// => 'Chiā Incorporated'
+// => 'hac Incorporated'
 ```
 
 ### <a name="overview-security" href="#overview-security">#</a> Security
@@ -472,7 +472,7 @@ value resembling a fictitious word.
 
 ```js
 word('id-23')
-// => 'Vȉyo'
+// => 'nostrum'
 ```
 
 ##### `options`
@@ -494,7 +494,7 @@ word('id-2', {
   maxSyllables: 6,
   unicode: 0.382
 })
-// => 'Mō'
+// => 'ƥot'
 ```
 
 #### <a name="words" href="#words">#</a> `words(id[, options])`
@@ -504,7 +504,7 @@ value resembling fictitious words.
 
 ```js
 words('id-23')
-// => 'Ꝁihyna kinokiṋha ṁu'
+// => 'Sempit iudicos quidem'
 ```
 
 ##### `options`
@@ -532,7 +532,7 @@ words('id-2', {
   unicode: 0.618,
   capitalize: 'all'
 })
-// => 'Kiyuyova Kona Mạ Kiyo̩ma Kin So'
+// => 'Ad Nobis Aȑ Alter Es Quid'
 ```
 
 #### <a name="sentence" href="#sentence">#</a> `sentence(id[, options])`
@@ -542,7 +542,7 @@ value resembling a sentence of fictitious words.
 
 ```js
 sentence('id-23')
-// => 'Yutaṃo kahy kiraeǩaino nonavi kį̃ntami hy, cẻa ᶄi naki no shiraeki mụ nònaniyu.'
+// => 'Statueret verter me nullo quanto dedit, mot volup si dur vacuit ub quanto.'
 ```
 
 ##### `options`
@@ -568,7 +568,7 @@ sentence('id-2', {
   maxWords: 3,
   unicode: 0.9
 })
-// => 'Ȼhiyoa vamoḱerae, kǐn makớ.'
+// => 'Tậmentis summṓ, eṣ viɗer.'
 ```
 
 #### <a name="paragraph" href="#paragraph">#</a> `paragraph(id[, options])`
@@ -578,7 +578,7 @@ value resembling a paragraph of fictitious words.
 
 ```js
 paragraph('id-23')
-// => 'Kinmonako cềamiva rấe sochiyu kai kaishiỹo chi va, mẫyu raviyǿmi konâki ȳu hykavika ra vihasohy yo. Mo kayơra sochi nashisőma chisȱ cea ᶄe chiceǎvi, kǎi some shi ko kaichivako. Shi koᶄahy ki yoṿa chiha. Niraeayu kaiyukovi kekiyome kokaṁo rakinraeko raenikeni m̃okairaechi. Vayọ ka moha ko yuhỳmi. Hyha kokayớ shi řa kaniyuki. Noraekai korae mu yoviƈeachi naceaki mimani norashi, kinhy kisoňike nakikechi kimomu ḿo ceakiţa tachi hyka.'
+// => 'Faciuntur tibusque tal et loco eademus quod incor, vitam et nobis dic idis dol liberrat qui. Par ef hoc quid volup anum partien quod, plac se non es propteris. Aut a quae sed quanto. Ipse per quod periora fore earum melius. Est et primos in hoc. Uri propter are es fug. Homintel civium ep prob il sapientium et, numquam secun ate quid percipesse sit oderitis brevis.'
 ```
 
 ##### `options`
@@ -604,7 +604,7 @@ paragraph('id-2', {
   minSentences: 3,
   unicode: 0.9
 })
-// => 'Mimǖcea yṑkaishi muceằme yuhahỷ kiÿo. Kaimuńake koviᶄeni hacħi mukoma ńa yų́. Moshịnova yokiçhi ņiyohy noshȉmacea ṽi, kaiḫayo ǩe hÿami mɵ raekoǹichi. Ketænovi ǩi vakoshi chi haʋi.'
+// => 'Vero ǡb laeţet deṯ q̃ui. Iḋ é̩t aṕ iucunẗur physicī ipsaḿ. Voluptaṭion cửm ȭmnino ernữm ʋol, hạec siţ oḿ ültim niĥillud. Morbos liƀ dè oḿnes sę̃d.'
 ```
 
 ### <a name="composition" href="#composition">#</a> Composition
@@ -617,7 +617,7 @@ with the given `joiner`.
 
 ```js
 join('id-23', ' ', [word, oneOf(['Street', 'Drive'])])
-// => 'Meràemukin Drive'
+// => 'omne Drive'
 ```
 
 If an item in the `value` array is not a function, that value will be used
@@ -625,7 +625,7 @@ as-is:
 
 ```js
 join('id-2', ' ', [word, 'Drive'])
-// => 'Chiā Drive'
+// => 'hac Drive'
 ```
 
 `joiner` can also be a function, in which case it will be called with the
@@ -633,7 +633,7 @@ results of resolving each item in `values` as input:
 
 ```js
 join('id-3', ([a, b, c]) => `${a}-${b} ${c}`, [word, word, word])
-// => 'Yoceahyʋa-Ceắmumiha Ǩinta'
+// => 'potes-orum reliq'
 ```
 
 If any of the items in `values` resolves to a nested array, that array will be
@@ -659,7 +659,7 @@ be returned:
 
 ```js
 oneOf('id-2', [int, word, char])
-// => 'Ceảni'
+// => 'legum'
 ```
 
 #### <a name="someOf" href="#someOf">#</a> `someOf(input, range, values)`
@@ -700,7 +700,7 @@ within the given `range`, and returns the results as an array:
 
 ```js
 times('id-23', [4, 5], word)
-// => [ 'Miką', 'Kảkiko', 'Muhÿko', 'Nặso' ]
+// => [ 'me', 'cula', 'quam', 'iam' ]
 ```
 
 As shown above, `range` can be a tuple array of the minimum and maximum possible
@@ -709,7 +709,7 @@ which case the given maker will be called exactly that number of times:
 
 ```js
 times('id-2', 2, word)
-// => [ 'Kerămi', 'Ḿachi' ]
+// => [ 'retinan', 'effic' ]
 ```
 
 #### <a name="tuple" href="#tuple">#</a> `tuple(input, values)`
@@ -742,7 +742,7 @@ shape('id-23', {
   firstName: word,
   lastName: word
 })
-// => { firstName: 'Vikeýuvi', lastName: 'Kinceamṓ' }
+// => { firstName: 'haec', lastName: 'manens' }
 ```
 
 If an item in the `properties` object is not a function, that value will be used
@@ -753,7 +753,7 @@ shape('id-23', {
   name: join(' ', [word, word]),
   active: true
 })
-// => { name: 'Hahysoʋa Ceahỵme', active: true }
+// => { name: 'vitam a', active: true }
 ```
 
 #### <a name="oneOfWeighted" href="#oneOfWeighted">#</a> `oneOfWeighted(id, values)`
@@ -782,7 +782,7 @@ oneOfWeighted('id-2', [
   [0.05, char],
   [0.05, int]
 ])
-// => 'Kakiḿekai'
+// => 'ut'
 ```
 
 For each `[probability, value]` pair in the array of `values`, if the given
