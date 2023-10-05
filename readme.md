@@ -485,7 +485,7 @@ word('id-23')
   contain non-ascii characters. If a value between `0` and `1` is given, that
   value will represent the probability of a returned value containing a single
   unicode character.
-- **`minSyllables=2` and `maxSyllables=4`:** the minimum and maximum possible
+- **`minSyllables=1` and `maxSyllables=4`:** the minimum and maximum possible
   number of syllables that returned words will contain
 
 ```js
@@ -596,7 +596,7 @@ paragraph('id-23')
   value will represent the probability of a returned value containing a single
   unicode character.
 - **`minSyllables=1` and `maxSyllables=4`:** the minimum and maximum possible
-  number of syllables that returned words will contain
+  number of syllables that returned words will contain.
 
 ```js
 paragraph('id-2', {
