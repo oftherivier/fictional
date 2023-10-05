@@ -6,13 +6,13 @@ Generate fake data deterministically from a given input
 import { word } from 'fictional'
 
 word('id-1')
-// => 'Ere'
+// => 'Um'
 
 word('id-2')
-// => 'Poter'
+// => 'Potere'
 
 word('id-1')
-// => 'Ere'
+// => 'Um'
 ```
 
 ```js
@@ -23,13 +23,13 @@ const user = shape({
 })
 
 user('id-1')
-// => { name: 'Or Regione Ulit' }
+// => { name: 'Orum Regione Ulit' }
 
 user('id-2')
-// => { name: 'Atomi Pac' }
+// => { name: 'Et Quam' }
 
 user('id-1')
-// => { name: 'Or Regione Ulit' }
+// => { name: 'Orum Regione Ulit' }
 ```
 
 - [Why](#why)
@@ -89,7 +89,7 @@ const user = shape({
 })
 
 user('id-1')
-// => { id: 4641209466322491, name: { first: 'Ini', last: 'Quaeren' } }
+// => { id: 4641209466322491, name: { first: 'Si', last: 'Quaerent' } }
 ```
 
 To some extent, there are ways of achieving similar results with libraries like
@@ -121,7 +121,7 @@ import { word } from 'fictional'
 
 // `word` is a maker
 word('id-1')
-// => 'Ere'
+// => 'Um'
 ```
 
 The given input can be any JSON-serializable value. For any two calls to the
@@ -139,13 +139,13 @@ word({
   a: 21,
   b: 23
 })
-// => 'Consumenti'
+// => 'Quid'
 
 word({
   b: 23,
   a: 21
 })
-// => 'Consumenti'
+// => 'Quid'
 ```
 
 ### <a name="overview-composition" href="#overview-composition">#</a> Composition
@@ -161,10 +161,10 @@ const streetAddress = join(' ', [
 ])
 
 streetAddress('id-1')
-// => '82 Despicio Drive'
+// => '82 Certa Drive'
 
 streetAddress('id-2')
-// => '132 Declarore Street'
+// => '132 Puto Street'
 ```
 
 Some makers take in identifying value as the only required argument and return.
@@ -190,7 +190,7 @@ returned array has a different value.
 
 ```js
 tuple('id-1', [word, word])
-// => [ 'Et', 'Despicio' ]
+// => [ 'Et', 'Certa' ]
 
 // this is roughly the same as doing
 word(hash('id-1')), word(hash(hash('id-1')))
@@ -494,7 +494,7 @@ word('id-2', {
   maxSyllables: 6,
   unicode: 0.382
 })
-// => 'Ƥot'
+// => 'Poteŕe'
 ```
 
 #### <a name="words" href="#words">#</a> `words(id[, options])`
@@ -532,7 +532,7 @@ words('id-2', {
   unicode: 0.618,
   capitalize: 'all'
 })
-// => 'Reprehę̃nim Nobis Aȑ Alter Es Quid'
+// => 'Ad Nobisʈis Aret Alter Ȇst Quịdem'
 ```
 
 #### <a name="sentence" href="#sentence">#</a> `sentence(id[, options])`
@@ -542,7 +542,7 @@ value resembling a sentence of fictitious words.
 
 ```js
 sentence('id-23')
-// => 'Statueret verter me nullo quanto dedit, mot volup si dur vacuit ub sapiendam.'
+// => 'Statueret verterea me nullo quanto dedittamen, motum sit causa corpore chrysippe nec et.'
 ```
 
 ##### `options`
@@ -568,7 +568,7 @@ sentence('id-2', {
   maxWords: 3,
   unicode: 0.9
 })
-// => 'Tậmentis aṭ, eṣ viɗer.'
+// => 'Tameṉtis summṓ, essẽ videräe.'
 ```
 
 #### <a name="paragraph" href="#paragraph">#</a> `paragraph(id[, options])`
@@ -578,7 +578,7 @@ value resembling a paragraph of fictitious words.
 
 ```js
 paragraph('id-23')
-// => 'Faciuntur tibusque tal et loco eademus pertinger incor, vitam potesse nobis dic statuamus quan maxime hoc. Par ef praesen quid volup anum partien homina, plac se non es propteris. Aut intelleg quae sed quanto. Hominest igatem satisse detrac nomin iucunditat coercer. Est et primos in stultorquat. Uri propter infin sit es. Homintel fugienter videt dol sentitio coh aperere, numquam secun ate quid percipesse sit oderitis curatibus.'
+// => 'Faciuntur tibusque tali et loco eademus quod incorporrec, vitamicur et nobis ipem igunde mediocris omis est. Paranim neque consuetudit et essententiae sit et etiamsi, placeat se non ac hoc. Autem a quae sed quanto. Ipse per quod periora fore earum melius. Est etiam primos in hoc. Uri propterveniam are esse fugientia. Homintelleg civium illa se ere puerilius tament, numquam secunt ate quid percipesse sit oderitis brevis.'
 ```
 
 ##### `options`
@@ -604,7 +604,7 @@ paragraph('id-2', {
   minSentences: 3,
   unicode: 0.9
 })
-// => 'Vero gratiam laeţet deṯ inantê. Proɓaret instructừs ňe bene iṅ ȇ. Voluptaṭion ṿivi ȭmnino delectutês ʋol, commṓdum siţ metụs doḽ proṫ. Probarbĭtram liƀ dè oḿnes occulǡ.'
+// => 'Vero ǡb laeţet detractiṧ q̃ui. Iḋ é̩t ặperamor ẩetere autễm nam. Voluptaṭion cửm o̩mnino ernữm volùperet, hạec siŧ mởdo quã ex. Morbos uẗ ǜlla ꞧeferudin quoɗsi.'
 ```
 
 ### <a name="composition" href="#composition">#</a> Composition
@@ -617,7 +617,7 @@ with the given `joiner`.
 
 ```js
 join('id-23', ' ', [word, oneOf(['Street', 'Drive'])])
-// => 'Finitation Drive'
+// => 'Omne Drive'
 ```
 
 If an item in the `value` array is not a function, that value will be used
@@ -633,7 +633,7 @@ results of resolving each item in `values` as input:
 
 ```js
 join('id-3', ([a, b, c]) => `${a}-${b} ${c}`, [word, word, word])
-// => 'Officero-Viveret Reliq'
+// => 'Potes-Orum Reliquid'
 ```
 
 If any of the items in `values` resolves to a nested array, that array will be
@@ -700,7 +700,7 @@ within the given `range`, and returns the results as an array:
 
 ```js
 times('id-23', [4, 5], word)
-// => [ 'Me', 'Cula', 'Advero', 'Iam' ]
+// => [ 'Me', 'Cula', 'Quam', 'Iam' ]
 ```
 
 As shown above, `range` can be a tuple array of the minimum and maximum possible
@@ -709,7 +709,7 @@ which case the given maker will be called exactly that number of times:
 
 ```js
 times('id-2', 2, word)
-// => [ 'Retinan', 'Effic' ]
+// => [ 'Retinantes', 'Efficilis' ]
 ```
 
 #### <a name="tuple" href="#tuple">#</a> `tuple(input, values)`
@@ -742,7 +742,7 @@ shape('id-23', {
   firstName: word,
   lastName: word
 })
-// => { firstName: 'Cyrenaicis', lastName: 'Manens' }
+// => { firstName: 'Haec', lastName: 'Manens' }
 ```
 
 If an item in the `properties` object is not a function, that value will be used
@@ -753,7 +753,7 @@ shape('id-23', {
   name: join(' ', [word, word]),
   active: true
 })
-// => { name: 'Eturae Eadem', active: true }
+// => { name: 'Vitam A', active: true }
 ```
 
 #### <a name="oneOfWeighted" href="#oneOfWeighted">#</a> `oneOfWeighted(id, values)`
@@ -782,7 +782,7 @@ oneOfWeighted('id-2', [
   [0.05, char],
   [0.05, int]
 ])
-// => 'Ratione'
+// => 'Ut'
 ```
 
 For each `[probability, value]` pair in the array of `values`, if the given

@@ -9,7 +9,7 @@ var LETTERS = require('./lorem.json')
 
 var INT_RANGE = 4294967296
 
-var DEFAULT_MIN_SYLLABLES = 2
+var DEFAULT_MIN_SYLLABLES = null
 var DEFAULT_MAX_SYLLABLES = 4
 var DEFAULT_CAPITALIZE = true
 var DEFAULT_UNICODE = 0
@@ -21,7 +21,6 @@ function word(input, opts) {
   var maxSyllables = defaults(opts.maxSyllables, DEFAULT_MAX_SYLLABLES)
   var pUnicode = defaults(opts.unicode, DEFAULT_UNICODE)
   var id = hash.hash2(input, 'word')
-  var syllableLimit = fit(id, minSyllables, maxSyllables)
 
   id = hash.sequenceNext(id)
 
@@ -68,8 +67,8 @@ function word(input, opts) {
       syllableCount++
       result += next
       prev = next
-    } while (syllableCount < syllableLimit && next !== '')
-  } while (syllableCount < syllableLimit)
+    } while (syllableCount < maxSyllables && next !== '')
+  } while (minSyllables !== null && syllableCount < minSyllables)
 
   id = hash.sequenceNext(id)
 
