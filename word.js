@@ -1,6 +1,5 @@
 var hash = require('./hash')
 var conj = require('./utils/conj')
-var fit = require('./utils/fit')
 var flip = require('./utils/flip')
 var unicodify = require('./utils/unicodify')
 var defaults = require('./utils/defaults')

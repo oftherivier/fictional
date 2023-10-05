@@ -1,7 +1,7 @@
 const fs = require('fs')
 
 const LETTER = /[a-zA-Z]/
-const PUNCTUATION = /[ .,'"()\[\]?-]/
+const PUNCTUATION = /[ .,'"()[\]?-]/
 const SYLLABLE_HEURISTIC = /^[^aeiou]*[aeiou]+[^aeiou]?$/
 
 const splitIntoSyllables = text => {
