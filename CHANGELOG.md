@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.10.0](https://github.com/oftherivier/fictional/compare/v0.9.0...v0.10.0) (2023-10-05)
+
+
+### Bug Fixes
+
+* Linting fixes ([e23f11b](https://github.com/oftherivier/fictional/commit/e23f11bd70645dece888fce6d9891dc1919f64db))
+
 ## [0.9.0](https://github.com/oftherivier/fictional/compare/v0.8.6...v0.9.0) (2023-10-02)
 
 ### [0.8.6](https://github.com/oftherivier/fictional/compare/v0.8.5...v0.8.6) (2023-10-02)
