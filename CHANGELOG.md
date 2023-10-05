@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.10.1](https://github.com/oftherivier/fictional/compare/v0.10.0...v0.10.1) (2023-10-05)
+
+
+### Bug Fixes
+
+* Include `lorem.json` when publishing ([4426410](https://github.com/oftherivier/fictional/commit/4426410d15f69045a8b51ff6948a4c56eb7fe79e))
+
 ## [0.10.0](https://github.com/oftherivier/fictional/compare/v0.9.0...v0.10.0) (2023-10-05)
 
 
