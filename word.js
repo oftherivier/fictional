@@ -25,8 +25,8 @@ function word(input, opts) {
 
   id = hash.sequenceNext(id)
 
-  var result = ''
-  var prev = ''
+  var result
+  var prev
   var next
   var probability
   var candidates
@@ -35,35 +35,41 @@ function word(input, opts) {
   var candidateLetter
   var candidateProbability
   var nextProbabilityMark
-  var syllableCount = 0
+  var syllableCount
   var candidateIndex
 
   do {
-    id = hash.sequenceNext(id)
-    probability = id / INT_RANGE
+    result = ''
+    prev = ''
+    syllableCount = 0
 
-    nextProbabilityMark = 0
-    candidates = LETTERS[prev]
-    candidatesLen = candidates.length
-    candidateIndex = -1
-    next = null
+    do {
+      id = hash.sequenceNext(id)
+      probability = id / INT_RANGE
 
-    while (++candidateIndex < candidatesLen && next == null) {
-      candidate = candidates[candidateIndex]
-      candidateLetter = candidate[0]
-      candidateProbability = candidate[1]
+      nextProbabilityMark = 0
+      candidates = LETTERS[prev]
+      candidatesLen = candidates.length
+      candidateIndex = -1
+      next = null
 
-      nextProbabilityMark += candidateProbability
+      while (++candidateIndex < candidatesLen && next == null) {
+        candidate = candidates[candidateIndex]
+        candidateLetter = candidate[0]
+        candidateProbability = candidate[1]
 
-      if (probability <= nextProbabilityMark) {
-        next = candidateLetter
+        nextProbabilityMark += candidateProbability
+
+        if (probability <= nextProbabilityMark) {
+          next = candidateLetter
+        }
       }
-    }
 
-    syllableCount++
-    result += next
-    prev = next
-  } while (syllableCount < syllableLimit && next !== '')
+      syllableCount++
+      result += next
+      prev = next
+    } while (syllableCount < syllableLimit && next !== '')
+  } while (syllableCount < syllableLimit)
 
   id = hash.sequenceNext(id)
 
