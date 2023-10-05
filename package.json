@@ -20,6 +20,7 @@
   "author": "Justin van der Merwe",
   "license": "MIT",
   "files": [
+    "data",
     "*.js",
     "utils/*.js",
     "*.mjs",

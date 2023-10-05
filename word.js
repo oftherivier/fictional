@@ -4,7 +4,7 @@ var flip = require('./utils/flip')
 var unicodify = require('./utils/unicodify')
 var defaults = require('./utils/defaults')
 
-var LETTERS = require('./lorem.json')
+var SYLLABLES = require('./data/lorem.json')
 
 var INT_RANGE = 4294967296
 
@@ -30,7 +30,7 @@ function word(input, opts) {
   var candidates
   var candidate
   var candidatesLen
-  var candidateLetter
+  var candidateSyllable
   var candidateProbability
   var nextProbabilityMark
   var syllableCount
@@ -46,20 +46,20 @@ function word(input, opts) {
       probability = id / INT_RANGE
 
       nextProbabilityMark = 0
-      candidates = LETTERS[prev]
+      candidates = SYLLABLES[prev]
       candidatesLen = candidates.length
       candidateIndex = -1
       next = null
 
       while (++candidateIndex < candidatesLen && next == null) {
         candidate = candidates[candidateIndex]
-        candidateLetter = candidate[0]
+        candidateSyllable = candidate[0]
         candidateProbability = candidate[1]
 
         nextProbabilityMark += candidateProbability
 
         if (probability <= nextProbabilityMark) {
-          next = candidateLetter
+          next = candidateSyllable
         }
       }
 
