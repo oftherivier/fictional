@@ -6,13 +6,13 @@ Generate fake data deterministically from a given input
 import { word } from 'fictional'
 
 word('id-1')
-// => 'um'
+// => 'Um'
 
 word('id-2')
-// => 'poter'
+// => 'Poter'
 
 word('id-1')
-// => 'um'
+// => 'Um'
 ```
 
 ```js
@@ -89,7 +89,7 @@ const user = shape({
 })
 
 user('id-1')
-// => { id: 4641209466322491, name: { first: 'si', last: 'quaeren' } }
+// => { id: 4641209466322491, name: { first: 'Si', last: 'Quaeren' } }
 ```
 
 To some extent, there are ways of achieving similar results with libraries like
@@ -121,7 +121,7 @@ import { word } from 'fictional'
 
 // `word` is a maker
 word('id-1')
-// => 'um'
+// => 'Um'
 ```
 
 The given input can be any JSON-serializable value. For any two calls to the
@@ -139,13 +139,13 @@ word({
   a: 21,
   b: 23
 })
-// => 'quid'
+// => 'Quid'
 
 word({
   b: 23,
   a: 21
 })
-// => 'quid'
+// => 'Quid'
 ```
 
 ### <a name="overview-composition" href="#overview-composition">#</a> Composition
@@ -161,10 +161,10 @@ const streetAddress = join(' ', [
 ])
 
 streetAddress('id-1')
-// => '82 certa Drive'
+// => '82 Certa Drive'
 
 streetAddress('id-2')
-// => '132 puto Street'
+// => '132 Puto Street'
 ```
 
 Some makers take in identifying value as the only required argument and return.
@@ -190,7 +190,7 @@ returned array has a different value.
 
 ```js
 tuple('id-1', [word, word])
-// => [ 'et', 'certa' ]
+// => [ 'Et', 'Certa' ]
 
 // this is roughly the same as doing
 word(hash('id-1')), word(hash(hash('id-1')))
@@ -271,10 +271,10 @@ composing makers:
 const companyName = join(' ', [word, oneOf(['Incorporated', 'Systems'])])
 
 companyName('id-1')
-// => 'et Incorporated'
+// => 'Et Incorporated'
 
 companyName('id-2')
-// => 'hac Incorporated'
+// => 'Hac Incorporated'
 ```
 
 ### <a name="overview-security" href="#overview-security">#</a> Security
@@ -472,7 +472,7 @@ value resembling a fictitious word.
 
 ```js
 word('id-23')
-// => 'nostrum'
+// => 'Nostrum'
 ```
 
 ##### `options`
@@ -494,7 +494,7 @@ word('id-2', {
   maxSyllables: 6,
   unicode: 0.382
 })
-// => 'ƥot'
+// => 'Ƥot'
 ```
 
 #### <a name="words" href="#words">#</a> `words(id[, options])`
@@ -617,7 +617,7 @@ with the given `joiner`.
 
 ```js
 join('id-23', ' ', [word, oneOf(['Street', 'Drive'])])
-// => 'omne Drive'
+// => 'Omne Drive'
 ```
 
 If an item in the `value` array is not a function, that value will be used
@@ -625,7 +625,7 @@ as-is:
 
 ```js
 join('id-2', ' ', [word, 'Drive'])
-// => 'hac Drive'
+// => 'Hac Drive'
 ```
 
 `joiner` can also be a function, in which case it will be called with the
@@ -633,7 +633,7 @@ results of resolving each item in `values` as input:
 
 ```js
 join('id-3', ([a, b, c]) => `${a}-${b} ${c}`, [word, word, word])
-// => 'potes-orum reliq'
+// => 'Potes-Orum Reliq'
 ```
 
 If any of the items in `values` resolves to a nested array, that array will be
@@ -659,7 +659,7 @@ be returned:
 
 ```js
 oneOf('id-2', [int, word, char])
-// => 'legum'
+// => 'Legum'
 ```
 
 #### <a name="someOf" href="#someOf">#</a> `someOf(input, range, values)`
@@ -700,7 +700,7 @@ within the given `range`, and returns the results as an array:
 
 ```js
 times('id-23', [4, 5], word)
-// => [ 'me', 'cula', 'quam', 'iam' ]
+// => [ 'Me', 'Cula', 'Quam', 'Iam' ]
 ```
 
 As shown above, `range` can be a tuple array of the minimum and maximum possible
@@ -709,7 +709,7 @@ which case the given maker will be called exactly that number of times:
 
 ```js
 times('id-2', 2, word)
-// => [ 'retinan', 'effic' ]
+// => [ 'Retinan', 'Effic' ]
 ```
 
 #### <a name="tuple" href="#tuple">#</a> `tuple(input, values)`
@@ -742,7 +742,7 @@ shape('id-23', {
   firstName: word,
   lastName: word
 })
-// => { firstName: 'haec', lastName: 'manens' }
+// => { firstName: 'Haec', lastName: 'Manens' }
 ```
 
 If an item in the `properties` object is not a function, that value will be used
@@ -753,7 +753,7 @@ shape('id-23', {
   name: join(' ', [word, word]),
   active: true
 })
-// => { name: 'vitam a', active: true }
+// => { name: 'Vitam A', active: true }
 ```
 
 #### <a name="oneOfWeighted" href="#oneOfWeighted">#</a> `oneOfWeighted(id, values)`
@@ -782,7 +782,7 @@ oneOfWeighted('id-2', [
   [0.05, char],
   [0.05, int]
 ])
-// => 'ut'
+// => 'Ut'
 ```
 
 For each `[probability, value]` pair in the array of `values`, if the given

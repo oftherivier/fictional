@@ -11,7 +11,7 @@ var INT_RANGE = 4294967296
 
 var DEFAULT_MIN_SYLLABLES = 2
 var DEFAULT_MAX_SYLLABLES = 4
-var DEFAULT_CAPITALIZE = false
+var DEFAULT_CAPITALIZE = true
 var DEFAULT_UNICODE = 0
 
 function word(input, opts) {
