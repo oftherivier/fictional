@@ -334,7 +334,7 @@ value with both a whole and decimal segment.
 
 ```js
 float('id-23')
-// => 4139094247650.859
+// => 2211849950287729
 ```
 
 ##### `options`
@@ -347,7 +347,7 @@ float('id-2', {
   min: 2,
   max: 99
 })
-// => 2.54
+// => 56.259760707962705
 ```
 
 #### <a name="dateString" href="#date-string">#</a> `dateString(id[, options])`
