@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/oftherivier/fictional/compare/v0.10.1...v1.0.0) (2024-01-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* Improve float()'s distribution (#36)
+
+### Bug Fixes
+
+* Improve float()'s distribution ([#36](https://github.com/oftherivier/fictional/issues/36)) ([7311f08](https://github.com/oftherivier/fictional/commit/7311f0800430b35356b2afde87ff205e84eb60aa))
+
 ### [0.10.1](https://github.com/oftherivier/fictional/compare/v0.10.0...v0.10.1) (2023-10-05)
 
 
