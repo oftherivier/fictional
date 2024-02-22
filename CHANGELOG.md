@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/oftherivier/fictional/compare/v1.0.0...v2.0.0) (2024-02-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* someOf() with ranges always returning []
+
+### Bug Fixes
+
+* someOf() with ranges always returning [] ([d66a0f2](https://github.com/oftherivier/fictional/commit/d66a0f245c295c956c302cee4be66be95fe53485))
+
 ## [1.0.0](https://github.com/oftherivier/fictional/compare/v0.10.1...v1.0.0) (2024-01-02)
 
 
