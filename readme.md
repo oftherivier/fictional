@@ -670,7 +670,7 @@ given `range`. Each item will be picked no more than once.
 
 ```js
 someOf('id-23', [1, 2], ['red', 'green', 'blue'])
-// => []
+// => [ 'green' ]
 ```
 
 As shown above, `range` can be a tuple array of the minimum and maximum possible
@@ -689,7 +689,7 @@ be returned:
 
 ```js
 someOf('id-3', [1, 2], [int, word, char])
-// => []
+// => [ 'Quidem', 'W' ]
 ```
 
 #### <a name="times" href="#times">#</a> `times(input, range, maker)`

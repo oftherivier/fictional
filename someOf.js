@@ -8,7 +8,10 @@ function someOf(a, b, c) {
 
 function someOfMain(input, range, samples) {
   var ids = hash.sequence2(input, 'someOf')
-  var n = typeof range === 'number' ? range : fit(id, range[0], range[1])
+  var n =
+    typeof range === 'number'
+      ? range
+      : fit(ids.next().value, range[0], range[1])
   var i = -1
   var results = []
   var remaining = samples.slice()
