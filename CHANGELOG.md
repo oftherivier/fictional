@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.1](https://github.com/oftherivier/fictional/compare/v2.0.0...v2.0.1) (2024-03-13)
+
+
+### Bug Fixes
+
+* types for projects with module resolution "bundler" ([#38](https://github.com/oftherivier/fictional/issues/38)) ([291e221](https://github.com/oftherivier/fictional/commit/291e2216ea4324b80c159b39224f45782f15f044))
+
 ## [2.0.0](https://github.com/oftherivier/fictional/compare/v1.0.0...v2.0.0) (2024-02-22)
 
 
