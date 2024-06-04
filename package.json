@@ -42,7 +42,7 @@
     "release": "yarn tool release",
     "typetest": "yarn tool typetest",
     "checks": "yarn lint && yarn typetest && yarn test",
-    "tool": "npx ../otr-tools"
+    "tool": "npx @oftherivier/tools"
   },
   "dependencies": {
     "decimal.js": "^10.4.0",
@@ -62,6 +62,6 @@
   ],
   "packageManager": "yarn@4.2.2+sha256.1aa43a5304405be7a7cb9cb5de7b97de9c4e8ddd3273e4dad00d6ae3eb39f0ef",
   "devDependencies": {
-    "@oftherivier/tools": "../otr-tools/oftherivier-tools-0.1.47-up.2.tgz"
+    "@oftherivier/tools": "../otr-tools/oftherivier-tools-0.1.47-up.3.tgz"
   }
 }
