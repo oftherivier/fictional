@@ -1,5 +1,5 @@
 var fnv = require('fnv-plus')
-var siphash = require('siphash')
+var siphash = require('siphash/lib/siphash.js')
 var stringify = require('fast-json-stable-stringify')
 
 var unsafeFastHash = fnv.fast1a52
