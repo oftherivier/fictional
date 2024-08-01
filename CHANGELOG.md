@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.3](https://github.com/oftherivier/fictional/compare/v2.0.2...v2.0.3) (2024-08-01)
+
+
+### Bug Fixes
+
+* Import js export directly for siphash ([ad5323a](https://github.com/oftherivier/fictional/commit/ad5323a3d52197c902e8bd20ec2b53a35809a862))
+
 ### [2.0.2](https://github.com/oftherivier/fictional/compare/v2.0.1...v2.0.2) (2024-06-04)
 
 ### [2.0.1](https://github.com/oftherivier/fictional/compare/v2.0.0...v2.0.1) (2024-03-13)
