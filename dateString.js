@@ -10,20 +10,28 @@ function dateString(input, opts) {
   var id = hash(input)
 
   opts = opts || 0
-  var minYear = defaults(opts.minYear, MIN_YEAR)
-  var maxYear = defaults(opts.maxYear, MAX_YEAR)
+  var minDate, maxDate
 
-  // for simplicity, use 28d as max regardless of month/year
-  var year = fit(id, minYear, maxYear)
-  var monthIndex = fit(id, 0, 11)
-  var day = fit(id, 1, 28)
-  var hour = fit(id, 0, 23)
-  var min = fit(id, 0, 59)
-  var millisec = fit(id, 0, 1000)
+  if (opts.min) {
+    minDate = new Date(opts.min)
+  } else {
+    var minYear = defaults(opts.minYear, MIN_YEAR)
+    minDate = new Date(Date.UTC(minYear, 0, 1))
+  }
 
-  return new Date(
-    Date.UTC(year, monthIndex, day, hour, min, millisec)
-  ).toISOString()
+  if (opts.max) {
+    maxDate = new Date(opts.max)
+  } else {
+    var maxYear = defaults(opts.maxYear, MAX_YEAR)
+    maxDate = new Date(Date.UTC(maxYear, 11, 31, 23, 59, 59, 999))
+  }
+
+  var min = minDate.getTime()
+  var max = maxDate.getTime()
+
+  var time = fit(id, min, max)
+
+  return new Date(time).toISOString()
 }
 
 dateString.options = function dateStringOptions(opts) {
