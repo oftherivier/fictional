@@ -376,7 +376,7 @@ parsed directly by javascript's Date constructor or a Date object itself.
 
 ```js
 dateString('id-1', {
-  min: new Date('2024-01-01T00:00:00Z')
+  min: new Date('2024-01-01T00:00:00Z'),
   max: new Date('2024-12-31T23:59:59.999Z')
 })
 // => '2024-04-01T02:39:56.220Z'
