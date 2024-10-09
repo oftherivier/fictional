@@ -357,12 +357,30 @@ representing a date in
 [ISO 8601](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString)
 format.
 
+Not providing `options` will default to `minYear=1980` and `maxYear=2019` for
+backwards compatibility.
+
+If you provide no options or `minYear` and `maxYear`, generated dates will be
+restricted to be between the 1st and 28th of any month.
+
 ```js
 dateString('id-23')
 // => '1989-02-18T02:01:32.000Z'
 ```
 
 ##### `options`
+
+- **`min='2024-01-01T00:00:00Z'` and `max='2024-12-31T23:59:59:999Z'`:** the
+minimum and maximum possible date values. Values can be any string that can be
+parsed directly by javascript's Date constructor or a Date object itself.
+
+```js
+dateString('id-1', {
+  min: new Date('2024-01-01T00:00:00Z')
+  max: new Date('2024-12-31T23:59:59.999Z')
+})
+// => '2024-04-01T02:39:56.220Z'
+```
 
 - **`minYear=1980` and `maxYear=2019`:** the minimum and maximum possible year
   values for returned dates
