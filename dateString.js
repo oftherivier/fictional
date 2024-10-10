@@ -13,7 +13,12 @@ function dateString(input, opts) {
   var minDate, maxDate
 
   // keep older dateString function for backwards compatibility
-  if (!opts || (opts.minYear && opts.maxYear)) {
+  if (
+    !opts ||
+    (opts.minYear && opts.minYear) ||
+    (opts.minYear && !opts.max) ||
+    (!opts.min && opts.maxYear)
+  ) {
     return dateStringLegacy(input, opts)
   }
 
