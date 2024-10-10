@@ -1,8 +1,13 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See
-[standard-version](https://github.com/conventional-changelog/standard-version)
-for commit guidelines.
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [2.1.0](https://github.com/oftherivier/fictional/compare/v2.0.3...v2.1.0) (2024-10-10)
+
+
+### Features
+
+* support min and max Date inputs for dateString() ([#41](https://github.com/oftherivier/fictional/issues/41)) ([716c94c](https://github.com/oftherivier/fictional/commit/716c94ce4230791e43df41d7efa780cd2137b9c8))
 
 ### [2.0.3](https://github.com/oftherivier/fictional/compare/v2.0.2...v2.0.3) (2024-08-01)
 
