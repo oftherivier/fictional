@@ -10,5 +10,4 @@ test('makers as items', t => {
     const result = oneOf(i, [mod2])
     t.assert(0 <= result && result <= 1)
   }
-
 })

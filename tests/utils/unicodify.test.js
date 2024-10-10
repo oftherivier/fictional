@@ -8,5 +8,4 @@ test('unicodification', t => {
       unicodify(hash(word), word)
     )
   )
-
 })

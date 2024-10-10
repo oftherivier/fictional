@@ -24,19 +24,15 @@ const INPUT_PROBABILITIES = [
   0.9
 ]
 
-test(
-  `averages to within ${DIFF_THRESHOLD * 100}% of the given probability`,
-  t => {
-    for (const p of INPUT_PROBABILITIES) {
-      let i = -1
-      const results = []
-      while (++i < 10000) results.push(+flip(i, p))
+test(`averages to within ${DIFF_THRESHOLD * 100}% of the given probability`, t => {
+  for (const p of INPUT_PROBABILITIES) {
+    let i = -1
+    const results = []
+    while (++i < 10000) results.push(+flip(i, p))
 
-      const mean = results.reduce((a, b) => a + b) / results.length
-      const diff = diffBetween(mean, p)
+    const mean = results.reduce((a, b) => a + b) / results.length
+    const diff = diffBetween(mean, p)
 
-      t.assert(diff <= DIFF_THRESHOLD)
-    }
-
+    t.assert(diff <= DIFF_THRESHOLD)
   }
-)
+})

@@ -8,5 +8,4 @@ test('min and max', t => {
     const result = int('foo', { min: 3, max: 5 })
     t.assert(3 <= result && result <= 5)
   }
-
 })

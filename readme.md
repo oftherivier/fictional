@@ -371,8 +371,8 @@ dateString('id-23')
 ##### `options`
 
 - **`min='2024-01-01T00:00:00Z'` and `max='2024-12-31T23:59:59:999Z'`:** the
-minimum and maximum possible date values. Values can be any string that can be
-parsed directly by javascript's Date constructor or a Date object itself.
+  minimum and maximum possible date values. Values can be any string that can be
+  parsed directly by javascript's Date constructor or a Date object itself.
 
 ```js
 dateString('id-1', {

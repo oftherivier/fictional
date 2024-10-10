@@ -13,7 +13,6 @@ test('minYear and maxYear', t => {
     const year = new Date(result).getFullYear()
     t.assert(2030 <= year && year <= 2089)
   }
-
 })
 
 test('min and max', t => {
@@ -28,5 +27,4 @@ test('min and max', t => {
     const year = new Date(result).getFullYear()
     t.assert(2038 <= year && year <= 2525)
   }
-
 })
