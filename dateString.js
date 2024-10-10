@@ -10,6 +10,44 @@ function dateString(input, opts) {
   var id = hash(input)
 
   opts = opts || 0
+  var minDate, maxDate
+
+  // keep older dateString function for backwards compatibility
+  if (
+    !opts ||
+    (opts.minYear && opts.minYear) ||
+    (opts.minYear && !opts.max) ||
+    (!opts.min && opts.maxYear)
+  ) {
+    return dateStringLegacy(input, opts)
+  }
+
+  if (opts.min) {
+    minDate = new Date(opts.min)
+  } else {
+    var minYear = defaults(opts.minYear, MIN_YEAR)
+    minDate = new Date(Date.UTC(minYear, 0, 1))
+  }
+
+  if (opts.max) {
+    maxDate = new Date(opts.max)
+  } else {
+    var maxYear = defaults(opts.maxYear, MAX_YEAR)
+    maxDate = new Date(Date.UTC(maxYear, 11, 31, 23, 59, 59, 999))
+  }
+
+  var min = minDate.getTime()
+  var max = maxDate.getTime()
+
+  var time = fit(id, min, max)
+
+  return new Date(time).toISOString()
+}
+
+function dateStringLegacy(input, opts) {
+  var id = hash(input)
+
+  opts = opts || 0
   var minYear = defaults(opts.minYear, MIN_YEAR)
   var maxYear = defaults(opts.maxYear, MAX_YEAR)
 

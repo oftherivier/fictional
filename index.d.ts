@@ -66,6 +66,8 @@ export { float }
 export interface DateStringOptions {
   minYear: number
   maxYear: number
+  min: Date | string
+  max: Date | string
 }
 
 export interface DateString {
@@ -278,158 +280,158 @@ export type TupleReturnType<Makers extends AnyMakers> = Makers extends Makers1<
   : Makers extends Makers5<infer V1, infer V2, infer V3, infer V4, infer V5>
   ? [V1, V2, V3, V4, V5]
   : Makers extends Makers6<
-      infer V1,
-      infer V2,
-      infer V3,
-      infer V4,
-      infer V5,
-      infer V6
-    >
+    infer V1,
+    infer V2,
+    infer V3,
+    infer V4,
+    infer V5,
+    infer V6
+  >
   ? [V1, V2, V3, V4, V5, V6]
   : Makers extends Makers7<
-      infer V1,
-      infer V2,
-      infer V3,
-      infer V4,
-      infer V5,
-      infer V6,
-      infer V7
-    >
+    infer V1,
+    infer V2,
+    infer V3,
+    infer V4,
+    infer V5,
+    infer V6,
+    infer V7
+  >
   ? [V1, V2, V3, V4, V5, V6, V7]
   : Makers extends Makers8<
-      infer V1,
-      infer V2,
-      infer V3,
-      infer V4,
-      infer V5,
-      infer V6,
-      infer V7,
-      infer V8
-    >
+    infer V1,
+    infer V2,
+    infer V3,
+    infer V4,
+    infer V5,
+    infer V6,
+    infer V7,
+    infer V8
+  >
   ? [V1, V2, V3, V4, V5, V6, V7, V8]
   : Makers extends Makers9<
-      infer V1,
-      infer V2,
-      infer V3,
-      infer V4,
-      infer V5,
-      infer V6,
-      infer V7,
-      infer V8,
-      infer V9
-    >
+    infer V1,
+    infer V2,
+    infer V3,
+    infer V4,
+    infer V5,
+    infer V6,
+    infer V7,
+    infer V8,
+    infer V9
+  >
   ? [V1, V2, V3, V4, V5, V6, V7, V8, V9]
   : Makers extends Makers10<
-      infer V1,
-      infer V2,
-      infer V3,
-      infer V4,
-      infer V5,
-      infer V6,
-      infer V7,
-      infer V8,
-      infer V9,
-      infer V10
-    >
+    infer V1,
+    infer V2,
+    infer V3,
+    infer V4,
+    infer V5,
+    infer V6,
+    infer V7,
+    infer V8,
+    infer V9,
+    infer V10
+  >
   ? [V1, V2, V3, V4, V5, V6, V7, V8, V9, V10]
   : Makers extends Makers11<
-      infer V1,
-      infer V2,
-      infer V3,
-      infer V4,
-      infer V5,
-      infer V6,
-      infer V7,
-      infer V8,
-      infer V9,
-      infer V10,
-      infer V11
-    >
+    infer V1,
+    infer V2,
+    infer V3,
+    infer V4,
+    infer V5,
+    infer V6,
+    infer V7,
+    infer V8,
+    infer V9,
+    infer V10,
+    infer V11
+  >
   ? [V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11]
   : Makers extends Makers12<
-      infer V1,
-      infer V2,
-      infer V3,
-      infer V4,
-      infer V5,
-      infer V6,
-      infer V7,
-      infer V8,
-      infer V9,
-      infer V10,
-      infer V11,
-      infer V12
-    >
+    infer V1,
+    infer V2,
+    infer V3,
+    infer V4,
+    infer V5,
+    infer V6,
+    infer V7,
+    infer V8,
+    infer V9,
+    infer V10,
+    infer V11,
+    infer V12
+  >
   ? [V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12]
   : Makers extends Makers13<
-      infer V1,
-      infer V2,
-      infer V3,
-      infer V4,
-      infer V5,
-      infer V6,
-      infer V7,
-      infer V8,
-      infer V9,
-      infer V10,
-      infer V11,
-      infer V12,
-      infer V13
-    >
+    infer V1,
+    infer V2,
+    infer V3,
+    infer V4,
+    infer V5,
+    infer V6,
+    infer V7,
+    infer V8,
+    infer V9,
+    infer V10,
+    infer V11,
+    infer V12,
+    infer V13
+  >
   ? [V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12, V13]
   : Makers extends Makers14<
-      infer V1,
-      infer V2,
-      infer V3,
-      infer V4,
-      infer V5,
-      infer V6,
-      infer V7,
-      infer V8,
-      infer V9,
-      infer V10,
-      infer V11,
-      infer V12,
-      infer V13,
-      infer V14
-    >
+    infer V1,
+    infer V2,
+    infer V3,
+    infer V4,
+    infer V5,
+    infer V6,
+    infer V7,
+    infer V8,
+    infer V9,
+    infer V10,
+    infer V11,
+    infer V12,
+    infer V13,
+    infer V14
+  >
   ? [V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12, V13, V14]
   : Makers extends Makers15<
-      infer V1,
-      infer V2,
-      infer V3,
-      infer V4,
-      infer V5,
-      infer V6,
-      infer V7,
-      infer V8,
-      infer V9,
-      infer V10,
-      infer V11,
-      infer V12,
-      infer V13,
-      infer V14,
-      infer V15
-    >
+    infer V1,
+    infer V2,
+    infer V3,
+    infer V4,
+    infer V5,
+    infer V6,
+    infer V7,
+    infer V8,
+    infer V9,
+    infer V10,
+    infer V11,
+    infer V12,
+    infer V13,
+    infer V14,
+    infer V15
+  >
   ? [V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12, V13, V14, V15]
   : Makers extends Makers16<
-      infer V1,
-      infer V2,
-      infer V3,
-      infer V4,
-      infer V5,
-      infer V6,
-      infer V7,
-      infer V8,
-      infer V9,
-      infer V10,
-      infer V11,
-      infer V12,
-      infer V13,
-      infer V14,
-      infer V15,
-      infer V16
-    >
+    infer V1,
+    infer V2,
+    infer V3,
+    infer V4,
+    infer V5,
+    infer V6,
+    infer V7,
+    infer V8,
+    infer V9,
+    infer V10,
+    infer V11,
+    infer V12,
+    infer V13,
+    infer V14,
+    infer V15,
+    infer V16
+  >
   ? [V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12, V13, V14, V15, V16]
   : never
 
@@ -484,14 +486,14 @@ type Makers7<
   V6 = any,
   V7 = any
 > = [
-  Maker<V1>,
-  Maker<V2>,
-  Maker<V3>,
-  Maker<V4>,
-  Maker<V5>,
-  Maker<V6>,
-  Maker<V7>
-]
+    Maker<V1>,
+    Maker<V2>,
+    Maker<V3>,
+    Maker<V4>,
+    Maker<V5>,
+    Maker<V6>,
+    Maker<V7>
+  ]
 type Makers8<
   V1 = any,
   V2 = any,
@@ -502,15 +504,15 @@ type Makers8<
   V7 = any,
   V8 = any
 > = [
-  Maker<V1>,
-  Maker<V2>,
-  Maker<V3>,
-  Maker<V4>,
-  Maker<V5>,
-  Maker<V6>,
-  Maker<V7>,
-  Maker<V8>
-]
+    Maker<V1>,
+    Maker<V2>,
+    Maker<V3>,
+    Maker<V4>,
+    Maker<V5>,
+    Maker<V6>,
+    Maker<V7>,
+    Maker<V8>
+  ]
 type Makers9<
   V1 = any,
   V2 = any,
@@ -522,16 +524,16 @@ type Makers9<
   V8 = any,
   V9 = any
 > = [
-  Maker<V1>,
-  Maker<V2>,
-  Maker<V3>,
-  Maker<V4>,
-  Maker<V5>,
-  Maker<V6>,
-  Maker<V7>,
-  Maker<V8>,
-  Maker<V9>
-]
+    Maker<V1>,
+    Maker<V2>,
+    Maker<V3>,
+    Maker<V4>,
+    Maker<V5>,
+    Maker<V6>,
+    Maker<V7>,
+    Maker<V8>,
+    Maker<V9>
+  ]
 type Makers10<
   V1 = any,
   V2 = any,
@@ -544,17 +546,17 @@ type Makers10<
   V9 = any,
   V10 = any
 > = [
-  Maker<V1>,
-  Maker<V2>,
-  Maker<V3>,
-  Maker<V4>,
-  Maker<V5>,
-  Maker<V6>,
-  Maker<V7>,
-  Maker<V8>,
-  Maker<V9>,
-  Maker<V10>
-]
+    Maker<V1>,
+    Maker<V2>,
+    Maker<V3>,
+    Maker<V4>,
+    Maker<V5>,
+    Maker<V6>,
+    Maker<V7>,
+    Maker<V8>,
+    Maker<V9>,
+    Maker<V10>
+  ]
 type Makers11<
   V1 = any,
   V2 = any,
@@ -568,18 +570,18 @@ type Makers11<
   V10 = any,
   V11 = any
 > = [
-  Maker<V1>,
-  Maker<V2>,
-  Maker<V3>,
-  Maker<V4>,
-  Maker<V5>,
-  Maker<V6>,
-  Maker<V7>,
-  Maker<V8>,
-  Maker<V9>,
-  Maker<V10>,
-  Maker<V11>
-]
+    Maker<V1>,
+    Maker<V2>,
+    Maker<V3>,
+    Maker<V4>,
+    Maker<V5>,
+    Maker<V6>,
+    Maker<V7>,
+    Maker<V8>,
+    Maker<V9>,
+    Maker<V10>,
+    Maker<V11>
+  ]
 type Makers12<
   V1 = any,
   V2 = any,
@@ -594,19 +596,19 @@ type Makers12<
   V11 = any,
   V12 = any
 > = [
-  Maker<V1>,
-  Maker<V2>,
-  Maker<V3>,
-  Maker<V4>,
-  Maker<V5>,
-  Maker<V6>,
-  Maker<V7>,
-  Maker<V8>,
-  Maker<V9>,
-  Maker<V10>,
-  Maker<V11>,
-  Maker<V12>
-]
+    Maker<V1>,
+    Maker<V2>,
+    Maker<V3>,
+    Maker<V4>,
+    Maker<V5>,
+    Maker<V6>,
+    Maker<V7>,
+    Maker<V8>,
+    Maker<V9>,
+    Maker<V10>,
+    Maker<V11>,
+    Maker<V12>
+  ]
 type Makers13<
   V1 = any,
   V2 = any,
@@ -622,20 +624,20 @@ type Makers13<
   V12 = any,
   V13 = any
 > = [
-  Maker<V1>,
-  Maker<V2>,
-  Maker<V3>,
-  Maker<V4>,
-  Maker<V5>,
-  Maker<V6>,
-  Maker<V7>,
-  Maker<V8>,
-  Maker<V9>,
-  Maker<V10>,
-  Maker<V11>,
-  Maker<V12>,
-  Maker<V13>
-]
+    Maker<V1>,
+    Maker<V2>,
+    Maker<V3>,
+    Maker<V4>,
+    Maker<V5>,
+    Maker<V6>,
+    Maker<V7>,
+    Maker<V8>,
+    Maker<V9>,
+    Maker<V10>,
+    Maker<V11>,
+    Maker<V12>,
+    Maker<V13>
+  ]
 type Makers14<
   V1 = any,
   V2 = any,
@@ -652,21 +654,21 @@ type Makers14<
   V13 = any,
   V14 = any
 > = [
-  Maker<V1>,
-  Maker<V2>,
-  Maker<V3>,
-  Maker<V4>,
-  Maker<V5>,
-  Maker<V6>,
-  Maker<V7>,
-  Maker<V8>,
-  Maker<V9>,
-  Maker<V10>,
-  Maker<V11>,
-  Maker<V12>,
-  Maker<V13>,
-  Maker<V14>
-]
+    Maker<V1>,
+    Maker<V2>,
+    Maker<V3>,
+    Maker<V4>,
+    Maker<V5>,
+    Maker<V6>,
+    Maker<V7>,
+    Maker<V8>,
+    Maker<V9>,
+    Maker<V10>,
+    Maker<V11>,
+    Maker<V12>,
+    Maker<V13>,
+    Maker<V14>
+  ]
 type Makers15<
   V1 = any,
   V2 = any,
@@ -684,22 +686,22 @@ type Makers15<
   V14 = any,
   V15 = any
 > = [
-  Maker<V1>,
-  Maker<V2>,
-  Maker<V3>,
-  Maker<V4>,
-  Maker<V5>,
-  Maker<V6>,
-  Maker<V7>,
-  Maker<V8>,
-  Maker<V9>,
-  Maker<V10>,
-  Maker<V11>,
-  Maker<V12>,
-  Maker<V13>,
-  Maker<V14>,
-  Maker<V15>
-]
+    Maker<V1>,
+    Maker<V2>,
+    Maker<V3>,
+    Maker<V4>,
+    Maker<V5>,
+    Maker<V6>,
+    Maker<V7>,
+    Maker<V8>,
+    Maker<V9>,
+    Maker<V10>,
+    Maker<V11>,
+    Maker<V12>,
+    Maker<V13>,
+    Maker<V14>,
+    Maker<V15>
+  ]
 type Makers16<
   V1 = any,
   V2 = any,
@@ -718,23 +720,23 @@ type Makers16<
   V15 = any,
   V16 = any
 > = [
-  Maker<V1>,
-  Maker<V2>,
-  Maker<V3>,
-  Maker<V4>,
-  Maker<V5>,
-  Maker<V6>,
-  Maker<V7>,
-  Maker<V8>,
-  Maker<V9>,
-  Maker<V10>,
-  Maker<V11>,
-  Maker<V12>,
-  Maker<V13>,
-  Maker<V14>,
-  Maker<V15>,
-  Maker<V16>
-]
+    Maker<V1>,
+    Maker<V2>,
+    Maker<V3>,
+    Maker<V4>,
+    Maker<V5>,
+    Maker<V6>,
+    Maker<V7>,
+    Maker<V8>,
+    Maker<V9>,
+    Maker<V10>,
+    Maker<V11>,
+    Maker<V12>,
+    Maker<V13>,
+    Maker<V14>,
+    Maker<V15>,
+    Maker<V16>
+  ]
 
 declare const expandRange: (a: number, b: number) => number[]
 
