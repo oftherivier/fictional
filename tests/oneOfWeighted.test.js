@@ -4,30 +4,35 @@ const { diffBetween } = require('./utils')
 
 const DIFF_THRESHOLD = 0.065
 
-test(`averages to within ${
-  DIFF_THRESHOLD * 100
-}% of the given probabilities`, t => {
-  const n = 10000
-  let i = -1
+test(`averages to within ${DIFF_THRESHOLD * 100
+  }% of the given probabilities`, t => {
+    const n = 10000
+    let i = -1
 
-  const sums = {
-    red: 0,
-    green: 0,
-    blue: 0
-  }
+    const sums = {
+      red: 0,
+      green: 0,
+      blue: 0,
+      yellow: 0,
+      fuchsia: 0
+    }
 
-  const fn = oneOfWeighted([
-    [0.6, 'red'],
-    [0.1, 'green'],
-    [0.3, 'blue']
-  ])
+    const fn = oneOfWeighted([
+      [0.6, 'red'],
+      [0.2, 'green'],
+      [0.1, 'blue']
+      [0.05, 'yellow']
+      [0.05, 'fuchsia']
+    ])
 
-  while (++i < n) sums[fn(i)]++
+    while (++i < n) sums[fn(i)]++
 
-  t.assert(diffBetween(sums.red / n, 0.6) <= DIFF_THRESHOLD)
-  t.assert(diffBetween(sums.green / n, 0.1) <= DIFF_THRESHOLD)
-  t.assert(diffBetween(sums.blue / n, 0.3) <= DIFF_THRESHOLD)
-})
+    t.assert(diffBetween(sums.red / n, 0.6) <= DIFF_THRESHOLD)
+    t.assert(diffBetween(sums.green / n, 0.2) <= DIFF_THRESHOLD)
+    t.assert(diffBetween(sums.blue / n, 0.1) <= DIFF_THRESHOLD)
+    t.assert(diffBetween(sums.yellow / n, 0.05) <= DIFF_THRESHOLD)
+    t.assert(diffBetween(sums.fuchsia / n, 0.05) <= DIFF_THRESHOLD)
+  })
 
 test(`unassigned probabilities`, t => {
   const n = 10000
