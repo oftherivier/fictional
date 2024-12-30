@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.1](https://github.com/oftherivier/fictional/compare/v2.1.0...v2.1.1) (2024-12-30)
+
+
+### Bug Fixes
+
+* oneOfWeighted remaining probability ([#45](https://github.com/oftherivier/fictional/issues/45)) ([21161d9](https://github.com/oftherivier/fictional/commit/21161d9cae24dfedf7b3aa974435a601d24ed313))
+
 ## [2.1.0](https://github.com/oftherivier/fictional/compare/v2.0.3...v2.1.0) (2024-10-10)
 
 
