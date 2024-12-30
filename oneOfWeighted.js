@@ -21,7 +21,7 @@ function oneOfWeightedMain(input, samples) {
   while (++i < n) {
     sample = samples[i]
     p = sample[0] / pRemaining
-    pRemaining -= p
+    pRemaining -= sample[0]
 
     if (flip(id, p)) {
       return resolve(id, sample[1])
