@@ -11,20 +11,14 @@ function oneOfWeighted(a, b) {
 
 function oneOfWeightedMain(input, samples) {
   samples = parseSamples(samples)
-  var id = hash2(input, 'oneOfWeighted')
-  var n = samples.length
-  var pRemaining = 1
-  var i = -1
-  var sample
-  var p
+  var id = hash(input, 'oneOfWeighted')
+  const prob = (id % 1_000_000) / 1_000_000
 
-  while (++i < n) {
-    sample = samples[i]
-    p = sample[0] / pRemaining
-    pRemaining -= p
-
-    if (flip(id, p)) {
-      return resolve(id, sample[1])
+  let cumulative = 0;
+  for (const [probability, value] of samples) {
+    cumulative += probability;
+    if (prob < cumulative) {
+      return value;
     }
   }
 
@@ -62,7 +56,7 @@ function parseSamples(samples) {
   } else if (samplesLen === assignedPsLen && sumAssignedPs < 1 - EPS) {
     throw new Error(
       'All items were assigned probabilities, yet the probabilities add up to less than 1: ' +
-        JSON.stringify(assignedPs)
+      JSON.stringify(assignedPs)
     )
   }
 
