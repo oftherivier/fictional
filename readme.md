@@ -800,7 +800,7 @@ oneOfWeighted('id-2', [
   [0.05, char],
   [0.05, int]
 ])
-// => 'Ut'
+// => [Function: word] { options: [Function: wordOptions] }
 ```
 
 For each `[probability, value]` pair in the array of `values`, if the given
@@ -817,7 +817,7 @@ oneOfWeighted('id-23', [
   [null, 'green'],
   [null, 'blue']
 ])
-// => 'green'
+// => 'blue'
 ```
 
 ## <a name="install-use" href="#install-use">#</a> Install & Use
