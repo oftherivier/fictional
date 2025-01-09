@@ -1,7 +1,5 @@
 var hash = require('./hash')
 var hash2 = hash.hash2
-var flip = require('./utils/flip')
-var resolve = require('./utils/resolve')
 
 var EPS = 0.0001
 
@@ -12,13 +10,13 @@ function oneOfWeighted(a, b) {
 function oneOfWeightedMain(input, samples) {
   samples = parseSamples(samples)
   var id = hash2(input, 'oneOfWeighted')
-  const prob = (id % 1_000_000) / 1_000_000
+  var prob = (id % 1000000) / 1000000
 
-  let cumulative = 0;
-  for (const [probability, value] of samples) {
-    cumulative += probability;
+  var cumulative = 0
+  for (var i = 0; i < samples.length; i++) {
+    cumulative += samples[i][0]
     if (prob < cumulative) {
-      return value;
+      return samples[i][1]
     }
   }
 
@@ -56,7 +54,7 @@ function parseSamples(samples) {
   } else if (samplesLen === assignedPsLen && sumAssignedPs < 1 - EPS) {
     throw new Error(
       'All items were assigned probabilities, yet the probabilities add up to less than 1: ' +
-      JSON.stringify(assignedPs)
+        JSON.stringify(assignedPs)
     )
   }
 

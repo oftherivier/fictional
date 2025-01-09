@@ -9,26 +9,30 @@ test(`1/5 averages to within ${DIFF_THRESHOLD * 100
     const n = 10000
     let i = -1
 
-  const sums = {
-    red: 0,
-    green: 0,
-    blue: 0
-  }
+    const sums = {
+      red: 0,
+      green: 0,
+      blue: 0,
+      yellow: 0,
+      fuchsia: 0
+    }
 
     const fn = oneOfWeighted([
       [0.6, 'red'],
       [0.2, 'green'],
       [0.1, 'blue'],
       [0.05, 'yellow'],
-      [0.05, 'fuchsia'],
+      [0.05, 'fuchsia']
     ])
 
-  while (++i < n) sums[fn(i)]++
+    while (++i < n) sums[fn(i)]++
 
-  t.assert(diffBetween(sums.red / n, 0.6) <= DIFF_THRESHOLD)
-  t.assert(diffBetween(sums.green / n, 0.1) <= DIFF_THRESHOLD)
-  t.assert(diffBetween(sums.blue / n, 0.3) <= DIFF_THRESHOLD)
-})
+    t.assert(diffBetween(sums.red / n, 0.6) <= DIFF_THRESHOLD)
+    t.assert(diffBetween(sums.green / n, 0.2) <= DIFF_THRESHOLD)
+    t.assert(diffBetween(sums.blue / n, 0.1) <= DIFF_THRESHOLD)
+    t.assert(diffBetween(sums.yellow / n, 0.05) <= DIFF_THRESHOLD)
+    t.assert(diffBetween(sums.fuchsia / n, 0.05) <= DIFF_THRESHOLD)
+  })
 
 test(`2/5 averages to within ${DIFF_THRESHOLD * 100}% of the given probabilities`, t => {
   const n = 10000
@@ -47,7 +51,7 @@ test(`2/5 averages to within ${DIFF_THRESHOLD * 100}% of the given probabilities
     [0.3, 'banana'],
     [0.2, 'cherry'],
     [0.05, 'pear'],
-    [0.05, 'persimmon'],
+    [0.05, 'persimmon']
   ])
 
   while (++i < n) sums[fn(i)]++
@@ -71,7 +75,7 @@ test(`3/5 averages to within ${DIFF_THRESHOLD * 100}% of the given probabilities
     Bonjour: 0,
     Salam: 0,
     Nomoshkar: 0
-  };
+  }
 
   const fn = oneOfWeighted([
     [0.25, 'Namaste'],
@@ -81,17 +85,17 @@ test(`3/5 averages to within ${DIFF_THRESHOLD * 100}% of the given probabilities
     [0.07, 'Bonjour'],
     [0.07, 'Salam'],
     [0.06, 'Nomoshkar']
-  ]);
+  ])
 
-  while (++i < n) sums[fn(i)]++;
+  while (++i < n) sums[fn(i)]++
 
-  t.assert(diffBetween(sums['Namaste'] / n, 0.25) <= DIFF_THRESHOLD);
-  t.assert(diffBetween(sums['Hello'] / n, 0.2) <= DIFF_THRESHOLD + 0.025);
-  t.assert(diffBetween(sums['Ni hao'] / n, 0.2) <= DIFF_THRESHOLD);
-  t.assert(diffBetween(sums['Hola'] / n, 0.15) <= DIFF_THRESHOLD);
-  t.assert(diffBetween(sums['Bonjour'] / n, 0.07) <= DIFF_THRESHOLD);
-  t.assert(diffBetween(sums['Salam'] / n, 0.07) <= DIFF_THRESHOLD);
-  t.assert(diffBetween(sums['Nomoshkar'] / n, 0.06) <= DIFF_THRESHOLD);
+  t.assert(diffBetween(sums['Namaste'] / n, 0.25) <= DIFF_THRESHOLD)
+  t.assert(diffBetween(sums['Hello'] / n, 0.2) <= DIFF_THRESHOLD + 0.025)
+  t.assert(diffBetween(sums['Ni hao'] / n, 0.2) <= DIFF_THRESHOLD)
+  t.assert(diffBetween(sums['Hola'] / n, 0.15) <= DIFF_THRESHOLD)
+  t.assert(diffBetween(sums['Bonjour'] / n, 0.07) <= DIFF_THRESHOLD)
+  t.assert(diffBetween(sums['Salam'] / n, 0.07) <= DIFF_THRESHOLD)
+  t.assert(diffBetween(sums['Nomoshkar'] / n, 0.06) <= DIFF_THRESHOLD)
 })
 
 test(`4/5 averages to within ${DIFF_THRESHOLD * 100}% of the given probabilities`, t => {
@@ -111,7 +115,7 @@ test(`4/5 averages to within ${DIFF_THRESHOLD * 100}% of the given probabilities
     [0.025, 'dog'],
     [0.1, 'bird'],
     [0.025, 'fish'],
-    [0.05, 'rabbit'],
+    [0.05, 'rabbit']
   ])
 
   while (++i < n) sums[fn(i)]++
@@ -140,7 +144,7 @@ test(`5/5 averages to within ${DIFF_THRESHOLD * 100}% of the given probabilities
     [0.25, 'beta'],
     [0.25, 'gamma'],
     [0.15, 'delta'],
-    [0.1, 'epsilon'],
+    [0.1, 'epsilon']
   ])
 
   while (++i < n) sums[fn(i)]++
@@ -206,4 +210,3 @@ test(`omitted probabilities`, t => {
     ])
   )
 })
-
