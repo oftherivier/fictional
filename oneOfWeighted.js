@@ -11,7 +11,7 @@ function oneOfWeighted(a, b) {
 
 function oneOfWeightedMain(input, samples) {
   samples = parseSamples(samples)
-  var id = hash(input, 'oneOfWeighted')
+  var id = hash2(input, 'oneOfWeighted')
   const prob = (id % 1_000_000) / 1_000_000
 
   let cumulative = 0;
