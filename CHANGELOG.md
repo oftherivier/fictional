@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/oftherivier/fictional/compare/v2.1.1...v3.0.0) (2025-01-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* algorithm for oneOfWeighted has better distribution (#47)
+
+### Bug Fixes
+
+* algorithm for oneOfWeighted has better distribution ([#47](https://github.com/oftherivier/fictional/issues/47)) ([5b9ed8e](https://github.com/oftherivier/fictional/commit/5b9ed8ebf303eb25bd3e6c925384144efb5c56b5)), closes [#46](https://github.com/oftherivier/fictional/issues/46)
+
 ### [2.1.1](https://github.com/oftherivier/fictional/compare/v2.1.0...v2.1.1) (2024-12-30)
 
 
