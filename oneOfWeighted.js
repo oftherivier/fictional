@@ -1,7 +1,5 @@
 var hash = require('./hash')
 var hash2 = hash.hash2
-var flip = require('./utils/flip')
-var resolve = require('./utils/resolve')
 
 var EPS = 0.0001
 
@@ -12,19 +10,13 @@ function oneOfWeighted(a, b) {
 function oneOfWeightedMain(input, samples) {
   samples = parseSamples(samples)
   var id = hash2(input, 'oneOfWeighted')
-  var n = samples.length
-  var pRemaining = 1
-  var i = -1
-  var sample
-  var p
+  var prob = (id % 1000000) / 1000000
 
-  while (++i < n) {
-    sample = samples[i]
-    p = sample[0] / pRemaining
-    pRemaining -= p
-
-    if (flip(id, p)) {
-      return resolve(id, sample[1])
+  var cumulative = 0
+  for (var i = 0; i < samples.length; i++) {
+    cumulative += samples[i][0]
+    if (prob < cumulative) {
+      return samples[i][1]
     }
   }
 
