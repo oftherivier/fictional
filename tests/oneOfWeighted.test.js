@@ -1,5 +1,5 @@
 const test = require('ava')
-const { oneOfWeighted } = require('..')
+const { oneOfWeighted, oneOf } = require('..')
 const { diffBetween } = require('./utils')
 
 const DIFF_THRESHOLD = 0.065
@@ -209,4 +209,20 @@ test(`omitted probabilities`, t => {
       [0.9, 'b']
     ])
   )
+})
+
+
+test(`curried makers`, t => {
+  const n = 10000
+  let i = -1
+
+  const fn = oneOfWeighted([
+    [0.8, oneOf(['red', 'green'])],
+    [0.2, oneOf(['blue', 'yellow'])],
+  ])
+
+  const seen = new Set()
+  while (++i < n) seen.add(fn(i))
+
+  t.deepEqual(Array.from(seen).sort(), ['blue', 'green', 'red', 'yellow'])
 })

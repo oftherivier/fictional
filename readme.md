@@ -800,7 +800,7 @@ oneOfWeighted('id-2', [
   [0.05, char],
   [0.05, int]
 ])
-// => [Function: word] { options: [Function: wordOptions] }
+// => 'Ut'
 ```
 
 For each `[probability, value]` pair in the array of `values`, if the given

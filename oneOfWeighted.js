@@ -1,4 +1,5 @@
 var hash = require('./hash')
+var resolve = require('./utils/resolve')
 var hash2 = hash.hash2
 
 var EPS = 0.0001
@@ -16,7 +17,7 @@ function oneOfWeightedMain(input, samples) {
   for (var i = 0; i < samples.length; i++) {
     cumulative += samples[i][0]
     if (prob < cumulative) {
-      return samples[i][1]
+      return resolve(id, samples[i][1])
     }
   }
 
